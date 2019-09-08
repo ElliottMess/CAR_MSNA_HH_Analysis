@@ -1,0 +1,1292 @@
+,,,,,Personnes déplacées internes,,,,,Personnes retournées de RCA (Ex-PDI),,,,,Personnes retournées en provenance d'autre pays,,,,,source d'information (Nbre),Qualité de la données,,,
+_ADM1_NAME,_ADM2_NAME,_ADM3_NAME,_V_CODE,_Village,idps,hh_idp,ind_idp,abris_pdi_site,abris_pdi_hors_site,retournes,hh_ret_rca,ind_ret_rca,abris_ret_site,abris_ret_hors_site,retournes_etrangers,hh_ret_oth,ind_ret_oth,abris_reto_site,abris_reto_hors_site,Nbre_Informateurs_cles,coherence_informateurs,coherence_observation,existence_preuves,perception_enumerateur
+Bamingui-Bangoran,Bamingui,Vassako,CF5121_ZIG_0000,ZIGNA,oui,96,489,0,96,oui,124,624,0,124,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Bamingui,Vassako,CF5121_MBE_0000,MBENGOU,oui,77,390,0,77,oui,40,215,0,40,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Bamingui,Vassako,CF5121_BAL_0001,BALOUBA,oui,48,238,0,48,oui,42,216,0,42,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Bamingui,Vassako,CF5121_BOR_0000,BORNO,oui,35,192,0,35,oui,55,240,0,55,oui,3,20,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Bamingui,Vassako,CF5121_WAN_0000,WANGO,oui,35,170,0,35,oui,16,90,0,16,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Bamingui,Vassako,CF5121_DOU_0000,DOUMOU,oui,30,153,0,30,oui,148,737,0,148,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Bamingui,Vassako,CF5121_LAN_0000,LANDO,oui,28,147,0,28,oui,92,463,0,92,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Bamingui,Vassako,CF5121_KPO_0000,KPOLMONGUE,oui,22,107,0,22,oui,13,69,0,13,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Bamingui,Vassako,CF5121_BAN_0000,BANGOLET,oui,20,110,0,20,oui,15,70,0,15,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Bamingui,Vassako,CF5121_DAB_0000,DABOU,oui,16,86,0,16,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Bamingui,Vassako,CF5121_YAM_0000,YAMBALA,oui,13,88,0,13,oui,6,21,0,6,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Bamingui,Vassako,CF5121_KAG_0000,KAGANZE,oui,12,68,0,12,oui,4,30,0,4,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Bamingui,Vassako,CF5121_YAN_0000,YANDA,oui,11,74,0,11,oui,12,77,0,12,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Bamingui,Vassako,CF5121_BAL_0000,BALEYAGBA,oui,8,38,0,8,oui,25,147,0,25,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Bamingui,Vassako,CF5121_GUI_0000,GUIRRA,oui,5,32,0,5,oui,10,56,0,10,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Bamingui,Vassako,CF5121_NIA_0000,NIANGO,oui,5,27,0,5,oui,63,319,0,63,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Bamingui,Vassako,CF5121_ECO_0000,ECOFAUNE PLUS,oui,1,1,0,1,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_ALI_0001,ALIOU,oui,15,98,0,15,oui,5,35,0,5,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_BOR_0000,BORNOU,oui,25,130,0,25,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_CIT_0000,CITE DE L'AMITIE,oui,80,428,0,80,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_SOU_0000,SOKOUMBA,oui,3,20,0,3,non,0,0,0,0,oui,52,243,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_HAO_0002,HAOUSSA 2,oui,28,86,0,28,oui,3,7,0,3,oui,37,66,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_GOU_0001,GOUZBEDA,oui,29,140,0,29,oui,2,11,0,2,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_GOZ_0001,GOZAMAR,oui,80,302,80,0,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_GOZ_0000,GOZAMAR 3,oui,5,22,0,5,oui,10,60,0,10,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_NGA_0000,NGADJA,oui,25,141,0,25,oui,9,40,0,9,oui,33,172,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_HAO_0001,HAOUSSA 1,oui,10,62,0,10,oui,66,268,0,66,oui,1,4,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_SUL_0003,SULTAN 4,oui,114,575,0,114,oui,32,170,0,32,oui,26,140,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_KAN_0000,KANDJIA,oui,33,160,0,33,oui,3,11,0,3,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_KPE_0000,KPETENE,oui,67,342,0,67,non,0,0,0,0,oui,25,121,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_DJA_0000,DJALAB,oui,5,28,0,5,oui,97,489,0,97,oui,23,115,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_LEM_0002,LEMANA 2,oui,29,107,0,29,oui,6,28,0,6,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_LEM_0003,LEMANA 3,oui,17,90,0,17,oui,6,33,0,6,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_MOU_0000,MOUROUBA,oui,2,5,0,2,oui,36,183,0,36,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_NDO_0001,NDOKA 1,oui,1,2,0,1,oui,25,120,0,25,oui,2,19,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_NDO_0002,NDOKA 2,oui,64,300,0,64,oui,7,30,0,7,oui,6,20,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_SUL_0001,SULTAN 1,oui,207,1043,0,207,oui,25,130,0,25,oui,22,120,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_GOL_0000,GOLOMANDJA,oui,90,460,0,90,oui,16,90,0,16,oui,21,100,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_HAO_0000,HAOUSSA,oui,10,44,0,10,oui,11,62,0,11,oui,19,181,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_SAR_0001,SARA ZOYON,oui,73,349,0,73,non,0,0,0,0,oui,7,30,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_SAR_0000,SARA,non,0,0,0,0,oui,30,157,0,30,oui,15,70,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_ROU_0000,ROUNGA,oui,75,374,0,75,oui,4,23,0,4,oui,14,65,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_LEM_0001,LEMANA 1,oui,41,140,0,41,oui,29,90,0,29,oui,13,40,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_SUL_0002,SULTAN 3,oui,60,300,0,60,oui,7,40,0,7,oui,9,55,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_SUL_0000,SULTAN 2,oui,3,13,0,3,oui,21,111,0,21,oui,12,66,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_TYP_0000,TYPOYEUR,oui,24,101,0,24,oui,10,60,0,10,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_YAN_0000,YANGOUGALE,oui,80,333,0,80,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_ZOU_0001,ZOUKOUTOUNIALA 1,oui,8,40,0,8,oui,3,18,0,3,oui,7,40,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Dar-El-Kouti,CF5111_ZOU_0002,ZOUKOUTOUNIALA 2,non,0,0,0,0,oui,4,20,0,4,oui,9,42,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Mbolo-Pata,CF5112_KIB_0000,KIBITTI,oui,16,109,0,16,oui,8,37,0,8,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Mbolo-Pata,CF5112_MBO_0001,MBOLLO 1,oui,6,28,0,6,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Mbolo-Pata,CF5112_MBO_0002,MBOLLO 2,oui,6,20,0,6,oui,12,61,0,12,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Mbolo-Pata,CF5112_VON_0000,VONGBA,oui,7,22,0,7,oui,17,75,0,17,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Mbolo-Pata,CF5112_YAN_0001,YANGOU BRINDI 1,oui,12,68,0,12,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bamingui-Bangoran,Ndélé,Mbolo-Pata,CF5112_YAN_0002,YANGOU BRINDI 2,oui,59,229,0,59,oui,1,1,0,1,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_BEA_0000,BEA-REX,non,0,0,0,0,oui,20,100,0,20,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_BOU_0000,BOULATA,oui,336,1680,0,336,oui,60,300,0,60,oui,170,850,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_CAM_0000,CAMEROUNAIS DOUALA,oui,422,2110,0,422,oui,216,1080,0,216,oui,220,1100,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_CAM_0001,CAMEROUNAIS NORD,oui,32,160,0,32,oui,298,1510,0,298,oui,270,1350,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_CAM_0002,CAMEROUNAIS YAOUNDE,oui,608,3040,0,608,oui,109,545,0,109,oui,292,1460,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_CAS_0000,CASTORS,oui,4,20,0,4,non,0,0,0,0,oui,40,200,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_FAT_0000,FATIMA 2,oui,29,145,0,29,oui,140,700,0,140,oui,26,130,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_FON_0000,FONDO,oui,300,1500,0,300,oui,280,1400,0,280,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_FOU_0000,FOULBE,oui,170,850,0,170,oui,70,350,0,70,oui,80,400,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_DOM_0000,GBAYA DOMBIA 1,oui,272,1360,0,272,oui,287,1295,0,287,oui,433,2165,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_GBA_0002,GBAYA DOMBIA 2,oui,700,3500,0,700,oui,90,450,0,90,oui,180,900,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_GBA_0001,GBAYA KM5,oui,80,400,0,80,oui,160,800,0,160,oui,200,1000,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_ISS_0000,ISSONGO,oui,960,4800,0,960,oui,270,1350,0,270,oui,240,1200,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_KOK_0003,KOKOLO 2,non,0,0,0,0,oui,5,25,0,5,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_KOK_0000,KOKOLO 3,oui,24,120,0,24,oui,372,2160,0,372,oui,58,290,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_KOK_0002,KOKOLO 4,oui,26,130,0,26,oui,66,330,0,66,oui,12,60,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_KOK_0004,KOKOLO 5,oui,40,200,0,40,oui,110,550,0,110,oui,36,180,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_KOK_0001,KOKOLO1,oui,16,80,0,16,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_OUH_0000,OUHAM2 GUIDA,oui,682,3410,0,682,non,0,0,0,0,oui,36,180,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_RAM_0000,RAMANDJI,oui,274,1370,0,274,oui,130,650,0,130,oui,64,320,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_SAM_0000,SAMBO,oui,260,1300,0,260,oui,106,530,0,106,oui,74,370,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_SAN_0000,SANGA BIBALE,oui,512,2560,0,512,oui,140,700,0,140,oui,150,750,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_SAR_0001,SARA DAH,non,0,0,0,0,oui,16,80,0,16,oui,1,5,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_SAR_0000,SARA-KABA,non,0,0,0,0,oui,10,50,0,10,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_SEN_0000,SENEGALAIS,oui,660,3300,0,660,oui,80,400,0,80,oui,700,3500,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_YAK_0000,YAKITE,oui,116,580,0,116,oui,12,60,0,12,oui,10,50,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_YAL_0001,YALOA 1,oui,660,3300,0,660,oui,388,1940,0,388,oui,304,1520,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_YAL_0000,YALOA 2,oui,800,4000,0,800,oui,100,500,0,100,oui,216,1080,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Bangui,Bangui,3e Arrondissement,CF7113_YAM_0000,YAMBASSA,oui,120,600,0,120,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Alindao,Alindao,CF6121_BAN_0000,BANGUI-VILLE,oui,191,955,191,0,oui,8,26,0,8,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Alindao,Alindao,CF6121_BOR_0000,BORNO,oui,145,675,0,145,oui,95,504,0,95,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Alindao,Alindao,CF6121_KON_0000,KONGO 2,oui,837,4175,837,0,oui,28,140,0,28,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Alindao,Alindao,CF6121_MIS_0000,MISSION CATHOLIQUE,oui,6115,25645,6115,0,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Alindao,Alindao,CF6121_NGA_0000,NGABE 1,oui,113,560,0,113,oui,38,117,0,38,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Alindao,Alindao,CF6121_NZO_0000,NZONIBE,non,0,0,0,0,oui,4,20,0,4,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Alindao,Alindao,CF6121_PAG_0001,PAGUY 1,oui,60,300,0,60,oui,1,8,0,1,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Alindao,Alindao,CF6121_RON_0002,RONGA 2,oui,40,125,0,40,oui,50,80,0,50,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Alindao,Alindao,CF6121_RON_0003,RONGA 3,oui,19,95,0,19,oui,95,700,0,95,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Alindao,Alindao,CF6121_VOU_0000,VOUNDJA DJOGO,oui,340,1700,340,0,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Alindao,Bakou,CF6124_ANG_0001,ANGAZEU (KONGBO),oui,1375,6840,1375,0,oui,200,1000,0,200,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Alindao,Bakou,CF6124_BAN_0001,BANDA DEKA,oui,406,2030,0,406,oui,287,1435,0,287,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Alindao,Bakou,CF6124_ELI_0001,ELIM 1,oui,35,178,0,35,oui,94,472,0,94,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Alindao,Bakou,CF6124_ELI_0002,ELIM 2,oui,114,573,114,0,oui,10,50,0,10,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Alindao,Bakou,CF6124_KON_0001,KONGBO 1,oui,134,644,0,134,oui,50,250,0,50,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Alindao,Bakou,CF6124_NGO_0001,NGONGO,oui,100,500,0,100,oui,24,120,0,24,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Alindao,Bakou,CF6124_PAD_0001,PADA 2,oui,20,100,0,20,oui,156,780,0,156,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Alindao,Bakou,CF6124_ZAR_0001,ZARAWA,oui,500,2500,0,500,oui,27,136,0,27,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Alindao,Guiligui,CF6122_PAV_0001,PAVICA 16,oui,1333,6665,0,1333,oui,712,3560,0,712,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Kembé,Kembé,CF6131_MBI_0001,MBINGO,oui,396,1980,0,396,oui,31,155,0,31,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mbelima,CF6112_BAN_0002,BANDA GBAZENGUE,non,0,0,0,0,oui,52,247,0,52,oui,9,35,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mbelima,CF6112_BAN_0003,BANDA NGBANGOU,non,0,0,0,0,oui,20,84,0,20,oui,12,45,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mbelima,CF6112_BAN_0004,BANDOU 1,oui,1,1,0,1,oui,31,148,0,31,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mbelima,CF6112_BAN_0005,BANDOU 2,non,0,0,0,0,oui,70,273,0,70,oui,4,12,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mbelima,CF6112_COU_0001,COURBE KPETENE,oui,2,6,0,2,non,0,0,0,0,oui,26,122,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mbelima,CF6112_DJI_0001,DJIMANGOA,non,0,0,0,0,oui,66,260,0,66,oui,7,18,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mbelima,CF6112_DOU_0001,DOUMADJIA,non,0,0,0,0,non,0,0,0,0,oui,34,179,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mbelima,CF6112_GBA_0002,GBABI 2,oui,2,10,0,2,oui,33,193,0,33,oui,2,12,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mbelima,CF6112_GBA_0003,GBAMA 1,oui,12,42,0,12,oui,166,720,0,166,oui,3,9,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mbelima,CF6112_GBE_0001,GBEBI 1,non,0,0,0,0,oui,24,163,0,24,oui,4,20,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mbelima,CF6112_GOA_0001,GOASSA,non,0,0,0,0,oui,27,105,0,27,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mbelima,CF6112_IMA_0002,IMA 3 LONDO,oui,12,58,0,12,oui,75,367,0,75,oui,4,10,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mbelima,CF6112_IMA_0003,IMA LISSI,non,0,0,0,0,oui,104,265,0,104,oui,25,52,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mbelima,CF6112_IMA_0004,IMA ROUNGA,oui,12,60,0,12,oui,107,522,0,107,oui,7,22,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mbelima,CF6112_KAN_0001,KANDJA,non,0,0,0,0,oui,39,174,0,39,oui,2,3,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mbelima,CF6112_MBO_0002,MBOCHE 1,oui,3,6,0,3,oui,98,420,0,98,oui,8,24,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mbelima,CF6112_MBO_0003,MBOCHE 2,oui,8,27,0,8,oui,81,571,0,81,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mbelima,CF6112_OYE_0001,OYE 1,non,0,0,0,0,oui,79,679,0,79,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mbelima,CF6112_YAB_0001,YABROU 1,oui,2,2,0,2,oui,96,392,0,96,oui,7,40,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mbelima,CF6112_YAM_0001,YAMA OTTO,non,0,0,0,0,oui,74,178,0,74,oui,24,40,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mobaye,CF6111_COU_0001,COURBE LOBA,non,0,0,0,0,oui,31,238,0,31,oui,34,218,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mobaye,CF6111_GBA_0002,GBAMA 2,non,0,0,0,0,non,0,0,0,0,oui,25,131,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mobaye,CF6111_GBA_0001,GBAMANGUI,non,0,0,0,0,non,0,0,0,0,oui,74,351,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mobaye,CF6111_KOM_0003,KOMODU 1,non,0,0,0,0,oui,1,5,0,1,oui,45,174,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mobaye,CF6111_KOM_0004,KOMODU 2,non,0,0,0,0,oui,7,30,0,7,oui,39,173,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mobaye,CF6111_LAT_0001,LATIN,non,0,0,0,0,non,0,0,0,0,oui,20,100,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mobaye,CF6111_LAW_0001,LAWA,non,0,0,0,0,oui,14,76,0,14,oui,14,81,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mobaye,CF6111_LOU_0001,LOUMBA,non,0,0,0,0,oui,14,81,0,14,oui,68,366,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mobaye,CF6111_MOB_0001,MOBAYE POSTE,non,0,0,0,0,non,0,0,0,0,oui,29,173,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mobaye,CF6111_NDO_0001,NDOUHOU,non,0,0,0,0,oui,12,59,0,12,oui,35,213,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mobaye,CF6111_NZA_0001,NZAKARA BOUKOUMBE,non,0,0,0,0,non,0,0,0,0,oui,17,87,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mobaye,CF6111_PAR_0001,PARIS CONGO 1,non,0,0,0,0,non,0,0,0,0,oui,57,148,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mobaye,CF6111_PAR_0002,PARIS CONGO 2,non,0,0,0,0,non,0,0,0,0,oui,29,173,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mobaye,CF6111_POT_0001,POTO POTO,non,0,0,0,0,oui,5,33,0,5,oui,120,541,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mobaye,CF6111_RON_0001,RONGA,non,0,0,0,0,non,0,0,0,0,oui,67,192,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mobaye,CF6111_SIN_0001,SINDA,non,0,0,0,0,oui,24,93,0,24,oui,10,87,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Mobaye,Mobaye,CF6111_TON_0001,TONGBA NZENGUE,non,0,0,0,0,non,0,0,0,0,oui,60,216,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Satéma,Kotto-Oubangui,CF6161_KOU_0001,KOUANGBA,oui,158,790,0,158,oui,150,750,0,150,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Satéma,Kotto-Oubangui,CF6161_LAK_0002,LAKOUNDJI 1,oui,1240,1403,0,1240,oui,107,535,0,107,oui,12,61,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Satéma,Kotto-Oubangui,CF6161_LAK_0003,LAKOUNDJI 2,oui,632,3160,0,632,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Basse-Kotto,Satéma,Kotto-Oubangui,CF6161_LAK_0004,LAKOUNDJI 3,oui,448,2240,0,448,oui,45,226,0,45,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haute-Kotto,Bria,Bria,CF5211_AMA_0001,AMAMEU,oui,794,3596,0,794,oui,165,821,0,165,non,0,0,0,0,4,oui_majorite,oui_majorite,en_partie,eleve
+Haute-Kotto,Bria,Bria,CF5211_BOR_0001,BORNOU 1,oui,1473,6649,109,1364,oui,433,936,0,433,oui,43,76,0,43,5,oui_majorite,oui_majorite,oui_majorite,eleve
+Haute-Kotto,Bria,Bria,CF5211_BOR_0002,BORNOU 2,oui,421,2073,0,421,oui,158,422,0,158,non,0,0,0,0,4,oui_majorite,oui_majorite,oui_majorite,moyen
+Haute-Kotto,Bria,Bria,CF5211_GAL_0001,GALABADJA,oui,456,2670,0,456,oui,59,305,0,59,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,eleve
+Haute-Kotto,Bria,Bria,CF5211_GBA_0001,GBADOU,oui,1573,7482,23,1550,oui,217,922,0,217,non,0,0,0,0,5,oui_majorite,oui_majorite,oui_majorite,eleve
+Haute-Kotto,Bria,Bria,CF5211_GOB_0001,GOBOLO 1,oui,200,1214,0,200,oui,25,185,0,25,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Haute-Kotto,Bria,Bria,CF5211_GOB_0002,GOBOLO 2,oui,117,1033,0,117,oui,87,817,0,87,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Haute-Kotto,Bria,Bria,CF5211_LA _0001,LA SIM,oui,381,2094,132,249,oui,65,604,0,65,oui,13,106,0,13,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Haute-Kotto,Bria,Bria,CF5211_MAN_0001,MANDE 1,oui,176,1401,0,176,oui,6,43,0,6,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Haute-Kotto,Bria,Bria,CF5211_MAN_0002,MANDE 2,oui,158,976,0,158,oui,75,307,0,75,oui,27,173,0,27,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Haute-Kotto,Bria,Bria,CF5211_MAN_0003,MANDE 3,oui,80,633,0,80,oui,10,64,0,10,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Haute-Kotto,Bria,Bria,CF5211_MAN_0004,MANDE 4,oui,151,1202,0,151,oui,30,240,0,30,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Haute-Kotto,Bria,Bria,CF5211_NDO_0001,NDOMENDE 1,oui,124,846,0,124,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Haute-Kotto,Bria,Bria,CF5211_NDR_0001,NDROU 1,oui,137,1088,0,137,oui,8,62,0,8,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Haute-Kotto,Bria,Bria,CF5211_NDR_0002,NDROU 3,oui,60,480,0,60,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Haute-Kotto,Bria,Bria,CF5211_PK _0001,PK 3,oui,9104,50030,9104,0,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Haute-Kotto,Bria,Bria,CF5211_YAN_0001,YANDOMO,oui,98,292,98,0,oui,10,28,10,0,non,0,0,0,0,3,oui_majorite,oui_majorite,pas_du_tout,moyen
+Haute-Kotto,Yalinga,Yalinga,CF5231_DOU_0001,DOUNGOU,non,0,0,0,0,oui,19,95,0,19,non,0,0,0,0,3,oui_majorite,oui_majorite,pas_du_tout,eleve
+Haute-Kotto,Yalinga,Yalinga,CF5231_DOU_0002,DOUNGOU 1 CROISEMENT,oui,30,150,0,30,oui,70,374,0,70,non,0,0,0,0,3,oui_majorite,oui_majorite,pas_du_tout,eleve
+Haute-Kotto,Yalinga,Yalinga,CF5231_KPA_0001,KPAME,oui,25,150,0,25,oui,56,290,0,56,non,0,0,0,0,3,oui_majorite,oui_majorite,pas_du_tout,eleve
+Haute-Kotto,Yalinga,Yalinga,CF5231_MBI_0001,MBIHI,oui,3,10,0,3,oui,83,401,0,83,non,0,0,0,0,4,oui_toutes,oui_majorite,oui_majorite,tres_eleve
+Haute-Kotto,Yalinga,Yalinga,CF5231_NDA_0001,NDAIMA,oui,54,288,0,54,oui,116,613,0,116,non,0,0,0,0,4,oui_majorite,oui_majorite,oui_majorite,eleve
+Haute-Kotto,Yalinga,Yalinga,CF5231_NGO_0001,NGOULIA,oui,24,126,0,24,oui,140,700,0,140,non,0,0,0,0,5,oui_majorite,oui_majorite,en_partie,eleve
+Haute-Kotto,Yalinga,Yalinga,CF5231_NGU_0001,NGUI 1,oui,10,63,0,10,oui,42,228,0,42,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_toutes,eleve
+Haute-Kotto,Yalinga,Yalinga,CF5231_YAK_0001,YAKAMALET,oui,15,90,0,15,oui,55,330,0,55,non,0,0,0,0,3,oui_majorite,oui_majorite,pas_du_tout,moyen
+Haute-Kotto,Yalinga,Yalinga,CF5231_YAL_0001,YALINGA,oui,31,212,28,3,oui,29,131,0,29,non,0,0,0,0,3,oui_majorite,oui_majorite,pas_du_tout,eleve
+Haut-Mbomou,Bambouti,Lili,CF6321_ABO_0001,ABOSSI,oui,11,55,0,11,non,0,0,0,0,oui,28,140,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Bambouti,Lili,CF6321_BAZ_0001,BAZIGBIRI,oui,72,360,0,72,non,0,0,0,0,oui,7,35,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Bambouti,Lili,CF6321_GBA_0001,GBALIA,oui,30,150,0,30,non,0,0,0,0,oui,14,70,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Bambouti,Lili,CF6321_SEL_0001,SELIM,oui,18,94,0,18,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Djéma,Djéma,CF6341_BOK_0001,BOKINDO,oui,36,128,0,36,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Djéma,Djéma,CF6341_DJE_0001,DJEMA,oui,3008,15112,0,3008,oui,19,92,0,19,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Djéma,Djéma,CF6341_FOU_0000,FOUKA,oui,244,674,0,244,oui,23,183,0,23,oui,24,212,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Djéma,Djéma,CF6341_KAD_0001,KADJIMA,oui,53,206,0,53,oui,16,153,0,16,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Djéma,Djéma,CF6341_MAB_0001,MABOU,oui,107,311,0,107,oui,25,94,0,25,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Djéma,Djéma,CF6341_OUR_0001,OUROU,oui,189,498,0,189,oui,16,137,0,16,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Obo,Mboki,CF6312_ARA_0001,ARABE,oui,46,230,0,46,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Obo,Mboki,CF6312_BAL_0001,BALAGADANGBA,oui,112,564,0,112,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Obo,Mboki,CF6312_BAN_0001,BANGUI MPOKO,oui,442,2210,0,442,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Obo,Mboki,CF6312_MAN_0001,MANDO,oui,40,200,0,40,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Obo,Mboki,CF6312_MAN_0002,MANGUIAGNA,oui,49,245,0,49,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Obo,Mboki,CF6312_MBO_0003,MBOKI CENTRE,oui,30,150,0,30,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Obo,Mboki,CF6312_MBO_0004,MBOKI ESPOIR,oui,840,4200,0,840,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Obo,Mboki,CF6312_NDR_0001,NDRESSE,oui,14,70,0,14,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Obo,Mboki,CF6312_YEM_0001,YEMOUSSE,oui,102,510,0,102,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Obo,Obo,CF6311_ABO_0000,ABOUNA,oui,14,70,0,14,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Haut-Mbomou,Obo,Obo,CF6311_ARA_0001,ARABE,oui,15,80,0,15,non,0,0,0,0,non,0,0,0,,3,oui_majorite,en_partie,en_partie,moyen
+Haut-Mbomou,Obo,Obo,CF6311_BAM_0000,BAMBITO,oui,140,655,119,21,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Obo,Obo,CF6311_COM_0000,COMBATTANT (BADONGO),oui,50,250,0,50,non,0,0,0,0,non,0,0,0,,3,en_partie,en_partie,en_partie,moyen
+Haut-Mbomou,Obo,Obo,CF6311_DAK_0001,DAKATIMOUNGA,oui,57,285,0,57,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Haut-Mbomou,Obo,Obo,CF6311_FOU_0001,FOUKPIO,oui,20,100,0,20,non,0,0,0,0,non,0,0,0,,3,en_partie,en_partie,en_partie,moyen
+Haut-Mbomou,Obo,Obo,CF6311_GNO_0001,GNONKORA,oui,36,164,0,75,non,0,0,0,0,oui,5,23,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Obo,Obo,CF6311_GOU_0000,GOUGBERE-BAZIMA,oui,102,514,0,102,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Haut-Mbomou,Obo,Obo,CF6311_GOU_0001,GOUGBERE-MBIA,oui,360,1800,0,360,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Haut-Mbomou,Obo,Obo,CF6311_KOU_0000,KOUBOU,oui,119,593,0,119,non,0,0,0,0,oui,4,20,0,,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Haut-Mbomou,Obo,Obo,CF6311_KOU_0001,KOUROUKO 1,oui,90,448,0,90,non,0,0,0,0,oui,5,30,0,,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Haut-Mbomou,Obo,Obo,CF6311_KOU_0002,KOUROUKO 2,oui,40,201,0,40,non,0,0,0,0,oui,3,15,0,,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Haut-Mbomou,Obo,Obo,CF6311_LIG_0000,LIGOUA,oui,120,596,0,120,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Haut-Mbomou,Obo,Obo,CF6311_MAZ_0001,MAZANGUE,oui,18,85,0,18,non,0,0,0,0,non,0,0,0,,3,en_partie,en_partie,oui_majorite,moyen
+Haut-Mbomou,Obo,Obo,CF6311_MOT_0000,MOTOPI,oui,185,833,127,58,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Obo,Obo,CF6311_NAI_0001,NAIROBI 1,oui,31,148,0,31,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_toutes,eleve
+Haut-Mbomou,Obo,Obo,CF6311_NAI_0002,NAIROBI 2,oui,89,449,0,89,non,0,0,0,0,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,tres_eleve
+Haut-Mbomou,Obo,Obo,CF6311_NAI_0003,NAIROBI 3,oui,83,410,0,83,non,0,0,0,0,non,0,0,0,0,3,oui_toutes,oui_majorite,en_partie,eleve
+Haut-Mbomou,Obo,Obo,CF6311_NAK_0001,NAKPANGA,oui,230,1274,130,100,oui,24,120,0,24,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Obo,Obo,CF6311_NGO_0000,NGOUME,oui,90,455,0,90,non,0,0,0,0,oui,5,25,0,,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Haut-Mbomou,Obo,Obo,CF6311_NGU_0000,NGUILINGUILI,oui,91,440,0,91,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Haut-Mbomou,Obo,Obo,CF6311_SIK_0001,SIKOTARA,oui,26,129,0,26,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Haut-Mbomou,Obo,Obo,CF6311_YAG_0000,YAGBA,oui,455,2265,383,72,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Zémio,Zémio,CF6331_ARG_0000,ARGUE,oui,923,3821,773,150,oui,355,1334,333,22,oui,84,368,59,25,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Haut-Mbomou,Zémio,Zémio,CF6331_BAN_0000,BANAIGUI,oui,49,214,0,49,oui,52,159,0,52,oui,8,28,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Zémio,Zémio,CF6331_BAN_0001,BANDAKPA,oui,15,110,0,15,oui,40,180,0,40,oui,14,104,0,14,3,en_partie,en_partie,en_partie,moyen
+Haut-Mbomou,Zémio,Zémio,CF6331_BAN_0002,BANDASSI,oui,37,110,0,37,oui,120,518,0,120,oui,51,209,0,51,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Haut-Mbomou,Zémio,Zémio,CF6331_BEG_0000,BEGOUE,oui,8,10,0,8,oui,5,13,0,5,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Zémio,Zémio,CF6331_BIR_0000,BIROH,oui,25,70,0,25,oui,7,30,0,7,oui,1,8,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Zémio,Zémio,CF6331_BOD_0000,BODJOKPO,oui,5,25,0,5,oui,75,392,0,75,oui,110,833,0,110,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Haut-Mbomou,Zémio,Zémio,CF6331_FEN_0000,FENZANE,oui,14,31,0,14,oui,115,517,0,115,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Zémio,Zémio,CF6331_GBO_0000,GBONDI,oui,15,20,0,15,oui,5,16,0,5,oui,17,50,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Zémio,Zémio,CF6331_KAM_0000,KAMANDA,oui,75,148,0,75,oui,10,40,0,10,oui,6,13,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Zémio,Zémio,CF6331_KIT_0000,KITESSA,oui,422,925,0,422,oui,34,97,0,34,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Zémio,Zémio,CF6331_KON_0000,KONDO,oui,496,3355,0,496,oui,134,640,0,134,oui,335,1517,0,335,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Haut-Mbomou,Zémio,Zémio,CF6331_KOU_0000,KOUMBOLI,oui,203,847,0,203,oui,177,1062,0,177,oui,204,553,0,204,4,oui_majorite,oui_majorite,oui_majorite,tres_eleve
+Haut-Mbomou,Zémio,Zémio,CF6331_KOU_0001,KOUMONOUNGO,oui,4,11,0,4,oui,4,7,0,4,oui,1,2,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Zémio,Zémio,CF6331_LIW_0000,LIWE,oui,9,23,0,9,oui,13,37,0,13,oui,12,18,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Zémio,Zémio,CF6331_MAB_0000,MABOUSSOU,oui,43,110,0,43,oui,17,43,0,17,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Zémio,Zémio,CF6331_MAH_0000,MAHAMAT,oui,400,5200,0,400,oui,105,260,0,105,oui,30,115,0,30,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Haut-Mbomou,Zémio,Zémio,CF6331_MAM_0000,MAMA,oui,107,497,0,107,oui,133,431,0,133,oui,130,600,0,130,3,oui_majorite,oui_majorite,oui_majorite,tres_eleve
+Haut-Mbomou,Zémio,Zémio,CF6331_NGO_0000,NGOUYO,oui,87,674,0,87,oui,1,2,0,1,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Zémio,Zémio,CF6331_SAN_0001,SANGOUZIRANI 2,oui,35,98,0,35,oui,80,704,0,80,oui,95,454,0,95,3,oui_majorite,oui_majorite,oui_majorite,tres_eleve
+Haut-Mbomou,Zémio,Zémio,CF6331_TAM_0000,TAMBOURA,oui,13,9,0,13,oui,167,722,0,167,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Haut-Mbomou,Zémio,Zémio,CF6331_ZEP_0000,ZEPEROU,oui,600,1500,0,600,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Bakouma,Bakouma,CF6251_ANG_0001,ANGO,oui,6,35,0,6,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_toutes,oui_majorite,eleve
+Mbomou,Bakouma,Bakouma,CF6251_BAD_0001,BADOUNABI,oui,20,100,0,20,oui,200,1000,0,200,non,0,0,0,0,4,oui_majorite,oui_toutes,oui_majorite,eleve
+Mbomou,Bakouma,Bakouma,CF6251_BAL_0001,BALIGUINI,oui,20,104,0,20,non,0,0,0,0,non,0,0,0,0,4,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Bakouma,Bakouma,CF6251_FAD_0002,FADAMA 1,oui,13,66,0,13,oui,36,198,0,36,non,0,0,0,0,3,oui_majorite,oui_toutes,oui_majorite,eleve
+Mbomou,Bakouma,Bakouma,CF6251_FAD_0003,FADAMA 2,oui,26,130,0,26,oui,54,270,0,54,non,0,0,0,0,4,oui_toutes,oui_majorite,oui_majorite,eleve
+Mbomou,Bakouma,Bakouma,CF6251_GBO_0001,GBOLO,oui,38,142,0,38,oui,144,720,0,144,non,0,0,0,0,3,oui_majorite,oui_toutes,oui_majorite,eleve
+Mbomou,Bakouma,Bakouma,CF6251_KEN_0001,KENDO NAKANDO,oui,33,165,0,33,oui,5,25,0,5,non,0,0,0,0,3,oui_toutes,oui_majorite,oui_majorite,eleve
+Mbomou,Bakouma,Bakouma,CF6251_KOU_0000,KOUANGA,oui,10,50,0,10,oui,55,280,0,55,non,0,0,0,0,4,oui_toutes,oui_toutes,oui_majorite,eleve
+Mbomou,Bakouma,Bakouma,CF6251_KPA_0001,KPATOU,oui,26,130,0,26,non,0,0,0,0,non,0,0,0,0,4,oui_majorite,oui_toutes,oui_toutes,eleve
+Mbomou,Bakouma,Bakouma,CF6251_LEN_0002,LENGO 1,oui,25,125,0,25,oui,20,102,0,20,non,0,0,0,0,3,oui_majorite,oui_toutes,en_partie,eleve
+Mbomou,Bakouma,Bakouma,CF6251_MAM_0000,MAMADOU,oui,26,130,0,26,oui,260,1300,0,260,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_toutes,eleve
+Mbomou,Bakouma,Bakouma,CF6251_NGU_0001,NGUEREFARA,oui,343,797,0,343,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Bakouma,Bakouma,CF6251_PAS_0001,PASSIKI,oui,6,30,0,6,oui,77,388,0,77,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Bakouma,Bakouma,CF6251_ZIM_0001,ZIME,oui,11,55,0,11,oui,70,350,0,70,non,0,0,0,0,4,oui_toutes,oui_majorite,oui_majorite,eleve
+Mbomou,Bangassou,Bangassou,CF6211_AOU_0000,AOUYA,oui,41,208,0,41,oui,33,172,0,33,oui,4,19,0,4,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Bangassou,Bangassou,CF6211_BAD_0001,BADAKOU,oui,3,15,0,3,non,0,0,0,0,oui,15,75,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Bangassou,Bangassou,CF6211_BAM_0001,BAMBARASSA,oui,20,100,0,20,non,0,0,0,0,oui,5,25,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Bangassou,Bangassou,CF6211_BAR_0000,BARAMA,oui,97,483,0,97,oui,10,53,0,10,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Bangassou,Bangassou,CF6211_BOU_0000,BOUKOUA,oui,125,625,0,125,oui,50,250,0,50,oui,95,475,0,95,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Bangassou,Bangassou,CF6211_DAK_0001,DAKPOUTOU,oui,30,145,0,30,oui,85,425,0,85,oui,8,45,0,8,4,oui_majorite,oui_majorite,en_partie,eleve
+Mbomou,Bangassou,Bangassou,CF6211_DEM_0001,DEMBA SAYO,oui,3,45,0,3,non,0,0,0,0,non,0,0,0,0,4,oui_majorite,en_partie,oui_majorite,eleve
+Mbomou,Bangassou,Bangassou,CF6211_GAM_0001,GAMBO,oui,57,270,0,57,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,acceptable
+Mbomou,Bangassou,Bangassou,CF6211_GAM_0002,GAMOU,oui,270,1353,0,270,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Bangassou,Bangassou,CF6211_GBI_0001,GBIAKOTA,oui,453,2260,0,453,non,0,0,0,0,oui,18,89,0,18,4,oui_majorite,oui_majorite,en_partie,acceptable
+Mbomou,Bangassou,Bangassou,CF6211_GOL_0000,GOLONGOTO,oui,56,265,0,56,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Mbomou,Bangassou,Bangassou,CF6211_GOU_0000,GOUNGERE,oui,37,195,0,37,oui,33,145,0,33,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,eleve
+Mbomou,Bangassou,Bangassou,CF6211_KAI_0001,KAIMBA SAYO,oui,11,56,0,11,oui,5,18,0,5,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Mbomou,Bangassou,Bangassou,CF6211_KAM_0000,KAMANGBAGUE,oui,210,1050,0,210,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Bangassou,Bangassou,CF6211_KEM_0000,KEMBE LIGNE,oui,37,180,0,37,non,0,0,0,0,oui,25,124,0,25,3,oui_majorite,oui_majorite,oui_toutes,acceptable
+Mbomou,Bangassou,Bangassou,CF6211_KOB_0001,KOBO,oui,89,445,0,89,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,tres_eleve
+Mbomou,Bangassou,Bangassou,CF6211_KOD_0001,KODOKO,oui,6,30,0,6,non,0,0,0,0,oui,4,20,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Bangassou,Bangassou,CF6211_KOL_0001,KOLONGO,oui,19,93,0,19,oui,94,340,0,94,oui,16,70,0,16,3,oui_majorite,oui_majorite,en_partie,eleve
+Mbomou,Bangassou,Bangassou,CF6211_LIW_0000,LIWANGO TIRAYEUR,oui,441,2313,0,441,non,0,0,0,0,oui,4,20,0,4,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Bangassou,Bangassou,CF6211_MAD_0001,MADAGRENGBANDA,oui,5,32,0,5,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,oui_majorite,eleve
+Mbomou,Bangassou,Bangassou,CF6211_MAH_0001,MAHAMAT PIKA,oui,180,903,0,180,oui,135,675,0,135,oui,50,245,0,50,3,en_partie,oui_majorite,en_partie,moyen
+Mbomou,Bangassou,Bangassou,CF6211_MAL_0001,MALIKO 1,oui,80,397,0,80,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Bangassou,Bangassou,CF6211_MAL_0002,MALIKO 2,non,0,0,0,0,oui,107,541,0,107,oui,53,257,0,53,3,oui_majorite,en_partie,en_partie,acceptable
+Mbomou,Bangassou,Bangassou,CF6211_MAL_0003,MALIKO LEPREUX,oui,24,119,0,24,oui,72,360,0,72,oui,24,118,0,24,5,oui_majorite,en_partie,oui_majorite,moyen
+Mbomou,Bangassou,Bangassou,CF6211_MAM_0001,MAMADOU BAH,oui,102,405,0,102,oui,50,250,0,50,oui,325,1625,0,325,3,oui_majorite,en_partie,oui_majorite,moyen
+Mbomou,Bangassou,Bangassou,CF6211_MAN_0001,MANDINGAR,oui,102,542,0,102,oui,230,1173,0,230,oui,110,564,0,110,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Bangassou,Bangassou,CF6211_MAN_0000,MANGAMBA,oui,25,125,0,25,non,0,0,0,0,oui,2,6,0,2,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Bangassou,Bangassou,CF6211_MBA_0001,MBANGUI NGORO,oui,6,29,0,6,non,0,0,0,0,non,0,0,0,0,4,en_partie,en_partie,en_partie,moyen
+Mbomou,Bangassou,Bangassou,CF6211_MBO_0000,MBOUTOU,oui,111,531,0,111,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,acceptable
+Mbomou,Bangassou,Bangassou,CF6211_MOU_0000,MOUSSA,oui,90,457,0,90,oui,11,56,0,11,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Bangassou,Bangassou,CF6211_NAK_0001,NAKALA,oui,15,75,0,15,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Bangassou,Bangassou,CF6211_NAN_0001,NANGBARAKA,oui,14,70,0,14,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Bangassou,Bangassou,CF6211_NDO_0001,NDOUNGA SAYO,oui,152,763,0,152,oui,106,529,0,106,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Bangassou,Bangassou,CF6211_NGB_0001,NGBANDA,oui,23,113,0,23,non,0,0,0,0,oui,6,35,0,6,4,en_partie,oui_majorite,en_partie,moyen
+Mbomou,Bangassou,Bangassou,CF6211_NGB_0002,NGBANDAGONDA,oui,33,173,0,33,oui,151,759,0,151,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Bangassou,Bangassou,CF6211_NGB_0003,NGBINDA,oui,139,673,0,139,non,0,0,0,0,non,0,0,0,0,4,oui_majorite,oui_majorite,oui_majorite,moyen
+Mbomou,Bangassou,Bangassou,CF6211_NGO_0000,NGOMBE,oui,188,943,0,188,oui,11,55,0,11,oui,361,1806,0,361,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Bangassou,Bangassou,CF6211_NGU_0001,NGUINDA GBAGUI,oui,969,4841,0,969,oui,114,568,0,114,oui,84,419,0,84,3,oui_majorite,en_partie,pas_du_tout,acceptable
+Mbomou,Bangassou,Bangassou,CF6211_NZA_0000,NZANGA SAYO,oui,34,173,0,34,non,0,0,0,0,oui,22,113,0,22,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Bangassou,Bangassou,CF6211_OUA_0001,OUANGEZE,oui,80,403,0,80,non,0,0,0,0,oui,72,359,0,72,5,oui_majorite,oui_majorite,en_partie,eleve
+Mbomou,Bangassou,Bangassou,CF6211_OUT_0001,OUTHMAN,oui,115,575,0,115,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,oui_majorite,eleve
+Mbomou,Bangassou,Bangassou,CF6211_SAM_0001,SAMBA GAMADE,oui,18,86,0,18,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Bangassou,Bangassou,CF6211_SAM_0002,SAMBA NIMOKE,oui,68,340,0,68,non,0,0,0,0,oui,62,310,0,62,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Mbomou,Bangassou,Bangassou,CF6211_SOA_0001,SOA ZANGANDO,oui,32,159,0,32,non,0,0,0,0,oui,3,15,0,3,3,en_partie,en_partie,oui_majorite,moyen
+Mbomou,Bangassou,Bangassou,CF6211_TIA_0001,TIAKA,oui,130,650,0,130,oui,135,675,0,135,oui,1020,5100,0,1020,3,oui_majorite,oui_majorite,en_partie,eleve
+Mbomou,Bangassou,Bangassou,CF6211_WAL_0000,WALI MINGUI,oui,550,2754,0,550,oui,5,25,0,5,oui,1415,7089,0,1415,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Mbomou,Bangassou,Bangassou,CF6211_YAN_0001,YANGOUYA,oui,156,774,0,156,non,0,0,0,0,oui,44,220,0,44,3,oui_majorite,oui_majorite,en_partie,eleve
+Mbomou,Bangassou,Bangassou,CF6211_YAP_0001,YAPELE,oui,71,320,0,71,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,acceptable
+Mbomou,Bangassou,Bangassou,CF6211_YOU_0000,YOUGOU,oui,355,1530,335,20,oui,25,175,0,25,non,0,0,0,0,3,en_partie,oui_majorite,en_partie,moyen
+Mbomou,Bangassou,Bangassou,CF6211_ZIM_0001,ZIMANGO,oui,35,175,0,35,oui,111,555,0,111,oui,24,120,0,24,4,oui_majorite,oui_majorite,en_partie,eleve
+Mbomou,Bangassou,Bangassou,CF6211_ZOU_0000,ZOUABALO,oui,63,293,0,63,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,acceptable
+Mbomou,Bangassou,Bangassou,CF6211_ZOU_0001,ZOUDOUKOU,oui,10,50,0,10,non,0,0,0,0,oui,5,25,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Bangassou,Sayo-Niakari,CF6212_BAN_0001,BANGOULA,oui,40,313,0,40,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Bangassou,Sayo-Niakari,CF6212_BAZ_0001,BAZIKO,oui,17,86,0,17,oui,13,67,0,13,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Bangassou,Sayo-Niakari,CF6212_BON_0001,BONDO,oui,38,195,0,38,oui,1,5,0,1,oui,1,7,0,1,3,oui_majorite,oui_majorite,oui_majorite,tres_eleve
+Mbomou,Bangassou,Sayo-Niakari,CF6212_DAG_0001,DAGROU,oui,20,100,0,20,non,0,0,0,0,non,0,0,0,0,5,oui_majorite,oui_majorite,en_partie,eleve
+Mbomou,Bangassou,Sayo-Niakari,CF6212_DIN_0001,DINGANDINGUI,oui,25,132,0,25,oui,3,15,0,3,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Bangassou,Sayo-Niakari,CF6212_GAT_0001,GATANGA,oui,33,165,0,33,oui,1,7,0,1,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,tres_eleve
+Mbomou,Bangassou,Sayo-Niakari,CF6212_GBA_0001,GBANDO,oui,21,105,0,21,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Bangassou,Sayo-Niakari,CF6212_GBE_0001,GBESSORO,oui,31,162,0,31,oui,2,10,0,2,oui,2,10,0,2,3,oui_majorite,oui_majorite,en_partie,eleve
+Mbomou,Bangassou,Sayo-Niakari,CF6212_GBO_0001,GBONDO,oui,434,2175,0,434,oui,0,0,0,0,non,0,0,0,0,3,en_partie,oui_majorite,en_partie,tres_eleve
+Mbomou,Bangassou,Sayo-Niakari,CF6212_GOM_0001,GOMBA,oui,6,36,0,6,oui,3,20,0,3,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Bangassou,Sayo-Niakari,CF6212_GUI_0001,GUININGOU,oui,35,181,0,35,oui,6,30,0,6,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,tres_eleve
+Mbomou,Bangassou,Sayo-Niakari,CF6212_KIP_0002,KIPPA 1,oui,4,18,0,4,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,eleve
+Mbomou,Bangassou,Sayo-Niakari,CF6212_KIP_0001,KIPPA 2,oui,63,315,0,63,oui,1,4,0,1,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,tres_eleve
+Mbomou,Bangassou,Sayo-Niakari,CF6212_KIS_0001,KISSI,oui,21,104,0,21,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,eleve
+Mbomou,Bangassou,Sayo-Niakari,CF6212_KPE_0001,KPETENE,oui,74,368,0,74,oui,6,30,0,6,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Bangassou,Sayo-Niakari,CF6212_LAK_0001,LAKOUANGA,oui,57,288,0,57,oui,6,30,0,6,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,eleve
+Mbomou,Bangassou,Sayo-Niakari,CF6212_LIM_0001,LIMBIO,oui,21,97,0,21,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,eleve
+Mbomou,Bangassou,Sayo-Niakari,CF6212_MBA_0002,MBARI 1,oui,316,1580,0,316,oui,3,10,0,3,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Bangassou,Sayo-Niakari,CF6212_MBA_0001,MBARI2,oui,271,1358,0,271,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Bangassou,Sayo-Niakari,CF6212_NAK_0001,NAKINGUILI,oui,14,77,0,14,oui,3,15,0,3,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,eleve
+Mbomou,Bangassou,Sayo-Niakari,CF6212_NDO_0001,NDOUNGA,oui,56,277,0,56,oui,14,70,0,14,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,eleve
+Mbomou,Bangassou,Sayo-Niakari,CF6212_NGA_0001,NGAMANA,non,0,0,0,0,non,0,0,0,0,oui,16,85,0,16,3,oui_majorite,oui_majorite,oui_majorite,tres_eleve
+Mbomou,Bangassou,Sayo-Niakari,CF6212_NGB_0001,NGBOMBE,oui,41,249,0,41,oui,12,63,0,12,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_toutes,tres_eleve
+Mbomou,Bangassou,Sayo-Niakari,CF6212_NGO_0002,NGOUMBALA,oui,25,129,0,25,non,0,0,0,0,oui,7,37,0,,3,oui_majorite,oui_majorite,en_partie,tres_eleve
+Mbomou,Bangassou,Sayo-Niakari,CF6212_NGO_0001,NGOUNAPALO,oui,29,150,0,29,oui,1,13,0,1,oui,41,208,0,41,3,oui_majorite,oui_majorite,en_partie,eleve
+Mbomou,Bangassou,Sayo-Niakari,CF6212_NIA_0001,NIAKARI CENTRE,oui,184,924,0,184,oui,21,108,0,21,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,eleve
+Mbomou,Bangassou,Sayo-Niakari,CF6212_PAL_0001,PALANGUE,oui,9,51,0,9,oui,5,28,0,5,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Bangassou,Sayo-Niakari,CF6212_RAI_0001,RAISON,oui,28,143,0,28,oui,7,35,0,7,oui,1,8,0,1,3,oui_majorite,oui_majorite,en_partie,eleve
+Mbomou,Bangassou,Sayo-Niakari,CF6212_SEW_0001,SEWA,oui,107,535,0,107,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,tres_eleve
+Mbomou,Bangassou,Sayo-Niakari,CF6212_SIG_0001,SIGBOROLO,oui,23,115,0,23,oui,1,6,0,1,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,eleve
+Mbomou,Bangassou,Sayo-Niakari,CF6212_ZAK_0001,ZAKOU,oui,425,2125,0,425,oui,30,150,0,30,oui,24,120,0,24,3,oui_majorite,oui_majorite,en_partie,tres_eleve
+Mbomou,Bangassou,Sayo-Niakari,CF6212_ZID_0001,ZIDRO,oui,55,345,0,55,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_toutes,eleve
+Mbomou,Bangassou,Vougba-Balifondo,CF6213_AGU_0001,AGUISSOR SECK,non,0,0,0,0,oui,13,65,0,13,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Mbomou,Bangassou,Vougba-Balifondo,CF6213_BAD_0001,BADUNFU,oui,11,55,0,11,non,0,0,0,0,non,0,0,0,0,3,en_partie,oui_majorite,en_partie,moyen
+Mbomou,Bangassou,Vougba-Balifondo,CF6213_BAP_0001,BAPOLI,oui,4,19,0,4,non,0,0,0,0,non,0,0,0,0,4,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Bangassou,Vougba-Balifondo,CF6213_BAR_0001,BARAMA,oui,12,64,0,12,oui,94,470,0,94,non,0,0,0,0,3,oui_majorite,oui_majorite,pas_du_tout,acceptable
+Mbomou,Bangassou,Vougba-Balifondo,CF6213_BAT_0001,BATIMBILIKA,oui,5,23,0,5,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Bangassou,Vougba-Balifondo,CF6213_FOD_0001,FODE,non,0,0,0,0,oui,9,47,0,9,non,0,0,0,0,3,oui_majorite,en_partie,oui_majorite,moyen
+Mbomou,Bangassou,Vougba-Balifondo,CF6213_KPA_0001,KPATAMOTO,oui,10,50,0,10,oui,6,30,0,6,oui,9,46,0,9,3,oui_majorite,en_partie,oui_majorite,moyen
+Mbomou,Bangassou,Vougba-Balifondo,CF6213_MAK_0001,MAKEMBE,oui,3,15,0,3,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Mbomou,Bangassou,Vougba-Balifondo,CF6213_MBA_0002,MBALAZIME 1,oui,7,35,0,7,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Mbomou,Bangassou,Vougba-Balifondo,CF6213_MBA_0003,MBALAZIME 2,oui,13,50,0,13,oui,68,335,0,68,non,0,0,0,0,3,en_partie,en_partie,en_partie,acceptable
+Mbomou,Bangassou,Vougba-Balifondo,CF6213_MBA_0001,MBALAZIME 3,oui,34,170,0,34,non,0,0,0,0,non,0,0,0,0,4,en_partie,oui_majorite,en_partie,moyen
+Mbomou,Bangassou,Vougba-Balifondo,CF6213_SAM_0001,SAMBA MBANGUIA,oui,11,55,0,11,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,moyen
+Mbomou,Bangassou,Vougba-Balifondo,CF6213_TOU_0001,TOULEYINGUI,oui,16,80,0,16,non,0,0,0,0,non,0,0,0,0,3,en_partie,oui_majorite,en_partie,moyen
+Mbomou,Bangassou,Vougba-Balifondo,CF6213_VOU_0001,VOUGBA,oui,8,40,0,8,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Mbomou,Bangassou,Vougba-Balifondo,CF6213_YOM_0001,YOMBO-MBOUYO,oui,7,33,0,7,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Mbomou,Bangassou,Vougba-Balifondo,CF6213_YON_0002,YONGOSSABA 1,oui,42,210,0,42,non,0,0,0,0,non,0,0,0,0,5,en_partie,oui_majorite,en_partie,moyen
+Mbomou,Bangassou,Vougba-Balifondo,CF6213_YON_0001,YONGOSSABA 2,oui,24,124,0,24,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Mbomou,Bangassou,Vougba-Balifondo,CF6213_ZAL_0001,ZALOUA,oui,6,175,0,6,oui,40,200,0,40,oui,17,85,0,17,3,oui_toutes,oui_majorite,en_partie,eleve
+Mbomou,Bangassou,Vougba-Balifondo,CF6213_ZOB_0001,ZOBE MBARI,oui,13,68,0,13,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,eleve
+Mbomou,Bangassou,Zandadou,CF6214_AGO_0001,AGOUMAR,oui,166,629,0,166,non,0,0,0,0,non,0,0,0,0,4,oui_majorite,oui_majorite,en_partie,eleve
+Mbomou,Bangassou,Zandadou,CF6214_AHO_0001,AHOU 1,oui,147,563,0,147,non,0,0,0,0,non,0,0,0,0,4,oui_majorite,en_partie,oui_majorite,moyen
+Mbomou,Bangassou,Zandadou,CF6214_BAD_0001,BADOUNGOU,oui,24,125,0,24,non,0,0,0,0,non,0,0,0,0,3,en_partie,oui_majorite,en_partie,moyen
+Mbomou,Bangassou,Zandadou,CF6214_GBA_0003,GBANGA 1,oui,1,1,0,1,non,0,0,0,0,oui,15,92,0,15,3,en_partie,oui_majorite,oui_majorite,eleve
+Mbomou,Bangassou,Zandadou,CF6214_GBA_0002,GBANGA 2,oui,15,105,0,15,non,0,0,0,0,non,0,0,0,0,3,en_partie,en_partie,en_partie,acceptable
+Mbomou,Bangassou,Zandadou,CF6214_LAB_0001,LABASSO,oui,42,130,0,42,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,eleve
+Mbomou,Bangassou,Zandadou,CF6214_LAN_0002,LANOME 1,oui,45,242,0,45,non,0,0,0,0,non,0,0,0,0,4,en_partie,en_partie,en_partie,acceptable
+Mbomou,Bangassou,Zandadou,CF6214_LIG_0001,LIGANOUNGA,oui,42,205,0,42,oui,71,296,0,71,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Bangassou,Zandadou,CF6214_NGO_0001,NGOMBI,oui,222,1110,0,222,oui,592,2964,0,592,oui,77,384,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Bangassou,Zandadou,CF6214_PAN_0001,PANDE,oui,170,384,0,170,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Mbomou,Bangassou,Zandadou,CF6214_YON_0001,YONGOFONGO 1,oui,51,235,0,51,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Bangassou,Zandadou,CF6214_YON_0003,YONGOFONGO 2,oui,64,357,0,64,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,oui_majorite,eleve
+Mbomou,Bangassou,Zandadou,CF6214_ZIM_0001,ZIME-FLEUVE,oui,245,1190,0,245,oui,64,317,0,64,oui,39,186,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Gambo,Gambo,CF6231_ADO_0001,ADOUM TRACAFF,oui,24,176,0,24,oui,8,31,0,8,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_toutes,acceptable
+Mbomou,Gambo,Gambo,CF6231_AMA_0001,AMANI,non,0,0,0,0,oui,94,470,0,94,oui,2,11,0,2,3,oui_majorite,oui_majorite,oui_majorite,tres_eleve
+Mbomou,Gambo,Gambo,CF6231_BAB_0000,BABALA,oui,19,95,0,19,oui,19,93,0,19,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,acceptable
+Mbomou,Gambo,Gambo,CF6231_BAB_0001,BABOUDOU,non,0,0,0,0,oui,9,45,0,9,non,0,0,0,0,4,en_partie,oui_majorite,en_partie,moyen
+Mbomou,Gambo,Gambo,CF6231_BAG_0001,BAGUINI,oui,12,47,0,12,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Gambo,Gambo,CF6231_BAL_0001,BALADOU,non,0,0,0,0,oui,40,202,0,40,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Gambo,Gambo,CF6231_BAM_0001,BAMBIYO,oui,9,40,0,9,non,0,0,0,0,non,0,0,0,0,4,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Gambo,Gambo,CF6231_BAO_0001,BAO,oui,48,238,0,48,oui,118,588,0,118,non,0,0,0,0,5,oui_majorite,oui_majorite,en_partie,acceptable
+Mbomou,Gambo,Gambo,CF6231_BAO_0000,BAOULEBASSO,oui,2,12,0,2,oui,40,194,0,40,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,acceptable
+Mbomou,Gambo,Gambo,CF6231_BIS_0001,BISSANGO,non,0,0,0,0,oui,73,361,0,73,oui,2,10,0,2,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Gambo,Gambo,CF6231_GAN_0000,GANDAKOTOTI,oui,168,807,0,168,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Gambo,Gambo,CF6231_KAO_0001,KAOUNGA,non,0,0,0,0,oui,29,144,0,29,oui,1,5,0,1,3,oui_majorite,oui_majorite,oui_majorite,tres_eleve
+Mbomou,Gambo,Gambo,CF6231_LAB_0001,LABRAYE,oui,2,5,0,2,oui,11,66,0,11,non,0,0,0,0,3,oui_majorite,oui_toutes,oui_majorite,eleve
+Mbomou,Gambo,Gambo,CF6231_MAB_0001,MABO,oui,19,64,0,19,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Gambo,Gambo,CF6231_MAN_0001,MANGO,non,0,0,0,0,oui,30,176,0,30,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Gambo,Gambo,CF6231_MBA_0002,MBALAPA,non,0,0,0,0,oui,40,200,0,40,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Gambo,Gambo,CF6231_MBA_0000,MBANGO,oui,41,202,0,41,oui,133,661,0,133,non,0,0,0,0,4,oui_majorite,oui_majorite,en_partie,acceptable
+Mbomou,Gambo,Gambo,CF6231_MBA_0001,MBARAGNE,oui,3,9,0,3,oui,11,65,0,11,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Gambo,Gambo,CF6231_MBR_0000,MBRINGA,oui,20,100,0,20,oui,104,503,0,104,non,0,0,0,0,4,oui_majorite,oui_majorite,en_partie,eleve
+Mbomou,Gambo,Gambo,CF6231_NDO_0001,NDOUNGA,oui,7,39,0,7,non,0,0,0,0,non,0,0,0,0,4,oui_majorite,oui_majorite,oui_majorite,tres_eleve
+Mbomou,Gambo,Gambo,CF6231_NGB_0002,NGBANDI BOSSO,oui,3,15,0,3,oui,21,107,0,21,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Gambo,Gambo,CF6231_NGO_0001,NGORO,oui,6,32,0,6,non,0,0,0,0,non,0,0,0,0,5,oui_majorite,oui_majorite,en_partie,acceptable
+Mbomou,Gambo,Gambo,CF6231_NGU_0002,NGUINDO-KETTE,non,0,0,0,0,oui,50,247,0,50,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Gambo,Gambo,CF6231_SAM_0002,SAMANZAI,oui,20,129,0,20,non,0,0,0,0,non,0,0,0,0,5,oui_majorite,en_partie,en_partie,moyen
+Mbomou,Gambo,Gambo,CF6231_SAM_0000,SAMBIA,oui,63,318,0,63,oui,69,343,0,69,non,0,0,0,0,7,oui_majorite,oui_majorite,en_partie,eleve
+Mbomou,Gambo,Gambo,CF6231_SOC_0000,SOCADA,oui,16,79,0,16,oui,83,414,0,83,non,0,0,0,0,4,oui_majorite,oui_majorite,en_partie,acceptable
+Mbomou,Gambo,Gambo,CF6231_VOU_0002,VOULOUNGBA,oui,12,64,0,12,oui,16,84,0,16,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Gambo,Gambo,CF6231_YEN_0001,YENGUE,non,0,0,0,0,oui,47,232,0,47,oui,4,20,0,4,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Gambo,Gambo,CF6231_YET_0001,YETIZO,oui,6,41,0,6,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Ouango,Ngbandinga,CF6222_AND_0001,ANDAYE,non,0,0,0,0,non,0,0,0,0,oui,171,609,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Ouango,Ngbandinga,CF6222_GBI_0001,GBIAKETTE,non,0,0,0,0,non,0,0,0,0,oui,110,450,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Ouango,Ngbandinga,CF6222_KEM_0001,KEMBA,oui,12,62,0,12,non,0,0,0,0,oui,684,2570,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Ouango,Ngbandinga,CF6222_KOD_0001,KODRONGUE,non,0,0,0,0,non,0,0,0,0,oui,150,750,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Ouango,Ngbandinga,CF6222_MBO_0001,MBONZIRIRI,non,0,0,0,0,oui,15,58,0,15,oui,195,800,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Ouango,Ngbandinga,CF6222_NGO_0001,NGOMBE,non,0,0,0,0,non,0,0,0,0,oui,1847,9508,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Ouango,Ngbandinga,CF6222_NGU_0001,NGUENGUE,oui,4,15,0,4,non,0,0,0,0,oui,102,430,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Ouango,Ngbandinga,CF6222_NZI_0001,NZIANGBA,non,0,0,0,0,non,0,0,0,0,oui,59,270,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Ouango,Ngbandinga,CF6222_TOK_0001,TOKI,non,0,0,0,0,non,0,0,0,0,oui,205,1022,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Ouango,Ouango,CF6221_BAG_0001,BAGBABA,oui,37,185,0,37,oui,125,457,0,125,oui,15,75,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Ouango,Ouango,CF6221_BOT_0001,BOTOWA,oui,12,60,0,12,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Ouango,Ouango,CF6221_FAL_0001,FALANZE,oui,26,175,0,26,non,0,0,0,0,non,0,0,0,0,4,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Ouango,Ouango,CF6221_GNI_0001,GNILO,oui,18,65,0,18,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,tres_eleve
+Mbomou,Ouango,Ouango,CF6221_GOM_0001,GOMBA,oui,47,235,0,47,non,0,0,0,0,non,0,0,0,0,4,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Ouango,Ouango,CF6221_GOZ_0001,GOZOMBANGUI,oui,38,190,0,38,oui,138,690,0,138,oui,11,43,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Ouango,Ouango,CF6221_KAM_0001,KAMOBAYA,oui,2,11,0,2,non,0,0,0,0,oui,90,452,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Ouango,Ouango,CF6221_KOB_0001,KOBOKO,oui,51,175,0,51,oui,16,80,0,16,oui,55,275,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Ouango,Ouango,CF6221_KOU_0001,KOULET,oui,26,107,0,26,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,tres_eleve
+Mbomou,Ouango,Ouango,CF6221_LOU_0001,LOUNGOUNGBA,oui,1211,5603,0,1211,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Ouango,Ouango,CF6221_MAD_0001,MADAGBANDI,oui,37,200,0,37,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Ouango,Ouango,CF6221_MAG_0001,MAGAMBA,oui,81,407,0,81,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Ouango,Ouango,CF6221_MAH_0001,MAHAMATH ALI,oui,16,79,0,16,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Mbomou,Ouango,Ouango,CF6221_MAL_0001,MALANGAMBA,oui,24,107,0,24,non,0,0,0,0,non,0,0,0,0,4,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Ouango,Ouango,CF6221_MAM_0001,MAMADOU BAMBE,oui,43,127,0,43,non,0,0,0,0,non,0,0,0,0,4,oui_majorite,oui_majorite,oui_majorite,moyen
+Mbomou,Ouango,Ouango,CF6221_MBA_0001,MBAMBALE,oui,56,270,0,56,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Ouango,Ouango,CF6221_MOU_0001,MOUSSA,oui,33,155,0,33,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Ouango,Ouango,CF6221_NDE_0001,NDEKOMISSO,non,0,0,0,0,non,0,0,0,0,oui,203,898,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Ouango,Ouango,CF6221_NDO_0001,NDOGBA,oui,8,37,0,8,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Ouango,Ouango,CF6221_NGA_0001,NGALAKPA,oui,15,75,0,15,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Mbomou,Ouango,Ouango,CF6221_OUA_0001,OUAGO KOTTA,oui,12,60,0,12,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Mbomou,Ouango,Ouango,CF6221_OUA_0006,OUAZZOUA 2,oui,123,585,0,123,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Mbomou,Ouango,Ouango,CF6221_OUA_0002,OUAZZOUA 3,oui,38,162,0,38,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Ouango,Ouango,CF6221_OUA_0003,OUAZZOUA 4,oui,87,466,0,87,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Ouango,Ouango,CF6221_OUA_0004,OUAZZOUA PLANTATION,oui,47,228,0,47,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Ouango,Ouango,CF6221_OUE_0001,OUEGUE,oui,28,130,0,28,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Mbomou,Ouango,Ouango,CF6221_YAK_0001,YAKOSSOUA,oui,7,37,0,7,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Ouango,Ouango,CF6221_YEN_0001,YENZIA,oui,68,136,0,68,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Ouango,Ouango,CF6221_YOL_0001,YOLOUNGOU,oui,25,125,0,25,oui,22,100,0,22,oui,98,450,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Ouango,Ouango,CF6221_ZEG_0001,ZEGUI,oui,25,135,0,25,non,0,0,0,0,non,0,0,0,0,4,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Rafai,Rafaï,CF6241_AGO_0000,AGOUMAR,non,0,0,0,0,oui,9,43,0,9,oui,1,1,0,1,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Rafai,Rafaï,CF6241_AGO_0002,AGOUMAR 2,oui,35,207,0,35,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Mbomou,Rafai,Rafaï,CF6241_AGO_0003,AGOUMAR 3,oui,389,1774,0,389,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Mbomou,Rafai,Rafaï,CF6241_AGO_0001,AGOUMAR 4,oui,64,318,0,64,oui,23,82,0,23,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Mbomou,Rafai,Rafaï,CF6241_AIM_0001,AIM,oui,189,1265,189,0,non,0,0,0,0,oui,3,17,2,1,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Rafai,Rafaï,CF6241_ARA_0000,ARABE,oui,336,532,0,336,oui,2,6,0,2,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Rafai,Rafaï,CF6241_BAG_0001,BAGBOULA,oui,19,98,0,19,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Mbomou,Rafai,Rafaï,CF6241_BAN_0001,BANDASSI,oui,55,266,0,55,oui,12,57,0,12,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,acceptable
+Mbomou,Rafai,Rafaï,CF6241_BAR_0001,BARADOU,oui,65,322,0,65,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Rafai,Rafaï,CF6241_BIN_0001,BINGBA 1,non,0,0,0,0,oui,82,330,0,82,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Rafai,Rafaï,CF6241_BIN_0002,BINGBA 2,oui,34,119,0,34,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Rafai,Rafaï,CF6241_BIN_0003,BINGBA 3,oui,740,3466,284,456,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Mbomou,Rafai,Rafaï,CF6241_DEM_0001,DEMBIA,oui,136,667,0,136,non,0,0,0,0,oui,78,521,0,78,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Rafai,Rafaï,CF6241_GOU_0001,GOULA,non,0,0,0,0,oui,4,12,0,4,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Rafai,Rafaï,CF6241_GUE_0001,GUEREKINDO,oui,40,178,0,40,non,0,0,0,0,oui,1,3,0,1,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Rafai,Rafaï,CF6241_KPE_0000,KPETE,oui,96,486,0,96,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Mbomou,Rafai,Rafaï,CF6241_LON_0000,LONGBA,oui,45,226,0,45,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Mbomou,Rafai,Rafaï,CF6241_LOU_0001,LOUETE,oui,13,49,0,13,non,0,0,0,0,oui,13,26,0,13,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Rafai,Rafaï,CF6241_MIS_0001,MISKINE,non,0,0,0,0,oui,5,17,0,5,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Rafai,Rafaï,CF6241_NGO_0001,NGOUNZA 1,non,0,0,0,0,oui,2,13,0,2,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Mbomou,Rafai,Rafaï,CF6241_NGO_0002,NGOUNZA 2,oui,54,267,0,54,oui,58,307,0,58,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Rafai,Rafaï,CF6241_OUM_0001,OUMAR,oui,105,523,0,105,oui,13,60,0,13,oui,7,27,0,7,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Rafai,Rafaï,CF6241_SAM_0001,SAMBALA,non,0,0,0,0,oui,305,1519,0,305,oui,26,121,0,26,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Rafai,Rafaï,CF6241_SAN_0000,SANDOU,oui,495,2830,460,35,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Rafai,Rafaï,CF6241_SEL_0002,SELIME 1,oui,67,237,0,67,non,0,0,0,0,oui,8,28,0,8,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Rafai,Rafaï,CF6241_SEL_0003,SELIME 2,oui,197,860,0,197,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Rafai,Rafaï,CF6241_SEL_0004,SELIME 3,oui,187,846,0,187,non,0,0,0,0,oui,6,21,0,6,3,oui_majorite,oui_majorite,en_partie,acceptable
+Mbomou,Rafai,Rafaï,CF6241_SIE_0001,SIEUR,non,0,0,0,0,non,0,0,0,0,oui,6,24,0,6,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Rafai,Rafaï,CF6241_SUL_0001,SULTAN,oui,42,141,0,42,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Rafai,Rafaï,CF6241_TAN_0001,TANGBI,oui,148,599,0,148,oui,1,3,0,1,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Rafai,Rafaï,CF6241_ZON_0001,ZONGBA 1,oui,34,171,0,34,oui,50,247,0,50,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Mbomou,Rafai,Rafaï,CF6241_ZON_0002,ZONGBA 2,oui,11,32,0,11,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_BAM_0000,BAMATARA,non,0,0,0,0,oui,147,735,0,147,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_BOG_0000,BOGUENE,non,0,0,0,0,oui,47,235,0,47,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_BOL_0000,BOLAFEI,non,0,0,0,0,oui,39,195,0,39,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,bas
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_BOT_0000,BOTOKON,non,0,0,0,0,oui,271,1355,0,271,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_BOT_0004,BOTOKON 2,non,0,0,0,0,oui,175,875,0,175,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_BOT_0001,BOTTO 1,non,0,0,0,0,oui,125,615,0,125,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_BOT_0002,BOTTO 2,non,0,0,0,0,oui,95,352,0,95,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_BOT_0003,BOTTO 3,non,0,0,0,0,oui,84,420,0,84,non,0,0,0,0,3,oui_toutes,oui_majorite,oui_majorite,moyen
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_BOT_0005,BOTTO 4,non,0,0,0,0,oui,50,250,0,50,non,0,0,0,0,4,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_DOU_0001,DOUKOUMBE 1,non,0,0,0,0,oui,142,660,0,142,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_DOU_0002,DOUKOUMBE 2,non,0,0,0,0,oui,160,696,0,160,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_DOU_0003,DOUKOUMBE 3,non,0,0,0,0,oui,100,500,0,100,non,0,0,0,0,5,oui_majorite,oui_majorite,oui_majorite,moyen
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_DOU_0004,DOUKOUMBE 4,non,0,0,0,0,oui,140,700,0,140,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_DOU_0005,DOUKOUMBE 5,non,0,0,0,0,oui,130,650,0,130,non,0,0,0,0,3,pas_du_tout,oui_toutes,oui_majorite,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_FAH_0001,FAH-PILOTE,non,0,0,0,0,oui,135,615,0,135,non,0,0,0,0,3,en_partie,en_partie,en_partie,eleve
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_FAH_0002,FAH-VILLAGE,non,0,0,0,0,oui,160,784,0,160,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_toutes,eleve
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_KOU_0000,KOUDOUWESSE,non,0,0,0,0,oui,48,240,0,48,non,0,0,0,0,3,oui_majorite,oui_toutes,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_KOU_0001,KOUDOUWESSE 2,non,0,0,0,0,oui,95,475,0,95,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_MBA_0000,MBA,non,0,0,0,0,oui,31,124,0,31,non,0,0,0,0,3,oui_majorite,en_partie,oui_majorite,moyen
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_MET_0001,METEFARA,non,0,0,0,0,oui,48,240,0,48,non,0,0,0,0,4,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_MOU_0000,MOUSCOU,non,0,0,0,0,oui,74,638,0,74,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,bas
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_NGO_0004,NGOUAKA 1,non,0,0,0,0,oui,122,610,0,122,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_NGO_0005,NGOUAKA 2,non,0,0,0,0,oui,154,770,0,154,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_NGO_0001,NGOULEKPA 1,non,0,0,0,0,oui,152,760,0,152,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_NGO_0002,NGOULEKPA 2,non,0,0,0,0,oui,121,585,0,121,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Botto,CF4212_NGO_0003,NGOULEKPA 3,non,0,0,0,0,oui,175,875,0,175,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_BAN_0001,BANGA 1,non,0,0,0,0,oui,27,136,0,27,non,0,0,0,0,4,oui_majorite,oui_majorite,oui_toutes,eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_BAN_0002,BANGA 2,non,0,0,0,0,oui,138,617,0,138,non,0,0,0,0,3,oui_majorite,en_partie,oui_majorite,moyen
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_BOU_0001,BOUBOU 1,non,0,0,0,0,oui,34,170,0,34,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_BOU_0002,BOUBOU 2,non,0,0,0,0,oui,34,180,0,34,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_GBA_0001,GBAKOU YABROU,oui,5,25,0,5,oui,32,160,0,32,non,0,0,0,0,4,oui_majorite,oui_toutes,pas_du_tout,eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_GBA_0002,GBAKOUMANGO,oui,6,30,0,6,oui,76,504,0,76,non,0,0,0,0,5,oui_majorite,oui_majorite,oui_toutes,eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_GBA_0003,GBANGA,non,0,0,0,0,oui,91,458,0,91,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_GOD_0001,GODO 1,non,0,0,0,0,oui,243,909,0,243,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_GOD_0002,GODO 2,non,0,0,0,0,oui,274,1414,0,274,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_GRE_0001,GREVAI 1,non,0,0,0,0,oui,123,864,0,123,non,0,0,0,0,4,oui_toutes,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_GRE_0002,GREVAI 2,oui,6,30,0,6,oui,34,164,0,34,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_toutes,eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_GRE_0003,GREVAI 3,oui,3,15,0,3,oui,130,650,0,130,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_GRE_0004,GREVAI 4,non,0,0,0,0,oui,174,685,0,174,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_GRE_0005,GREVAI 5,oui,5,22,0,5,oui,126,630,0,126,non,0,0,0,0,4,oui_majorite,oui_majorite,oui_toutes,eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_GRE_0006,GREVAI 6,non,0,0,0,0,oui,119,595,0,119,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_KAB_0000,KABA,oui,74,291,74,0,oui,127,621,0,127,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_toutes,moyen
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_KIN_0000,KINDILINGOU,non,0,0,0,0,oui,84,420,0,84,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_toutes,eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_KOT_0001,KOTAMALE (GOUYA),oui,5,25,0,5,oui,350,1750,0,350,oui,1,5,0,1,3,oui_majorite,oui_majorite,oui_majorite,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_NGO_0001,NGOUGAZA,non,0,0,0,0,oui,75,355,0,75,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_toutes,eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_NGO_0003,NGOUMBE,oui,3,15,0,3,oui,20,100,0,20,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_NGO_0002,NGOUZENDE,oui,4,20,0,4,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_toutes,pas_du_tout,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_SIN_0001,SINDI 1,non,0,0,0,0,oui,22,110,0,22,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_toutes,eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_SIN_0002,SINDI 2,non,0,0,0,0,oui,26,130,0,26,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_toutes,eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_SIN_0003,SINDI 3,non,0,0,0,0,oui,44,115,0,44,non,0,0,0,0,3,oui_majorite,oui_toutes,oui_toutes,eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_YAN_0001,YANGOUMBANDA 1,oui,10,50,0,10,oui,106,535,0,106,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_YAN_0002,YANGOUMBANDA 2,non,0,0,0,0,oui,66,330,0,66,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_YAN_0003,YANGOUMBANDA 3,oui,3,15,0,3,oui,32,160,0,32,non,0,0,0,0,3,oui_majorite,oui_toutes,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Grivaï-Pamia,CF4214_ZIN_0000,ZINDI,oui,2,10,0,2,oui,80,400,0,80,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_toutes,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_ABA_0000,ABAKAR (HAOUSSA),oui,302,1810,0,302,oui,135,785,0,135,oui,93,515,90,3,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_ABD_0000,ABDALLAH,oui,303,1815,0,303,oui,56,230,0,56,oui,35,105,0,35,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_ADD_0000,ADDY,oui,200,1200,0,200,oui,120,720,0,120,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_BAI_0001,BAIPO 1,oui,9,45,0,9,oui,30,197,0,30,oui,1,5,0,1,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_BAI_0002,BAIPO 2,oui,7,35,0,7,oui,10,50,0,10,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_BAI_0000,BAIPO 3,non,0,0,0,0,oui,81,405,0,81,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_BAK_0000,BAKOUTE,non,0,0,0,0,oui,92,460,0,92,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_BAM_0000,BAMOU,non,0,0,0,0,oui,77,385,0,77,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_BEB_0001,BEBE 1,oui,6,30,0,6,oui,245,1225,0,245,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_toutes,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_BEB_0002,BEBE 2,oui,4,20,0,4,oui,207,1035,0,207,non,0,0,0,0,3,oui_toutes,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_BIS_0000,BISSINGALE,oui,5,15,0,5,oui,253,1059,0,253,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_BOB_0000,BOBARA,oui,10,42,0,10,oui,22,182,0,22,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_BOD_0000,BODOLO,non,0,0,0,0,oui,21,105,0,21,non,0,0,0,0,4,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_BOK_0000,BOKADA,non,0,0,0,0,oui,33,150,0,33,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_CAM_0000,CAMP FLEUR,oui,284,1420,0,284,oui,14,70,0,14,oui,70,350,70,0,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_CHU_0000,CHUTTES NANA,non,0,0,0,0,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_toutes,oui_toutes,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_CIT_0000,CITE BAGAZA,non,0,0,0,0,oui,64,370,0,64,non,0,0,0,0,3,oui_toutes,oui_majorite,oui_majorite,moyen
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_DAM_0001,DAMBE,non,0,0,0,0,oui,95,950,0,95,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_GAN_0000,GANAMA,oui,105,447,0,105,oui,50,273,0,50,oui,11,44,11,0,3,oui_majorite,oui_toutes,oui_majorite,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_GBA_0001,GBAGA-OUNDE,non,0,0,0,0,oui,14,70,0,14,non,0,0,0,0,3,en_partie,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_GBA_0000,GBAYA,oui,102,510,0,102,oui,13,65,0,13,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_GOB_0001,GOBONGO 1,oui,14,70,0,14,oui,172,860,0,172,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_toutes,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_GOB_0002,GOBONGO 2,oui,30,150,0,30,oui,35,175,0,35,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,moyen
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_GOB_0000,GOBONGO 3,oui,16,54,0,16,oui,74,370,0,74,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4221_GRI_0002,GRIBINGUI 2,non,0,0,0,0,oui,92,452,0,92,non,0,0,0,0,3,oui_majorite,en_partie,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_KAN_0000,KANDIMARA,oui,9,45,0,9,oui,25,125,0,25,non,0,0,0,0,3,oui_majorite,oui_toutes,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_KOK_0000,KOKOROTA,oui,3043,12442,3043,0,oui,167,705,0,167,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_KPO_0000,KPOKPO 3,non,0,0,0,0,oui,54,305,0,54,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_KPO_0002,KPOPO 2,oui,71,355,0,71,oui,76,392,0,76,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_LAZ_0000,LAZARE,oui,1987,7795,1987,0,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_MBE_0000,MBELLA,oui,485,1012,485,0,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_MBR_0002,MBRES 2,non,0,0,0,0,oui,40,200,0,40,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_MBR_0001,MBROUA 1,oui,6,30,0,6,oui,112,581,0,112,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_MBR_0000,MBROUA 2,non,0,0,0,0,oui,37,185,0,37,non,0,0,0,0,3,oui_toutes,oui_majorite,oui_toutes,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_MIS_0001,MISSION CATHOLIQUE 1,oui,7,35,0,7,oui,92,460,0,92,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_MIS_0002,MISSION CATHOLIQUE 2,non,0,0,0,0,oui,200,1200,0,200,non,0,0,0,0,3,oui_majorite,pas_du_tout,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_NDE_0000,NDEMAYO,non,0,0,0,0,oui,123,615,0,123,non,0,0,0,0,3,pas_du_tout,pas_du_tout,pas_du_tout,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_NOU_0000,NOUVELLE BASE,non,0,0,0,0,oui,112,560,0,112,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_ODJ_0001,ODJO ,non,0,0,0,0,oui,63,315,0,63,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_OUA_0001,OUADDA MAROUF,oui,2,10,0,2,oui,36,180,0,36,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_OUB_0001,OUBI 1,non,0,0,0,0,oui,92,460,0,92,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_OUB_0002,OUBI 2,non,0,0,0,0,oui,95,570,0,95,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_QUA_0000,QUARTIER SOCADA,oui,348,1738,0,348,oui,73,365,0,73,oui,136,680,0,136,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_SAB_0000,SABAWANGA,non,0,0,0,0,oui,42,210,0,42,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_SAM_0001,SAMBA-WANGA 2,non,0,0,0,0,oui,42,210,0,42,non,0,0,0,0,3,oui_majorite,en_partie,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_SAR_0000,SARA SIEN,non,0,0,0,0,oui,39,195,0,39,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4214_TIN_0000,TINGUI YALO,non,0,0,0,0,oui,46,230,0,46,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_TYP_0000,TYPOYEUR,oui,185,925,0,185,oui,197,985,0,197,non,0,0,0,0,3,oui_toutes,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_YAB_0001,YABAKA 1,oui,2,10,0,2,oui,136,680,0,136,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_YAB_0002,YABAKA 2,oui,1,5,0,1,oui,131,655,0,131,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,moyen
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_YAN_0000,YANENDJI,oui,90,450,0,90,oui,4,12,0,4,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Kaga-Bandoro,CF4211_ZAI_0000,ZAIRE,non,0,0,0,0,non,0,0,0,0,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_BAK_0000,BAKABA,non,0,0,0,0,oui,61,305,0,61,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_BIS_0001,BISSEKEBOU 1,non,0,0,0,0,oui,72,360,0,72,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_BIS_0002,BISSEKEBOU 2,non,0,0,0,0,oui,79,395,0,79,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_BIS_0003,BISSEKEBOU 3,oui,1,5,0,1,oui,68,340,0,68,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_BIS_0004,BISSIKEBO 4,non,0,0,0,0,oui,57,285,0,57,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_BLI_0000,BLIZAO,non,0,0,0,0,oui,17,88,0,17,non,0,0,0,0,3,en_partie,en_partie,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_BOU_0001,BOUMBALA 1,non,0,0,0,0,oui,88,450,0,88,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_BOU_0002,BOUMBALA 2,non,0,0,0,0,oui,100,500,0,100,non,0,0,0,0,3,oui_majorite,oui_toutes,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_FOU_0001,FOUTA 1,non,0,0,0,0,oui,54,270,0,54,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_FOU_0002,FOUTA 2,non,0,0,0,0,oui,80,400,0,80,non,0,0,0,0,4,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_GOB_0000,GOBERA,non,0,0,0,0,oui,77,385,0,77,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_GON_0001,GONDAVA,oui,1,5,0,1,oui,157,785,0,157,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_IBI_0001,IBINGUI 1,non,0,0,0,0,oui,23,117,0,23,non,0,0,0,0,3,oui_majorite,en_partie,oui_majorite,moyen
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_IBI_0002,IBINGUI 2,oui,1,5,0,1,oui,89,445,0,89,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_KIA_0001,KIA 1,non,0,0,0,0,oui,209,1045,0,209,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_KIA_0002,KIA 2,oui,1,3,0,1,oui,64,320,0,64,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_KIA_0003,KIA 3,non,0,0,0,0,oui,73,365,0,73,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_KON_0001,KONVI 1,oui,12,60,0,12,oui,50,250,0,50,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_LEG_0001,LEGA,oui,10,50,0,10,oui,49,240,0,49,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_MBA_0001,MBAINDO,non,0,0,0,0,oui,25,120,0,25,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_NAN_0001,NANA 1,oui,1,8,0,1,oui,67,335,0,67,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,moyen
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_NAN_0003,NANA 3,non,0,0,0,0,oui,100,500,0,100,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_NAN_0004,NANA 4,non,0,0,0,0,oui,98,490,0,98,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_NAN_0005,NANA 5,non,0,0,0,0,oui,88,442,0,88,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_NAN_0006,NANA 6,oui,1,4,0,1,oui,48,240,0,48,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_NAY_0001,NAYA,oui,2,10,0,2,oui,34,170,0,34,non,0,0,0,0,3,oui_majorite,oui_toutes,oui_toutes,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_NGO_0001,NGOUMOUROU 1,non,0,0,0,0,oui,96,480,0,96,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_NGO_0002,NGOUMOUROU 2,non,0,0,0,0,oui,55,275,0,55,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_NGO_0003,NGOUMOUROU 3,oui,1,5,0,1,oui,49,245,0,49,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_NGO_0004,NGOUMOUROU 4,non,0,0,0,0,oui,105,525,0,105,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_toutes,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_NGO_0005,NGOUMOUROU 5,non,0,0,0,0,oui,88,440,0,88,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_NGU_0001,NGUIMBO 1,non,0,0,0,0,oui,27,135,0,27,non,0,0,0,0,3,oui_toutes,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_NGU_0002,NGUIMBO 2,non,0,0,0,0,oui,30,150,0,30,non,0,0,0,0,3,oui_majorite,en_partie,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_NZA_0001,NZANDO 1,non,0,0,0,0,oui,37,185,0,37,non,0,0,0,0,3,en_partie,oui_majorite,oui_majorite,moyen
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_NZA_0002,NZANDO 2,oui,2,7,0,2,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_OUA_0003,OUANDAGO 3,oui,1,6,0,1,oui,80,400,0,80,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_OUA_0000,OUANDAGO 7,non,0,0,0,0,oui,270,1350,0,270,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_OUA_0009,OUANDAGO 9,non,0,0,0,0,oui,57,285,0,57,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_OUA_0001,OUANDAGO11 (YAFARA),non,0,0,0,0,oui,212,938,0,212,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_OUN_0004,OUNDAGO 1,non,0,0,0,0,oui,66,330,0,66,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_OUN_0010,OUNDAGO 10,non,0,0,0,0,oui,58,290,0,58,non,0,0,0,0,3,en_partie,en_partie,oui_toutes,moyen
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_OUN_0002,OUNDAGO 2,non,0,0,0,0,oui,111,555,0,111,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_OUN_0005,OUNDAGO 5,non,0,0,0,0,oui,74,370,0,74,non,0,0,0,0,3,oui_toutes,oui_toutes,pas_du_tout,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_OUN_0006,OUNDAGO 6,non,0,0,0,0,oui,171,850,0,171,non,0,0,0,0,3,en_partie,oui_majorite,pas_du_tout,acceptable
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_OUN_0008,OUNDAGO 8,non,0,0,0,0,oui,55,275,0,55,non,0,0,0,0,3,oui_toutes,pas_du_tout,pas_du_tout,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_PAT_0001,PATCHO 1,non,0,0,0,0,oui,129,660,0,129,non,0,0,0,0,3,oui_majorite,en_partie,oui_majorite,moyen
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_PAT_0002,PATCHO 2,oui,1,5,0,1,oui,102,510,0,102,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_PAT_0003,PATCHO 3,non,0,0,0,0,oui,119,595,0,119,non,0,0,0,0,4,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_PAT_0004,PATCHO 4,non,0,0,0,0,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_SIM_0000,SIMBAKOUA,non,0,0,0,0,oui,106,531,0,106,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_TAR_0001,TARAWAI KETE,non,0,0,0,0,oui,35,155,0,35,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_VAM_0001,VAMI 1,non,0,0,0,0,oui,40,200,0,40,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_VAM_0002,VAMI 3,non,0,0,0,0,oui,20,95,0,20,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_VAY_0001,VAYA,non,0,0,0,0,oui,22,110,0,22,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_YAM_0001,YAMISSI 1,oui,1,7,0,1,oui,89,448,0,89,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Nana-Outa,CF4213_YAM_0002,YAMISSI 2,non,0,0,0,0,oui,100,498,0,100,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_BAM_0000,BAMATARA,oui,1,2,0,1,oui,170,766,0,170,non,0,0,0,,3,oui_majorite,oui_majorite,pas_du_tout,moyen
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_BAN_0000,BANZA,non,0,0,0,0,oui,277,1179,0,277,non,0,0,0,,3,en_partie,en_partie,en_partie,eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_DEN_0001,DENGUINON 1,oui,1,5,0,1,oui,332,1660,0,332,non,0,0,0,,3,oui_majorite,oui_majorite,oui_majorite,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_DEN_0002,DENGUINON 2,oui,1,5,0,1,oui,75,375,0,75,non,0,0,0,,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_DEN_0003,DENGUINON 3,oui,1,5,0,1,oui,234,1170,0,234,non,0,0,0,,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_DER_0001,DERE 1,oui,1,4,0,1,oui,114,560,0,114,non,0,0,0,,3,en_partie,oui_toutes,pas_du_tout,moyen
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_DER_0002,DERE 2,oui,1,2,0,1,oui,116,573,0,116,non,0,0,0,,3,oui_majorite,oui_toutes,pas_du_tout,eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_DER_0003,DERE 3,oui,1,3,0,1,oui,207,1035,0,207,non,0,0,0,,3,oui_majorite,oui_toutes,oui_toutes,moyen
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_DIS_0003,DISSIKOU 3,non,0,0,0,0,oui,158,787,0,158,non,0,0,0,,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_DIS_0005,DISSIKOU 5,non,0,0,0,0,oui,100,502,0,100,non,0,0,0,,3,oui_toutes,oui_toutes,oui_majorite,moyen
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_DOM_0001,DOMODO 1,oui,10,55,0,10,oui,205,1025,0,205,non,0,0,0,,3,pas_du_tout,pas_du_tout,pas_du_tout,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_DOM_0002,DOMODO 2,non,0,0,0,0,oui,28,137,0,28,non,0,0,0,,4,oui_toutes,oui_toutes,oui_toutes,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_DOU_0000,DOUKOUMA,oui,1,3,0,1,oui,415,2025,0,415,non,0,0,0,,3,oui_toutes,oui_toutes,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_FAY_0001,FAYA 1,non,0,0,0,0,oui,167,823,0,167,non,0,0,0,,3,oui_toutes,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_FAY_0002,FAYA 2,non,0,0,0,0,oui,132,658,0,132,non,0,0,0,,3,pas_du_tout,pas_du_tout,pas_du_tout,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_GAZ_0000,GAZAO,oui,1,6,0,1,oui,53,267,0,53,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_GUE_0001,GUENGUELE 1,non,0,0,0,0,oui,154,771,0,154,non,0,0,0,,3,oui_toutes,oui_toutes,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_KAK_0001,KAKO 1,non,0,0,0,0,oui,47,235,0,47,non,0,0,0,,3,oui_toutes,oui_toutes,oui_toutes,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_KAK_0002,KAKO 2,oui,2,10,0,2,oui,86,430,0,86,non,0,0,0,,3,oui_toutes,oui_toutes,oui_toutes,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_KAK_0003,KAKO 3,oui,2,10,0,2,oui,142,710,0,142,non,0,0,0,,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_KAN_0001,KANDA 1,non,0,0,0,0,oui,244,1432,0,244,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_KAN_0000,KANGA,oui,4,20,0,4,oui,223,1063,0,223,non,0,0,0,,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_KOD_0001,KODEMBON,oui,1,3,0,1,oui,40,200,0,40,non,0,0,0,,3,oui_majorite,oui_majorite,pas_du_tout,moyen
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_KPA_0000,KPAKAYA,oui,1,2,0,1,oui,110,550,0,110,non,0,0,0,,3,oui_majorite,oui_majorite,pas_du_tout,eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_KPE_0000,KPETENE,non,0,0,0,0,oui,26,131,0,26,non,0,0,0,,3,oui_toutes,oui_toutes,oui_toutes,tres_eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_MBA_0001,MBATA,oui,1,5,0,1,oui,60,300,0,60,non,0,0,0,,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_MBA_0002,MBAZITI,non,0,0,0,0,oui,31,155,0,31,non,0,0,0,,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_MBR_0001,MBROUILLI 1,non,0,0,0,0,oui,155,778,0,155,non,0,0,0,,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_MBR_0002,MBROUILLI 2,non,0,0,0,0,oui,79,397,0,79,non,0,0,0,,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_MEN_0000,MENGUE BOKENGUE,oui,3,17,0,3,oui,243,1029,0,243,non,0,0,0,,3,oui_toutes,oui_toutes,oui_toutes,eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_MEN_0001,MENGUE BOKOIN,non,0,0,0,0,oui,249,1245,0,249,non,0,0,0,,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_NDE_0001,NDENGA 1,non,0,0,0,0,oui,171,795,0,171,non,0,0,0,,5,oui_toutes,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_NDE_0002,NDENGA 2,non,0,0,0,0,oui,165,805,0,165,non,0,0,0,,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_NGO_0000,NGOBO,oui,6,33,0,6,oui,23,115,0,23,non,0,0,0,,3,oui_toutes,oui_majorite,oui_toutes,eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_NGO_0001,NGOUVOTA 1,non,0,0,0,0,oui,266,1465,0,266,non,0,0,0,,3,oui_toutes,oui_toutes,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_NGO_0002,NGOUVOTA 2,oui,20,100,0,20,oui,279,1652,0,279,non,0,0,0,,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_PIM_0000,PIMBI KASSAI,non,0,0,0,0,oui,173,875,0,173,non,0,0,0,,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_KPO_0002,POPO 2,oui,10,50,0,10,oui,117,585,0,117,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_SAB_0001,SABAYANGA 1,non,0,0,0,0,oui,130,653,0,130,non,0,0,0,,3,oui_toutes,oui_toutes,oui_toutes,eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_SAB_0002,SABAYANGA 2,non,0,0,0,0,oui,232,1040,0,232,non,0,0,0,,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_SAM_0000,SAMBA BOKENGUE,oui,1,2,0,1,oui,87,435,0,87,non,0,0,0,,3,oui_majorite,oui_toutes,en_partie,moyen
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_SIA_0000,SIAH,oui,1,5,0,1,oui,129,595,0,129,non,0,0,0,,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_SOM_0001,SOMBOKE 1,non,0,0,0,0,oui,156,942,0,156,non,0,0,0,,3,oui_majorite,oui_majorite,oui_toutes,eleve
+Nana-Gribizi,Kaga-Bandoro,Ndenga,CF4215_ZAM_0002,ZAM-ALI 2,non,0,0,0,0,oui,147,735,0,147,non,0,0,0,,3,oui_toutes,oui_toutes,oui_toutes,tres_eleve
+Nana-Gribizi,Mbrès,Mbrès,CF4221_BAG_0001,BAGORO 1,oui,122,443,0,122,oui,185,925,0,185,non,0,0,0,0,3,en_partie,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Mbrès,Mbrès,CF4221_BAG_0000,BAGORO 2,non,0,0,0,0,oui,174,865,0,174,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,eleve
+Nana-Gribizi,Mbrès,Mbrès,CF4221_BIN_0000,BINI 1,oui,21,105,0,21,oui,8,40,0,8,non,0,0,0,0,3,en_partie,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Mbrès,Mbrès,CF4221_BLA_0001,BLAKADJA,non,0,0,0,0,oui,149,745,0,149,non,0,0,0,0,3,oui_toutes,oui_majorite,oui_majorite,tres_eleve
+Nana-Gribizi,Mbrès,Mbrès,CF4221_CRE_0001,CREMBOU,oui,3,15,0,3,oui,32,160,0,32,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Mbrès,Mbrès,CF4221_DAK_0001,DAKPA,oui,2,10,0,2,oui,8,40,0,8,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,acceptable
+Nana-Gribizi,Mbrès,Mbrès,CF4221_DJA_0000,DJAGBRAFO,non,0,0,0,0,oui,99,495,0,99,non,0,0,0,0,3,en_partie,en_partie,en_partie,eleve
+Nana-Gribizi,Mbrès,Mbrès,CF4221_DJA_0001,DJANGALA,non,0,0,0,0,oui,291,1455,0,291,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Nana-Gribizi,Mbrès,Mbrès,CF4221_DOU_0000,DOUMA,non,0,0,0,0,oui,10,50,0,10,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,eleve
+Nana-Gribizi,Mbrès,Mbrès,CF4221_GRI_0001,GRIBINGUI 1,oui,1,2,0,1,oui,99,447,0,99,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,bas
+Nana-Gribizi,Mbrès,Mbrès,CF4221_KAD_0001,KADDA,non,0,0,0,0,oui,90,450,0,90,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,acceptable
+Nana-Gribizi,Mbrès,Mbrès,CF4221_KAN_0000,KANGOU,non,0,0,0,0,oui,4,20,0,4,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Mbrès,Mbrès,CF4221_KOT_0001,KOTCHEGUELE 1,oui,248,1240,0,248,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Mbrès,Mbrès,CF4221_LAK_0000,LAKOUE TENE,oui,85,345,0,85,oui,67,255,0,67,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,tres_eleve
+Nana-Gribizi,Mbrès,Mbrès,CF4221_MAO_0000,MAORKA,non,0,0,0,0,oui,105,457,0,105,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,tres_bas
+Nana-Gribizi,Mbrès,Mbrès,CF4221_MAR_0000,MARAOMBA,non,0,0,0,0,oui,156,760,0,156,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_toutes,eleve
+Nana-Gribizi,Mbrès,Mbrès,CF4221_MAR_0001,MAROAMBA 2,non,0,0,0,0,oui,38,190,0,38,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,moyen
+Nana-Gribizi,Mbrès,Mbrès,CF4221_MBO_0000,MBOUTOU 1,oui,22,110,0,22,oui,40,200,0,40,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,moyen
+Nana-Gribizi,Mbrès,Mbrès,CF4221_MBO_0001,MBOUTOU 2,non,0,0,0,0,oui,20,100,0,20,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Mbrès,Mbrès,CF4221_MBR_0002,MBRES 1,non,0,0,0,0,oui,161,805,0,161,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Mbrès,Mbrès,CF4221_MBR_0000,MBRES 2,non,0,0,0,0,oui,70,350,0,70,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Mbrès,Mbrès,CF4221_MBR_0003,MBRES 3,non,0,0,0,0,oui,70,350,0,70,non,0,0,0,0,3,en_partie,oui_toutes,oui_toutes,eleve
+Nana-Gribizi,Mbrès,Mbrès,CF4221_NDI_0001,NDIBA 1,non,0,0,0,0,oui,20,100,0,20,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Mbrès,Mbrès,CF4221_NDI_0002,NDIBA 2,oui,3,15,0,3,oui,20,100,0,20,non,0,0,0,0,3,oui_majorite,oui_toutes,oui_majorite,eleve
+Nana-Gribizi,Mbrès,Mbrès,CF4221_NGO_0001,NGOBO,oui,68,340,0,68,oui,12,60,0,12,non,0,0,0,0,3,oui_toutes,pas_du_tout,oui_toutes,tres_eleve
+Nana-Gribizi,Mbrès,Mbrès,CF4221_NOU_0000,NOUVELLE BASE,non,0,0,0,0,oui,50,230,0,50,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,eleve
+Nana-Gribizi,Mbrès,Mbrès,CF4221_OUG_0000,OUGA,oui,26,130,0,26,oui,112,543,0,112,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_toutes,tres_eleve
+Nana-Gribizi,Mbrès,Mbrès,CF4221_OUM_0000,OUME,non,0,0,0,0,oui,199,951,0,199,non,0,0,0,0,3,oui_toutes,oui_toutes,pas_du_tout,tres_bas
+Nana-Gribizi,Mbrès,Mbrès,CF4221_QUA_0000,QUARTIER MUSULMAN,oui,100,430,0,100,non,0,0,0,0,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,acceptable
+Nana-Gribizi,Mbrès,Mbrès,CF4221_SAN_0000,SANGO 1,non,0,0,0,0,oui,114,485,0,114,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_majorite,eleve
+Nana-Gribizi,Mbrès,Mbrès,CF4221_SAN_0002,SANGO 2,non,0,0,0,0,oui,214,1070,0,214,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,moyen
+Nana-Gribizi,Mbrès,Mbrès,CF4221_TAO_0001,TAO,oui,6,30,0,6,oui,70,350,0,70,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,moyen
+Nana-Gribizi,Mbrès,Mbrès,CF4221_TOA_0001,TOA,non,0,0,0,0,oui,60,300,0,60,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Nana-Gribizi,Mbrès,Mbrès,CF4221_YAB_0000,YABO,non,0,0,0,0,oui,125,625,0,125,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Nana-Gribizi,Mbrès,Mbrès,CF4221_YAN_0001,YANINGUERE,non,0,0,0,0,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Ouaka,Bakala,Koudou-Bégo,CF4321_BOD_0001,BODO,oui,20,105,0,20,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouaka,Bakala,Koudou-Bégo,CF4321_BOR_0001,BORNOU,oui,340,1702,0,340,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Ouaka,Bakala,Koudou-Bégo,CF4321_MAN_0001,MANGOLEWA,oui,30,160,0,30,oui,25,125,0,25,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouaka,Bakala,Koudou-Bégo,CF4321_MOU_0001,MOUROUBA,oui,51,255,0,51,oui,44,220,0,44,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,acceptable
+Ouaka,Bakala,Koudou-Bégo,CF4321_SAB_0001,SABOYOMBO,oui,50,250,0,50,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouaka,Bakala,Koudou-Bégo,CF4321_WAN_0001,WANDALONGO,oui,38,195,0,38,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,pas_du_tout,eleve
+Ouaka,Bakala,Koudou-Bégo,CF4321_YAL_0001,YALIGAZA,oui,30,150,0,30,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouaka,Bambari,Bambari,CF4311_ABB_0001,ABBO 1,oui,15,75,0,15,oui,15,75,0,15,oui,2,17,0,2,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouaka,Bambari,Bambari,CF4311_AKP_0001,AKPE 1,oui,2,10,0,2,oui,10,60,0,10,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouaka,Bambari,Bambari,CF4311_AKP_0003,AKPE 3,oui,2,10,0,2,oui,7,36,0,7,non,0,0,0,0,3,pas_du_tout,oui_majorite,en_partie,acceptable
+Ouaka,Bambari,Bambari,CF4311_AKP_0004,AKPE 4,oui,60,300,0,60,oui,19,95,0,19,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouaka,Bambari,Bambari,CF4311_ASS_0000,ASSOUKOUMBA,oui,10,55,0,10,oui,10,50,0,10,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,eleve
+Ouaka,Bambari,Bambari,CF4311_AWA_0001,AWAL 1,oui,8,45,0,8,oui,10,50,0,10,oui,8,40,0,8,3,oui_majorite,en_partie,en_partie,moyen
+Ouaka,Bambari,Bambari,CF4311_AWA_0002,AWAL 2,oui,2,10,0,2,oui,31,155,0,31,non,0,0,0,0,3,en_partie,oui_majorite,pas_du_tout,acceptable
+Ouaka,Bambari,Bambari,CF4311_BAM_0000,BAMBARI DONGO,oui,13,58,0,13,oui,6,30,0,6,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouaka,Bambari,Bambari,CF4311_BIN_0001,BINGUIMALE,oui,40,200,0,40,oui,60,300,0,60,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouaka,Bambari,Bambari,CF4311_BOU_0000,BOUKAKOU,oui,20,100,0,20,oui,15,75,0,15,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,moyen
+Ouaka,Bambari,Bambari,CF4311_CAM_0001,CAMP ADMINISTRATIF,oui,3581,17906,0,3581,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouaka,Bambari,Bambari,CF4311_CAM_0000,CAMP ELEVAGE,oui,1000,9009,1000,0,non,0,0,0,0,non,0,0,0,0,3,en_partie,en_partie,en_partie,moyen
+Ouaka,Bambari,Bambari,CF4311_CEN_0000,CENTRE,oui,16,80,0,16,oui,23,95,0,23,oui,2,11,0,2,3,oui_majorite,en_partie,en_partie,moyen
+Ouaka,Bambari,Bambari,CF4311_CTR_0000,CTRO,oui,25,130,0,25,oui,28,140,0,28,non,0,0,0,0,3,en_partie,oui_majorite,en_partie,moyen
+Ouaka,Bambari,Bambari,CF4311_DEC_0000,DECAMPS,oui,870,4350,810,60,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouaka,Bambari,Bambari,CF4311_DOU_0001,DOUNGOUPOU 1,oui,10,55,0,10,oui,31,158,0,31,non,0,0,0,0,3,pas_du_tout,en_partie,oui_majorite,acceptable
+Ouaka,Bambari,Bambari,CF4311_DOU_0002,DOUNGOUPOU 2,oui,10,50,0,10,oui,12,60,0,12,oui,2,11,0,2,3,pas_du_tout,en_partie,en_partie,moyen
+Ouaka,Bambari,Bambari,CF4311_GBI_0000,GBIASSANGO,oui,10,60,0,10,oui,8,38,0,8,non,0,0,0,0,3,en_partie,en_partie,en_partie,moyen
+Ouaka,Bambari,Bambari,CF4311_GOH_0001,GOHINDE 1,oui,30,150,0,30,oui,5,22,0,5,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouaka,Bambari,Bambari,CF4311_GON_0000,GONGUERE,oui,40,200,0,40,oui,6,33,0,6,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouaka,Bambari,Bambari,CF4311_KAK_0001,KAKAO,non,0,0,0,0,oui,112,560,0,112,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouaka,Bambari,Bambari,CF4311_KID_0002,KIDIGA 2,oui,35,180,0,35,oui,35,180,0,35,non,0,0,0,0,3,oui_majorite,oui_majorite,pas_du_tout,eleve
+Ouaka,Bambari,Bambari,CF4311_KID_0001,KIDJIGRA 1,oui,580,2948,580,0,oui,22,185,0,22,oui,2,10,0,2,3,en_partie,oui_majorite,en_partie,moyen
+Ouaka,Bambari,Bambari,CF4311_KID_0003,KIDJIGRA 3,oui,50,250,0,50,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouaka,Bambari,Bambari,CF4311_KOS_0000,KOSSINENDJI,oui,2,8,0,2,oui,66,327,0,66,non,0,0,0,0,3,oui_majorite,pas_du_tout,en_partie,acceptable
+Ouaka,Bambari,Bambari,CF4311_KOT_0000,KOTAKOLI,oui,50,255,0,50,oui,60,305,0,60,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouaka,Bambari,Bambari,CF4311_KOT_0001,KOTALI,oui,20,100,0,20,oui,8,45,0,8,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouaka,Bambari,Bambari,CF4311_KPI_0000,KPIABALE,oui,18,90,0,18,oui,10,50,0,10,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,moyen
+Ouaka,Bambari,Bambari,CF4311_LOG_0001,LOGODE 1,oui,15,75,0,15,oui,60,305,0,60,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouaka,Bambari,Bambari,CF4311_LOG_0002,LOGODE 2,oui,2,11,0,2,oui,5,30,0,5,oui,4,30,0,4,3,oui_majorite,en_partie,en_partie,moyen
+Ouaka,Bambari,Bambari,CF4311_LOU_0000,LOUKOUANGA,oui,1,8,0,1,oui,20,100,0,20,oui,10,50,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouaka,Bambari,Bambari,CF4311_LOU_0001,LOUNGOUANGA,oui,11,60,0,11,oui,20,100,0,20,oui,10,50,0,10,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouaka,Bambari,Bambari,CF4311_MAD_0001,MADIOUKA 1,oui,20,105,0,20,oui,30,150,0,30,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouaka,Bambari,Bambari,CF4311_MAD_0002,MADIOUKA 2,oui,18,92,0,18,oui,3,18,0,3,non,0,0,0,0,3,oui_majorite,pas_du_tout,en_partie,acceptable
+Ouaka,Bambari,Bambari,CF4311_MAK_0000,MAKANGUE,oui,25,125,0,25,oui,40,200,0,40,non,0,0,0,0,3,oui_majorite,pas_du_tout,en_partie,acceptable
+Ouaka,Bambari,Bambari,CF4311_MAL_0000,MALEKOTA,oui,15,80,0,15,oui,6,30,0,6,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouaka,Bambari,Bambari,CF4311_MAS_0000,MASSAMBA,oui,14,70,0,14,oui,2,11,0,2,non,0,0,0,0,3,en_partie,pas_du_tout,en_partie,acceptable
+Ouaka,Bambari,Bambari,CF4311_MBA_0000,MBAGOLO,oui,105,440,0,105,oui,15,75,0,15,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_toutes,eleve
+Ouaka,Bambari,Bambari,CF4311_MOS_0000,MOSQUEE,oui,30,152,0,30,oui,2,11,0,2,oui,21,105,0,21,3,pas_du_tout,oui_majorite,en_partie,acceptable
+Ouaka,Bambari,Bambari,CF4311_NDO_0000,NDOKOYO,oui,18,92,0,18,oui,25,100,0,25,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,acceptable
+Ouaka,Bambari,Bambari,CF4311_NDR_0000,NDROUKOLI,oui,20,102,0,20,oui,14,70,0,14,non,0,0,0,0,3,oui_toutes,pas_du_tout,en_partie,acceptable
+Ouaka,Bambari,Bambari,CF4311_NGA_0001,NGAMA 1,oui,6,35,0,6,oui,5,45,0,5,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,acceptable
+Ouaka,Bambari,Bambari,CF4311_NGA_0002,NGAMA 2,oui,2,12,0,2,oui,20,101,0,20,non,0,0,0,0,3,oui_majorite,pas_du_tout,en_partie,acceptable
+Ouaka,Bambari,Bambari,CF4311_NGA_0000,NGAMOTEDE,oui,11,60,0,11,oui,18,90,0,18,oui,3,16,0,3,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouaka,Bambari,Bambari,CF4311_OUB_0001,OUBADA 1,oui,10,55,0,10,oui,10,55,0,10,non,0,0,0,0,3,oui_majorite,pas_du_tout,en_partie,acceptable
+Ouaka,Bambari,Bambari,CF4311_OUB_0002,OUBADA 2,oui,30,155,0,30,oui,21,108,0,21,non,0,0,0,0,3,oui_toutes,pas_du_tout,en_partie,moyen
+Ouaka,Bambari,Bambari,CF4311_PAS_0000,PASSIKI,non,0,0,0,0,oui,8,50,0,8,non,0,0,0,0,3,oui_majorite,pas_du_tout,en_partie,acceptable
+Ouaka,Bambari,Bambari,CF4311_POU_0002,POUDAKPA 2,oui,15,80,0,15,oui,2,14,0,2,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,acceptable
+Ouaka,Bambari,Bambari,CF4311_POU_0001,POUDAPKA 1,oui,20,102,0,20,oui,8,45,0,8,non,0,0,0,0,3,oui_majorite,pas_du_tout,en_partie,acceptable
+Ouaka,Bambari,Bambari,CF4311_RED_0000,REDJIDOU,oui,11,55,0,11,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouaka,Bambari,Bambari,CF4311_REP_0000,REPIO,oui,2,12,0,2,oui,18,90,0,18,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouaka,Bambari,Bambari,CF4311_SAB_0000,SABALET,oui,25,108,0,25,oui,3,15,0,3,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouaka,Bambari,Bambari,CF4311_SAM_0000,SAMBIA,oui,4,21,0,4,oui,16,80,0,16,oui,6,30,0,6,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouaka,Bambari,Bambari,CF4311_SEC_0000,SECTEUR 4,oui,20,102,0,20,oui,15,80,0,15,non,0,0,0,0,3,pas_du_tout,en_partie,en_partie,acceptable
+Ouaka,Bambari,Bambari,CF4311_TAZ_0000,TAZOUDE,oui,3,16,0,3,oui,6,30,0,6,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouaka,Bambari,Bambari,CF4311_TCH_0000,TCHINDJI,oui,6,36,0,6,oui,3,17,0,3,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,acceptable
+Ouaka,Bambari,Bambari,CF4311_TOU_0001,TOUMBAZOU 1,oui,8,45,0,8,oui,12,60,0,12,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,eleve
+Ouaka,Bambari,Bambari,CF4311_TOU_0002,TOUMBAZOU 2,oui,8,45,0,8,oui,2,11,0,2,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouaka,Bambari,Bambari,CF4311_WAN_0001,WANGAYE 1,oui,6,33,0,6,oui,15,80,0,15,oui,2,11,0,2,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouaka,Bambari,Bambari,CF4311_WAN_0002,WANGAYE 2,oui,14,75,0,14,non,0,0,0,0,non,0,0,0,0,3,oui_toutes,en_partie,pas_du_tout,moyen
+Ouaka,Bambari,Bambari,CF4311_WAN_0003,WANGAYE 3,oui,10,50,0,10,oui,8,40,0,8,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,eleve
+Ouaka,Bambari,Danga-Gboudou,CF6231_FOU_0001,FOUNOWORO,oui,20,100,0,20,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouaka,Bambari,Danga-Gboudou,CF4312_KPE_0001,KPETENE 1,oui,35,175,0,35,non,0,0,0,0,oui,2,12,0,2,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouaka,Bambari,Danga-Gboudou,CF4312_KPE_0002,KPETENE 2,oui,30,150,0,30,oui,35,175,0,35,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,acceptable
+Ouaka,Bambari,Danga-Gboudou,CF4312_MAL_0001,MALOUM 1,oui,1660,8330,1660,0,oui,20,105,0,20,oui,5,25,0,5,3,oui_majorite,en_partie,en_partie,moyen
+Ouaka,Bambari,Danga-Gboudou,CF4312_MAL_0002,MALOUM 2,oui,33,165,0,33,oui,18,90,0,18,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouaka,Bambari,Danga-Gboudou,CF4312_MAL_0003,MALOUM 3,oui,27,135,0,27,oui,24,120,0,24,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouaka,Bambari,Danga-Gboudou,CF4312_MOS_0001,MOSQUEE,oui,25,125,0,25,oui,4,23,0,4,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouaka,Bambari,Danga-Gboudou,CF4312_SEK_0000,SEKO,oui,1000,5455,1000,0,non,0,0,0,0,non,0,0,0,0,3,en_partie,oui_majorite,en_partie,eleve
+Ouaka,Bambari,Danga-Gboudou,CF4314_TAG_0000,TAGBARA,non,0,0,0,0,oui,40,200,0,40,non,0,0,0,0,3,oui_toutes,en_partie,pas_du_tout,moyen
+Ouaka,Bambari,Ngougbia,CF4313_NGA_0000,NGAKOBO,oui,1300,6983,1300,0,non,0,0,0,0,non,0,0,0,0,3,en_partie,en_partie,en_partie,moyen
+Ouaka,Bambari,Pladama-Ouaka,CF4311_AVI_0000,AVIATION,oui,990,4957,990,0,oui,25,125,0,25,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,eleve
+Ouaka,Bambari,Pladama-Ouaka,CF4311_LAP_0001,LAPAGO (site),oui,305,1500,0,305,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouaka,Bambari,Pladama-Ouaka,CF4314_NGA_0001,NGALINGOU,oui,479,2477,479,0,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouaka,Bambari,Pladama-Ouaka,CF4314_OUA_0001,OUABE,non,0,0,0,0,oui,16,80,0,16,non,0,0,0,0,3,en_partie,oui_majorite,pas_du_tout,moyen
+Ouaka,Bambari,Pladama-Ouaka,CF4314_PLA_0000,PLADAMA,oui,100,511,100,0,oui,4,30,0,4,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouaka,Grimari,Grimari,CF4331_LAB_0001,LABAMBA,oui,53,272,0,53,oui,46,231,0,46,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouaka,Grimari,Grimari,CF4331_NGO_0002,NGOULI,oui,30,160,0,30,oui,6,35,0,6,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouaka,Grimari,Grimari,CF4331_NGO_0001,NGOULINGA,oui,158,794,0,158,oui,22,110,0,22,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_majorite,eleve
+Ouaka,Grimari,Lissa,CF4333_DAM_0001,DAMBAGOA,oui,15,82,0,15,oui,2,11,0,2,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouaka,Grimari,Lissa,CF4333_KAN_0001,KANDJIA,oui,50,98,0,50,oui,5,30,0,5,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouaka,Grimari,Pouyamba,CF4334_GOU_0001,GOUSSOUMALE,oui,30,150,0,30,oui,8,45,0,8,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouaka,Grimari,Pouyamba,CF4334_MBI_0001,MBIMBALA,oui,21,102,0,21,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouaka,Ippy,Ippy,CF4351_IPP_0000,IPPY CENTRE,non,0,0,0,0,oui,132,660,0,132,non,0,0,0,0,3,pas_du_tout,en_partie,en_partie,acceptable
+Ouaka,Ippy ,Ippy,CF4351_KON_0001,KONGBO MID 2,oui,60,300,0,60,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouaka,Kouango,Azengue-Mindou,CF4342_AVI_0001,AVIATION,oui,5,21,0,5,non,0,0,0,0,oui,7,35,0,7,3,oui_majorite,oui_majorite,oui_majorite,tres_eleve
+Ouaka,Kouango,Azengue-Mindou,CF4342_BAN_0001,BANGA CENTRE,oui,5,25,0,5,non,0,0,0,0,oui,4,20,0,4,3,oui_majorite,oui_majorite,en_partie,acceptable
+Ouaka,Kouango,Azengue-Mindou,CF4342_BET_0001,BETA 1,oui,14,70,0,14,oui,4,20,0,4,oui,12,60,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouaka,Kouango,Cochio-Toulou,CF4343_BIA_0001,BIANGA,oui,80,400,0,80,oui,95,475,0,95,oui,75,375,0,75,3,oui_majorite,en_partie,en_partie,moyen
+Ouaka,Kouango,Azengue-Mindou,CF4342_BIM_0001,BIMBO,oui,12,60,0,12,oui,40,200,0,40,oui,30,150,0,30,3,en_partie,en_partie,pas_du_tout,moyen
+Ouaka,Kouango,Kouango,CF4341_BOR_0001,BORNOU 1,oui,35,175,0,35,oui,6,30,0,6,oui,7,38,0,7,3,oui_majorite,pas_du_tout,en_partie,acceptable
+Ouaka,Kouango,Cochio-Toulou,CF4343_GBE_0001,GBEDA,oui,10,50,0,10,oui,3,18,0,3,oui,2,12,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouaka,Kouango,Cochio-Toulou,CF4343_GOY_0001,GOYA,oui,244,1220,0,244,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouaka,Kouango,Cochio-Toulou,CF4343_KPA_0001,KPANGBA 2,oui,10,60,0,10,non,0,0,0,0,oui,11,58,0,11,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouaka,Kouango,Cochio-Toulou,CF4343_LIN_0001,LINDAO,oui,8,42,0,8,oui,8,40,0,8,oui,186,934,0,186,3,oui_toutes,en_partie,pas_du_tout,moyen
+Ouaka,Kouango,Azengue-Mindou,CF4342_M'B_0001,MBAGORO,oui,15,68,0,15,oui,10,10,0,10,oui,6,30,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouaka,Kouango,Azengue-Mindou,CF4342_MBA_0001,MBALANGO,oui,40,205,0,40,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouaka,Kouango,Kouango,CF4341_MBE_0001,MBETA,oui,10,52,0,10,non,0,0,0,0,oui,5,10,0,5,3,oui_majorite,oui_majorite,oui_majorite,tres_eleve
+Ouaka,Kouango,Azengue-Mindou,CF4342_OUG_0001,OUGOU,oui,3,3,0,3,oui,15,85,0,15,oui,5,30,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouaka,Kouango,Kouango,CF4341_OUK_0001,OUKA,oui,21,105,0,21,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,pas_du_tout,en_partie,moyen
+Ouaka,Kouango,Cochio-Toulou,CF4343_SAB_0001,SABEGOUDE,oui,30,150,0,30,non,0,0,0,0,non,0,0,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouaka,Kouango,Kouango,CF4341_SIT_0001,SITE SAMKAROME,oui,22,110,0,22,non,0,0,0,0,oui,12,60,0,12,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Ouaka ,Bakala,Koudou-Bégo,CF4321_KAL_0001,KALAYA,oui,5,30,0,5,non,0,0,0,0,non,0,0,0,0,3,en_partie,pas_du_tout,en_partie,moyen
+Ouaka ,Bambari,Bambari,CF4311_FRA_0001,FRAMEAU,non,0,0,0,0,oui,13,65,0,13,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouaka ,Bambari,Bambari,CF4311_KLA_0001,KLAMENDJI,non,0,0,0,0,oui,30,150,0,30,non,0,0,0,0,3,pas_du_tout,en_partie,oui_majorite,eleve
+Ouaka ,Bambari,Bambari,CF4311_SAI_0000,SAINT JOSEPH,oui,19,101,19,0,non,0,0,0,0,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,moyen
+Ouaka ,Bambari,Ngougbia,CF4313_BAT_0001,BATOBADJA,oui,16,80,0,16,non,0,0,0,0,non,0,0,0,0,3,en_partie,oui_majorite,en_partie,moyen
+Ouaka ,Bambari,Ngougbia,CF4313_MAT_0001,MATCHIKA,oui,11,60,0,11,non,0,0,0,0,non,0,0,0,0,3,en_partie,pas_du_tout,en_partie,moyen
+Ouaka ,Bambari,Pladama-Ouaka,CF4314_AWA_0001,AWATCHE,oui,10,55,0,10,oui,17,85,0,17,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,moyen
+Ouaka ,Bambari,Pladama-Ouaka,CF4314_KRA_0001,KRAKONDJI,oui,10,53,0,10,oui,6,33,0,6,non,0,0,0,0,3,oui_majorite,pas_du_tout,pas_du_tout,moyen
+Ouaka ,Bambari,Pladama-Ouaka,CF4314_MAD_0001,MADOMALE,oui,8,43,0,8,oui,3,18,0,3,non,0,0,0,0,3,en_partie,oui_majorite,en_partie,moyen
+Ouaka ,Bambari,Pladama-Ouaka,CF4314_MAK_0001,MAKOULOU,non,0,0,0,0,oui,4,25,0,4,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouaka ,Bambari,Pladama-Ouaka,CF4314_NGB_0001,NGBEMATO,oui,10,52,0,10,oui,4,22,0,4,non,0,0,0,0,3,oui_majorite,pas_du_tout,en_partie,moyen
+Ouaka ,Bambari,Pladama-Ouaka,CF4314_TOG_0001,TOGO,non,0,0,0,0,oui,20,105,0,20,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,eleve
+Ouaka ,Bambari,Pladama-Ouaka,CF4314_YAM_0001,YAMALET,oui,3,18,0,3,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_ACD_0000,ACDA,oui,7,35,0,7,oui,50,250,0,50,oui,23,119,0,23,3,oui_majorite,en_partie,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_AVE_0000,AVENIR,oui,13,55,0,13,oui,18,100,0,18,oui,9,57,0,9,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_BAI_0000,BAIKAYAN,oui,6,35,0,6,oui,15,75,0,15,oui,8,42,0,8,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_BAR_0001,BARRAGE 1,oui,7,40,0,7,oui,115,580,0,115,oui,10,52,0,10,3,oui_majorite,en_partie,en_partie,acceptable
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_BAR_0002,BARRAGE 2,oui,12,60,0,12,oui,94,485,0,94,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_BAT_0000,BATALI,oui,8,36,0,8,oui,46,226,0,46,oui,9,49,0,9,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_BEL_0001,BELGE,oui,2,10,0,2,oui,7,40,0,7,oui,10,58,0,10,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_BEL_0002,BELKE 1,oui,7,38,0,7,oui,24,120,0,24,oui,18,86,0,18,3,oui_majorite,en_partie,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_BEL_0000,BELKE 2,oui,8,40,0,8,oui,35,175,0,35,oui,5,26,0,5,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_BEM_0000,BEM,oui,4,20,0,4,oui,101,505,0,101,oui,8,41,0,8,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_BOB_0000,BOBORO,oui,3,15,0,3,oui,51,250,0,51,oui,2,11,0,2,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_BOL_0000,BOLARA,oui,10,50,0,10,oui,58,300,0,58,oui,8,50,0,8,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_BOY_0000,BOYWANE,oui,1,5,0,1,oui,70,350,0,70,oui,14,67,0,14,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_CAM_0001,CAMP COMMERCIAL,oui,8,46,0,8,oui,176,880,0,176,oui,13,61,0,13,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_CAM_0002,CAMP MISSION,oui,17,70,0,17,oui,160,801,0,160,oui,7,30,0,7,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_DEL_0000,DELLE,non,0,0,0,0,oui,18,85,0,18,oui,15,78,0,15,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_DIA_0000,DIAKE,oui,3,14,0,3,oui,28,138,0,28,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_ECO_0000,ECOLE MIXTE 1,oui,30,118,0,30,oui,70,353,0,70,oui,5,27,0,5,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_FAR_0000,FARAWIL,oui,9,49,0,9,oui,29,145,0,29,oui,39,195,0,39,3,oui_toutes,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_GAM_0000,GAMBILA 2,non,0,0,0,0,oui,13,66,0,13,non,0,0,0,0,3,oui_majorite,oui_toutes,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_GAN_0001,GANZA 1,oui,33,200,0,33,oui,71,340,0,71,oui,12,58,0,12,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_GAN_0002,GANZA 2,oui,25,128,0,25,oui,72,361,0,72,oui,18,98,0,18,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_GBA_0001,GBADILA,oui,2,13,0,2,oui,20,101,0,20,oui,3,16,0,3,3,oui_majorite,oui_majorite,en_partie,eleve
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_GBA_0002,GBADOCK,oui,8,35,0,8,oui,51,250,0,51,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_GBA_0003,GBAGANA,oui,1,7,0,1,oui,53,265,0,53,oui,62,313,0,62,3,oui_majorite,oui_majorite,pas_du_tout,eleve
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_GON_0000,GONON,oui,21,109,0,21,oui,78,400,0,78,oui,3,20,0,3,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_GRO_0003,GROUPEMENT HAOUSSA,oui,9,45,0,9,oui,63,315,0,63,oui,120,602,0,120,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_GRO_0001,GROUPEMENT KOTTI,oui,19,99,0,19,oui,195,980,0,195,oui,73,366,0,73,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_GRO_0002,GROUPEMENT MANDJA,oui,40,200,0,40,oui,165,850,0,165,oui,22,110,0,22,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_HER_0000,HEREMANDJI,oui,11,40,0,11,oui,45,225,0,45,oui,39,194,0,39,3,oui_majorite,oui_majorite,en_partie,eleve
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_KAI_0000,KAIDOMON,oui,12,60,0,12,oui,83,415,0,83,oui,1,5,0,1,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_KOD_0000,KODI 2,oui,5,28,0,5,oui,40,208,0,40,oui,20,108,0,20,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_KOU_0000,KOUNG-KOUNG,oui,8,40,0,8,oui,63,315,0,63,oui,24,120,0,24,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_KPE_0000,KPETENE,non,0,0,0,0,oui,16,65,0,16,oui,2,11,0,2,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_LAN_0000,LANDO,oui,5,27,0,5,oui,54,272,0,54,oui,8,40,0,8,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_LAO_0000,LAOU,non,0,0,0,0,oui,27,138,0,27,oui,4,15,0,4,3,oui_toutes,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_LAV_0000,LAVALE DELACHARITE,oui,6,37,0,6,oui,77,386,0,77,oui,53,260,0,53,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_LEH_0000,LEHELEMI,non,0,0,0,0,oui,18,90,0,18,oui,2,11,0,2,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_LIM_0000,LIMA,oui,3,20,0,3,oui,85,425,0,85,oui,6,30,0,6,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_MAI_0000,MAIRIE,oui,3,15,0,3,oui,11,58,0,11,oui,5,26,0,5,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_MBI_0001,MBIAKARE,oui,1,5,0,1,oui,25,130,0,25,oui,12,63,0,12,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_MBI_0002,MBIDANGA,oui,9,46,0,9,oui,84,422,0,84,oui,30,156,0,30,3,en_partie,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_MBI_0004,MBIKE 1,oui,2,10,0,2,oui,10,52,0,10,non,0,0,0,0,3,oui_majorite,oui_toutes,en_partie,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_MBI_0005,MBIKE 2,oui,2,15,0,2,oui,48,250,0,48,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_MBI_0006,MBILAYE,oui,8,48,0,8,oui,40,208,0,40,oui,16,88,0,16,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_MBI_0003,MBILOUKI,oui,6,32,0,6,oui,24,68,0,24,oui,11,61,0,11,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_MBI_0007,MBIMANE,oui,3,15,0,3,oui,36,180,0,36,oui,34,168,0,34,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_MBI_0008,MBIMANE 1,oui,2,15,0,2,oui,61,300,0,61,oui,15,76,0,15,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_NZA_0000,NZAPA A HON YORO,oui,3,17,0,3,oui,24,120,0,24,oui,3,15,0,3,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_PET_0000,PETROCA 1,non,0,0,0,0,oui,36,180,0,36,oui,21,117,0,21,3,oui_majorite,en_partie,oui_majorite,eleve
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_PET_0002,PETROCA 2,oui,3,17,0,3,oui,53,265,0,53,oui,18,91,0,18,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_SAR_0000,SARA,oui,8,40,0,8,oui,88,440,0,88,oui,16,80,0,16,3,en_partie,en_partie,en_partie,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_SOU_0000,SOUMA,oui,3,15,0,3,oui,44,220,0,44,oui,50,153,0,50,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_TAG_0000,TAGBERE,oui,3,15,0,3,oui,28,137,0,28,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_YEM_0002,YEME 2,oui,10,50,0,10,oui,25,130,0,25,oui,3,16,0,3,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_YEZ_0000,YEZO,oui,14,70,0,14,oui,20,108,0,20,oui,5,27,0,5,3,oui_majorite,oui_toutes,en_partie,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_ZER_0000,ZEREWELE,oui,1,6,0,1,oui,183,980,0,183,oui,5,27,0,5,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Bocaranga,Bocaranga,CF3121_ZOK_0000,ZOKWEZO,oui,8,37,0,8,oui,8,37,0,8,oui,1,5,0,1,3,oui_majorite,en_partie,en_partie,eleve
+Ouham Pendé,Bocaranga,Loura,CF3122_BOK_0001,BOKOMBISSI,oui,17,83,0,17,oui,141,705,0,141,oui,27,132,0,27,3,oui_toutes,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Bocaranga,Loura,CF3122_KOU_0001,KOUNMBAM 1,oui,41,205,0,41,oui,170,535,0,170,oui,23,117,0,23,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Loura,CF3122_KOU_0002,KOUNMBAM 2,oui,30,149,0,30,oui,309,1594,0,309,oui,11,55,0,11,3,oui_majorite,oui_majorite,oui_toutes,moyen
+Ouham Pendé,Bocaranga,Loura,CF3122_KOU_0003,KOUNPALA,oui,10,50,0,10,oui,166,830,0,166,oui,35,175,0,35,3,oui_majorite,oui_toutes,oui_majorite,eleve
+Ouham Pendé,Bocaranga,Loura,CF3122_MBI_0001,MBISSENGUE,oui,7,35,0,7,oui,67,335,0,67,oui,9,45,0,9,3,oui_majorite,oui_toutes,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Pendé,CF3123_GRO_0001,GROUPEMENT GALANGA,oui,24,120,0,24,oui,128,640,0,128,oui,24,123,0,24,3,oui_majorite,oui_majorite,oui_toutes,eleve
+Ouham Pendé,Bocaranga,Pendé,CF3123_HER_0001,HERBA,oui,41,205,0,41,oui,87,432,0,87,oui,72,358,0,72,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bocaranga,Pendé,CF3123_NGO_0001,NGOUTERE 1,oui,65,330,0,65,oui,244,1229,0,244,oui,32,164,0,32,3,oui_toutes,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Bocaranga,Pendé,CF3123_TOL_0001,TOLLE,oui,91,456,0,91,oui,60,302,0,60,oui,104,520,0,104,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bossemtélé,Binon,CF3161_BAL_0000,BALLA,oui,10,53,0,10,oui,38,257,0,38,oui,22,110,0,22,3,en_partie,oui_majorite,en_partie,moyen
+Ouham Pendé,Bossemtélé,Binon,CF3161_GAL_0000,GALILEE,oui,10,50,0,10,non,0,0,0,0,oui,3,16,0,3,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Bossemtélé,Binon,CF3161_LAT_0000,LATIN,non,0,0,0,0,non,0,0,0,0,oui,38,190,0,38,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Bossemtélé,Binon,CF3161_PLA_0000,PLATEAU,non,0,0,0,0,oui,79,397,0,79,oui,36,183,0,36,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Bozoum,Bozoum,CF3111_BOK_0000,BOKONE,non,0,0,0,0,oui,84,415,0,84,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,moyen
+Ouham Pendé,Bozoum,Bozoum,CF3111_BOR_0001,BORNOU,non,0,0,0,0,oui,76,380,0,76,oui,3,16,0,3,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bozoum,Bozoum,CF3111_COM_0000,COMBATTANT,non,0,0,0,0,oui,34,165,0,34,non,0,0,0,0,3,oui_majorite,oui_toutes,oui_majorite,moyen
+Ouham Pendé,Bozoum,Bozoum,CF3111_GAM_0000,GAMBO,oui,4,16,0,4,oui,20,103,0,20,oui,30,152,0,30,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bozoum,Bozoum,CF3111_GBA_0001,GBADORE,oui,2,10,0,2,oui,102,512,0,102,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bozoum,Bozoum,CF3111_GBA_0000,GBANDENGUE,non,0,0,0,0,oui,3,20,0,3,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bozoum,Bozoum,CF3111_GBA_0002,GBANENGUE 2,oui,6,29,0,6,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bozoum,Bozoum,CF3111_KAR_0000,KARE-BEE 2,oui,2,11,0,2,oui,5,23,0,5,oui,3,18,0,3,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Bozoum,Bozoum,CF3111_KOY_0000,KOYALE 3,oui,16,76,0,16,oui,65,325,0,65,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bozoum,Bozoum,CF3111_KPE_0000,KPETENE,oui,1,3,0,1,oui,57,280,0,57,oui,5,26,0,5,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Bozoum,Bozoum,CF3111_MAN_0000,MANGAZA 1,oui,4,25,0,4,oui,60,300,0,60,oui,6,29,0,6,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bozoum,Bozoum,CF3111_MAN_0002,MANGAZA 2,oui,3,15,0,3,non,0,0,0,0,oui,4,22,0,4,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Bozoum,Bozoum,CF3111_MID_0000,MID-MISSION,non,0,0,0,0,oui,116,585,0,116,non,0,0,0,0,3,oui_majorite,oui_toutes,pas_du_tout,moyen
+Ouham Pendé,Bozoum,Bozoum,CF3111_MIS_0000,MISSION EVANGELIQUE FRERE,non,0,0,0,0,oui,21,107,0,21,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Bozoum,Bozoum,CF3111_NOH_0000,NOH SALLE,oui,4,23,0,4,oui,13,72,0,13,oui,2,4,0,2,3,en_partie,en_partie,pas_du_tout,moyen
+Ouham Pendé,Bozoum,Bozoum,CF3111_OUH_0000,OUHAM 1,non,0,0,0,0,oui,32,158,0,32,oui,1,4,0,1,3,oui_majorite,oui_toutes,oui_majorite,eleve
+Ouham Pendé,Bozoum,Bozoum,CF3111_OUH_0002,OUHAM 2,non,0,0,0,0,oui,26,125,0,26,non,0,0,0,0,3,oui_majorite,oui_toutes,oui_majorite,moyen
+Ouham Pendé,Bozoum,Bozoum,CF3111_POU_0001,POUKONE 1,oui,1,3,0,1,oui,27,143,0,27,oui,7,11,0,7,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Bozoum,Bozoum,CF3111_POU_0002,POUKONE 2,oui,2,10,0,2,oui,57,283,0,57,oui,11,50,0,11,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bozoum,Bozoum,CF3111_POU_0000,POUKONE 3,oui,2,10,0,2,oui,19,95,0,19,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bozoum,Bozoum,CF3111_SOD_0000,SODECA,oui,1,5,0,1,oui,71,255,0,71,oui,21,105,0,21,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bozoum,Bozoum,CF3111_STO_0000,STOCK,oui,5,25,0,5,oui,20,109,0,20,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_toutes,eleve
+Ouham Pendé,Bozoum,Bozoum,CF3111_TAB_0001,TABALE,oui,2,9,0,2,oui,6,29,0,6,oui,1,4,0,1,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bozoum,Bozoum,CF3111_TRA_0000,TRAITANT,oui,24,120,0,24,oui,30,151,0,30,oui,9,47,0,9,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bozoum,Bozoum,CF3111_YAK_0000,YAKOUTOURE,oui,4,20,0,4,oui,4,20,0,4,oui,4,17,0,4,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Bozoum,Bozoum,CF3111_ZAZ_0000,ZAZA,oui,2,11,0,2,oui,28,125,0,28,oui,6,27,0,6,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Bozoum,Bozoum,CF3111_ZOM_0000,ZOMBERE,non,0,0,0,0,oui,7,25,0,7,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Koui,Koui,CF3131_BAK_0000,BAKOUSSA,non,0,0,0,0,oui,39,200,0,39,oui,8,37,0,8,3,oui_majorite,en_partie,oui_majorite,moyen
+Ouham Pendé,Koui,Koui,CF3131_BAT_0000,BATAYANGA,oui,10,53,0,10,oui,56,282,0,56,oui,23,118,0,23,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Koui,Koui,CF3131_BET_0000,BETANI,oui,6,32,0,6,oui,61,310,0,61,oui,26,131,0,26,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Koui,Koui,CF3131_BON_0001,BONGANOU 2,oui,15,78,0,15,oui,46,223,0,46,oui,27,138,0,27,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Koui,Koui,CF3131_BON_0000,BONGUENE,oui,8,42,0,8,oui,25,148,0,25,oui,18,93,0,18,3,oui_majorite,en_partie,oui_majorite,moyen
+Ouham Pendé,Koui,Koui,CF3131_BOS_0000,BOSSABINA,non,0,0,0,0,oui,50,250,0,50,oui,2,12,0,2,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Koui,Koui,CF3131_BOS_0001,BOSSAROU,oui,41,203,0,41,oui,29,145,0,29,oui,52,265,0,52,3,oui_toutes,oui_toutes,oui_majorite,tres_eleve
+Ouham Pendé,Koui,Koui,CF3131_BOU_0000,BOURKINA YEZO,oui,3,17,0,3,oui,33,177,0,33,oui,6,30,0,6,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Koui,Koui,CF3131_BOY_0000,BOYAY-KOUBILI,non,0,0,0,0,oui,54,274,0,54,oui,12,63,0,12,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Koui,Koui,CF3131_DEG_0000,DEGAULLE 2,non,0,0,0,0,oui,10,52,0,10,oui,10,58,0,10,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Koui,Koui,CF3131_DJO_0000,DJOGUEL,oui,20,103,0,20,oui,120,601,0,120,oui,150,757,0,150,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Koui,Koui,CF3131_FOU_0000,FOULBERE,oui,14,64,0,14,oui,50,253,0,50,oui,48,228,0,48,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouham Pendé,Koui,Koui,CF3131_GOU_0000,GOUMDI,oui,9,50,0,9,oui,20,100,0,20,oui,35,176,0,35,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Koui,Koui,CF3131_JOL_0000,JOLI-SOIR,oui,4,23,0,4,oui,65,333,0,65,oui,33,159,0,33,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Koui,Koui,CF3131_KAR_0001,KARE 1,oui,10,52,0,10,oui,30,138,0,30,oui,20,98,0,20,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Koui,Koui,CF3131_KAR_0002,KARE 2,non,0,0,0,0,oui,76,389,0,76,oui,35,174,0,35,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Koui,Koui,CF3131_KOM_0000,KOMBO HERA,non,0,0,0,0,non,0,0,0,0,oui,12,72,0,12,3,oui_majorite,oui_majorite,oui_toutes,moyen
+Ouham Pendé,Koui,Koui,CF3131_LAM_0000,LAMORDE,oui,20,100,0,20,oui,264,1324,0,264,oui,72,361,0,72,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouham Pendé,Koui,Koui,CF3131_MBI_0000,MBILAGBI,oui,6,40,0,6,oui,81,415,0,81,oui,13,70,0,13,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Koui,Koui,CF3131_MOI_0001,MOINAM,non,0,0,0,0,oui,9,48,0,9,oui,4,22,0,4,3,oui_majorite,en_partie,oui_majorite,eleve
+Ouham Pendé,Koui,Koui,CF3131_PAN_0001,PANA 1,non,0,0,0,0,oui,130,650,0,130,oui,24,120,0,24,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Koui,Koui,CF3131_PAN_0002,PANA 2,oui,13,65,0,13,oui,41,206,0,41,oui,10,58,0,10,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Koui,Koui,CF3131_PAR_0000,PARIS DAKAR,non,0,0,0,0,oui,27,120,0,27,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Koui,Koui,CF3131_POP_0001,POPULAIRE 1,oui,57,285,0,57,oui,97,486,0,97,oui,85,439,0,85,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Koui,Koui,CF3131_POP_0002,POPULAIRE 2,oui,19,90,0,19,oui,42,214,0,42,oui,49,249,0,,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Koui,Koui,CF3131_SEC_0000,SECDOUCK,oui,1,4,0,1,oui,81,404,0,81,oui,6,31,0,6,3,oui_majorite,en_partie,oui_majorite,eleve
+Ouham Pendé,Koui,Koui,CF3131_TOU_0001,TOUBANKO 2,non,0,0,0,0,oui,38,190,0,38,oui,6,36,0,6,3,oui_toutes,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Koui,Koui,CF3131_TRE_0000,TRESOR,non,0,0,0,0,oui,41,197,0,41,oui,12,64,0,12,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Koui,Koui,CF3131_WOW_0000,WOWOUROU,oui,17,80,0,17,oui,73,367,0,73,oui,69,345,0,69,3,oui_toutes,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Ngaoundaye,Dilouki,CF3151_BAT_0001,BATALIMON,oui,12,61,0,12,oui,36,175,0,36,oui,4,22,0,4,3,oui_majorite,en_partie,oui_majorite,moyen
+Ouham Pendé,Ngaoundaye,Dilouki,CF3151_BEN_0001,BENE,oui,9,38,0,9,oui,26,128,0,26,oui,3,16,0,3,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Ngaoundaye,Dilouki,CF3151_COM_0001,CAMP MISSION,oui,3,19,0,3,oui,10,50,0,10,oui,1,3,0,1,3,oui_majorite,oui_majorite,pas_du_tout,acceptable
+Ouham Pendé,Ngaoundaye,Dilouki,CF3151_CAR_0002,CARREFOUR 1,oui,2,8,0,2,oui,54,274,0,54,oui,8,43,0,8,3,oui_majorite,oui_toutes,en_partie,eleve
+Ouham Pendé,Ngaoundaye,Dilouki,CF3151_CAR_0003,CARREFOUR 2,non,0,0,0,0,oui,12,56,0,12,oui,2,11,0,2,3,oui_majorite,en_partie,en_partie,acceptable
+Ouham Pendé,Ngaoundaye,Dilouki,CF3151_DJA_0001,DJAM,oui,2,12,0,2,oui,18,85,0,18,oui,8,43,0,8,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Ngaoundaye,Dilouki,CF3151_HAO_0001,HAOUSSA,oui,6,31,0,6,oui,13,71,0,13,oui,12,63,0,12,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Ngaoundaye,Dilouki,CF3151_LAR_0001,LARA,oui,3,16,0,3,oui,77,380,0,77,oui,12,62,0,12,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Ngaoundaye,Dilouki,CF3151_MBI_0002,MBIBAYE,oui,1,3,0,1,oui,12,60,0,12,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Ngaoundaye,Dilouki,CF3151_MBI_0003,MBILARA,oui,3,14,0,3,oui,60,300,0,60,oui,2,12,0,2,3,oui_majorite,oui_majorite,pas_du_tout,moyen
+Ouham Pendé,Ngaoundaye,Dilouki,CF3151_MBI_0004,MBISSEM,oui,4,18,0,4,oui,25,120,0,25,oui,10,56,0,10,3,oui_majorite,oui_majorite,pas_du_tout,eleve
+Ouham Pendé,Ngaoundaye,Dilouki,CF3151_NDE_0001,NDIM-ECOLE,oui,8,40,0,8,oui,23,122,0,23,oui,9,48,0,9,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Ngaoundaye,Dilouki,CF3151_DJI_0002,NDIM-PANA,oui,79,395,0,79,oui,228,1145,0,228,oui,24,123,0,24,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Ngaoundaye,Dilouki,CF3151_NDJ_0003,NDIM-SOCOCA,oui,9,49,0,9,oui,20,112,0,20,oui,18,97,0,18,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Ngaoundaye,Dilouki,CF3151_NDJ_0002,NDIM-VATIKAN,oui,12,63,0,12,oui,41,208,0,41,oui,9,48,0,9,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Ngaoundaye,Dilouki,CF3151_DJI_0003,NDIM-VILLAGE,oui,12,60,0,12,oui,74,375,0,74,oui,23,120,0,23,3,oui_majorite,oui_majorite,en_partie,eleve
+Ouham Pendé,Ngaoundaye,Dilouki,CF3151_NZO_0001,NZOROKOUNA,oui,3,17,0,3,oui,24,126,0,24,oui,20,103,0,20,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Ngaoundaye,Kodi,CF3153_BAN_0001,BANG,oui,16,82,0,16,oui,272,1362,0,272,oui,709,3544,0,709,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Ngaoundaye,Kodi,CF3153_BOK_0001,BOKO,oui,146,732,0,146,oui,1165,5825,0,1165,oui,108,542,0,108,3,oui_majorite,oui_majorite,en_partie,eleve
+Ouham Pendé,Ngaoundaye,Kodi,CF3153_KOR_0001,KORE,non,0,0,0,0,oui,250,1250,0,250,oui,501,2508,0,501,3,oui_majorite,pas_du_tout,oui_majorite,bas
+Ouham Pendé,Ngaoundaye,Kodi,CF3153_MAN_0001,MANN,oui,99,500,0,99,oui,916,4581,0,916,oui,300,1502,0,300,3,oui_toutes,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Ngaoundaye,Kodi,CF3153_MBE_0001,MBEREWOCK,oui,36,182,0,36,oui,631,8156,0,631,oui,170,562,0,170,3,oui_majorite,en_partie,en_partie,eleve
+Ouham Pendé,Ngaoundaye,Kodi,CF3153_MBI_0001,MBINAYE,oui,12,68,0,12,non,0,0,0,0,oui,40,203,0,40,3,oui_toutes,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Ngaoundaye,Kodi,CF3153_NDA_0001,NDANGA,oui,50,250,0,50,oui,200,1005,0,200,oui,909,4549,0,909,3,oui_toutes,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Ngaoundaye,Lim,CF3152_BAO_0000,BAOUDA,non,0,0,0,0,oui,31,156,0,31,oui,14,72,0,14,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Ngaoundaye,Lim,CF3152_BEL_0000,BELLE-VIE,non,0,0,0,0,oui,19,103,0,19,oui,82,407,0,82,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Ngaoundaye,Lim,CF3152_BOA_0000,BOAMANDENE,oui,8,38,0,8,oui,13,67,0,13,oui,63,317,0,63,3,oui_majorite,en_partie,en_partie,acceptable
+Ouham Pendé,Ngaoundaye,Lim,CF3152_DJO_0001,DJOULDE,non,0,0,0,0,non,0,0,0,0,oui,72,192,0,72,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Ngaoundaye,Lim,CF3152_GOR_0000,GORE-MAKELE,non,0,0,0,0,oui,109,542,0,109,oui,71,343,0,71,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Ngaoundaye,Lim,CF3152_KOU_0000,KOUSSE,oui,4,21,0,4,oui,27,136,0,27,oui,51,283,0,51,3,oui_majorite,en_partie,oui_majorite,moyen
+Ouham Pendé,Ngaoundaye,Lim,CF3152_LAP_0000,LAPOUNZOUI,non,0,0,0,0,non,0,0,0,0,oui,82,408,0,82,3,en_partie,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Ngaoundaye,Lim,CF3152_LEB_0000,LEBGAO,non,0,0,0,0,oui,2,9,0,2,oui,97,486,0,97,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Ngaoundaye,Lim,CF3152_MBE_0001,MBERE PONT,oui,11,55,0,11,non,0,0,0,0,oui,86,418,0,86,3,oui_majorite,oui_majorite,en_partie,acceptable
+Ouham Pendé,Ngaoundaye,Lim,CF3152_MON_0002,MONT-PANA,non,0,0,0,0,oui,59,300,0,59,oui,33,172,0,33,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Ngaoundaye,Lim,CF3152_MON_0001,MONT-PANA 2,non,0,0,0,0,oui,50,251,0,50,oui,40,199,0,40,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Ngaoundaye,Lim,CF3152_NDI_0000,NDIA,non,0,0,0,0,oui,47,235,0,47,oui,18,86,0,18,3,oui_majorite,oui_toutes,oui_majorite,eleve
+Ouham Pendé,Ngaoundaye,Lim,CF3152_NGB_0000,NGBAMA,non,0,0,0,0,oui,79,398,0,79,oui,98,500,0,98,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Ngaoundaye,Lim,CF3152_PAN_0001,PANA 1,non,0,0,0,0,non,0,0,0,0,oui,88,492,0,88,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Ngaoundaye,Lim,CF3152_PAN_0003,PANA 2,non,0,0,0,0,oui,91,455,0,91,oui,119,611,0,119,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Ngaoundaye,Lim,CF3152_PAN_0002,PANALOKI,non,0,0,0,0,oui,97,490,0,97,oui,24,125,0,24,3,oui_majorite,en_partie,oui_majorite,moyen
+Ouham Pendé,Ngaoundaye,Lim,CF3152_POU_0001,POUNGBA,non,0,0,0,0,oui,42,200,0,42,oui,40,200,0,40,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Ngaoundaye,Lim,CF3152_POU_0000,POUNZEKE -GORE,non,0,0,0,0,oui,67,338,0,67,oui,31,157,0,31,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Ngaoundaye,Lim,CF3152_TOK_0000,TOKOL,oui,20,103,0,20,oui,30,155,0,30,oui,80,402,0,80,3,oui_majorite,oui_toutes,oui_majorite,moyen
+Ouham Pendé,Ngaoundaye,Yémé,CF3154_KAT_0001,KATE,oui,9,48,0,9,oui,310,3553,0,310,oui,51,255,0,51,3,oui_toutes,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Ngaoundaye,Yémé,CF3154_KOW_0001,KOWONE,oui,42,222,0,42,oui,603,3033,0,603,oui,27,124,0,27,3,oui_toutes,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Ngaoundaye,Yémé,CF3154_NDO_0001,NDOUBORI,oui,23,117,0,23,oui,364,1827,0,364,oui,20,103,0,20,3,oui_toutes,oui_toutes,oui_toutes,eleve
+Ouham Pendé,Ngaoundaye,Yémé,CF3154_NZA_0001,NZAKOUNDOU,oui,10,51,0,10,oui,490,2450,0,490,oui,15,60,0,15,3,oui_toutes,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Ngaoundaye,Yémé,CF3154_TOU_0001,TOULOULOU,oui,22,130,0,22,oui,250,1250,0,250,oui,24,140,0,24,3,oui_toutes,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3144_BEA_0000,BEATIBI,oui,1,4,0,1,oui,29,145,0,29,oui,1,5,0,1,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEB_0005,BEBAODA,non,0,0,0,0,oui,167,612,0,167,oui,3,15,0,3,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEB_0006,BEBENGUERE (1-2),non,0,0,0,0,oui,30,153,0,30,oui,80,401,0,80,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEB_0007,BEBIDJO,non,0,0,0,0,oui,9,49,0,9,oui,10,57,0,10,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEB_0004,BEBOUNDA,oui,1,1,0,1,oui,68,338,0,68,oui,6,32,0,6,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEB_0001,BEBOUZAWE 1,non,0,0,0,0,oui,120,600,0,120,oui,2,11,0,2,3,en_partie,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEB_0002,BEBOY 1,oui,1,5,0,1,oui,325,1655,0,325,oui,6,26,0,6,3,en_partie,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3145_BEB_0000,BEBOY 2,oui,1,1,0,1,oui,240,1200,0,240,oui,5,20,0,5,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEB_0008,BEBOY 3,non,0,0,0,0,oui,194,970,0,194,oui,5,9,0,5,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEB_0003,BEBOY-LE-BEUL,non,0,0,0,0,oui,18,90,0,18,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEB_0009,BEBY,non,0,0,0,0,oui,59,295,0,59,oui,2,3,0,2,3,oui_majorite,en_partie,oui_toutes,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BED_0003,BEDA,oui,1,5,0,1,oui,112,560,0,112,oui,2,7,0,2,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BED_0001,BEDAMARA 4,non,0,0,0,0,oui,35,175,0,35,oui,2,10,0,2,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BED_0005,BEDAYA 1 (DONGOR -MAIRE),oui,1,3,0,1,oui,108,575,0,108,oui,4,24,0,4,3,en_partie,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BED_0008,BEDAYA 1 (NDERE),non,0,0,0,0,oui,61,300,0,61,oui,4,19,0,4,3,oui_majorite,en_partie,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BED_0007,BEDAYA 1 (NDIMBAYA),non,0,0,0,0,oui,157,787,0,157,oui,7,27,0,7,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3145_WAD_0000,BEDAYA 1 (WADJE),non,0,0,0,0,oui,101,508,0,101,oui,4,23,0,4,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BED_0002,BEDAYA CAPITA,non,0,0,0,0,oui,11,56,0,11,oui,3,17,0,3,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BED_0006,BEDJANGALA 1,non,0,0,0,0,oui,19,98,0,19,oui,72,362,0,72,3,en_partie,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BED_0004,BEDY,non,0,0,0,0,oui,95,475,0,95,oui,4,24,0,4,3,oui_majorite,en_partie,en_partie,acceptable
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEG_0001,BEGOULADJE 3,non,0,0,0,0,oui,2,8,0,2,oui,42,210,0,42,3,pas_du_tout,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEG_0002,BEGUILA,non,0,0,0,0,oui,25,152,0,25,oui,1,5,0,1,3,en_partie,en_partie,en_partie,tres_bas
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEK_0001,BEKOBIAN (1-2),non,0,0,0,0,oui,18,91,0,18,oui,53,264,0,53,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEK_0000,BEKORO 3,non,0,0,0,0,oui,80,400,0,80,oui,5,20,0,5,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEK_0002,BEKORO 4,non,0,0,0,0,oui,50,250,0,50,non,0,0,0,0,3,en_partie,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEK_0003,BEKOUNA,non,0,0,0,0,oui,9,45,0,9,oui,69,345,0,69,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEM_0001,BEMAIDE CITY,non,0,0,0,0,oui,27,138,0,27,oui,2,6,0,2,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEM_0000,BEMAKORO,non,0,0,0,0,oui,74,370,0,74,oui,3,17,0,3,3,oui_majorite,en_partie,oui_majorite,acceptable
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEM_0003,BEMBOR 1,oui,1,3,0,1,oui,32,160,0,32,oui,1,2,0,1,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEM_0002,BEMBOR 2,non,0,0,0,0,oui,23,120,0,23,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEM_0004,BEMBOR 3,non,0,0,0,0,oui,107,500,0,107,oui,2,6,0,2,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEM_0005,BEMBOR 4,non,0,0,0,0,oui,129,647,0,129,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEM_0006,BEMOULI,non,0,0,0,0,oui,6,32,0,6,oui,28,142,0,28,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEN_0001,BENA,non,0,0,0,0,oui,80,403,0,80,oui,13,59,0,13,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEN_0006,BENAMKOR 1,non,0,0,0,0,oui,561,2803,0,561,oui,11,45,0,11,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEN_0005,BENANH 2,non,0,0,0,0,oui,36,179,0,36,oui,8,38,0,8,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEN_0007,BENDOU 1,non,0,0,0,0,oui,37,185,0,37,oui,1,6,0,1,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEN_0008,BENDOU 2,non,0,0,0,0,oui,30,150,0,30,oui,41,204,0,41,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEN_0009,BENDOUBA 1,non,0,0,0,0,oui,58,291,0,58,oui,1,3,0,1,3,en_partie,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEN_0003,BENGOMAR 1,non,0,0,0,0,oui,63,316,0,63,oui,2,12,0,2,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEN_0002,BENGONBIAM,non,0,0,0,0,oui,80,395,0,80,oui,3,14,0,3,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEN_0010,BENGOR,non,0,0,0,0,oui,11,56,0,11,oui,32,164,0,32,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEN_0011,BENGORMBO2,non,0,0,0,0,oui,70,354,0,70,oui,6,30,0,6,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3144_BEN_0002,BENODIL 1,non,0,0,0,0,oui,102,512,0,102,oui,4,20,0,4,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEN_0004,BENODIL 2,oui,1,10,0,1,oui,80,402,0,80,oui,2,6,0,2,3,oui_majorite,en_partie,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEN_0012,BENY,non,0,0,0,0,oui,30,150,0,30,oui,134,670,0,134,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BEP_0001,BEPAL,non,0,0,0,0,oui,44,224,0,44,oui,1,3,0,1,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BES_0000,BESSA 1,non,0,0,0,0,oui,103,514,0,103,oui,1,6,0,1,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3145_BES_0000,BESSALODOCK,non,0,0,0,0,oui,87,435,0,87,oui,3,12,0,3,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BET_0003,BETEBELE,non,0,0,0,0,oui,36,183,0,36,oui,1,3,0,1,3,oui_majorite,oui_majorite,en_partie,acceptable
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BET_0004,BETIBOINDA 3,non,0,0,0,0,oui,60,302,0,60,oui,1,3,0,1,3,oui_majorite,oui_majorite,en_partie,acceptable
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BET_0001,BETIN 1,oui,1,3,0,1,oui,203,1015,0,203,oui,15,69,0,15,3,oui_majorite,en_partie,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BET_0005,BETOKOMIA 2,non,0,0,0,0,oui,128,642,0,128,oui,3,8,0,3,3,oui_majorite,oui_majorite,oui_toutes,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_BET_0002,BETOKO-MIA 3,oui,1,6,0,1,oui,115,575,0,115,non,0,0,0,0,3,en_partie,en_partie,oui_majorite,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_DOL_0001,DOLAO,non,0,0,0,0,oui,3,16,0,3,oui,60,300,0,60,3,oui_majorite,oui_majorite,en_partie,eleve
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_MAK_0000,MAKANDJI,non,0,0,0,0,oui,122,610,0,122,oui,8,34,0,8,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_NZE_0001,NZEREKE,non,0,0,0,0,oui,64,380,0,64,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Bah-Bessar,CF3143_POU_0001,POULAOU 2,non,0,0,0,0,oui,134,672,0,134,oui,2,8,0,2,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Banh,CF3148_BAM_0001,BAMBARA 1,non,0,0,0,0,oui,21,105,0,21,non,0,0,0,0,3,oui_majorite,en_partie,oui_majorite,moyen
+Ouham Pendé,Paoua,Banh,CF3148_BAM_0002,BAMBARA 2,oui,3,16,0,3,oui,16,77,0,16,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,bas
+Ouham Pendé,Paoua,Banh,CF3148_BAM_0003,BAMBARA 3,non,0,0,0,0,oui,4,17,0,4,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,tres_bas
+Ouham Pendé,Paoua,Banh,CF3148_BAM_0004,BAMBARA 4,non,0,0,0,0,oui,21,103,0,21,non,0,0,0,0,3,oui_majorite,oui_majorite,pas_du_tout,moyen
+Ouham Pendé,Paoua,Banh,CF3148_BOZ_0000,BOZAMALE,non,0,0,0,0,oui,11,55,0,11,oui,3,12,0,3,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Banh,CF3148_DAN_0000,DANG BABA,oui,10,50,0,10,oui,15,75,0,15,non,0,0,0,0,3,en_partie,pas_du_tout,pas_du_tout,moyen
+Ouham Pendé,Paoua,Banh,CF3148_DOB_0000,DOBAI,oui,1,2,0,1,oui,10,48,0,10,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Banh,CF3148_GAR_0000,GAROU,non,0,0,0,0,non,0,0,0,0,oui,4,14,0,4,3,en_partie,en_partie,pas_du_tout,moyen
+Ouham Pendé,Paoua,Banh,CF3148_GOU_0002,GOUZE (BAITIA),oui,12,67,0,12,oui,42,174,0,42,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,tres_bas
+Ouham Pendé,Paoua,Banh,CF3148_GOU_0003,GOUZE (BION),non,0,0,0,0,oui,41,129,0,41,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Banh,CF3148_GOU_0004,GOUZE (BOLERE),non,0,0,0,0,oui,31,123,0,31,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouham Pendé,Paoua,Banh,CF3148_GOU_0007,GOUZE (KPERE KARI),non,0,0,0,0,oui,70,210,0,70,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouham Pendé,Paoua,Banh,CF3148_GOU_0005,GOUZE (KPETENE),oui,53,161,0,53,oui,70,210,0,70,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,bas
+Ouham Pendé,Paoua,Banh,CF3148_GOU_0006,GOUZE (POU NGBAOU),oui,41,165,0,41,oui,42,168,0,42,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,bas
+Ouham Pendé,Paoua,Banh,CF3148_KON_0000,KONE GUIRA,non,0,0,0,0,oui,16,80,0,16,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,eleve
+Ouham Pendé,Paoua,Banh,CF3148_KOU_0000,KOUNPO 1,non,0,0,0,0,oui,6,23,0,6,oui,8,33,0,8,3,en_partie,en_partie,en_partie,bas
+Ouham Pendé,Paoua,Banh,CF3148_MBA_0001,MBAI WAHOULE,oui,6,31,0,6,oui,18,85,0,18,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Banh,CF3148_MBA_0002,MBAINDIGUE,non,0,0,0,0,oui,3,22,0,3,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Banh,CF3148_MBI_0000,MBIVA (POUMBAINDI),oui,4,20,0,4,oui,17,85,0,17,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,bas
+Ouham Pendé,Paoua,Banh,CF3148_MOU_0002,MOUNANGUIA,oui,2,10,0,2,non,0,0,0,0,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,bas
+Ouham Pendé,Paoua,Banh,CF3148_PAY_0000,PAYSANNAT,oui,6,29,0,6,oui,20,97,0,20,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Banh,CF3148_POU_0001,POULAO CENTRE,oui,4,20,0,4,oui,4,20,0,4,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Banh,CF3148_POU_0002,POUWONRON,oui,9,45,0,9,oui,13,65,0,13,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Banh,CF3148_ZAR_0000,ZARA,oui,1,6,0,1,oui,11,55,0,11,non,0,0,0,0,3,oui_majorite,pas_du_tout,pas_du_tout,bas
+Ouham Pendé,Paoua,Banh,CF3148_ZIB_0000,ZIBAIA (POUMBAINDI),non,0,0,0,0,oui,17,86,0,17,non,0,0,0,0,3,en_partie,en_partie,en_partie,bas
+Ouham Pendé,Paoua,Banh,CF3148_ZIC_0000,ZICKO,non,0,0,0,0,oui,7,35,0,7,oui,3,15,0,3,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Banh,CF3148_ZOY_0001,ZOYAMBORI,non,0,0,0,0,oui,9,45,0,9,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bimbi,CF3147_BAV_0001,BAVARA-BOBANI,non,0,0,0,0,oui,30,95,0,30,non,0,0,0,0,3,oui_toutes,oui_majorite,oui_toutes,moyen
+Ouham Pendé,Paoua,Bimbi,CF3147_BOW_0001,BOWE,non,0,0,0,0,oui,40,77,0,40,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_majorite,tres_eleve
+Ouham Pendé,Paoua,Bimbi,CF3147_DOU_0001,DOULA-BONDIA 2,oui,30,74,0,30,oui,30,90,0,30,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Bimbi,CF3147_GAR_0001,GARBA-POUMBAINDI,non,0,0,0,0,oui,18,61,0,18,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,acceptable
+Ouham Pendé,Paoua,Bimbi,CF3147_GBO_0001,GBONG 3,non,0,0,0,0,oui,3,12,0,3,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bimbi,CF3147_GOZ_0001,GOZION,non,0,0,0,0,oui,6,43,0,6,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bimbi,CF3147_KOU_0001,KOUTOUMA,non,0,0,0,0,oui,14,72,0,14,non,0,0,0,0,3,oui_majorite,oui_toutes,oui_toutes,eleve
+Ouham Pendé,Paoua,Bimbi,CF3147_POU_0001,POUNDING,non,0,0,0,0,oui,7,36,0,7,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Bimbi,CF3147_WOX_0001,WOXO,non,0,0,0,0,oui,5,15,0,5,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Malé,CF3146_BAY_0000,BAY,oui,7,33,0,7,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Malé,CF3146_BIL_0001,BILAKARE,non,0,0,0,0,non,0,0,0,0,oui,2,6,0,2,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Malé,CF3146_BIL_0002,BILAKARE 2,oui,22,121,0,22,oui,5,38,0,5,non,0,0,0,0,3,en_partie,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Malé,CF3146_BIL_0003,BILAKARE 3,oui,15,75,0,15,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,acceptable
+Ouham Pendé,Paoua,Malé,CF3146_BOH_0004,BOH 1,oui,36,180,0,36,oui,2,8,0,2,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Malé,CF3146_BOH_0006,BOH 2,non,0,0,0,0,oui,13,69,0,13,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Malé,CF3146_BOH_0005,BOH NZARA,oui,1,5,0,1,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Malé,CF3146_DIM_0000,DIMBANA,non,0,0,0,0,oui,12,75,0,12,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Malé,CF3146_GAM_0000,GAMVA,oui,5,30,0,5,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Malé,CF3146_KAH_0001,KAHON 1,non,0,0,0,0,oui,7,36,0,7,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Malé,CF3146_KAH_0002,KAHON 2,oui,6,32,0,6,oui,6,30,0,6,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Malé,CF3146_KAN_0000,KANDA,non,0,0,0,0,oui,4,15,0,4,non,0,0,0,0,3,en_partie,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Malé,CF3146_KOK_0000,KOKOL,oui,4,20,0,4,non,0,0,0,0,non,0,0,0,0,3,en_partie,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Malé,CF3146_KON_0001,KONE KAHON,non,0,0,0,0,oui,10,50,0,10,non,0,0,0,0,3,en_partie,en_partie,oui_majorite,moyen
+Ouham Pendé,Paoua,Malé,CF3146_KON_0003,KONE NGALA,oui,6,32,0,6,non,0,0,0,0,non,0,0,0,0,3,en_partie,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Malé,CF3146_KON_0002,KONE -SAME,oui,4,19,0,4,non,0,0,0,0,non,0,0,0,0,3,en_partie,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Malé,CF3146_LE _0000,LE POUROU,non,0,0,0,0,oui,15,80,0,15,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Malé,CF3146_NGA_0001,NGAMBALA,non,0,0,0,0,oui,15,79,0,15,non,0,0,0,0,3,en_partie,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Malé,CF3146_POU_0005,POUKONE,oui,3,21,0,3,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Malé,CF3146_POU_0000,POUYAYIRA,non,0,0,0,0,oui,1,5,0,1,non,0,0,0,0,3,en_partie,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Malé,CF3146_RAW_0000,RAWA,non,0,0,0,0,oui,10,57,0,10,non,0,0,0,0,3,en_partie,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Malé,CF3146_RAY_0000,RAYA,oui,17,82,0,17,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Malé,CF3146_TEL_0000,TELLE,non,0,0,0,0,oui,18,93,0,18,oui,16,40,0,16,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Malé,CF3146_TOU_0000,TOUMI,oui,7,36,0,7,oui,8,40,0,8,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Malé,CF3146_YOR_0000,YORO,non,0,0,0,0,oui,7,38,0,7,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,acceptable
+Ouham Pendé,Paoua,Malé,CF3146_ZOU_0001,ZOUTALE,oui,11,51,0,11,oui,2,10,0,2,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Malé,CF3146_ZOU_0002,ZOUTALE 2,non,0,0,0,0,oui,8,44,0,8,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEA_0001,BEATIBI,non,0,0,0,0,oui,25,125,0,25,oui,15,75,0,15,3,oui_majorite,oui_toutes,oui_majorite,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEB_0015,BEBEKEREU,non,0,0,0,0,oui,4,20,0,4,oui,36,180,0,36,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEB_0001,BEBELEM (1-2),non,0,0,0,0,oui,183,1362,0,183,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEB_0012,BEBINGUI,non,0,0,0,0,oui,3,16,0,3,oui,202,1010,0,202,3,oui_majorite,oui_majorite,en_partie,eleve
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEB_0002,BEBOLO,non,0,0,0,0,oui,100,497,0,100,oui,3,15,0,3,3,en_partie,en_partie,pas_du_tout,acceptable
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEB_0003,BEBOUZAWE 2,non,0,0,0,0,oui,51,250,0,51,oui,7,33,0,7,3,en_partie,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEB_0004,BEBOY 4,non,0,0,0,0,oui,145,720,0,145,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEB_0013,BEDAKA,non,0,0,0,0,oui,16,80,0,16,oui,154,770,0,154,3,oui_toutes,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEB_0014,BEDAM,non,0,0,0,0,oui,272,1360,0,272,oui,101,505,0,101,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEB_0005,BEDAYA 2,non,0,0,0,0,non,0,0,0,0,oui,218,1090,0,218,3,oui_majorite,en_partie,oui_majorite,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEB_0006,BEDINGUILI,non,0,0,0,0,oui,54,270,0,54,oui,110,550,0,110,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BED_0001,BEDJANGALA 2,non,0,0,0,0,oui,78,392,0,78,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEB_0007,BEDOBAKE,non,0,0,0,0,oui,220,1100,0,220,oui,20,102,0,20,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEB_0008,BEDOKOU 1,non,0,0,0,0,oui,14,70,0,14,oui,52,260,0,52,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEB_0009,BEDOKOU 2,non,0,0,0,0,oui,5,25,0,5,oui,235,1175,0,235,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BED_0002,BEDORO,non,0,0,0,0,oui,170,850,0,170,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BED_0003,BEDOUA 1,non,0,0,0,0,oui,366,1880,0,366,oui,5,24,0,5,3,en_partie,en_partie,pas_du_tout,acceptable
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEB_0010,BEDOUA 2,non,0,0,0,0,oui,40,200,0,40,oui,61,305,0,61,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEB_0011,BEDOUA 3,non,0,0,0,0,oui,45,225,0,45,oui,40,200,0,40,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEG_0001,BEGOULADJE (1-2),non,0,0,0,0,oui,100,500,0,100,oui,216,1080,0,216,3,oui_majorite,oui_majorite,oui_majorite,acceptable
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEG_0002,BEGUILI,non,0,0,0,0,oui,10,52,0,10,oui,160,800,0,160,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEH_0001,BEHOU,non,0,0,0,0,oui,10,50,0,10,oui,55,275,0,55,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEK_0011,BEKADON 1,non,0,0,0,0,oui,65,325,0,65,oui,120,600,0,120,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEK_0012,BEKADON 2,non,0,0,0,0,oui,60,300,0,60,oui,61,305,0,61,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEK_0013,BEKAI,non,0,0,0,0,oui,126,630,0,126,oui,240,1200,0,,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEK_0004,BEKIA,non,0,0,0,0,oui,40,200,0,40,oui,50,250,0,50,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEK_0001,BEKIRA,non,0,0,0,0,oui,10,50,0,10,oui,2,9,0,2,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEK_0002,BEKORO-MISSION,non,0,0,0,0,oui,88,442,0,88,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEK_0003,BEKORO-VILLAGE,non,0,0,0,0,oui,220,1100,0,220,oui,2,11,0,2,3,en_partie,en_partie,pas_du_tout,acceptable
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEM_0010,BEMACKSARA,non,0,0,0,0,oui,60,300,0,60,oui,102,514,0,102,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEM_0002,BEMAIDE,non,0,0,0,0,oui,285,1425,0,285,oui,20,100,0,20,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEM_0005,BEMAIDE 2,non,0,0,0,0,non,0,0,0,0,oui,42,210,0,42,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEM_0003,BEMAL (BEMAI-NGONE),non,0,0,0,0,oui,83,416,0,83,oui,8,40,0,8,3,en_partie,en_partie,pas_du_tout,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BOD_0001,BEMAL (BODIA 1),non,0,0,0,0,oui,110,550,0,110,oui,11,50,0,11,3,en_partie,en_partie,pas_du_tout,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_CEN_0001,BEMAL (CENTRE COMMERCIAL),non,0,0,0,0,oui,67,335,0,67,oui,20,104,0,20,3,oui_majorite,en_partie,pas_du_tout,acceptable
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_DAN_0001,BEMAL (DAN-BE),non,0,0,0,0,oui,70,350,0,70,non,0,0,0,0,3,oui_majorite,en_partie,pas_du_tout,acceptable
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_DIS_0001,BEMAL (DISSI-BE),non,0,0,0,0,oui,200,1000,0,200,oui,20,102,0,20,3,en_partie,en_partie,pas_du_tout,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_DOB_0001,BEMAL (DOBARA),non,0,0,0,0,oui,105,527,0,105,oui,40,200,0,40,3,oui_majorite,en_partie,pas_du_tout,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEM_0001,BEMBAINDI,non,0,0,0,0,oui,153,765,0,153,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEM_0006,BEMBERE,non,0,0,0,0,oui,53,265,0,53,oui,55,275,0,55,3,oui_majorite,oui_majorite,en_partie,eleve
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEM_0004,BEMBO,non,0,0,0,0,oui,46,265,0,46,oui,200,1003,0,200,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEN_0001,BENANH 3,non,0,0,0,0,oui,37,185,0,37,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEN_0006,BENDIMOUNDOU,non,0,0,0,0,oui,20,100,0,20,oui,20,100,0,20,3,oui_majorite,en_partie,oui_majorite,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEN_0007,BENDOUBA,non,0,0,0,0,oui,90,450,0,90,oui,15,75,0,15,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEN_0003,BENERME,non,0,0,0,0,oui,102,510,0,102,oui,28,140,0,28,3,en_partie,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEN_0004,BENGATOKO,non,0,0,0,0,non,0,0,0,0,oui,80,400,0,80,3,oui_majorite,oui_majorite,en_partie,eleve
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEN_0005,BENINE,non,0,0,0,0,non,0,0,0,0,oui,106,530,0,106,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEO_0001,BEOGOMBO 3,non,0,0,0,0,oui,116,577,0,116,non,0,0,0,0,3,en_partie,en_partie,pas_du_tout,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEO_0000,BEOKOUMBO 5,non,0,0,0,0,oui,191,968,0,191,oui,5,30,0,5,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BEP_0001,BEPIKASSE,non,0,0,0,0,oui,88,440,0,88,oui,151,755,0,151,3,oui_majorite,en_partie,oui_majorite,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BET_0003,BETOKO (BENINGA),oui,5,25,0,5,oui,82,413,0,82,oui,3,14,0,3,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BET_0004,BETOKO (IBIRO),non,0,0,0,0,oui,60,320,0,60,oui,20,105,0,20,3,oui_majorite,oui_majorite,en_partie,eleve
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BET_0005,BETOKO (MBONBE),oui,5,25,0,5,oui,64,322,0,64,oui,5,24,0,5,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BET_0006,BETOKO (NDILNE),oui,4,20,0,4,oui,54,272,0,54,oui,14,70,0,14,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BET_0007,BETOKO (NDOMADJI),non,0,0,0,0,oui,71,355,0,71,oui,68,340,0,68,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BET_0001,BETOKO 2,non,0,0,0,0,oui,25,125,0,25,oui,80,400,0,80,3,oui_toutes,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_BON_0001,BONDIA 2,non,0,0,0,0,oui,39,194,0,39,non,0,0,0,0,3,en_partie,en_partie,en_partie,acceptable
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_DJI_0001,DJITO,non,0,0,0,0,oui,10,50,0,10,oui,90,450,0,90,3,oui_majorite,en_partie,oui_majorite,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_KPE_0001,KPETENE,non,0,0,0,0,oui,15,75,0,15,oui,8,40,0,8,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Mia-Pendé,CF3144_YEN_0001,YENE,non,0,0,0,0,oui,9,45,0,9,oui,80,400,0,80,3,oui_majorite,oui_majorite,oui_toutes,eleve
+Ouham Pendé,Paoua,Mom,CF3142_BIL_0000,BIL- MBOKO,oui,1,6,0,1,non,0,0,0,0,non,0,0,0,0,3,en_partie,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Mom,CF3142_BOK_0000,BOKO-GUIWILI,oui,5,18,0,5,oui,3,9,0,3,non,0,0,0,0,3,en_partie,en_partie,oui_majorite,moyen
+Ouham Pendé,Paoua,Mom,CF3142_DAN_0000,DAN- TA,non,0,0,0,0,oui,2,6,0,2,non,0,0,0,0,3,en_partie,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Mom,CF3142_GAN_0001,GANGAN,oui,1,5,0,1,non,0,0,0,0,non,0,0,0,0,3,en_partie,en_partie,oui_majorite,acceptable
+Ouham Pendé,Paoua,Mom,CF3142_GAN_0002,GANGAN GANI,non,0,0,0,0,oui,3,11,0,3,non,0,0,0,0,3,en_partie,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Mom,CF3142_GAN_0004,GANI CENTRE,oui,8,40,0,8,oui,3,11,0,3,non,0,0,0,0,3,en_partie,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Mom,CF3142_NZA_0000,NZAKASSO 2,oui,10,29,0,10,non,0,0,0,0,oui,2,3,0,2,3,en_partie,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Mom,CF3142_POU_0000,POUKONE,oui,3,10,0,3,oui,3,14,0,3,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Mom,CF3142_TAL_0001,TALEY,oui,6,30,0,6,non,0,0,0,0,non,0,0,0,0,3,en_partie,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Mom,CF3142_TAL_0002,TALEY CENTRE,non,0,0,0,0,oui,2,11,0,2,non,0,0,0,0,3,en_partie,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Mom,CF3142_WAK_0000,WAKA 2,oui,6,16,0,6,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_ARA_0000,BARYA (ARABE),oui,6,33,0,6,oui,150,752,0,150,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BON_0001,BARYA (BONGARO 1),non,0,0,0,0,oui,134,688,0,134,oui,2,12,0,2,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BAR_0004,BARYA (BONGARO 2),non,0,0,0,0,oui,76,375,0,76,oui,2,11,0,2,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BOS_0000,BARYA (BOSSALI),non,0,0,0,0,oui,40,200,0,40,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BAR_0005,BARYA (GANG NDA),non,0,0,0,0,oui,45,225,0,45,non,0,0,0,0,3,en_partie,en_partie,oui_majorite,eleve
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BAR_0007,BARYA (TANGUILA),non,0,0,0,0,oui,56,278,0,56,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BEB_0002,BEBOURA 2,non,0,0,0,0,oui,285,1425,0,285,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BEB_0001,BEBOURA 3,oui,6,36,0,6,oui,225,1125,0,225,oui,2,10,0,2,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BED_0002,BEDAMARA (1-2-5),non,0,0,0,0,oui,474,2348,0,474,oui,4,20,0,4,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BED_0001,BEDARMAR 3,non,0,0,0,0,oui,49,244,0,49,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BED_0004,BEDINGUI 2,non,0,0,0,0,oui,60,316,0,60,oui,2,12,0,2,3,en_partie,en_partie,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BED_0005,BEDORO 3,non,0,0,0,0,oui,70,350,0,70,oui,2,11,0,2,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BED_0003,BEDOUA 4,non,0,0,0,0,oui,43,280,0,43,oui,4,15,0,4,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BEG_0001,BEGAKA 1,non,0,0,0,0,oui,48,239,0,48,oui,1,3,0,1,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BEG_0002,BEGANGORO(1-2-LAMDJE),non,0,0,0,0,oui,337,1988,0,337,oui,2,10,0,2,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BEG_0000,BEGATARA,non,0,0,0,0,oui,225,1127,0,225,oui,1,7,0,1,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BEK_0001,BEKILA (1-3),non,0,0,0,0,oui,254,856,0,254,oui,15,70,0,15,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3144_BEK_0000,BEKILA 2,oui,2,12,0,2,oui,56,280,0,56,oui,3,16,0,3,3,oui_toutes,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BEK_0000,BEKILA 4,oui,1,5,0,1,oui,79,395,0,79,oui,2,11,0,2,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BEM_0001,BEMAMKOULA,non,0,0,0,0,oui,78,378,0,78,oui,2,11,0,2,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BEN_0003,BENAMKOUNA,non,0,0,0,0,oui,330,1650,0,330,non,0,0,0,0,3,en_partie,en_partie,oui_majorite,eleve
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BEN_0005,BENAMKOUNA 2,non,0,0,0,0,oui,40,147,0,40,oui,3,17,0,3,3,oui_toutes,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BEN_0001,BENDINGUI 1,non,0,0,0,0,oui,32,165,0,32,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BEN_0006,BENDOULABO,non,0,0,0,0,oui,45,215,0,45,oui,12,60,0,12,3,oui_majorite,oui_majorite,pas_du_tout,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BEN_0004,BENGOMAR 2,non,0,0,0,0,oui,36,181,0,36,oui,2,12,0,2,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BEO_0001,BEOGOMBO (1-2-4),non,0,0,0,0,oui,611,2957,0,611,oui,29,145,0,29,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BES_0001,BESSA 3,non,0,0,0,0,oui,61,325,0,61,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BET_0003,BETEIN 2,non,0,0,0,0,oui,124,624,0,124,oui,37,185,0,37,3,oui_majorite,oui_toutes,oui_majorite,eleve
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BET_0001,BETEON 1,non,0,0,0,0,oui,164,827,0,164,oui,1,4,0,1,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BET_0004,BETOUBAKARE,non,0,0,0,0,oui,130,650,0,130,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3144_BOA_0000,BOAYA,oui,1,6,0,1,oui,220,1100,0,220,oui,2,10,0,2,3,oui_majorite,en_partie,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BOD_0000,BODOLI,non,0,0,0,0,oui,200,1000,0,200,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BON_0002,BONGARO 3,oui,2,10,0,2,oui,125,621,0,125,oui,2,10,0,2,3,en_partie,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_BOT_0000,BOTOLNA,non,0,0,0,0,oui,132,658,0,132,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_DOD_0000,DODOWA,oui,1,6,0,1,oui,159,795,0,159,non,0,0,0,0,3,oui_toutes,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Paoua,Nana-Barya,CF3145_KEB_0000,KEBE,oui,1,7,0,1,oui,485,2442,0,485,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_KOR_0000,KOROZIAN,non,0,0,0,0,oui,192,960,0,192,oui,5,27,0,,3,oui_toutes,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Paoua,Nana-Barya,CF3145_MBA_0006,MBARA (BEBOURA 1),non,0,0,0,0,oui,40,180,0,40,oui,4,15,0,4,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_MBO_0000,MBOTMBOKO,oui,4,17,0,4,oui,224,1122,0,224,oui,3,15,0,3,3,oui_majorite,en_partie,oui_toutes,eleve
+Ouham Pendé,Paoua,Nana-Barya,CF3145_NDE_0000,NDENGUE (BEBOURA 1),non,0,0,0,0,oui,81,405,0,81,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_OUR_0000,OURDOLLE,non,0,0,0,0,oui,82,409,0,82,non,0,0,0,0,3,en_partie,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Nana-Barya,CF3145_TAW_0000,TAWAN (BEBOURA 1),non,0,0,0,0,oui,35,175,0,35,oui,1,5,0,1,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_ACA_0000,ACADOP,oui,4,20,0,4,oui,22,106,0,22,oui,5,25,0,5,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_AER_0000,AERODROME,oui,3,15,0,3,oui,32,160,0,32,non,0,0,0,0,3,en_partie,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_ARA_0001,ARABE 1,oui,7,30,0,7,non,0,0,0,0,non,0,0,0,0,3,oui_toutes,oui_toutes,oui_majorite,eleve
+Ouham Pendé,Paoua,Paoua,CF3141_ARA_0002,ARABE 2,oui,15,75,0,15,oui,7,26,0,7,oui,5,18,0,5,3,oui_majorite,en_partie,oui_majorite,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_ARA_0000,ARABE 3,oui,30,150,0,30,oui,3,15,0,3,oui,7,35,0,7,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Paoua,Paoua,CF3141_AVE_0000,AVENUE,oui,1,5,0,1,oui,23,115,0,23,non,0,0,0,0,3,en_partie,oui_majorite,oui_toutes,eleve
+Ouham Pendé,Paoua,Paoua,CF3141_BAT_0000,BATAYANGA,oui,13,55,0,13,oui,27,135,0,27,oui,7,30,0,7,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_BEB_0000,BEBALIYO,oui,1,3,0,1,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_BED_0004,BEDERE CENTRE (PAOUA ),non,0,0,0,0,oui,200,1005,0,200,oui,3,16,0,3,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_BED_0005,BEDERE ELEVAGE,oui,1,2,0,1,oui,111,551,0,111,oui,1,6,0,1,3,oui_majorite,oui_majorite,pas_du_tout,acceptable
+Ouham Pendé,Paoua,Paoua,CF3141_BES_0000,BESSY,oui,20,65,0,20,oui,6,25,0,6,oui,6,30,0,6,3,en_partie,en_partie,oui_majorite,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_BET_0004,BETANI,non,0,0,0,0,oui,20,100,0,20,non,0,0,0,0,3,oui_majorite,oui_majorite,pas_du_tout,moyen
+Ouham Pendé,Paoua,Paoua,CF3145_BET_0002,BETEON 2,non,0,0,0,0,oui,14,72,0,14,non,0,0,0,0,3,en_partie,en_partie,oui_majorite,moyen
+Ouham Pendé,Paoua,Paoua,CF3145_BEO_0000,BETIBOINDA 1,non,0,0,0,0,oui,86,430,0,86,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Paoua,CF3145_BET_0005,BETIBOINDA 2,non,0,0,0,0,oui,157,784,0,157,oui,2,8,0,2,3,oui_majorite,oui_majorite,en_partie,eleve
+Ouham Pendé,Paoua,Paoua,CF3141_BET_0000,BETOKO MIA 1,oui,5,24,0,5,non,0,0,0,0,oui,10,50,0,10,3,en_partie,oui_majorite,en_partie,eleve
+Ouham Pendé,Paoua,Paoua,CF3141_BEY_0000,BEYOKARA,oui,1,5,0,1,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_BIM_0000,BIMBI,oui,5,25,0,5,oui,24,120,0,24,oui,3,15,0,3,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Paoua,Paoua,CF3141_BOR_0000,BORNOU,oui,4,20,0,4,oui,9,47,0,9,oui,9,42,0,9,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_CEN_0001,CENTRE COMMERCIAL,oui,4,20,0,4,non,0,0,0,0,non,0,0,0,0,3,oui_toutes,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_CEN_0002,CENTRE VILLE,oui,35,175,0,35,oui,20,99,0,20,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_toutes,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_COM_0004,COMBATTANT 1,oui,3,14,0,3,non,0,0,0,0,non,0,0,0,0,3,en_partie,oui_majorite,pas_du_tout,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_COM_0000,COMBATTANT 2,oui,2,9,0,2,oui,11,37,0,11,non,0,0,0,0,3,en_partie,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_COM_0003,COMBATTANT 3,oui,4,11,0,4,oui,12,57,0,12,oui,40,198,0,40,3,en_partie,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_DEU_0000,DEUX CENT VILLA,oui,104,495,0,104,non,0,0,0,0,oui,4,12,0,4,3,oui_majorite,en_partie,oui_majorite,eleve
+Ouham Pendé,Paoua,Paoua,CF3141_FOR_0000,FORGERON,oui,8,40,0,8,oui,12,60,0,12,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_toutes,eleve
+Ouham Pendé,Paoua,Paoua,CF3141_FOU_0000,FOULBE,oui,7,35,0,7,oui,15,70,0,15,oui,40,159,0,40,3,en_partie,en_partie,oui_majorite,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_GAD_0001,GADOULOU,oui,1,4,0,1,oui,314,1570,0,314,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_HAN_0000,HANG-FOUNG,oui,3,20,0,3,oui,13,65,0,13,oui,7,35,0,7,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Paoua,Paoua,CF3141_HAO_0000,HAOUSSA,oui,25,100,0,25,oui,20,35,0,20,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_IRO_0000,IRO,oui,3,13,0,3,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_KOK_0000,KOKORA,oui,5,25,0,5,non,0,0,0,0,non,0,0,0,0,3,oui_toutes,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_KOR_0000,KOROBAILE,oui,20,73,0,20,oui,62,310,0,62,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Paoua,Paoua,CF3141_KOU_0001,KOUNDAI-GOURA,oui,31,157,0,31,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_toutes,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_KOU_0002,KOUNTALI,oui,1,5,0,1,oui,7,32,0,7,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_LYC_0000,LYCEE,oui,32,168,0,32,oui,20,92,0,20,oui,4,22,0,4,3,oui_toutes,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Paoua,Paoua,CF3141_MAN_0001,MANDJA 1,oui,4,20,0,4,non,0,0,0,0,non,0,0,0,0,3,en_partie,en_partie,en_partie,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_MAN_0002,MANDJA 2,oui,5,25,0,5,non,0,0,0,0,oui,10,50,0,10,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_NOV_0000,NOVICIA,oui,9,48,0,9,oui,15,60,0,15,oui,3,15,0,3,3,en_partie,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_NYA_0001,NYAN,non,0,0,0,0,oui,52,258,0,52,non,0,0,0,0,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_NZA_0000,NZANGARA,oui,1,2,0,1,oui,12,60,0,12,oui,4,20,0,4,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_NZO_0001,NZORE,non,0,0,0,0,oui,79,390,0,79,non,0,0,0,0,3,oui_majorite,oui_majorite,pas_du_tout,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_PAO_0000,PAOUA ELIEN,oui,6,33,0,6,oui,36,180,0,36,oui,7,35,0,7,3,oui_majorite,oui_toutes,oui_majorite,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_PLA_0000,PLATON,oui,9,35,0,9,oui,4,20,0,4,oui,6,25,0,6,3,oui_majorite,oui_majorite,oui_toutes,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_POU_0003,POULAOU 3,oui,20,100,0,20,oui,2,6,0,2,oui,1,2,0,1,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Paoua,Paoua,CF3141_POU_0004,POULELE,oui,1,3,0,1,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,pas_du_tout,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_POU_0002,POUMBARI (PAOUA ),non,0,0,0,0,oui,134,666,0,134,oui,3,17,0,3,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_POU_0005,POUZAMA,oui,2,14,0,2,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,oui_majorite,pas_du_tout,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_SAN_0001,SANTE,oui,2,10,0,2,oui,325,1735,0,325,non,0,0,0,0,3,oui_majorite,oui_majorite,oui_majorite,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_SAR_0000,SARAMANDJA 2,oui,4,20,0,4,non,0,0,0,0,oui,10,50,0,10,3,oui_majorite,oui_majorite,en_partie,moyen
+Ouham Pendé,Paoua,Paoua,CF3141_SIM_0000,SIMBAL,oui,35,175,0,35,non,0,0,0,0,oui,16,80,0,16,3,oui_majorite,oui_majorite,oui_majorite,eleve
+Ouham Pendé,Paoua,Paoua,CF3141_SOU_0000,SOUMA,oui,10,48,0,10,non,0,0,0,0,non,0,0,0,0,3,oui_majorite,en_partie,en_partie,acceptable
+Ouham Pendé,Paoua,Paoua,CF3141_TRA_0000,TRAITANT,oui,3,15,0,3,oui,2,6,0,2,oui,1,4,0,1,3,oui_toutes,oui_majorite,oui_toutes,eleve
