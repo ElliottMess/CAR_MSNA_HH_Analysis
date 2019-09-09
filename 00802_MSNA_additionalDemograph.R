@@ -55,21 +55,21 @@ educ_ques <- c("sum_educ_3_presence_18_19.filles_13_18.0m",
 freq_ecole <- response_updated_cluster %>%
   summarise(
     freq_educ_2_inscrit_18_19.filles_7_12 = sum(sum_educ_2_inscrit_18_19.filles_7_12*weights_sampling, na.rm = T) / sum(sum_agegrp_7_12_filles * weights_sampling, na.rm = T),
-    freq_educ_2_inscrit_18_19.filles_13_18 = sum(sum_educ_2_inscrit_18_19.filles_13_18*weights_sampling, na.rm = T) / sum(sum_educ_2_inscrit_18_19.garcons_13_18 * weights_sampling, na.rm = T),
+    freq_educ_2_inscrit_18_19.filles_13_18 = sum(sum_educ_2_inscrit_18_19.filles_13_18*weights_sampling, na.rm = T) / sum(sum_agegrp_13_18_filles * weights_sampling, na.rm = T),
     freq_educ_2_inscrit_18_19.garcons_7_12 = sum(sum_educ_2_inscrit_18_19.garcons_7_12*weights_sampling, na.rm = T) / sum(sum_agegrp_7_12_garcons*weights_sampling, na.rm = T),
     freq_educ_2_inscrit_18_19.garcons_13_18 = sum(sum_educ_2_inscrit_18_19.garcons_13_18*weights_sampling, na.rm=T) / sum(sum_agegrp_13_18_garcons*weights_sampling, na.rm=T),
     
-    freq_educ_3_presence_18_19.filles_13_18.0m = sum(sum_educ_3_presence_18_19.filles_13_18.0m*weights_sampling,na.rm=T) / sum(sum_educ_2_inscrit_18_19.garcons_13_18* weights_sampling, na.rm = T),
-    freq_educ_3_presence_18_19.filles_13_18.0m_3m = sum(sum_educ_3_presence_18_19.filles_13_18.0m_3m*weights_sampling, na.rm = T) / sum(sum_educ_2_inscrit_18_19.garcons_13_18*weights_sampling, na.rm = T),
-    freq_educ_3_presence_18_19.filles_13_18.12m = sum(sum_educ_3_presence_18_19.filles_13_18.3m_6m*weights_sampling, na.rm=T) / sum(sum_educ_2_inscrit_18_19.garcons_13_18* weights_sampling, na.rm=T),
-    freq_educ_3_presence_18_19.filles_13_18.3m_6m = sum(sum_educ_3_presence_18_19.filles_13_18.6m_12m*weights_sampling, na.rm = T) / sum(sum_educ_2_inscrit_18_19.garcons_13_18*weights_sampling, na.rm = T),
-    freq_educ_3_presence_18_19.filles_13_18.6m_12m = sum(sum_educ_3_presence_18_19.filles_13_18.12m*weights_sampling, na.rm = T) / sum(sum_educ_2_inscrit_18_19.garcons_13_18*weights_sampling, na.rm = T),
+    freq_educ_3_presence_18_19.filles_13_18.0m = sum(sum_educ_3_presence_18_19.filles_13_18.0m*weights_sampling,na.rm=T) / sum(sum_educ_2_inscrit_18_19.filles_13_18* weights_sampling, na.rm = T),
+    freq_educ_3_presence_18_19.filles_13_18.0m_3m = sum(sum_educ_3_presence_18_19.filles_13_18.0m_3m*weights_sampling, na.rm = T) / sum(sum_educ_2_inscrit_18_19.filles_13_18*weights_sampling, na.rm = T),
+    freq_educ_3_presence_18_19.filles_13_18.12m = sum(sum_educ_3_presence_18_19.filles_13_18.3m_6m*weights_sampling, na.rm=T) / sum(sum_educ_2_inscrit_18_19.filles_13_18* weights_sampling, na.rm=T),
+    freq_educ_3_presence_18_19.filles_13_18.3m_6m = sum(sum_educ_3_presence_18_19.filles_13_18.6m_12m*weights_sampling, na.rm = T) / sum(sum_educ_2_inscrit_18_19.filles_13_18*weights_sampling, na.rm = T),
+    freq_educ_3_presence_18_19.filles_13_18.6m_12m = sum(sum_educ_3_presence_18_19.filles_13_18.12m*weights_sampling, na.rm = T) / sum(sum_educ_2_inscrit_18_19.filles_13_18*weights_sampling, na.rm = T),
     
-    freq_educ_3_presence_18_19.filles_7_12.0m = sum(sum_educ_3_presence_18_19.filles_7_12.0m*weights_sampling, na.rm = T) / sum(freq_educ_2_inscrit_18_19.filles_7_12*weights_sampling, na.rm = T),
-    freq_educ_3_presence_18_19.filles_7_12.0m_3m = sum(sum_educ_3_presence_18_19.filles_7_12.0m_3m*weights_sampling, na.rm = T) / sum(freq_educ_2_inscrit_18_19.filles_7_12*weights_sampling, na.rm = T),
-    freq_educ_3_presence_18_19.filles_7_12.12m = sum(sum_educ_3_presence_18_19.filles_7_12.3m_6m*weights_sampling, na.rm = T) / sum(freq_educ_2_inscrit_18_19.filles_7_12*weights_sampling, na.rm = T),
-    freq_educ_3_presence_18_19.filles_7_12.3m_6m = sum(sum_educ_3_presence_18_19.filles_7_12.6m_12m*weights_sampling, na.rm =T) / sum(freq_educ_2_inscrit_18_19.filles_7_12*weights_sampling, na.rm=T),
-    freq_educ_3_presence_18_19.filles_7_12.6m_12m = sum(sum_educ_3_presence_18_19.filles_7_12.12m*weights_sampling, na.rm = T) / sum(freq_educ_2_inscrit_18_19.filles_7_12*weights_sampling, na.rm = T),
+    freq_educ_3_presence_18_19.filles_7_12.0m = sum(sum_educ_3_presence_18_19.filles_7_12.0m*weights_sampling, na.rm = T) / sum(sum_educ_2_inscrit_18_19.filles_7_12*weights_sampling, na.rm = T),
+    freq_educ_3_presence_18_19.filles_7_12.0m_3m = sum(sum_educ_3_presence_18_19.filles_7_12.0m_3m*weights_sampling, na.rm = T) / sum(sum_educ_2_inscrit_18_19.filles_7_12*weights_sampling, na.rm = T),
+    freq_educ_3_presence_18_19.filles_7_12.12m = sum(sum_educ_3_presence_18_19.filles_7_12.3m_6m*weights_sampling, na.rm = T) / sum(sum_educ_2_inscrit_18_19.filles_7_12*weights_sampling, na.rm = T),
+    freq_educ_3_presence_18_19.filles_7_12.3m_6m = sum(sum_educ_3_presence_18_19.filles_7_12.6m_12m*weights_sampling, na.rm =T) / sum(sum_educ_2_inscrit_18_19.filles_7_12*weights_sampling, na.rm=T),
+    freq_educ_3_presence_18_19.filles_7_12.6m_12m = sum(sum_educ_3_presence_18_19.filles_7_12.12m*weights_sampling, na.rm = T) / sum(sum_educ_2_inscrit_18_19.filles_7_12*weights_sampling, na.rm = T),
     
     freq_educ_3_presence_18_19.garcons_13_18.0m = sum(sum_educ_3_presence_18_19.garcons_13_18.0m*weights_sampling, na.rm=T) / sum(sum_educ_2_inscrit_18_19.garcons_13_18*weights_sampling, na.rm=T),
     freq_educ_3_presence_18_19.garcons_13_18.0m_3m = sum(sum_educ_3_presence_18_19.garcons_13_18.0m_3m*weights_sampling, na.rm =T) /sum( sum_educ_2_inscrit_18_19.garcons_13_18*weights_sampling, na.rm = T),
@@ -91,7 +91,17 @@ freq_ecole <- response_updated_cluster %>%
     freq_ig_7_gr_vulnerable.handi_ment = sum(sum_ig_7_gr_vulnerable.handi_ment*weights_sampling, na.rm = T) / sum(ig_6_hh_membres_tot*weights_sampling, na.rm = T),
     freq_ig_7_gr_vulnerable.handi_phy = sum(sum_ig_7_gr_vulnerable.handi_phy*weights_sampling, na.rm = T) / sum(ig_6_hh_membres_tot*weights_sampling, na.rm = T),
     freq_ig_7_gr_vulnerable.nsp = sum(sum_ig_7_gr_vulnerable.nsp*weights_sampling, na.rm = T) / sum(ig_6_hh_membres_tot*weights_sampling, na.rm = T)
-  )
+    # sum_agegrp_0_17_femmes,
+    # sum_agegrp_0_17_hommes,
+    # sum_agegrp_0_17,
+    # sum_agegrp_0_4,
+    # sum_agregro_0_4_femmes,
+    # sum_agregro_0_4_hommes,
+    # sum_agegrp_4_18,
+    # sum_agegrp_4_18_femmes,
+    # sum_agegrp_4_18_hommes,
+    
+  )%>%
 gather(key = "variable", value= "percent")
 
 write.csv(freq_ecole, "./output/freq_scolaire_20190809.csv")

@@ -447,8 +447,9 @@
   
   df_hh <- df_hh %>%
     mutate(
-      pin_protec_detresse = if_else(protect_11_1 >0 & sum_agegrp_0_17 >0 , "1",
-                                            if_else(sum_agegrp_0_17 > 0, "0",NA_character_))
+      pin_protec_detresse = if_else(sum_agegrp_0_17 > 0 & is.na(protect_11_1) , "0",
+                                    if_else(sum_agegrp_0_17 > 0 & protect_11_1 == 0, "0",
+                                            if_else(sum_agegrp_0_17 > 0 & protect_11_1 > 0, "1",NA_character_)))
     )
   
   write.csv(df_hh, "output/MSNA_HH_Analysed_data.csv")
