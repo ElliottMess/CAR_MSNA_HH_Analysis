@@ -248,7 +248,7 @@
   # 
   
   var_freq_scol <- c("sum_educ_3_presence_18_19.filles_7_12.12m" , "sum_educ_3_presence_18_19.filles_7_12.6m_12m" , "sum_educ_3_presence_18_19.filles_13_18.12m", "sum_educ_3_presence_18_19.filles_13_18.6m_12m",
-                       "sum_educ_3_presence_18_19.garcons_7_12.12m" , "sum_educ_3_presence_18_19.garcons_7_12.6m_12m" , "sum_educ_3_presence_18_19.garcons_13_18.12m", "sum_educ_3_presence_18_19.garcons_13_18.6m_12m")
+                     "sum_educ_3_presence_18_19.garcons_7_12.12m" , "sum_educ_3_presence_18_19.garcons_7_12.6m_12m" , "sum_educ_3_presence_18_19.garcons_13_18.12m", "sum_educ_3_presence_18_19.garcons_13_18.6m_12m")
   
   df_hh <- df_hh%>%
     mutate(
@@ -275,8 +275,8 @@
                                       if_else(freq_scolarise_6m <.6 & freq_scolarise_6m >= .4, "3",
                                               if_else(freq_scolarise_6m < 0.4 & freq_scolarise_6m >= .2, "4",
                                                       if_else( freq_scolarise_6m < .2 & freq_scolarise_6m >=0, "5", NA_character_)
-                                                      )))
-                                              )
+                                              )))
+      )
     )
   
   ## # MSSC #### 
@@ -289,9 +289,9 @@
                                         if_else(secal_9_acces_marche == "marche_non_appro_nfi", "3", 
                                                 if_else(secal_9_acces_marche == "marche_accessible", "1", NA_character_)))),
       pin_protec_acces_service = if_else(protect_13.administration_leg == 1 | protect_13.comite_protection == 1 | protect_13.administration_loc == 1 | 
-                               protect_13.autre == 1 | protect_13.centre_ecoute == 1 | protect_13.relais_communautaire == 1 |
-                               protect_13.centre_ecoute == 1, "1",
-                             if_else(protect_13.aucun == 1 | protect_13.nsp == 1, "4", NA_character_))
+                                           protect_13.autre == 1 | protect_13.centre_ecoute == 1 | protect_13.relais_communautaire == 1 |
+                                           protect_13.centre_ecoute == 1, "1",
+                                         if_else(protect_13.aucun == 1 | protect_13.nsp == 1, "4", NA_character_))
     )
   
   
@@ -306,7 +306,7 @@
                                       if_else(hhs_score >= 2 & hhs_score <=3, "3", 
                                               if_else(hhs_score ==1, "2",
                                                       if_else(hhs_score == 0, "1",
-                                              NA_character_))))),
+                                                              NA_character_))))),
       pin_secal_lcs = if_else(lcs_total == "urgence", "4", 
                               if_else(lcs_total == "crise", "3", 
                                       if_else(lcs_total == "stress", "2", 
@@ -315,7 +315,7 @@
                               if_else(fcs_score2 >21 & fcs_score2 <= 35, "4",
                                       if_else(fcs_score2 >= 0 & fcs_score2 <= 21, "5",
                                               NA_character_)))
-  )
+    )
   df_hh <- df_hh %>%
     mutate(
       # aumoins_unenfant_diarrhee = if_else((sum_sante_4_0_4_malades_diarrhee_filles + sum_sante_4_0_4_malades_diarrhee_garcons)>0, 1, 0),
@@ -336,64 +336,6 @@
                                                          wash_10_infra_sanit == "defec_air_libre_cours_d_eau" | 
                                                          wash_10_infra_sanit == "defec_air_libre_zone_precise", "5", NA_character_)))),
       protect_11_1_aumoinsun = if_else(protect_11_1 >0 ,1, 0 )
-    )
-  
-  df_hh <- df_hh%>%
-    mutate(
-      freq_educ_2_inscrit_18_19.filles_7_12 = sum_educ_2_inscrit_18_19.filles_7_12 & sum_agegrp_7_12_filles,
-      freq_educ_2_inscrit_18_19.filles_13_18 = sum_educ_2_inscrit_18_19.filles_13_18 / sum_agegrp_13_18_filles,
-      freq_educ_2_inscrit_18_19.garcons_7_12 = sum_educ_2_inscrit_18_19.garcons_7_12 & sum_agegrp_7_12_garcons,
-      freq_educ_2_inscrit_18_19.garcons_13_18 = sum_educ_2_inscrit_18_19.garcons_13_18 / sum_agegrp_13_18_garcons,
-      freq_educ_3_presence_18_19.filles_13_18.0m = sum_educ_3_presence_18_19.filles_13_18.0m / sum_agegrp_13_18_filles,
-      freq_educ_3_presence_18_19.filles_13_18.0m_3m = sum_educ_3_presence_18_19.filles_13_18.0m / sum_agegrp_13_18_filles,
-      freq_educ_3_presence_18_19.filles_13_18.12m = sum_educ_3_presence_18_19.filles_13_18.0m / sum_agegrp_13_18_filles,
-      freq_educ_3_presence_18_19.filles_13_18.3m_6m = sum_educ_3_presence_18_19.filles_13_18.0m / sum_agegrp_13_18_filles,
-      freq_educ_3_presence_18_19.filles_13_18.6m_12m = sum_educ_3_presence_18_19.filles_13_18.0m / sum_agegrp_13_18_filles,
-      freq_educ_3_presence_18_19.filles_7_12.0m = sum_educ_3_presence_18_19.filles_7_12.0m / sum_agegrp_7_12_filles,
-      freq_educ_3_presence_18_19.filles_7_12.0m_3m = sum_educ_3_presence_18_19.filles_7_12.0m / sum_agegrp_7_12_filles,
-      freq_educ_3_presence_18_19.filles_7_12.12m = sum_educ_3_presence_18_19.filles_7_12.0m / sum_agegrp_7_12_filles,
-      freq_educ_3_presence_18_19.filles_7_12.3m_6m = sum_educ_3_presence_18_19.filles_7_12.0m / sum_agegrp_7_12_filles,
-      freq_educ_3_presence_18_19.filles_7_12.6m_12m = sum_educ_3_presence_18_19.filles_7_12.0m / sum_agegrp_7_12_filles,
-      freq_educ_3_presence_18_19.garcons_13_18.0m = sum_educ_3_presence_18_19.garcons_13_18.0m / sum_agegrp_13_18_garcons,
-      freq_educ_3_presence_18_19.garcons_13_18.0m_3m = sum_educ_3_presence_18_19.garcons_13_18.0m / sum_agegrp_13_18_garcons,
-      freq_educ_3_presence_18_19.garcons_13_18.12m = sum_educ_3_presence_18_19.garcons_13_18.0m / sum_agegrp_13_18_garcons,
-      freq_educ_3_presence_18_19.garcons_13_18.3m_6m = sum_educ_3_presence_18_19.garcons_13_18.0m / sum_agegrp_13_18_garcons,
-      freq_educ_3_presence_18_19.garcons_13_18.6m_12m = sum_educ_3_presence_18_19.garcons_13_18.0m / sum_agegrp_13_18_garcons,
-      freq_educ_3_presence_18_19.garcons_7_12.0m = sum_educ_3_presence_18_19.garcons_7_12.0m / sum_agegrp_7_12_garcons,
-      freq_educ_3_presence_18_19.garcons_7_12.0m_3m = sum_educ_3_presence_18_19.garcons_7_12.0m / sum_agegrp_7_12_garcons,
-      freq_educ_3_presence_18_19.garcons_7_12.12m = sum_educ_3_presence_18_19.garcons_7_12.0m / sum_agegrp_7_12_garcons,
-      freq_educ_3_presence_18_19.garcons_7_12.3m_6m = sum_educ_3_presence_18_19.garcons_7_12.0m / sum_agegrp_7_12_garcons,
-      freq_educ_3_presence_18_19.garcons_7_12.6m_12m = sum_educ_3_presence_18_19.garcons_7_12.0m / sum_agegrp_7_12_garcons
-    )%>%
-    mutate(freq_ig_7_gr_vulnerable.aucune = sum_ig_7_gr_vulnerable.aucune / ig_6_hh_membres_tot,
-           freq_ig_7_gr_vulnerable.ena = sum_ig_7_gr_vulnerable.ena/ ig_6_hh_membres_tot,
-           freq_ig_7_gr_vulnerable.es = sum_ig_7_gr_vulnerable.es / ig_6_hh_membres_tot,
-           freq_ig_7_gr_vulnerable.fa = sum_ig_7_gr_vulnerable.fa / ig_6_hh_membres_tot,
-           freq_ig_7_gr_vulnerable.fe = sum_ig_7_gr_vulnerable.fe / ig_6_hh_membres_tot,
-           freq_ig_7_gr_vulnerable.handi = sum_ig_7_gr_vulnerable.handi / ig_6_hh_membres_tot,
-           freq_ig_7_gr_vulnerable.handi_ment = sum_ig_7_gr_vulnerable.handi_ment / ig_6_hh_membres_tot,
-           freq_ig_7_gr_vulnerable.handi_phy = sum_ig_7_gr_vulnerable.handi_phy / ig_6_hh_membres_tot,
-           freq_ig_7_gr_vulnerable.nsp = sum_ig_7_gr_vulnerable.nsp / ig_6_hh_membres_tot
-    )%>%
-    mutate(freq_sante_2_soin_recu_oui_cs = sum_sante_2_soin_recu_oui_cs/ ig_6_hh_membres_tot,
-           freq_sante_2_soin_recu_oui_maison = sum_sante_2_soin_recu_oui_maison/ ig_6_hh_membres_tot,
-           freq_sante_3_soin_non_recu_infra_detruite_ca = sum_sante_3_soin_non_recu_infra_detruite_ca /ig_6_hh_membres_tot,
-           freq_sante_3_soin_non_recu_infra_detruite_nat = sum_sante_3_soin_non_recu_infra_detruite_nat/ig_6_hh_membres_tot,
-           freq_sante_3_soin_non_recu_infra_inexis = sum_sante_3_soin_non_recu_infra_inexis/ig_6_hh_membres_tot,
-           freq_sante_3_soin_non_recu_infra_trop_loin = sum_sante_3_soin_non_recu_infra_trop_loin/ig_6_hh_membres_tot,
-           freq_sante_3_soin_non_recu_insecurite = sum_sante_3_soin_non_recu_insecurite/ig_6_hh_membres_tot,
-           freq_sante_3_soin_non_recu_medic_indisp = sum_sante_3_soin_non_recu_medic_indisp/ig_6_hh_membres_tot,
-           freq_sante_3_soin_non_recu_non_autre = sum_sante_3_soin_non_recu_non_autre/ig_6_hh_membres_tot,
-           freq_sante_3_soin_non_recu_nsp = sum_sante_3_soin_non_recu_nsp/ig_6_hh_membres_tot,
-           freq_sante_3_soin_non_recu_qualite_trop_faible = sum_sante_3_soin_non_recu_qualite_trop_faible/ig_6_hh_membres_tot,
-           freq_sante_3_soin_non_recu_staff_indisp = sum_sante_3_soin_non_recu_staff_indisp/ig_6_hh_membres_tot,
-           freq_sante_3_soin_non_recu_trop_cher = sum_sante_3_soin_non_recu_trop_cher/ig_6_hh_membres_tot,
-           freq_sante_2_malade_non = sum_sante_2_malade_non/ig_6_hh_membres_tot,
-           freq_sante_2_malade_nsp = sum_sante_2_malade_nsp/ig_6_hh_membres_tot,
-           freq_sante_2_malade_oui = sum_sante_2_malade_oui/ig_6_hh_membres_tot,
-           freq_sante_2_soin_recu_non = sum_sante_2_soin_recu_non/ig_6_hh_membres_tot,
-           freq_sante_2_soin_recu_oui_autre = sum_sante_2_soin_recu_oui_autre/ig_6_hh_membres_tot
-           
     )
   
   df_hh <- df_hh%>%
@@ -430,27 +372,23 @@
                                         if_else(secal_9_acces_marche == "marche_non_appro_nfi", "3", 
                                                 if_else(secal_9_acces_marche == "marche_accessible", "1", NA_character_)))),
       pin_protec_acces_service = if_else(protect_13.administration_leg == 1 | protect_13.comite_protection == 1 | protect_13.administration_loc == 1 | 
-                               protect_13.autre == 1 | protect_13.centre_ecoute == 1 | protect_13.relais_communautaire == 1 |
-                               protect_13.centre_ecoute == 1, "1",
-                             if_else(protect_13.aucun == 1 | protect_13.nsp == 1, "4", NA_character_)),
-      protec_2_peur = if_else(protect_2_femmes == "oui" | protect_2_hommes == "oui", 1,
-                             if_else((protect_2_femmes == "non" & protect_2_hommes == "non") | 
-                                       (protect_2_femmes == "non" & protect_2_hommes == "") | 
-                                       (protect_2_femmes == "" & protect_2_hommes == "non") , 0, NA_integer_)),
-      
+                                           protect_13.autre == 1 | protect_13.centre_ecoute == 1 | protect_13.relais_communautaire == 1 |
+                                           protect_13.centre_ecoute == 1, "1",
+                                         if_else(protect_13.aucun == 1 | protect_13.nsp == 1, "4", NA_character_)),
+      protec_2_peur = if_else(protect_2_femmes == "oui" | protect_2_hommes == "oui", 1, 0),
       pin_protec_peur = if_else(protec_2_peur > 0 & protec_2_peur <= .1, "1",
-                                      if_else(protec_2_peur > .1 & protec_2_peur < .3, "3",
-                                              if_else(protec_2_peur >=.3 & protec_2_peur <=1, "4",
-                                                      NA_character_)))
-      )%>%
-      mutate(
+                                if_else(protec_2_peur > .1 & protec_2_peur < .3, "3",
+                                        if_else(protec_2_peur >=.3 & protec_2_peur <=1, "4",
+                                                NA_character_)))
+    )%>%
+    mutate(
       pin_secal_hhs = if_else(hhs_score >= 5, "5", 
                               if_else(hhs_score >=4 , "4", 
                                       if_else(hhs_score >= 2 & hhs_score <=3, "3", 
                                               if_else(hhs_score ==1, "2",
                                                       if_else(hhs_score == 0, "1",
                                                               NA_character_))))),
-  
+      
       pin_secal_lcs = if_else(lcs_total == "urgence", "4", 
                               if_else(lcs_total == "crise", "3", 
                                       if_else(lcs_total == "stress", "2", 
@@ -497,16 +435,22 @@
       #                                              if_else(rep_souhaitee_2 == "nfi"& (nfi_2_type_abri == "abri_urgence" | nfi_2_1_type_abri_autre == "aucun") & taille_abri_pp < 5, "2",
       #                                                      "1")))),
       pin_abri_surface = if_else((nfi_2_type_abri == "abri_urgence" & taille_abri_pp <= 3.5) | nfi_2_type_abri == "aucun", "5",
-                                         if_else(nfi_2_type_abri == "abri_urgence" & taille_abri_pp > 3.5, "3",
-                                                 if_else(nfi_2_type_abri == "habitat_paille" & taille_abri_pp <= 3.5 , "2",
-                                                         if_else(nfi_2_type_abri == "maison_dur" |  ( nfi_2_type_abri == "habitat_paille" & taille_abri_pp > 3.5), "1",
-                                                                 NA_character_)))),
+                                 if_else(nfi_2_type_abri == "abri_urgence" & taille_abri_pp > 3.5, "3",
+                                         if_else(nfi_2_type_abri == "habitat_paille" & taille_abri_pp <= 3.5 , "2",
+                                                 if_else(nfi_2_type_abri == "maison_dur" |  ( nfi_2_type_abri == "habitat_paille" & taille_abri_pp > 3.5), "1",
+                                                         NA_character_)))),
       pin_sante_lieuaccouchement = if_else(sum_sante_1_accouch_lieu %in% c("cs"), "oui", 
                                            if_else(sum_sante_1_accouch_lieu != "cs", "non",
-                                                   NA_character_)),
-
-      pin_protec_detresse = if_else(protect_11_1 > 0, "1", "0")
+                                                   NA_character_))
+    )
+  df_hh$protect_11_1_detress <- replace_na(df_hh$protect_11_1, "0")
+  
+  df_hh <- df_hh %>%
+    mutate(
+      pin_protec_detresse = if_else(protect_11_1 >0 & sum_agegrp_0_17 >0 , "1",
+                                            if_else(sum_agegrp_0_17 > 0, "0",NA_character_))
     )
   
   write.csv(df_hh, "output/MSNA_HH_Analysed_data.csv")
+  
   

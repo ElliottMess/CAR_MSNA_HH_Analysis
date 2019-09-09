@@ -333,7 +333,7 @@ main_withloop <- affect_loop_to_parent(loop = hh_ind, parent = main_withloop, ag
 #             ))
 
 
-hh_ind$sante_2_malade_oui_0_5_garcons <- if_else(hh_ind$sante_2_malade_oui == 1 & hh_ind$agegrp_0_4 & hh_ind$sexe_hh %in% "femme",1,0)
+hh_ind$sante_2_malade_oui_0_5_garcons <- if_else(hh_ind$sante_2_malade_oui == 1 & hh_ind$agegrp_0_4 & hh_ind$sexe_hh %in% "homme",1,0)
 hh_ind$sante_2_malade_oui_0_5_filles <- if_else(hh_ind$sante_2_malade_oui == 1 & hh_ind$agegrp_0_4 & hh_ind$sexe_hh %in% "femme",1,0)
 
 main_withloop <- affect_loop_to_parent(loop = hh_ind, parent = main_withloop, aggregate.function = sum , 

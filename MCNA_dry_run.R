@@ -122,8 +122,9 @@ sampling.frame.clust$villageall_admin2 %<>% gsub("\\s", "", .)
 sampling.frame.clust$villageall_admin2 %<>% tolower
 
 response$localite_final_labels_admin2 <-  gsub('[^ -~]', '', response$localite_final_labels_admin2)
-response <-  within(response, localite_final_labels_admin2[localite_final_labels_admin2 == "boborobocaranga" & localites_visitees_labels == "Boboro"] <- "boborobocaranga1")
-response <-  within(response, localite_final_labels_admin2[localite_final_labels_admin2 == "boborobocaranga" & localites_visitees_labels == "BOBORO"] <- "boborobocaranga2")
+
+response$localite_final_labels_admin2[response$localite_final_labels_admin2 == "boborobocaranga" & response$localites_visitees_labels == "Boboro"] <- "boborobocaranga1"
+response$localite_final_labels_admin2[response$localite_final_labels_admin2 == "boborobocaranga" & response$localites_visitees_labels == "BOBORO"] <- "boborobocaranga2"
 
 
 # PASTE WITH THEIR ADMIN 2s
@@ -225,6 +226,8 @@ response_updated_cluster <- do.call(data.frame,lapply(response_updated_cluster, 
 ### weights columns
 response_updated_cluster$weights_sampling <- weighting_combined(response_updated_cluster)
 
+response_updated_cluster$pin_protec_acces_service <- as.character(response_updated_cluster$pin_protec_acces_service)
+
 # #### pcodes
 # pcodes <- read.csv("./input/PCODES_Localites_OCHA.csv", stringsAsFactors = F, check.names = F)
 # ##### cleaning pcodes
@@ -262,7 +265,7 @@ response_updated_cluster$weights_sampling <- weighting_combined(response_updated
 #   left_join(pcodes, by = c("combined_admin_levels"= "combined_admin_levels"))%>%
 #               select(-combined_admin_levels)
 
-write.csv(response_updated_cluster, paste0("REACH_CAR_dataset_HH_MSNA_", format(Sys.time(), "%Y%m%d"),".csv"))
+write.csv(response_updated_cluster, paste0("./output/REACH_CAR_dataset_HH_MSNA_", format(Sys.time(), "%Y%m%d"),".csv"))
 
 
 final_result_admin_0 <- from_analysisplan_map_to_output(data = response_updated_cluster, 
@@ -391,6 +394,7 @@ summary.stats_admin2_nice <- summary.stats_admin2%>%
   left_join(questions_nameslables, by = c("dependent.var" = "name"))%>%
   map_to_file(paste0("./output/tables/","summary_stats_admin2_",format(Sys.time(), "%Y%m%d"),".csv"))
 
+response_updated_cluster$pin_secal_fcs <- as.character(response_updated_cluster$pin_secal_fcs)
 
 
 ###### Sante et protection ad-hoc pins
@@ -402,25 +406,26 @@ df_santeprotect_admin2 <- response_updated_cluster%>%
   summarise(sum_enfantsmalades30j = sum(nb_enfants_malades_30j*weights_sampling, na.rm = T),
     sum_enfants_0_4_pond = sum(enfants_0_4_pond*weights_sampling, na.rm = T),
     sum_pers_malade = sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
-    sum_pers_malade_nonsoignee = sum((sum_sante_2_soin_recu_oui_autre + sum_sante_2_soin_recu_oui_maison + sum_sante_2_soin_recu_non) * weights_sampling, na.rm = T)
+    sum_pers_malade_nonsoignee = sum((sum_sante_2_soin_recu_oui_autre + sum_sante_2_soin_recu_oui_maison + sum_sante_2_soin_recu_non) * weights_sampling, na.rm = T),
+    sum_pin_protec_peur = sum(pin_protec_peur * weights_sampling, na.rm = T)
   )%>%
   mutate(freq_enfantsmalades30j = sum_enfantsmalades30j / sum_enfants_0_4_pond,
-         freq_pers_malade_nonsoignee = sum_pers_malade_nonsoignee / sum_pers_malade,
-         pin_pers_malade_soignee = if_else(freq_pers_malade_nonsoignee >=0 & freq_pers_malade_nonsoignee < .2, "1",
-                                           if_else(freq_pers_malade_nonsoignee >= 0.2 & freq_pers_malade_nonsoignee < .4, "2",
-                                                   if_else(freq_pers_malade_nonsoignee >= .4 & freq_pers_malade_nonsoignee < .6, "3",
-                                                           if_else(freq_pers_malade_nonsoignee >= .6 & freq_pers_malade_nonsoignee <= .8, "4",
-                                                                   if_else(freq_pers_malade_nonsoignee > .8  & freq_pers_malade_nonsoignee <=1, "5",
-                                                                           NA_character_))))
-           
-         ),
-         pin_enfantsmalades = if_else(freq_enfantsmalades30j >= 0 & freq_enfantsmalades30j <= .15,"1",
-                                 if_else(freq_enfantsmalades30j > .15 & freq_enfantsmalades30j <= .25, "2",
-                                         if_else(freq_enfantsmalades30j > .25 & freq_enfantsmalades30j <= .35, "3",
-                                                 if_else(freq_enfantsmalades30j > .35 & freq_enfantsmalades30j <=.45, "4",
-                                                         if_else(freq_enfantsmalades30j > .45 & freq_enfantsmalades30j <=1, "5", NA_character_)))))
+         freq_pers_malade_nonsoignee = sum_pers_malade_nonsoignee / sum_pers_malade
+         # pin_pers_malade_soignee = if_else(freq_pers_malade_nonsoignee >=0 & freq_pers_malade_nonsoignee < .2, "1",
+         #                                   if_else(freq_pers_malade_nonsoignee >= 0.2 & freq_pers_malade_nonsoignee < .4, "2",
+         #                                           if_else(freq_pers_malade_nonsoignee >= .4 & freq_pers_malade_nonsoignee < .6, "3",
+         #                                                   if_else(freq_pers_malade_nonsoignee >= .6 & freq_pers_malade_nonsoignee <= .8, "4",
+         #                                                           if_else(freq_pers_malade_nonsoignee > .8  & freq_pers_malade_nonsoignee <=1, "5",
+         #                                                                   NA_character_))))
+         #   
+         # ),
+    #      pin_enfantsmalades = if_else(freq_enfantsmalades30j >= 0 & freq_enfantsmalades30j <= .15,"1",
+    #                              if_else(freq_enfantsmalades30j > .15 & freq_enfantsmalades30j <= .25, "2",
+    #                                      if_else(freq_enfantsmalades30j > .25 & freq_enfantsmalades30j <= .35, "3",
+    #                                              if_else(freq_enfantsmalades30j > .35 & freq_enfantsmalades30j <=.45, "4",
+    #                                                      if_else(freq_enfantsmalades30j > .45 & freq_enfantsmalades30j <=1, "5", NA_character_)))))
     )%>%
-  select(admin_2, pin_enfantsmalades, pin_pers_malade_soignee)
+  select(admin_2, freq_enfantsmalades30j, freq_pers_malade_nonsoignee)
 
 
 template_analysisplan_file <- "./input/analysisplan_template_pin.csv"
@@ -449,18 +454,18 @@ summary.stats_admin2_pin_nice <- summary.stats_admin2_pin%>%
   select(-dependent.var, -dependent.var.value)%>%
   spread(key = admin_indic, value = numbers)%>%
   left_join(df_santeprotect_admin2, by = c("repeat.var.value" = "admin_2"))%>%
-  mutate(pin_protec_2 = if_else(pin_protec_peur > 0 & pin_protec_peur <= .1, "1",
-                                                                 if_else(pin_protec_peur > .1 & pin_protec_peur < .3, "3",
-                                                                         if_else(pin_protec_peur >=.3 & pin_protec_peur <=1, "4",
-                                                                                 NA_character_))),
-         pin_sante_lieuaccouchement = if_else(pin_sante_lieuaccouchement >= .8 & pin_sante_lieuaccouchement <=1, "1",
-                                              if_else(pin_sante_lieuaccouchement >= .6 & pin_sante_lieuaccouchement < .8, "2",
-                                                      if_else(pin_sante_lieuaccouchement >= .4 & pin_sante_lieuaccouchement < .6, "3",
-                                                              if_else(pin_sante_lieuaccouchement >= .2 & pin_sante_lieuaccouchement < .4, "4",
-                                                                      if_else(pin_sante_lieuaccouchement >= 0 & pin_sante_lieuaccouchement < .2, "5",
-                                                                              NA_character_)))))
-  )%>%
-  select(-pin_protec_peur , -pin_sante_lieuaccouchement, -pin_sante_lieuaccouchement_non)%>%
+  # mutate(pin_protec_peur = if_else(pin_protec_peur_NA > 0 & pin_protec_peur_NA <= .1, "1",
+  #                                                                if_else(pin_protec_peur_NA > .1 & pin_protec_peur_NA < .3, "3",
+  #                                                                        if_else(pin_protec_peur_NA >=.3 & pin_protec_peur_NA <=1, "4",
+  #                                                                                NA_character_))),
+  #        pin_sante_lieuaccouchement = if_else(pin_sante_lieuaccouchement_oui >= .8 & pin_sante_lieuaccouchement_oui <=1, "1",
+  #                                             if_else(pin_sante_lieuaccouchement_oui >= .6 & pin_sante_lieuaccouchement_oui < .8, "2",
+  #                                                     if_else(pin_sante_lieuaccouchement_oui >= .4 & pin_sante_lieuaccouchement_oui < .6, "3",
+  #                                                             if_else(pin_sante_lieuaccouchement_oui >= .2 & pin_sante_lieuaccouchement_oui < .4, "4",
+  #                                                                     if_else(pin_sante_lieuaccouchement_oui >= 0 & pin_sante_lieuaccouchement_oui < .2, "5",
+  #                                                                             NA_character_)))))
+  #        )%>%
+  select(-pin_protec_peur_NA , -pin_sante_lieuaccouchement_oui, -pin_sante_lieuaccouchement_non)%>%
   map_to_file(paste0("./output/tables/","summary_stats_admin2_pin_",format(Sys.time(), "%Y%m%d"),".csv"))
 
 ###### Sante et protection ad-hoc pins
@@ -479,34 +484,38 @@ df_santeprotect_admin1_grp <- response_updated_cluster%>%
             sum_enfants_0_4_pond = sum(enfants_0_4_pond*weights_sampling, na.rm = T),
             sum_pers_malade = sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
             sum_pers_malade_nonsoignee = sum((sum_sante_2_soin_recu_oui_autre + sum_sante_2_soin_recu_oui_maison + sum_sante_2_soin_recu_non) * weights_sampling, na.rm = T),
-            pin_sante_lieuaccouchement = sum(pin_sante_lieuaccouchement*weights_sampling, na.rm = T)
-  )%>%
+            pin_sante_lieuaccouchement = sum(pin_sante_lieuaccouchement*weights_sampling, na.rm = T),
+            sum_pin_protec_peur = sum(pin_protec_peur * weights_sampling, na.rm = T),
+            sum_protect_11_1 = sum(protect_11_1_aumoinsun))%>%
   mutate(freq_enfantsmalades30j = sum_enfantsmalades30j / sum_enfants_0_4_pond,
-         freq_pers_malade_nonsoignee = sum_pers_malade_nonsoignee / sum_pers_malade,
-         pin_pers_malade_soignee = if_else(freq_pers_malade_nonsoignee >=0 & freq_pers_malade_nonsoignee < .2, "1",
-                                           if_else(freq_pers_malade_nonsoignee >= 0.2 & freq_pers_malade_nonsoignee < .4, "2",
-                                                   if_else(freq_pers_malade_nonsoignee >= .4 & freq_pers_malade_nonsoignee < .6, "3",
-                                                           if_else(freq_pers_malade_nonsoignee >= .6 & freq_pers_malade_nonsoignee <= .8, "4",
-                                                                   if_else(freq_pers_malade_nonsoignee > .8  & freq_pers_malade_nonsoignee <=1, "5",
-                                                                           NA_character_))))
-                                           
-         ),
-         pin_enfantsmalades = if_else(freq_enfantsmalades30j >= 0 & freq_enfantsmalades30j <= .15,"1",
-                                      if_else(freq_enfantsmalades30j > .15 & freq_enfantsmalades30j <= .25, "2",
-                                              if_else(freq_enfantsmalades30j > .25 & freq_enfantsmalades30j <= .35, "3",
-                                                      if_else(freq_enfantsmalades30j > .35 & freq_enfantsmalades30j <=.45, "4",
-                                                              if_else(freq_enfantsmalades30j > .45 & freq_enfantsmalades30j <=1, "5", NA_character_))))),
-         pin_sante_lieuaccouchement = if_else(pin_sante_lieuaccouchement >= .8 & pin_sante_lieuaccouchement <=1, "1",
-                                                                 if_else(pin_sante_lieuaccouchement >= .6 & pin_sante_lieuaccouchement < .8, "2",
-                                                                         if_else(pin_sante_lieuaccouchement >= .4 & pin_sante_lieuaccouchement < .6, "3",
-                                                                                 if_else(pin_sante_lieuaccouchement >= .2 & pin_sante_lieuaccouchement < .4, "4",
-                                                                                         if_else(pin_sante_lieuaccouchement >= 0 & pin_sante_lieuaccouchement < .2, "5",
-                                                                                                 NA_character_)))))
-                
+         freq_pers_malade_nonsoignee = sum_pers_malade_nonsoignee / sum_pers_malade
+         # pin_pers_malade_soignee = if_else(freq_pers_malade_nonsoignee >=0 & freq_pers_malade_nonsoignee < .2, "1",
+         #                                   if_else(freq_pers_malade_nonsoignee >= 0.2 & freq_pers_malade_nonsoignee < .4, "2",
+         #                                           if_else(freq_pers_malade_nonsoignee >= .4 & freq_pers_malade_nonsoignee < .6, "3",
+         #                                                   if_else(freq_pers_malade_nonsoignee >= .6 & freq_pers_malade_nonsoignee <= .8, "4",
+         #                                                           if_else(freq_pers_malade_nonsoignee > .8  & freq_pers_malade_nonsoignee <=1, "5",
+         #                                                                   NA_character_))))
+         #                                   
+         # ),
+         # pin_enfantsmalades = if_else(freq_enfantsmalades30j >= 0 & freq_enfantsmalades30j <= .15,"1",
+         #                              if_else(freq_enfantsmalades30j > .15 & freq_enfantsmalades30j <= .25, "2",
+         #                                      if_else(freq_enfantsmalades30j > .25 & freq_enfantsmalades30j <= .35, "3",
+         #                                              if_else(freq_enfantsmalades30j > .35 & freq_enfantsmalades30j <=.45, "4",
+         #                                                      if_else(freq_enfantsmalades30j > .45 & freq_enfantsmalades30j <=1, "5", NA_character_))))),
+         # pin_sante_lieuaccouchement = if_else(pin_sante_lieuaccouchement >= .8 & pin_sante_lieuaccouchement <=1, "1",
+         #                                                         if_else(pin_sante_lieuaccouchement >= .6 & pin_sante_lieuaccouchement < .8, "2",
+         #                                                                 if_else(pin_sante_lieuaccouchement >= .4 & pin_sante_lieuaccouchement < .6, "3",
+         #                                                                         if_else(pin_sante_lieuaccouchement >= .2 & pin_sante_lieuaccouchement < .4, "4",
+         #                                                                                 if_else(pin_sante_lieuaccouchement >= 0 & pin_sante_lieuaccouchement < .2, "5",
+         #                                                                                         NA_character_))))),
+         # pin_protec_peur = if_else(sum_pin_protec_peur > 0 & sum_pin_protec_peur <= .1, "1",
+         #                           if_else(sum_pin_protec_peur > .1 & sum_pin_protec_peur < .3, "3",
+         #                                   if_else(sum_pin_protec_peur >=.3 & sum_pin_protec_peur <=1, "4",
+         #                                           NA_character_)))
   )%>%
-  select(admin_1, ig_8_statut_groupe, pin_enfantsmalades, pin_pers_malade_soignee)%>%
+  select(admin_1, ig_8_statut_groupe, freq_enfantsmalades30j, freq_pers_malade_nonsoignee)%>%
   ungroup()%>%
-  select(admin_1, ig_8_statut_groupe, pin_enfantsmalades, pin_pers_malade_soignee)%>%
+  select(admin_1, ig_8_statut_groupe, freq_enfantsmalades30j, freq_pers_malade_nonsoignee)%>%
   gather(key = "pins", value = "numbers", -admin_1, -ig_8_statut_groupe)%>%
   mutate(admin_grp_score = paste(ig_8_statut_groupe, pins, sep = "_"))%>%
   select(admin_grp_score, admin_1, numbers)%>%
@@ -538,7 +547,6 @@ cols_analysisplan <- final_result_admin_1_grp_pin$analysisplan %>% select(resear
 
 summary.stats_admin1_grp_pin_nice <- summary.stats_admin1_grp_pin%>% 
   select(dependent.var, dependent.var.value,numbers, repeat.var.value, independent.var.value)%>%
-  filter(dependent.var.value != "Aucune peur pour les adultes")%>%
   mutate(admin_grp_score = paste(dependent.var, independent.var.value, dependent.var.value, sep = "_"))%>%
   select(admin_grp_score, repeat.var.value, numbers)%>%
   group_by(admin_grp_score, repeat.var.value)%>%
@@ -546,4 +554,22 @@ summary.stats_admin1_grp_pin_nice <- summary.stats_admin1_grp_pin%>%
   spread(key = admin_grp_score, value = numbers)%>%
   select(-grouped_id)%>%
   left_join(df_santeprotect_admin1_grp, by = c("repeat.var.value" = "admin_1"))%>%
-  map_to_file(paste0("./output/tables/","summary_stats_admin2_pin_",format(Sys.time(), "%Y%m%d"),".csv"))
+  # mutate(pin_protec_detresse_hote_NA = if_else(
+  #   pin_protec_detresse_hote_NA >=0 &  pin_protec_detresse_hote_NA <= .25, "1",
+  #                                                     if_else(pin_protec_detresse_hote_NA > .25 & pin_protec_detresse_hote_NA <= .3, "2",
+  #                                                             if_else(pin_protec_detresse_hote_NA >0.3 & pin_protec_detresse_hote_NA <=.4, "3",
+  #                                                                     if_else(pin_protec_detresse_hote_NA > .4 & pin_protec_detresse_hote_NA <= 1, "4", NA_character_)))),
+  #        pin_protec_detresse_deplaces_FA_NA = if_else(pin_protec_detresse_deplaces_FA_NA >=0 &  pin_protec_detresse_deplaces_FA_NA <= .25, "1",
+  #                                                                                              if_else(pin_protec_detresse_deplaces_FA_NA > .25 & pin_protec_detresse_deplaces_FA_NA <= .3, "2",
+  #                                                                                                      if_else(pin_protec_detresse_deplaces_FA_NA >0.3 & pin_protec_detresse_deplaces_FA_NA <=.4, "3",
+  #                                                                                                              if_else(pin_protec_detresse_deplaces_FA_NA > .4 & pin_protec_detresse_deplaces_FA_NA <= 1, "4", NA_character_)))),
+  #          pin_protec_detresse_retournes_NA =if_else(pin_protec_detresse_retournes_NA >=0 &  pin_protec_detresse_retournes_NA <= .25, "1",
+  #                                                                                  if_else(pin_protec_detresse_retournes_NA > .25 & pin_protec_detresse_retournes_NA <= .3, "2",
+  #                                                                                          if_else(pin_protec_detresse_retournes_NA >0.3 & pin_protec_detresse_retournes_NA <=.4, "3",
+  #                                                                                                  if_else(pin_protec_detresse_retournes_NA > .4 & pin_protec_detresse_retournes_NA <= 1, "4", NA_character_)))),
+  #         pin_protec_detresse_deplaces_site_NA =if_else(pin_protec_detresse_deplaces_site_NA >=0 &  pin_protec_detresse_deplaces_site_NA <= .25, "1",
+  #                                         if_else(pin_protec_detresse_deplaces_site_NA > .25 & pin_protec_detresse_deplaces_site_NA <= .3, "2",
+  #                                                 if_else(pin_protec_detresse_deplaces_site_NA >0.3 & pin_protec_detresse_deplaces_site_NA <=.4, "3",
+  #                                                         if_else(pin_protec_detresse_deplaces_site_NA > .4 & pin_protec_detresse_deplaces_site_NA <= 1, "4", NA_character_))))
+  #        )%>%
+  map_to_file(paste0("./output/tables/","summary_stats_admin1_grp_pin_",format(Sys.time(), "%Y%m%d"),".csv"))
