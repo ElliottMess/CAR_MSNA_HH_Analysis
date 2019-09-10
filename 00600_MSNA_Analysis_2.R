@@ -119,7 +119,7 @@
         if(length(df_hh[[other_toberecoded_mc_j_2$question.name]][i]) !=0){
           df_hh[[other_toberecoded_mc_j_2$question.name]][i] = 1
           df_hh[[other_toberecoded_mc_j_2$question.name.autre]][i] = 0
-          df_hh[[question.name_mc[j]]][i] = paste0(df_hh[[question.name_mc[j]]][i], " ", other_toberecoded_mc_j_2$reponse_corr[k], sep="")
+          df_hh[[question.name_mc[j]]][i] = paste0(df_hh[[question.name_mc[j]]][i], " ", other_toberecoded_mc_j_2$reponse_corr[j], sep="")
           df_hh[[question.name_mc[j]]][i] = sub("autre$", "", df_hh[[question.name_mc[j]]][i])
         }
       }
@@ -449,8 +449,11 @@
     mutate(
       pin_protec_detresse = if_else(sum_agegrp_0_17 > 0 & is.na(protect_11_1) , "0",
                                     if_else(sum_agegrp_0_17 > 0 & protect_11_1 == 0, "0",
-                                            if_else(sum_agegrp_0_17 > 0 & protect_11_1 > 0, "1",NA_character_)))
-    )
+                                            if_else(sum_agegrp_0_17 > 0 & protect_11_1 > 0, "1",NA_character_))),
+      protect_gbv = rowSums(select(., "protect_2_femmes_risque.mariage_force", "protect_2_femmes_risque.violence_sexuelles", "protect_3_filles_risque.mariage_force","protect_3_filles_risque.violence_sexuelles", "protect_3_garcons_risque.mariage_force", "protect_3_garcons_risque.violence_sexuelles"), na.rm = T),
+      protect_gbv_oui = if_else(protect_gbv > 0, "1",
+                                        "0")
+      )
   
   write.csv(df_hh, "output/MSNA_HH_Analysed_data.csv")
   
