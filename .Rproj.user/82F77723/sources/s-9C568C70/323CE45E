@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1568123011117.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "323CE45E",
+    "lastKnownWriteTime" : 1568123053,
+    "last_content_update" : 1568123053917,
+    "path" : "~/SpiderOak Hive/IMPACT/26_CAR/CAR_MSNA_HH_Analysis/002_merge_loop.R",
+    "project_path" : "002_merge_loop.R",
+    "properties" : {
+        "cursorPosition" : "7,46",
+        "scrollLine" : "6"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 10,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1568122965194.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "867562A",
+    "lastKnownWriteTime" : 1568120285,
+    "last_content_update" : 1568120285,
+    "path" : "~/SpiderOak Hive/IMPACT/26_CAR/CAR_MSNA_HH_Analysis/0030_nettoyage_RCA.R",
+    "project_path" : "0030_nettoyage_RCA.R",
+    "properties" : {
+        "cursorPosition" : "1097,0",
+        "scrollLine" : "1079"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

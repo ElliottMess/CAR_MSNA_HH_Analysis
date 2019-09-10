@@ -205,67 +205,10 @@
   
   df_hh$sante_5_deces_5moins = ifelse(df_hh$sante_5_deces_age < 5, 1, ifelse(df_hh$sante_5_deces_age >= 5, 0, NA))
   
-  
-  
-  # Add Borda count for needed variables :
-  # install.packages("votesys")
-  #library(votesys)
-  #
-  #unique(df_hh$educ_5_ecole_acces_1)
-  #raw <- as.matrix(select(df_hh, "educ_5_ecole_acces_1", 
-  #         "educ_5_ecole_acces_2",
-  #        "educ_5_ecole_acces_3"))
-  ## raw <- matrix(raw, ncol = 3, byrow = TRUE)
-  #vote <- create_vote(raw,xtype = 2,  candidate = c("non_fonct",  "acces_dangereux", "financier","logistique",
-  #                                                  "physique", "acces_impossible", "surpeuplee", "manque_staff",
-  #                                                  "infra", "cursus", "enfants_occupes",  "culturel", "manque_interet",
-  #                                                  "autre","aucune"))
-  #
-  #y <- borda_method(vote)
-  #
-  #
-  #length(unique(df_hh$educ_5_ecole_acces_1))
-  #  
-  #  raw <- c(
-  #    rep(c('m', 'n', 'c', 'k'), 42), 
-  #    rep(c('n', 'c', 'k', 'm'), 26), 
-  #    rep(c('c', 'k', 'n', 'm'), 15), 
-  #    rep(c('k', 'c', 'n', 'm'), 17)
-  #  ) 
-  #  raw <- matrix(raw, ncol = 4, byrow = TRUE)
-  #  vote <- create_vote(raw, xtype = 2, candidate = c('m', 'n', 'c', 'k'))
-  #  
-  #  raw <- list(c('a', 'e', 'c', 'd', 'b'), c('b', 'a', 'e'), 
-  #              c('c', 'd', 'b'), c('d', 'a', 'e')
-  #  )
-  #  vote <- create_vote(raw, xtype = 3, candidate = c('a', 'b', 'c', 'd', 'e'))
-  #  y <- borda_method(vote, modified = TRUE)
-  #  
-  #  
-  
-  # Check if all indicators are in 
-  # delete useless column
-  # 
-  
   var_freq_scol <- c("sum_educ_3_presence_18_19.filles_7_12.12m" , "sum_educ_3_presence_18_19.filles_7_12.6m_12m" , "sum_educ_3_presence_18_19.filles_13_18.12m", "sum_educ_3_presence_18_19.filles_13_18.6m_12m",
                      "sum_educ_3_presence_18_19.garcons_7_12.12m" , "sum_educ_3_presence_18_19.garcons_7_12.6m_12m" , "sum_educ_3_presence_18_19.garcons_13_18.12m", "sum_educ_3_presence_18_19.garcons_13_18.6m_12m")
   
   df_hh <- df_hh%>%
-    mutate(
-      pin_score_nfi = if_else(score_nfi_tot >= 3.9, "5",
-                              if_else(score_nfi_tot >= 3, "4",
-                                      if_else(score_nfi_tot >= 2, "3",
-                                              if_else(score_nfi_tot >= 1, "2",
-                                                      if_else(score_nfi_tot <= 1 & score_nfi_tot >=0, "1",
-                                                              NA_character_)
-                                              )))),
-      pin_abri_surface = if_else(taille_abri_pp >= 9, "1", 
-                                 if_else(taille_abri_pp < 9 & taille_abri_pp >= 8, "2",
-                                         if_else(taille_abri_pp >= 6.5 & taille_abri_pp < 8, "3",
-                                                 if_else(taille_abri_pp >= 3.5 & taille_abri_pp < 6.5, "4",
-                                                         if_else(taille_abri_pp >= 0 & taille_abri_pp <= 3.5, "5",
-                                                                 NA_character_)))))
-    )%>%
     mutate(
       nb_enfants_scol_6mplus = rowSums(select(., var_freq_scol), na.rm = T),
       school_age_enfants = (sum_educ_2_inscrit_18_19_non + sum_educ_2_inscrit_18_19.filles_13_18 + sum_educ_2_inscrit_18_19.filles_7_12 + sum_educ_2_inscrit_18_19.garcons_13_18 + sum_educ_2_inscrit_18_19.garcons_7_12),
@@ -278,63 +221,13 @@
                                               )))
       )
     )
-  
-  ## # MSSC #### 
-  df_hh <- df_hh %>%
-    mutate(
-      pin_mssc_marche = if_else(secal_9_acces_marche == "marche_inexist" |  secal_9_acces_marche == "marche_trop_cher" | 
-                                  secal_9_acces_marche == "marche_exist_acces_dangereux" |  secal_9_acces_marche == "marche_exist_acces_inacess_transport" |
-                                  secal_9_acces_marche == "marche_exist_acces_inacess_physique" | secal_9_acces_marche ==  "marche_exist_acces_inacess_secu", "5",
-                                if_else(secal_9_acces_marche == "marche_non_appro_bien_alim", "4", 
-                                        if_else(secal_9_acces_marche == "marche_non_appro_nfi", "3", 
-                                                if_else(secal_9_acces_marche == "marche_accessible", "1", NA_character_)))),
-      pin_protec_acces_service = if_else(protect_13.administration_leg == 1 | protect_13.comite_protection == 1 | protect_13.administration_loc == 1 | 
-                                           protect_13.autre == 1 | protect_13.centre_ecoute == 1 | protect_13.relais_communautaire == 1 |
-                                           protect_13.centre_ecoute == 1, "1",
-                                         if_else(protect_13.aucun == 1 | protect_13.nsp == 1, "4", NA_character_))
-    )
-  
+
   
   #### SECAL
   
   
-  df_hh <- df_hh%>%
-    mutate(
-      # pin_protec_3 = 
-      pin_secal_hhs = if_else(hhs_score >= 5, "5", 
-                              if_else(hhs_score >=4 , "4", 
-                                      if_else(hhs_score >= 2 & hhs_score <=3, "3", 
-                                              if_else(hhs_score ==1, "2",
-                                                      if_else(hhs_score == 0, "1",
-                                                              NA_character_))))),
-      pin_secal_lcs = if_else(lcs_total == "urgence", "4", 
-                              if_else(lcs_total == "crise", "3", 
-                                      if_else(lcs_total == "stress", "2", 
-                                              if_else(lcs_total == "minimal", "1", NA_character_)))),
-      pin_secal_fcs = if_else(fcs_score2 > 35, "1",
-                              if_else(fcs_score2 >21 & fcs_score2 <= 35, "4",
-                                      if_else(fcs_score2 >= 0 & fcs_score2 <= 21, "5",
-                                              NA_character_)))
-    )
   df_hh <- df_hh %>%
     mutate(
-      # aumoins_unenfant_diarrhee = if_else((sum_sante_4_0_4_malades_diarrhee_filles + sum_sante_4_0_4_malades_diarrhee_garcons)>0, 1, 0),
-      nb_enfant_diarrhee = sum_sante_4_0_4_malades_diarrhee_filles + sum_sante_4_0_4_malades_diarrhee_garcons,
-      pin_sante_diarrhee = if_else(nb_enfant_diarrhee == 0, "1",
-                                   if_else(nb_enfant_diarrhee / sum_agegrp_0_4 <= 0.5, "3",
-                                           if_else(nb_enfant_diarrhee / sum_agegrp_0_4 > 0.5, "5", NA_character_))),
-      pin_wash_source = if_else(source_eau_boisson == "amelioree" & wash_4_temps == "sur_place", "1",
-                                if_else(source_eau_boisson == "amelioree" & 
-                                          (wash_4_temps == "0_5_min" | wash_4_temps == "5_15_min" | wash_4_temps == "16_30_min"), "2", 
-                                        if_else(source_eau_boisson == "amelioree" & wash_4_temps == "31_plus_min", "3",  
-                                                if_else(source_eau_boisson == "non_amelioree", "4", 
-                                                        if_else(source_eau_boisson == "surface", "5", NA_character_))))),
-      pin_wash_infra = if_else(wash_10_infra_sanit == "latrine_acceptable" & wash_11_sanit_partagee == "non", "1", 
-                               if_else(wash_10_infra_sanit == "latrine_acceptable" & wash_11_sanit_partagee == "oui", "3", 
-                                       if_else(wash_10_infra_sanit == "latrine_non_acceptable", "4", 
-                                               if_else(wash_10_infra_sanit == "defec_air_libre" | 
-                                                         wash_10_infra_sanit == "defec_air_libre_cours_d_eau" | 
-                                                         wash_10_infra_sanit == "defec_air_libre_zone_precise", "5", NA_character_)))),
       protect_11_1_aumoinsun = if_else(protect_11_1 >0 ,1, 0 )
     )
   
@@ -346,20 +239,7 @@
                                               if_else(score_nfi_tot >= 1, "2",
                                                       if_else(score_nfi_tot <= 1 & score_nfi_tot >=0, "1",
                                                               NA_character_)
-                                              )))),
-      # pin_abri_surface = if_else(taille_abri_pp >= 9, "1", 
-      #                            if_else(taille_abri_pp < 9 & taille_abri_pp >= 8, "2",
-      #                                    if_else(taille_abri_pp >= 6.5 & taille_abri_pp < 8, "3",
-      #                                            if_else(taille_abri_pp >= 3.5 & taille_abri_pp < 6.5, "4",
-      #                                                    if_else(taille_abri_pp >= 0 & taille_abri_pp <= 3.5, "5",
-      #                                                            NA_character_))))),
-      # pin_abri_surface_2 = if_else(rep_souhaitee_1 == "nfi" & (nfi_2_type_abri == "abri_urgence" | nfi_2_1_type_abri_autre == "aucun") & taille_abri_pp < 3.5, "5",
-      #                              if_else(rep_souhaitee_1 == "nfi" & (nfi_2_type_abri == "abri_urgence" | nfi_2_1_type_abri_autre == "aucun") & taille_abri_pp < 5, "4",
-      #                                       if_else(rep_souhaitee_2 == "nfi"& (nfi_2_type_abri == "abri_urgence" | nfi_2_1_type_abri_autre == "aucun") & taille_abri_pp < 3.5, "3",
-      #                                               if_else(rep_souhaitee_2 == "nfi"& (nfi_2_type_abri == "abri_urgence" | nfi_2_1_type_abri_autre == "aucun") & taille_abri_pp < 5, "2",
-      #                                                       "1"))))
-      # 
-      
+                                              ))))
     )
   
   
@@ -429,11 +309,6 @@
   
   df_hh <- df_hh%>%
     mutate(
-      # pin_abri_surface = if_else(rep_souhaitee_1 == "nfi" & (nfi_2_type_abri == "abri_urgence" | nfi_2_1_type_abri_autre == "aucun") & taille_abri_pp < 3.5, "5",
-      #                              if_else(rep_souhaitee_1 == "nfi" & (nfi_2_type_abri == "abri_urgence" | nfi_2_1_type_abri_autre == "aucun") & taille_abri_pp < 5, "4",
-      #                                      if_else(rep_souhaitee_2 == "nfi"& (nfi_2_type_abri == "abri_urgence" | nfi_2_1_type_abri_autre == "aucun") & taille_abri_pp < 3.5, "3",
-      #                                              if_else(rep_souhaitee_2 == "nfi"& (nfi_2_type_abri == "abri_urgence" | nfi_2_1_type_abri_autre == "aucun") & taille_abri_pp < 5, "2",
-      #                                                      "1")))),
       pin_abri_surface = if_else((nfi_2_type_abri == "abri_urgence" & taille_abri_pp <= 3.5) | nfi_2_type_abri == "aucun", "5",
                                  if_else(nfi_2_type_abri == "abri_urgence" & taille_abri_pp > 3.5, "3",
                                          if_else(nfi_2_type_abri == "habitat_paille" & taille_abri_pp <= 3.5 , "2",

@@ -2,7 +2,7 @@ library(dplyr)
 
 ### Loading files
 
-df_hh <- read.csv("output/REACH_CAR_MSNA_Final_dataset_0309.csv", stringsAsFactors = F)
+df_hh <- read.csv("output/REACH_CAR_MSNA_Final_dataset_0309_clean_sampled.csv", stringsAsFactors = F)
 names(df_hh) <- tolower(names(df_hh))
 df_hh$mssc_2_source_rev_1 <- gsub("[^ -~]", "", df_hh$mssc_2_source_rev_1)
 df_hh$mssc_2_source_rev_2 <- gsub("[^ -~]", "", df_hh$mssc_2_source_rev_2)
