@@ -321,3 +321,12 @@ output/tables/PIN/summary_stats_admin2_pin_20190909.csv
 .Rproj.user/82F77723/pcs/files-pane.pper
 .Rproj.user/82F77723/pcs/files-pane.pper
 output/freq_scolaire_20190809_hotfix.csv
+input/questionnaire_MSNA_HH_loop_2019-08-29_tobecleaned.csv
+ndele_weights.csv
+output/DataCleaningLogbook_hh_ind-20190910
+output/DataCleaningLogbook_hh_ind-20190910.csv
+output/REACH_CAR_dataset_HH_MSNA_20190910.csv
+output/REACH_CAR_MSNA_Final_dataset_0309_clean.csv
+output/REACH_CAR_MSNA_Final_dataset_0309_clean_sampled.csv
+output/tables/PIN/summary_stats_admin1_grp_pin_20190910.csv
+output/tables/PIN/summary_stats_admin2_pin_20190910.csv
