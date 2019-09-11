@@ -357,3 +357,6 @@ output/REACH_CAR_MSNA_Final_dataset_0309_clean.csv
 output/REACH_CAR_MSNA_Final_dataset_0309_clean_sampled.csv
 output/tables/PIN/summary_stats_admin1_grp_pin_20190910.csv
 output/tables/PIN/summary_stats_admin2_pin_20190910.csv
+.Rproj.user/
+Rproj.user/82F77723/
+output/
