@@ -31,9 +31,18 @@ removed_nonUTF <- function(x){
   return(x)
 }
 
-write.csv.withversion <- function(data, file.name, path=getwd()){
-    
+write.csv.withversion <- function(data, file.name){
+  file.name <- paste(file.name, format(Sys.time(), "%Y%m%d"), sep="_")
+    if(!file.exists(file.name)){return(file.name)}
+    i=1
+    repeat {
+      f = paste(file.name,i,sep=".")
+      if(!file.exists(f)){return(f)}
+      i=i+1
+    }
 }
+
+write.csv.withversion(hh_ind, "hh_ind.csv")
 
 
 hh_ind <- read.csv("input/questionnaire_MSNA_HH_loop_2019-08-29.csv", stringsAsFactors = F, encoding = "UTF-8")%>%
