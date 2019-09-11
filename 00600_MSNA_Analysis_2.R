@@ -6,194 +6,93 @@
   
   df_hh <- read.csv("output/MSNA_HH_Analysed_data.csv", stringsAsFactors = F)
   
+  choices_form <- read.csv("input/questionnaire_kobo_hh_combine_v4_FINAL_PourAnalyse_choices.csv", stringsAsFactors = F)
   
-  ### Add variable for urban vs. rural ####
-  df_hh$urban_rural = ""
-  # import from Matt's file the var
-  popsize_village = read.csv("./input/Copy of caf_msna_sample_frame_villages_dtm_v3.csv", stringsAsFactors = F)
+  source('./functions/change_other_values.R')
   
-  popsize_village$admin2Name2 = gsub("ï","i", popsize_village$admin2Name ,ignore.case = TRUE) 
-  popsize_village$admin2Name2 = gsub("é","e", popsize_village$admin2Name2,ignore.case = TRUE) 
-  popsize_village$admin2Name2 = gsub("è","e", popsize_village$admin2Name2, ignore.case = TRUE)
-  popsize_village$admin2Name2 = gsub(" ","-", popsize_village$admin2Name2 , ignore.case = TRUE)
-  popsize_village$admin2Name2 = gsub("?","e", popsize_village$admin2Name2 , ignore.case = TRUE)
-  popsize_village$VillageAll_test = gsub(" ","" , popsize_village$VillageAll ,ignore.case = TRUE)
-  popsize_village$VillageAll_test =  sapply(popsize_village$VillageAll_test, tolower) 
-  popsize_village$VillageAll_test = gsub("´","i" , popsize_village$VillageAll_test ,ignore.case = TRUE)
-  popsize_village$VillageAll_test = gsub("?z","e" , popsize_village$VillageAll_test ,ignore.case = TRUE)
+  # ### Add variable for urban vs. rural ####
+  # df_hh$urban_rural = ""
+  # # import from Matt's file the var
+  # popsize_village = read.csv("./input/Copy of caf_msna_sample_frame_villages_dtm_v3.csv", stringsAsFactors = F)
+  # 
+  # popsize_village$admin2Name2 = gsub("ï","i", popsize_village$admin2Name ,ignore.case = TRUE) 
+  # popsize_village$admin2Name2 = gsub("é","e", popsize_village$admin2Name2,ignore.case = TRUE) 
+  # popsize_village$admin2Name2 = gsub("è","e", popsize_village$admin2Name2, ignore.case = TRUE)
+  # popsize_village$admin2Name2 = gsub(" ","-", popsize_village$admin2Name2 , ignore.case = TRUE)
+  # popsize_village$admin2Name2 = gsub("?","e", popsize_village$admin2Name2 , ignore.case = TRUE)
+  # popsize_village$VillageAll_test = gsub(" ","" , popsize_village$VillageAll ,ignore.case = TRUE)
+  # popsize_village$VillageAll_test =  sapply(popsize_village$VillageAll_test, tolower) 
+  # popsize_village$VillageAll_test = gsub("´","i" , popsize_village$VillageAll_test ,ignore.case = TRUE)
+  # popsize_village$VillageAll_test = gsub("?z","e" , popsize_village$VillageAll_test ,ignore.case = TRUE)
+  # 
+  # popsize_village$VillageAll_admin2 = paste0(popsize_village$VillageAll_test, " _ ", popsize_village$admin2Name2, sep="")
+  # 
+  # for (i in 1:nrow(df_hh)){
+  #   df_hh$urban_rural[i] = ifelse(is_in(df_hh$localite_final_labels_admin2[i], popsize_village$VillageAll_admin2), 
+  #                                 subset(popsize_village, popsize_village$VillageAll_admin2 == df_hh$localite_final_labels_admin2[i])$UrbanRural[1], 
+  #                                 df_hh$urban_rural[i]) 
+  # }
+  # 
+  # table(df_hh$urban_rural)
+  # 
+  # not_inSF = as.data.frame(unique(subset(df_hh, !is_in(df_hh$localite_final_labels_admin2, popsize_village$VillageAll_admin2))$localite_final_labels_admin2))
+  # write.csv(not_inSF, "output/urbainrural.csv")
+  # 
+    
   
-  popsize_village$VillageAll_admin2 = paste0(popsize_village$VillageAll_test, " _ ", popsize_village$admin2Name2, sep="")
-  
-  for (i in 1:nrow(df_hh)){
-    df_hh$urban_rural[i] = ifelse(is_in(df_hh$localite_final_labels_admin2[i], popsize_village$VillageAll_admin2), 
-                                  subset(popsize_village, popsize_village$VillageAll_admin2 == df_hh$localite_final_labels_admin2[i])$UrbanRural[1], 
-                                  df_hh$urban_rural[i]) 
-  }
-  
-  table(df_hh$urban_rural)
-  
-  not_inSF = as.data.frame(unique(subset(df_hh, !is_in(df_hh$localite_final_labels_admin2, popsize_village$VillageAll_admin2))$localite_final_labels_admin2))
-  write.csv(not_inSF, "output/urbainrural.csv")
-  
-  
-  
-  
-  # Recode 'other' ####
-  pacs <- read.csv2("./input/other_recoded_PAC.csv", stringsAsFactors = F, sep = ",", check.names = F) %>% as.data.frame
-  # other_toberecoded = read.csv("./input/other_recoded_PAC.csv", stringsAsFactors = F)
-  
-  names <- colnames(pacs)
-  names[6] <- "reponse_corr"
-  names -> colnames(pacs)
-  
-  other_toberecoded = pacs
-  
-  other_toberecoded = subset(other_toberecoded, other_toberecoded$reponse_corr != "")
-  liste_qst_other = unique(other_toberecoded$variable)
-  liste_qst_other_sc = c("aap_1_1_source_confiance_autre", "aap_3_canal_information_autre" ) 
-  # "ig_11_IDP_RtL_autre" ,"ig_15_IDP_RtR_Ret_Rapat_autre"   
-  liste_qst_other_borda = c("educ_5_ecole_acces_autre", 
-                            # "educ_6_reponse_autre", 
-                            "wash_22_autres_autre", "mssc_2_source_rev_autre", "wash_9_insuff_raisons_autre")
-  liste_qst_other_mc = c("aap_2_1_type_information_autre", "aap_4_retour_fournisseurs_aide_autre", 
-                         # "ig_14_IDP_cond_retour_autre", 
-                         "protect_13_autre", "wash_2_source_autre_usage_autre", "protect_2_femmes_risque_autre",
-                         "protect_3_filles_risque_autre", "protect_3_garcons_risque_autre","protect_2_hommes_risque_autre", "wash_1_source_boisson_autre")
-  liste_qst_other_other = c("mssc_4_dep_6M_autre", "wash_20_autres_autre")
-  
-  length(liste_qst_other) == length(liste_qst_other_sc)+length(liste_qst_other_borda)+length(liste_qst_other_mc)+length(liste_qst_other_other)
-  
-  other_toberecoded$value <- gsub(" /// instances: [0-9]*?$", "",other_toberecoded$value )
+  codes_others_aap <- read.csv("./input/questionnaire_MSNA_HH_autreToClean.csv", stringsAsFactors = F)%>%
+    mutate_at(vars(ends_with("_autre")), removed_nonUTF)
   
   
-  # Recode sc questions :
-  other_toberecoded_sc = subset(other_toberecoded, is_in(other_toberecoded$variable, liste_qst_other_sc))
+  questions_toberecoded <- names(select(codes_others_aap, ends_with("_autre")))
   
-  change_clog_select_one <- function(question.name, other.q.name, old.value, new.value, data){
-    other.q <- data[[other.q.name]] 
-    question.v <- data[[question.name]]
-    data[[other.q.name]] <- plyr::mapvalues(other.q, old.value, new.value)
-    question.v[which(!(is.null(other.q)))] <- !(is.null(data[[other.q.name]]))
-    data[[question.name]] <- question.v
-    return(data)
-  }
+  df_hh <- df_hh%>%
+    mutate_at(questions_toberecoded, removed_nonUTF)
   
-  df_hh$aap_autrerecoded = change_clog_select_one("aap_1_source_confiance", "aap_1_1_source_confiance_autre", other_toberecoded_sc$value, other_toberecoded_sc$reponse_corr,
-                                                  data = df_hh)$aap_1_source_confiance_autre
-  df_hh$aap_1_source_confiance = ifelse(df_hh$aap_autrerecoded != "", df_hh$aap_autrerecoded, df_hh$aap_1_source_confiance)
-  df_hh$aap_autrerecoded = change_clog_select_one("aap_3_canal_information", "aap_3_canal_information_autre", other_toberecoded_sc$value, other_toberecoded_sc$reponse_corr,
-                                                  data = df_hh)$aap_3_canal_information_autre
-  df_hh$aap_autrerecoded <- gsub("[^ -~]", "", df_hh$aap_autrerecoded)
-  df_hh$aap_autrerecoded <- tolower(gsub(" ", "", df_hh$aap_autrerecoded))
+  list_to_add_aap_1_1_source_confiance_autre <- choices_form$name[choices_form$list_name == "source_confiance"]
   
-  df_hh$aap_3_canal_information = ifelse(df_hh$aap_autrerecoded != "", df_hh$aap_autrerecoded, df_hh$aap_3_canal_information)
-  #df_hh$aap_autrerecoded = change_clog_select_one("ig_11_IDP_RtL", "ig_11_IDP_RtL_autre", other_toberecoded_sc$value, other_toberecoded_sc$reponse_corr,
-  #                                                data = df_hh)$ig_11_IDP_RtL_autre
-  #df_hh$ig_11_IDP_RtL = ifelse(df_hh$aap_autrerecoded != "", df_hh$aap_autrerecoded, df_hh$ig_11_IDP_RtL)
-  #df_hh$aap_autrerecoded = change_clog_select_one("ig_15_RtR_Ret_Rapat", "ig_15_IDP_RtR_Ret_Rapat_autre", other_toberecoded_sc$value, other_toberecoded_sc$reponse_corr,
-  #                                                data = df_hh)$ig_15_IDP_RtR_Ret_Rapat_autre
-  #df_hh$ig_15_RtR_Ret_Rapat = ifelse(df_hh$aap_autrerecoded != "", df_hh$aap_autrerecoded, df_hh$ig_15_RtR_Ret_Rapat)
-  
-  
-  # Recode mc questions :
-  liste_qst_other_mc
-  question.name_mc = c("aap_2_type_information", "aap_4_retour_fournisseurs_aide", "protect_13", "wash_2_source_autre_usage", "protect_2_femmes_risque", 
-                       "protect_2_filles_risque", "protect_2_garcons_risque", "protect_2_hommes_risque", "wash_1_source_boisson") 
-  
-  
-  other_toberecoded_mc = subset(other_toberecoded, is_in(other_toberecoded$variable, liste_qst_other_mc))
-  other_toberecoded_mc = subset(other_toberecoded_mc, other_toberecoded_mc$reponse_corr != "autre")
-  
-  for (i in 1:nrow(other_toberecoded_mc)){
-    other_toberecoded_mc$question.name[i] = paste0(question.name_mc[match(other_toberecoded_mc$variable[i], liste_qst_other_mc)], 
-                                                   ".", other_toberecoded_mc$reponse_corr[i], sep="") 
-    other_toberecoded_mc$question.name.autre[i] = paste0(question.name_mc[match(other_toberecoded_mc$variable[i], liste_qst_other_mc)], 
-                                                         ".autre", sep="")
-  }
-  
-  for(i in 1:nrow(df_hh)){
-    for(j in 1:length(liste_qst_other_mc)){
-      other_toberecoded_mc_j = subset(other_toberecoded_mc, other_toberecoded_mc$variable == liste_qst_other_mc[j])
-      if(is_in(df_hh[[liste_qst_other_mc[j]]][i], other_toberecoded_mc_j$value)){
-        other_toberecoded_mc_j_2 = subset(other_toberecoded_mc_j, other_toberecoded_mc_j$value == df_hh[[liste_qst_other_mc[j]]][i])
-        if(length(df_hh[[other_toberecoded_mc_j_2$question.name]][i]) !=0){
-          df_hh[[other_toberecoded_mc_j_2$question.name]][i] = 1
-          df_hh[[other_toberecoded_mc_j_2$question.name.autre]][i] = 0
-          df_hh[[question.name_mc[j]]][i] = paste0(df_hh[[question.name_mc[j]]][i], " ", other_toberecoded_mc_j_2$reponse_corr[j], sep="")
-          df_hh[[question.name_mc[j]]][i] = sub("autre$", "", df_hh[[question.name_mc[j]]][i])
-        }
-      }
-    }
-  }
-  
-  
-  
-  
-  
-  table(df_hh$educ_5_ecole_acces_1 == "autre")
-  table(df_hh$educ_5_ecole_acces_2 == "autre")
-  table(df_hh$educ_5_ecole_acces_3 == "autre")
-  # Recode other in top 3 :
-  other_toberecoded_top3 = subset(other_toberecoded, is_in(other_toberecoded$variable, liste_qst_other_borda))
 
-  other_toberecoded_top3 = subset(other_toberecoded_top3, is_in(other_toberecoded_top3$reponse_corr, choices$name))
+  df_hh$aap_1_source_confiance <- change_select_one_value(question.name = "aap_1_source_confiance", 
+                                                          other.q.name = "aap_1_1_source_confiance_autre", 
+                                                          old.value.name  = "aap_1_1_source_confiance_autre", 
+                                                          new.value.name = "aap_1_1_source_confiance_autre_recoding",
+                                                          toadd.value = list_to_add_aap_1_1_source_confiance_autre,
+                                                          data = df_hh,
+                                                          codes.df = codes_others_aap)$aap_1_source_confiance
+  
+  
+  list_to_aap_3_canal_information_autre <- choices_form$name[choices_form$list_name == "canal_information"]
+  
 
-
-  df_hh$educ_recoded = change_clog_select_one("educ_5_ecole_acces_1", "educ_5_ecole_acces_autre", other_toberecoded_top3$value, other_toberecoded_top3$reponse_corr,
-                                              data = df_hh)$educ_5_ecole_acces_1
-  df_hh$wash22_recoded = change_clog_select_one("wash_22_wash_reponse_1", "wash_22_autres_autre", other_toberecoded_top3$value, other_toberecoded_top3$reponse_corr,
-                                              data = df_hh)$wash_22_wash_reponse_1
-  df_hh$mssc2_recoded = change_clog_select_one("mssc_2_source_rev_1", "mssc_2_source_rev_autre", other_toberecoded_top3$value, other_toberecoded_top3$reponse_corr,
-                                              data = df_hh)$mssc_2_source_rev_1
-  df_hh$wash9_recoded = change_clog_select_one("wash_9_insuff_raisons_1", "wash_9_insuff_raisons_autre", other_toberecoded_top3$value, other_toberecoded_top3$reponse_corr,
-                                              data = df_hh)$wash_9_insuff_raisons_1
-  for (i in 1:nrow(df_hh)){
-    if(df_hh$educ_5_ecole_acces_1[i] == "autre"){
-      df_hh$educ_5_ecole_acces_1[i] = ifelse(df_hh$educ_recoded[i] != "", df_hh$educ_recoded[i], df_hh$educ_5_ecole_acces_1[i])
-    }else{
-      if(df_hh$educ_5_ecole_acces_2[i] == "autre"){
-        df_hh$educ_5_ecole_acces_2[i] = ifelse(df_hh$educ_recoded[i] != "", df_hh$educ_recoded[i], df_hh$educ_5_ecole_acces_2[i])
-        }else{
-          if(df_hh$educ_5_ecole_acces_3[i] == "autre"){
-            df_hh$educ_5_ecole_acces_3[i] = ifelse(df_hh$educ_recoded[i] != "", df_hh$educ_recoded[i], df_hh$educ_5_ecole_acces_3[i])
-          }
-          }
-    }
-    if(df_hh$wash_22_wash_reponse_1[i] == "autre"){
-      df_hh$wash_22_wash_reponse_1[i] = ifelse(df_hh$wash22_recoded[i] != "", df_hh$wash22_recoded[i], df_hh$wash_22_wash_reponse_1[i])
-    }else{
-      if(df_hh$wash_22_wash_reponse_2[i] == "autre"){
-        df_hh$wash_22_wash_reponse_2[i] = ifelse(df_hh$wash22_recoded[i] != "", df_hh$wash22_recoded[i], df_hh$wash_22_wash_reponse_2[i])
-      }else{
-        if(df_hh$wash_22_wash_reponse_3[i] == "autre"){
-          df_hh$wash_22_wash_reponse_3[i] = ifelse(df_hh$wash22_recoded[i] != "", df_hh$wash22_recoded[i], df_hh$wash_22_wash_reponse_3[i])
-        }
-      }
-    }
-    if(df_hh$mssc_2_source_rev_1[i] == "autre"){
-      df_hh$mssc_2_source_rev_1[i] = ifelse(df_hh$mssc2_recoded[i] != "", df_hh$mssc2_recoded[i], df_hh$mssc_2_source_rev_1[i])
-    }else{
-      if(df_hh$mssc_2_source_rev_2[i] == "autre"){
-        df_hh$mssc_2_source_rev_2[i] = ifelse(df_hh$mssc2_recoded[i] != "", df_hh$mssc2_recoded[i], df_hh$mssc_2_source_rev_2[i])
-      }else{
-        if(df_hh$mssc_2_source_rev_3[i] == "autre"){
-          df_hh$mssc_2_source_rev_3[i] = ifelse(df_hh$mssc2_recoded[i] != "", df_hh$mssc2_recoded[i], df_hh$mssc_2_source_rev_3[i])
-        }
-      }
-    }
-    if(df_hh$wash_9_insuff_raisons_1[i] == "autre"){
-      df_hh$wash_9_insuff_raisons_1[i] = ifelse(df_hh$wash9_recoded[i] != "", df_hh$wash9_recoded[i], df_hh$wash_9_insuff_raisons_1[i])
-    }else{
-      if(df_hh$wash_9_insuff_raisons_2[i] == "autre"){
-        df_hh$wash_9_insuff_raisons_2[i] = ifelse(df_hh$wash9_recoded[i] != "", df_hh$wash9_recoded[i], df_hh$wash_9_insuff_raisons_2[i])
-      }else{
-        if(df_hh$wash_9_insuff_raisons_3[i] == "autre"){
-          df_hh$wash_9_insuff_raisons_3[i] = ifelse(df_hh$wash9_recoded[i] != "", df_hh$wash9_recoded[i], df_hh$wash_9_insuff_raisons_3[i])
-        }
-      }
-    }
-  }
-
+  df_hh$aap_3_canal_information <- change_select_one_value(question.name = "aap_3_canal_information", 
+                                                          other.q.name = "aap_3_canal_information_autre", 
+                                                          old.value.name  = "aap_3_canal_information_autre", 
+                                                          new.value.name = "aap_3_canal_information_autre_recoding",
+                                                          toadd.value = list_to_aap_3_canal_information_autre,
+                                                          data = df_hh,
+                                                          codes.df = codes_others_aap)$aap_3_canal_information
+  
+  list_to_sante_5_deces_cause <- choices_form$name[choices_form$list_name == "deces_cause"]
+  
+  df_hh$sante_5_deces_cause <- change_select_one_value(question.name = "sante_5_deces_cause", 
+                                                       other.q.name = "sante_5_deces_cause_autre", 
+                                                       old.value.name  = "sante_5_deces_cause_autre", 
+                                                       new.value.name = "sante_5_deces_cause_autre_recoded",
+                                                       toadd.value = list_to_sante_5_deces_cause,
+                                                       data = df_hh,
+                                                       codes.df = codes_others_aap)$sante_5_deces_cause
+  
+  list_to_nfi_propr_abri <- choices_form$name[choices_form$list_name == "propr_abri"]
+  
+  df_hh$nfi_propr_abri <- change_select_one_value(question.name = "nfi_propr_abri", 
+                                                       other.q.name = "nfi_propr_abri_autre", 
+                                                       old.value.name  = "nfi_propr_abri_autre", 
+                                                       new.value.name = "nfi_propr_abri_autre_recoded",
+                                                       toadd.value = list_to_nfi_propr_abri,
+                                                       data = df_hh,
+                                                       codes.df = codes_others_aap)$nfi_propr_abri
+  
+  
   # Add a variable per inidcator - Per severity score if we have the scales ?  ####
   df_hh$sante_indicator_accouchement_assiste = ifelse(df_hh$sum_sante_1_accouch_lieu == "maison_assiste" | df_hh$sum_sante_1_accouch_lieu == "cs", 1, 0)
   df_hh$sante_indicator_accouchement_non_assiste = ifelse(df_hh$sum_sante_1_accouch_lieu == "maison_non_assiste" | df_hh$sum_sante_1_accouch_lieu == "autre", 1, 0)
