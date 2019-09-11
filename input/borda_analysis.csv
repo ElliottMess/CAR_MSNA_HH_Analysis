@@ -1,0 +1,11 @@
+variable_1,variable_2,variable_3,variable_4,variable_5,disaggregate,repeat_var,exclude,ranks
+educ_5_ecole_acces_1,educ_5_ecole_acces_2,educ_5_ecole_acces_3,,,ig_8_statut,admin_1,aucune,3
+wash_22_wash_reponse_1,wash_22_wash_reponse_2,wash_22_wash_reponse_3,,,ig_8_statut,admin_1,,3
+mssc_2_source_rev_1,mssc_2_source_rev_2,mssc_2_source_rev_3,,,ig_8_statut,admin_1,nsp,3
+wash_9_insuff_raisons_1,wash_9_insuff_raisons_2,wash_9_insuff_raisons_3,,,ig_8_statut,admin_1,nsp aucune,3
+nfi_7_assistance_1,nfi_7_assistance_2,nfi_7_assistance_3,,,ig_8_statut,admin_1,nsp,3
+educ_6_reponse_1,educ_6_reponse_2,educ_6_reponse_3,,,ig_8_statut,admin_1,,3
+rep_souhaitee_1,rep_souhaitee_2,rep_souhaitee_3,,,ig_8_statut,admin_1,aucun,3
+secal_13_reponse_1,secal_13_reponse_2,secal_13_reponse_3,,,ig_8_statut,admin_1,,3
+sante_7_reponse_1,sante_7_reponse_2,sante_7_reponse_3,,,ig_8_statut,admin_1,,3
+wash_15_insuff_raisons_1,wash_15_insuff_raisons_2,wash_15_insuff_raisons_3,,,ig_8_statut,admin_1,nsp aucune,3
