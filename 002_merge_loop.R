@@ -779,6 +779,13 @@ main_withloop <- affect_loop_to_parent(loop = hh_ind, parent = main_withloop, ag
 # Create var for child protect: 
 #"% de m?nages avec des enfants de moins de 18 ans qui sont impliqu?s dans des types de travail"
 
+
+hh_ind$protect_9_garcon <- ifelse(hh_ind$protect_9 == "oui" & hh_ind$sexe_hh == "homme", 1,0)
+hh_ind$protect_9_fille <- ifelse(hh_ind$protect_9 == "oui" & hh_ind$sexe_hh == "femme", 1,0)
+hh_ind$protect_9 <- ifelse(hh_ind$protect_9 == "oui", 1,0)
+
+
+
 hh_ind[,c("protect_10.agric", "protect_10.peche", "protect_10.elevage","protect_10.carriere",
           "protect_10.petit_commerce", "protect_10.restauration","protect_10.artisanat", "protect_10.travaux_domestiques", 
           "protect_10.construction", "protect_10.transport", "protect_10.recrutes","protect_10.prostitution",
@@ -803,7 +810,10 @@ main_withloop <- affect_loop_to_parent(loop = hh_ind, parent = main_withloop, ag
                                                            sum_protect_10.recrutes = "protect_10.recrutes",
                                                            sum_protect_10.prostitution = "protect_10.prostitution",
                                                            sum_protect_10.autre = "protect_10.autre",
-                                                           sum_protect_10.nsp = "protect_10.nsp"),
+                                                           sum_protect_10.nsp = "protect_10.nsp",
+                                                           sum_protect_9_garcon = "protect_9_garcon",
+                                                           sum_protect_9_fille = "protect_9_fille",
+                                                           sum_protect_9 = "protect_9"),
                                        uuid.name.loop = "X_parent_index", uuid.name.parent = "X_index")
 
 hh_ind$agegrp_7_12_filles <- if_else(hh_ind$age_hh>=7 & hh_ind$age_hh<=12 & hh_ind$sexe_hh == "femme",1,0)
@@ -838,6 +848,13 @@ hh_ind$agegrp_18_59_tot <- if_else(hh_ind$age_hh >=18 & hh_ind$age_hh <=59 ,1,0)
 hh_ind$agegrp_19_59_tot <- if_else(hh_ind$age_hh >=19 & hh_ind$age_hh <=59 ,1,0) 
 hh_ind$agegrp_59plus_tot <- if_else(hh_ind$age_hh >=60 & hh_ind$age_hh <=1000,1,0) 
 
+hh_ind$agegrp_5_17_femmes <- if_else(hh_ind$age_hh >=5 & hh_ind$age_hh <= 17 & hh_ind$sexe_hh == "femme", 1,0)
+hh_ind$agegrp_5_17_hommes <- if_else(hh_ind$age_hh >=5 & hh_ind$age_hh <= 17 & hh_ind$sexe_hh == "homme", 1,0)
+hh_ind$agegrp_5_17 <- if_else(hh_ind$age_hh >=5 & hh_ind$age_hh <= 17, 1,0)
+
+hh_ind$agegrp_0_4_femmes <- if_else(hh_ind$age_hh >=0 & hh_ind$age_hh <= 4 & hh_ind$sexe_hh == "femme", 1,0)
+hh_ind$agegrp_0_4_hommes <- if_else(hh_ind$age_hh >=0 & hh_ind$age_hh <= 4 & hh_ind$sexe_hh == "homme", 1,0)
+
 
 main_withloop <- affect_loop_to_parent(loop = hh_ind, parent = main_withloop, aggregate.function = sum , 
                                        variable.to.add = c(
@@ -855,7 +872,14 @@ main_withloop <- affect_loop_to_parent(loop = hh_ind, parent = main_withloop, ag
                                          sum_agegrp_0_18_tot = "agegrp_0_18_tot",
                                          sum_agegrp_18_59_tot = "agegrp_18_59_tot",
                                          sum_agegrp_19_59_tot = "agegrp_19_59_tot",
-                                         sum_agegrp_59plus_tot = "agegrp_59plus_tot"
+                                         sum_agegrp_59plus_tot = "agegrp_59plus_tot",
+                                         
+                                         sum_agegrp_5_17_femmes = "agegrp_5_17_femmes",
+                                         sum_agegrp_5_17_hommes = "agegrp_5_17_hommes",
+                                         sum_agegrp_5_17 = "agegrp_5_17",
+                                         
+                                         sum_agegrp_0_4_femmes = "agegrp_0_4_femmes",
+                                         sum_agegrp_0_4_hommes = "agegrp_0_4_hommes"
                                        ),
                                        uuid.name.loop = "X_parent_index", uuid.name.parent = "X_index")
 

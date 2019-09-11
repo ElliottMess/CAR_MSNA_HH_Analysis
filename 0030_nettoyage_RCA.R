@@ -1093,7 +1093,6 @@ checkquota2$sampling = data_clean_sampling_admin2
 write.csv(checkquota1, "./output/checkquota1_0309.csv")
 write.csv(checkquota2, "./output/checkquota2_0309.csv")
 
-read.csv()
 
 change_select_one_value <- function(question.name, other.q.name, old.value.name, new.value.name, toadd.value, data, codes.df){
   variable.coded <- codes.df%>%

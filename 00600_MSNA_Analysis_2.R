@@ -8,6 +8,8 @@
   
   choices_form <- read.csv("input/questionnaire_kobo_hh_combine_v4_FINAL_PourAnalyse_choices.csv", stringsAsFactors = F)
   
+  df_hh$admin_0 <- "admin_0"
+  
   source('./functions/change_other_values.R')
   
   # ### Add variable for urban vs. rural ####
@@ -55,7 +57,7 @@
   df_hh$aap_1_source_confiance <- change_select_one_value(question.name = "aap_1_source_confiance", 
                                                           other.q.name = "aap_1_1_source_confiance_autre", 
                                                           old.value.name  = "aap_1_1_source_confiance_autre", 
-                                                          new.value.name = "aap_1_1_source_confiance_autre_recoding",
+                                                          new.value.name = "aap_1_1_source_confiance_autre_recoded",
                                                           toadd.value = list_to_add_aap_1_1_source_confiance_autre,
                                                           data = df_hh,
                                                           codes.df = codes_others_aap)$aap_1_source_confiance
@@ -63,11 +65,12 @@
   
   list_to_aap_3_canal_information_autre <- choices_form$name[choices_form$list_name == "canal_information"]
   
+  
 
   df_hh$aap_3_canal_information <- change_select_one_value(question.name = "aap_3_canal_information", 
                                                           other.q.name = "aap_3_canal_information_autre", 
                                                           old.value.name  = "aap_3_canal_information_autre", 
-                                                          new.value.name = "aap_3_canal_information_autre_recoding",
+                                                          new.value.name = "aap_3_canal_information_autre_recoded",
                                                           toadd.value = list_to_aap_3_canal_information_autre,
                                                           data = df_hh,
                                                           codes.df = codes_others_aap)$aap_3_canal_information
@@ -97,6 +100,8 @@
   df_hh$sante_indicator_accouchement_assiste = ifelse(df_hh$sum_sante_1_accouch_lieu == "maison_assiste" | df_hh$sum_sante_1_accouch_lieu == "cs", 1, 0)
   df_hh$sante_indicator_accouchement_non_assiste = ifelse(df_hh$sum_sante_1_accouch_lieu == "maison_non_assiste" | df_hh$sum_sante_1_accouch_lieu == "autre", 1, 0)
   df_hh$sante_indicator_accouchement_nsp = ifelse(df_hh$sum_sante_1_accouch_lieu == "nsp" , 1, 0)
+  
+  df_hh <- df_hh %>% select(- sum_sante_1_accouch_cs, - sum_sante_1_accouch_maison, -sum_sante_1_accouch_maison_assiste, -sum_sante_1_accouch_maison_nonassiste, -sum_sante_1_accouch_nsp )
   
   df_hh$sante_5_deces_5moins = ifelse(df_hh$sante_5_deces_age < 5, 1, ifelse(df_hh$sante_5_deces_age >= 5, 0, NA))
   
@@ -135,7 +140,7 @@
                                                       if_else(score_nfi_tot <= 1 & score_nfi_tot >=0, "1",
                                                               NA_character_)
                                               ))))
-    )
+      )
   
   
   df_hh <- df_hh %>%
@@ -222,7 +227,8 @@
                                             if_else(sum_agegrp_0_17 > 0 & protect_11_1 > 0, "1",NA_character_))),
       protect_gbv = rowSums(select(., "protect_2_femmes_risque.mariage_force", "protect_2_femmes_risque.violence_sexuelles", "protect_3_filles_risque.mariage_force","protect_3_filles_risque.violence_sexuelles", "protect_3_garcons_risque.mariage_force", "protect_3_garcons_risque.violence_sexuelles"), na.rm = T),
       protect_gbv_oui = if_else(protect_gbv > 0, "1",
-                                        "0")
+                                        "0"),
+      sexe_chef_menage = if_else(ig_3_role == "oui", ig_2_sexe, ig_4_sexe_chef_menage)
       )
   
   write.csv(df_hh, "output/MSNA_HH_Analysed_data.csv")
