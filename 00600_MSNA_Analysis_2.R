@@ -133,71 +133,67 @@
   table(df_hh$educ_5_ecole_acces_1 == "autre")
   table(df_hh$educ_5_ecole_acces_2 == "autre")
   table(df_hh$educ_5_ecole_acces_3 == "autre")
-  # # Recode other in top 3 :
-  # other_toberecoded_top3 = subset(other_toberecoded, is_in(other_toberecoded$variable, liste_qst_other_borda))
-  # 
-  # other_toberecoded_top3 = subset(other_toberecoded_top3, is_in(other_toberecoded_top3$reponse_corr, choices$name))
-  # 
-  # 
-  # df_hh$educ_recoded = change_clog_select_one("educ_5_ecole_acces_1", "educ_5_ecole_acces_autre", other_toberecoded_top3$value, other_toberecoded_top3$reponse_corr,
-  #                                             data = df_hh)$educ_5_ecole_acces_1
-  # df_hh$wash22_recoded = change_clog_select_one("wash_22_wash_reponse_1", "wash_22_autres_autre", other_toberecoded_top3$value, other_toberecoded_top3$reponse_corr,
-  #                                             data = df_hh)$wash_22_wash_reponse_1
-  # df_hh$mssc2_recoded = change_clog_select_one("mssc_2_source_rev_1", "mssc_2_source_rev_autre", other_toberecoded_top3$value, other_toberecoded_top3$reponse_corr,
-  #                                             data = df_hh)$mssc_2_source_rev_1
-  # df_hh$wash9_recoded = change_clog_select_one("wash_9_insuff_raisons_1", "wash_9_insuff_raisons_autre", other_toberecoded_top3$value, other_toberecoded_top3$reponse_corr,
-  #                                             data = df_hh)$wash_9_insuff_raisons_1
-  # for (i in 1:nrow(df_hh)){
-  #   if(df_hh$educ_5_ecole_acces_1[i] == "autre"){
-  #     df_hh$educ_5_ecole_acces_1[i] = ifelse(df_hh$educ_recoded[i] != "", df_hh$educ_recoded[i], df_hh$educ_5_ecole_acces_1[i])
-  #   }else{
-  #     if(df_hh$educ_5_ecole_acces_2[i] == "autre"){
-  #       df_hh$educ_5_ecole_acces_2[i] = ifelse(df_hh$educ_recoded[i] != "", df_hh$educ_recoded[i], df_hh$educ_5_ecole_acces_2[i])
-  #       }else{
-  #         if(df_hh$educ_5_ecole_acces_3[i] == "autre"){
-  #           df_hh$educ_5_ecole_acces_3[i] = ifelse(df_hh$educ_recoded[i] != "", df_hh$educ_recoded[i], df_hh$educ_5_ecole_acces_3[i])
-  #         }
-  #         }
-  #   }
-  #   if(df_hh$wash_22_wash_reponse_1[i] == "autre"){
-  #     df_hh$wash_22_wash_reponse_1[i] = ifelse(df_hh$wash22_recoded[i] != "", df_hh$wash22_recoded[i], df_hh$wash_22_wash_reponse_1[i])
-  #   }else{
-  #     if(df_hh$wash_22_wash_reponse_2[i] == "autre"){
-  #       df_hh$wash_22_wash_reponse_2[i] = ifelse(df_hh$wash22_recoded[i] != "", df_hh$wash22_recoded[i], df_hh$wash_22_wash_reponse_2[i])
-  #     }else{
-  #       if(df_hh$wash_22_wash_reponse_3[i] == "autre"){
-  #         df_hh$wash_22_wash_reponse_3[i] = ifelse(df_hh$wash22_recoded[i] != "", df_hh$wash22_recoded[i], df_hh$wash_22_wash_reponse_3[i])
-  #       }
-  #     }
-  #   }
-  #   if(df_hh$mssc_2_source_rev_1[i] == "autre"){
-  #     df_hh$mssc_2_source_rev_1[i] = ifelse(df_hh$mssc2_recoded[i] != "", df_hh$mssc2_recoded[i], df_hh$mssc_2_source_rev_1[i])
-  #   }else{
-  #     if(df_hh$mssc_2_source_rev_2[i] == "autre"){
-  #       df_hh$mssc_2_source_rev_2[i] = ifelse(df_hh$mssc2_recoded[i] != "", df_hh$mssc2_recoded[i], df_hh$mssc_2_source_rev_2[i])
-  #     }else{
-  #       if(df_hh$mssc_2_source_rev_3[i] == "autre"){
-  #         df_hh$mssc_2_source_rev_3[i] = ifelse(df_hh$mssc2_recoded[i] != "", df_hh$mssc2_recoded[i], df_hh$mssc_2_source_rev_3[i])
-  #       }
-  #     }
-  #   }
-  #   if(df_hh$wash_9_insuff_raisons_1[i] == "autre"){
-  #     df_hh$wash_9_insuff_raisons_1[i] = ifelse(df_hh$wash9_recoded[i] != "", df_hh$wash9_recoded[i], df_hh$wash_9_insuff_raisons_1[i])
-  #   }else{
-  #     if(df_hh$wash_9_insuff_raisons_2[i] == "autre"){
-  #       df_hh$wash_9_insuff_raisons_2[i] = ifelse(df_hh$wash9_recoded[i] != "", df_hh$wash9_recoded[i], df_hh$wash_9_insuff_raisons_2[i])
-  #     }else{
-  #       if(df_hh$wash_9_insuff_raisons_3[i] == "autre"){
-  #         df_hh$wash_9_insuff_raisons_3[i] = ifelse(df_hh$wash9_recoded[i] != "", df_hh$wash9_recoded[i], df_hh$wash_9_insuff_raisons_3[i])
-  #       }
-  #     }
-  #   }
-  # }
-  # 
-  
-  
-  
-  
+  # Recode other in top 3 :
+  other_toberecoded_top3 = subset(other_toberecoded, is_in(other_toberecoded$variable, liste_qst_other_borda))
+
+  other_toberecoded_top3 = subset(other_toberecoded_top3, is_in(other_toberecoded_top3$reponse_corr, choices$name))
+
+
+  df_hh$educ_recoded = change_clog_select_one("educ_5_ecole_acces_1", "educ_5_ecole_acces_autre", other_toberecoded_top3$value, other_toberecoded_top3$reponse_corr,
+                                              data = df_hh)$educ_5_ecole_acces_1
+  df_hh$wash22_recoded = change_clog_select_one("wash_22_wash_reponse_1", "wash_22_autres_autre", other_toberecoded_top3$value, other_toberecoded_top3$reponse_corr,
+                                              data = df_hh)$wash_22_wash_reponse_1
+  df_hh$mssc2_recoded = change_clog_select_one("mssc_2_source_rev_1", "mssc_2_source_rev_autre", other_toberecoded_top3$value, other_toberecoded_top3$reponse_corr,
+                                              data = df_hh)$mssc_2_source_rev_1
+  df_hh$wash9_recoded = change_clog_select_one("wash_9_insuff_raisons_1", "wash_9_insuff_raisons_autre", other_toberecoded_top3$value, other_toberecoded_top3$reponse_corr,
+                                              data = df_hh)$wash_9_insuff_raisons_1
+  for (i in 1:nrow(df_hh)){
+    if(df_hh$educ_5_ecole_acces_1[i] == "autre"){
+      df_hh$educ_5_ecole_acces_1[i] = ifelse(df_hh$educ_recoded[i] != "", df_hh$educ_recoded[i], df_hh$educ_5_ecole_acces_1[i])
+    }else{
+      if(df_hh$educ_5_ecole_acces_2[i] == "autre"){
+        df_hh$educ_5_ecole_acces_2[i] = ifelse(df_hh$educ_recoded[i] != "", df_hh$educ_recoded[i], df_hh$educ_5_ecole_acces_2[i])
+        }else{
+          if(df_hh$educ_5_ecole_acces_3[i] == "autre"){
+            df_hh$educ_5_ecole_acces_3[i] = ifelse(df_hh$educ_recoded[i] != "", df_hh$educ_recoded[i], df_hh$educ_5_ecole_acces_3[i])
+          }
+          }
+    }
+    if(df_hh$wash_22_wash_reponse_1[i] == "autre"){
+      df_hh$wash_22_wash_reponse_1[i] = ifelse(df_hh$wash22_recoded[i] != "", df_hh$wash22_recoded[i], df_hh$wash_22_wash_reponse_1[i])
+    }else{
+      if(df_hh$wash_22_wash_reponse_2[i] == "autre"){
+        df_hh$wash_22_wash_reponse_2[i] = ifelse(df_hh$wash22_recoded[i] != "", df_hh$wash22_recoded[i], df_hh$wash_22_wash_reponse_2[i])
+      }else{
+        if(df_hh$wash_22_wash_reponse_3[i] == "autre"){
+          df_hh$wash_22_wash_reponse_3[i] = ifelse(df_hh$wash22_recoded[i] != "", df_hh$wash22_recoded[i], df_hh$wash_22_wash_reponse_3[i])
+        }
+      }
+    }
+    if(df_hh$mssc_2_source_rev_1[i] == "autre"){
+      df_hh$mssc_2_source_rev_1[i] = ifelse(df_hh$mssc2_recoded[i] != "", df_hh$mssc2_recoded[i], df_hh$mssc_2_source_rev_1[i])
+    }else{
+      if(df_hh$mssc_2_source_rev_2[i] == "autre"){
+        df_hh$mssc_2_source_rev_2[i] = ifelse(df_hh$mssc2_recoded[i] != "", df_hh$mssc2_recoded[i], df_hh$mssc_2_source_rev_2[i])
+      }else{
+        if(df_hh$mssc_2_source_rev_3[i] == "autre"){
+          df_hh$mssc_2_source_rev_3[i] = ifelse(df_hh$mssc2_recoded[i] != "", df_hh$mssc2_recoded[i], df_hh$mssc_2_source_rev_3[i])
+        }
+      }
+    }
+    if(df_hh$wash_9_insuff_raisons_1[i] == "autre"){
+      df_hh$wash_9_insuff_raisons_1[i] = ifelse(df_hh$wash9_recoded[i] != "", df_hh$wash9_recoded[i], df_hh$wash_9_insuff_raisons_1[i])
+    }else{
+      if(df_hh$wash_9_insuff_raisons_2[i] == "autre"){
+        df_hh$wash_9_insuff_raisons_2[i] = ifelse(df_hh$wash9_recoded[i] != "", df_hh$wash9_recoded[i], df_hh$wash_9_insuff_raisons_2[i])
+      }else{
+        if(df_hh$wash_9_insuff_raisons_3[i] == "autre"){
+          df_hh$wash_9_insuff_raisons_3[i] = ifelse(df_hh$wash9_recoded[i] != "", df_hh$wash9_recoded[i], df_hh$wash_9_insuff_raisons_3[i])
+        }
+      }
+    }
+  }
+
   # Add a variable per inidcator - Per severity score if we have the scales ?  ####
   df_hh$sante_indicator_accouchement_assiste = ifelse(df_hh$sum_sante_1_accouch_lieu == "maison_assiste" | df_hh$sum_sante_1_accouch_lieu == "cs", 1, 0)
   df_hh$sante_indicator_accouchement_non_assiste = ifelse(df_hh$sum_sante_1_accouch_lieu == "maison_non_assiste" | df_hh$sum_sante_1_accouch_lieu == "autre", 1, 0)
