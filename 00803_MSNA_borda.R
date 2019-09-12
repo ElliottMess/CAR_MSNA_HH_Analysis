@@ -48,3 +48,13 @@ borda_applier(borda_script_admin2, df_hh) %>%
   write_csv("output/borda/borda_admin2.csv",
             na = "")
 
+
+borda_script_admin0_sex <- borda_script_template%>%
+  mutate(
+    disaggregate = "sexe_chef_menage",
+    repeat_var = "admin_0"
+  )
+
+borda_applier(borda_script_admin2, df_hh) %>% 
+  write_csv("output/borda/borda_admin0_sexHHD.csv",
+            na = "")

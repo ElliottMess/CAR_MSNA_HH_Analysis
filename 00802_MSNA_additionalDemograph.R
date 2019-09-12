@@ -84,6 +84,9 @@ template_df <- read.csv(template_analysisplan_file, stringsAsFactors = F)
       freq_agegrp_59plus_femmes = sum(sum_agegrp_59plus_femmes * weights_sampling, na.rm =  T) /sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
       freq_agegrp_59plus_hommes = sum(sum_agegrp_59plus_hommes * weights_sampling, na.rm =  T) /sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
       
+      freq_femmes = sum((sum_agegrp_0_17_femmes + sum_agegrp_18_59_femmes + sum_agegrp_59plus_femmes) * weights_sampling, na.rm = T) / sum(ig_6_hh_membres_tot*weights_sampling, na.rm = T),
+      freq_hommes = sum((sum_agegrp_0_17_hommes + sum_agegrp_18_59_hommes + sum_agegrp_59plus_hommes) * weights_sampling, na.rm = T) / sum(ig_6_hh_membres_tot*weights_sampling, na.rm = T),
+      
       freq_sante_2_malade_oui = sum(sum_sante_2_malade_oui * weights_sampling, na.rm =  T) / sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
       freq_sante_2_malade_non = sum(sum_sante_2_malade_non * weights_sampling, na.rm =  T) / sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
       freq_sante_2_malade_nsp = sum(sum_sante_2_malade_nsp * weights_sampling, na.rm =  T) / sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
@@ -250,6 +253,9 @@ freq_admin0grp <- response_updated_cluster %>%
     freq_agegrp_59plus = sum(sum_agegrp_59plus_tot * weights_sampling, na.rm =  T) /sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
     freq_agegrp_59plus_femmes = sum(sum_agegrp_59plus_femmes * weights_sampling, na.rm =  T) /sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
     freq_agegrp_59plus_hommes = sum(sum_agegrp_59plus_hommes * weights_sampling, na.rm =  T) /sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
+    
+    freq_femmes = sum((sum_agegrp_0_17_femmes + sum_agegrp_18_59_femmes + sum_agegrp_59plus_femmes) * weights_sampling, na.rm = T) / sum(ig_6_hh_membres_tot*weights_sampling, na.rm = T),
+    freq_hommes = sum((sum_agegrp_0_17_hommes + sum_agegrp_18_59_hommes + sum_agegrp_59plus_hommes) * weights_sampling, na.rm = T) / sum(ig_6_hh_membres_tot*weights_sampling, na.rm = T),
     
     freq_sante_2_malade_oui = sum(sum_sante_2_malade_oui * weights_sampling, na.rm =  T) / sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
     freq_sante_2_malade_non = sum(sum_sante_2_malade_non * weights_sampling, na.rm =  T) / sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
@@ -419,6 +425,9 @@ freq_admin1 <- response_updated_cluster %>%
     freq_agegrp_59plus_femmes = sum(sum_agegrp_59plus_femmes * weights_sampling, na.rm =  T) /sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
     freq_agegrp_59plus_hommes = sum(sum_agegrp_59plus_hommes * weights_sampling, na.rm =  T) /sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
     
+    freq_femmes = sum((sum_agegrp_0_17_femmes + sum_agegrp_18_59_femmes + sum_agegrp_59plus_femmes) * weights_sampling, na.rm = T) / sum(ig_6_hh_membres_tot*weights_sampling, na.rm = T),
+    freq_hommes = sum((sum_agegrp_0_17_hommes + sum_agegrp_18_59_hommes + sum_agegrp_59plus_hommes) * weights_sampling, na.rm = T) / sum(ig_6_hh_membres_tot*weights_sampling, na.rm = T),
+    
     freq_sante_2_malade_oui = sum(sum_sante_2_malade_oui * weights_sampling, na.rm =  T) / sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
     freq_sante_2_malade_non = sum(sum_sante_2_malade_non * weights_sampling, na.rm =  T) / sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
     freq_sante_2_malade_nsp = sum(sum_sante_2_malade_nsp * weights_sampling, na.rm =  T) / sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
@@ -582,6 +591,10 @@ freq_admin1grp <- response_updated_cluster %>%
     freq_agegrp_18_59 = sum(sum_agegrp_18_59_tot * weights_sampling, na.rm =  T) /sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
     freq_agegrp_18_59_femmes = sum(sum_agegrp_18_59_femmes * weights_sampling, na.rm =  T) /sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
     freq_agegrp_18_59_hommes = sum(sum_agegrp_18_59_hommes * weights_sampling, na.rm =  T) /sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
+    
+    freq_femmes = sum((sum_agegrp_0_17_femmes + sum_agegrp_18_59_femmes + sum_agegrp_59plus_femmes) * weights_sampling, na.rm = T) / sum(ig_6_hh_membres_tot*weights_sampling, na.rm = T),
+    freq_hommes = sum((sum_agegrp_0_17_hommes + sum_agegrp_18_59_hommes + sum_agegrp_59plus_hommes) * weights_sampling, na.rm = T) / sum(ig_6_hh_membres_tot*weights_sampling, na.rm = T),
+    
     
     freq_agegrp_59plus = sum(sum_agegrp_59plus_tot * weights_sampling, na.rm =  T) /sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
     freq_agegrp_59plus_femmes = sum(sum_agegrp_59plus_femmes * weights_sampling, na.rm =  T) /sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
@@ -750,6 +763,9 @@ freq_admin2 <- response_updated_cluster %>%
     freq_agegrp_18_59 = sum(sum_agegrp_18_59_tot * weights_sampling, na.rm =  T) /sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
     freq_agegrp_18_59_femmes = sum(sum_agegrp_18_59_femmes * weights_sampling, na.rm =  T) /sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
     freq_agegrp_18_59_hommes = sum(sum_agegrp_18_59_hommes * weights_sampling, na.rm =  T) /sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
+    
+    freq_femmes = sum((sum_agegrp_0_17_femmes + sum_agegrp_18_59_femmes + sum_agegrp_59plus_femmes) * weights_sampling, na.rm = T) / sum(ig_6_hh_membres_tot*weights_sampling, na.rm = T),
+    freq_hommes = sum((sum_agegrp_0_17_hommes + sum_agegrp_18_59_hommes + sum_agegrp_59plus_hommes) * weights_sampling, na.rm = T) / sum(ig_6_hh_membres_tot*weights_sampling, na.rm = T),
     
     freq_agegrp_59plus = sum(sum_agegrp_59plus_tot * weights_sampling, na.rm =  T) /sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
     freq_agegrp_59plus_femmes = sum(sum_agegrp_59plus_femmes * weights_sampling, na.rm =  T) /sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
@@ -921,6 +937,9 @@ freq_admin0_sexHHD <- response_updated_cluster %>%
     freq_agegrp_59plus = sum(sum_agegrp_59plus_tot * weights_sampling, na.rm =  T) /sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
     freq_agegrp_59plus_femmes = sum(sum_agegrp_59plus_femmes * weights_sampling, na.rm =  T) /sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
     freq_agegrp_59plus_hommes = sum(sum_agegrp_59plus_hommes * weights_sampling, na.rm =  T) /sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
+    
+    freq_femmes = sum((sum_agegrp_0_17_femmes + sum_agegrp_18_59_femmes + sum_agegrp_59plus_femmes) * weights_sampling, na.rm = T) / sum(ig_6_hh_membres_tot*weights_sampling, na.rm = T),
+    freq_hommes = sum((sum_agegrp_0_17_hommes + sum_agegrp_18_59_hommes + sum_agegrp_59plus_hommes) * weights_sampling, na.rm = T) / sum(ig_6_hh_membres_tot*weights_sampling, na.rm = T),
     
     freq_sante_2_malade_oui = sum(sum_sante_2_malade_oui * weights_sampling, na.rm =  T) / sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
     freq_sante_2_malade_non = sum(sum_sante_2_malade_non * weights_sampling, na.rm =  T) / sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),

@@ -101,7 +101,7 @@
   df_hh$sante_indicator_accouchement_non_assiste = ifelse(df_hh$sum_sante_1_accouch_lieu == "maison_non_assiste" | df_hh$sum_sante_1_accouch_lieu == "autre", 1, 0)
   df_hh$sante_indicator_accouchement_nsp = ifelse(df_hh$sum_sante_1_accouch_lieu == "nsp" , 1, 0)
   
-  df_hh <- df_hh %>% select(- sum_sante_1_accouch_cs, - sum_sante_1_accouch_maison, -sum_sante_1_accouch_maison_assiste, -sum_sante_1_accouch_maison_nonassiste, -sum_sante_1_accouch_nsp )
+  df_hh <- df_hh %>% select(- sum_sante_1_accouch_maison, -sum_sante_1_accouch_maison_assiste, -sum_sante_1_accouch_maison_nonassiste, -sum_sante_1_accouch_nsp )
   
   df_hh$sante_5_deces_5moins = ifelse(df_hh$sante_5_deces_age < 5, 1, ifelse(df_hh$sante_5_deces_age >= 5, 0, NA))
   
@@ -218,7 +218,7 @@
                                            if_else(sum_sante_1_accouch_lieu != "cs", "non",
                                                    NA_character_))
     )
-  df_hh$protect_11_1_detress <- replace_na(df_hh$protect_11_1, "0")
+  df_hh$protect_11_1_detress <- tidyr::replace_na(df_hh$protect_11_1, "0")
   
   df_hh <- df_hh %>%
     mutate(
