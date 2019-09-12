@@ -515,6 +515,8 @@ hh_ind$agegrp_7_12_filles <- if_else(hh_ind$age_hh>=7 & hh_ind$age_hh<=12 & hh_i
 hh_ind$agegrp_7_12_garcons <- if_else(hh_ind$age_hh>=7 & hh_ind$age_hh<=12 & hh_ind$sexe_hh == "homme",1,0)
 hh_ind$agegrp_13_18_filles <- if_else(hh_ind$age_hh>=13 & hh_ind$age_hh<=18 & hh_ind$sexe_hh == "femme",1,0)
 hh_ind$agegrp_13_18_garcons <- if_else(hh_ind$age_hh>=13 & hh_ind$age_hh<=18 & hh_ind$sexe_hh == "homme",1,0)
+hh_ind$agegrp_6m_4_filles <- if_else(hh_ind$agegrp_6m_4 == 1 & hh_ind$sexe_hh == "femme",1,0)
+hh_ind$agegrp_6m_4_garcons <- if_else(hh_ind$agegrp_6m_4 == 1 & hh_ind$sexe_hh == "homme",1,0)
 
 main_withloop <- affect_loop_to_parent(loop = hh_ind, parent = main_withloop, aggregate.function = sum , 
                                        variable.to.add = c(
