@@ -42,7 +42,6 @@ write.csv.withversion <- function(data, file.name){
     }
 }
 
-write.csv.withversion(hh_ind, "hh_ind.csv")
 
 
 hh_ind <- read.csv("input/questionnaire_MSNA_HH_loop_2019-08-29.csv", stringsAsFactors = F, encoding = "UTF-8")%>%
@@ -882,5 +881,7 @@ main_withloop <- affect_loop_to_parent(loop = hh_ind, parent = main_withloop, ag
                                          sum_agegrp_0_4_hommes = "agegrp_0_4_hommes"
                                        ),
                                        uuid.name.loop = "X_parent_index", uuid.name.parent = "X_index")
+
+write.csv(hh_ind, paste0("./output/REACH_CAR_dataset_Indiv_MSNA_", format(Sys.time(), "%Y%m%d"),".csv"))
 
 write.csv(main_withloop, "./output/main_DS_withloop_tobecleaned.csv")
