@@ -1056,7 +1056,7 @@ data_clean_final = subset(data_clean_final, !is_in(data_clean_final$X_uuid, rm_i
 data_rm = subset(raw_data, is_in(raw_data$X_index, subset(DataCleaningLogBook,DataCleaningLogBook$new.value =="Qst supprimé de la DB")$index))
 
 write.csv(DataCleaningLogBook, "./output/DataCleaningLogBook_0309.csv")
-write.csv(data_clean_final, "./output/REACH_CAR_MSNA_Final_dataset_0309.csv")
+write.csv(data_clean_final, "./output/REACH_CAR_MSNA_Final_dataset_0309_clean.csv")
 
 
 
@@ -1094,6 +1094,59 @@ write.csv(checkquota1, "./output/checkquota1_0309.csv")
 write.csv(checkquota2, "./output/checkquota2_0309.csv")
 
 
+change_select_one_value <- function(question.name, other.q.name, old.value.name, new.value.name, toadd.value, data, codes.df){
+  variable.coded <- codes.df%>%
+    select(starts_with(other.q.name))%>%
+    distinct()%>%
+    filter(UQ(sym(other.q.name))!="")
+  
+  old.value <- variable.coded[[old.value.name]]
+  
+  new.value <- variable.coded[[new.value.name]]
+  
+  other.q <- data[[other.q.name]] 
+  question.v <- data[[question.name]]
+  data[[other.q.name]] <- plyr::mapvalues(other.q, old.value, new.value)
+  question.v[which(!(is.null(other.q)))] <- !(is.null(data[[other.q.name]]))
+  question.v[data[[other.q.name]] %in% toadd.value] <- data[[other.q.name]][data[[other.q.name]] %in% toadd.value]
+  data[[question.name]] <- question.v
+  return(data)
+}
+
+change_select_one_value_log <- function(logbook, data, codes.df, other.q.name, new.value.name){
+  variable.coded <- codes.df%>%
+    select(starts_with(other.q.name))%>%
+    distinct()%>%
+    filter(UQ(sym(other.q.name))!="")
+  
+  variables.log <- data %>%
+    inner_join(variable.coded)%>%
+    select(X_submission__uuid, X_index, other.q.name, new.value.name)%>%
+    mutate(uuid = X_submission__uuid, index = X_index, question.name = other.q.name, 
+           feedback = "", Issue = "Autre a recoder", changed = "Oui", 
+           old.value = UQ(sym(other.q.name)), new.value = UQ(sym(new.value.name)))%>%
+    select(log_cols)
+  
+  rbind(logbook, variables.log)
+  
+  return(logbook)
+}
+
+#### Accouchement
+
+list_to_add_accouch <- choices_form$name[choices_form$list_name == "accouch"]
+
+hh_ind$sante_1_accouch <- change_select_one_value(question.name = "sante_1_accouch", 
+                                                  other.q.name = "sante_1_accouch_autre", 
+                                                  old.value.name  = "sante_1_accouch_autre", 
+                                                  new.value.name = "sante_1_accouch_autre_recoding",
+                                                  toadd.value = list_to_add_accouch,
+                                                  data = hh_ind,
+                                                  codes.df = hh_ind_cleaned_value)$sante_1_accouch
+
+DataCleaningLogBook_hh_ind <- change_select_one_value_log(DataCleaningLogBook_hh_ind, hh_ind, hh_ind_cleaned_value, 
+                                                          other.q.name = "sante_1_accouch_autre",
+                                                          new.value.name = "sante_1_accouch_autre_recoding")
 
 
 #table( data_clean_final$bidons_cap,
