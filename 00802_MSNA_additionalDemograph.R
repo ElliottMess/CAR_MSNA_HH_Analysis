@@ -166,13 +166,13 @@ freq_admin0 <- response_updated_cluster %>%
     freq_sante_5_5plus_malades.fievre_garcons_5_17 = sum(sum_sante_5_5plus_malades.fievre_garcons_5_17 * weights_sampling, na.rm = T)/ sum(sum_agegrp_5_17_hommes * weights_sampling, na.rm = T),
     freq_sante_5_5plus_malades.fievre_garcons_18plus = sum(sum_sante_5_5plus_malades.fievre_garcons_18plus * weights_sampling, na.rm = T)/ sum(sum_agegrp_18plus_hommes * weights_sampling, na.rm = T),
     
-    freq_nut_2_muac.masfille_0_4 = sum(sum_nut_2_muac.masfille_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_0_4_femmes * weights_sampling, na.rm = T),
-    freq_nut_2_muac.masgarcon_0_4 = sum(sum_nut_2_muac.masgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_0_4_hommes * weights_sampling, na.rm = T),
-    freq_nut_2_muac.mas_0_4 = sum((sum_nut_2_muac.masgarcon_0_4+sum_nut_2_muac.masfille_0_4) * weights_sampling, na.rm = T)/ sum((sum_agegrp_0_4_hommes+sum_agegrp_0_4_femmes) * weights_sampling, na.rm = T),
+    freq_nut_2_muac.masfille_6m_4 = sum(sum_nut_2_muac.masfille_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_filles * weights_sampling, na.rm = T),
+    freq_nut_2_muac.masgarcon_6m_4 = sum(sum_nut_2_muac.masgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_garcons * weights_sampling, na.rm = T),
+    freq_nut_2_muac.mas_6m_4 = sum((sum_nut_2_muac.masgarcon_0_4+sum_nut_2_muac.masfille_0_4) * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4 * weights_sampling, na.rm = T),
     
-    freq_nut_2_muac.mamfille_0_4 = sum(sum_nut_2_muac.mamfille_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_0_4_femmes * weights_sampling, na.rm = T),
-    freq_nut_2_muac.mamgarcon_0_4 = sum(sum_nut_2_muac.mamgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_0_4_hommes * weights_sampling, na.rm = T),
-    freq_nut_2_muac.mam_0_4 = sum((sum_nut_2_muac.mamfille_0_4+sum_nut_2_muac.mamgarcon_0_4) * weights_sampling, na.rm = T)/ sum((sum_agegrp_0_4_hommes+sum_agegrp_0_4_femmes) * weights_sampling, na.rm = T),
+    freq_nut_2_muac.mamfille_6m_4 = sum(sum_nut_2_muac.mamfille_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_filles * weights_sampling, na.rm = T),
+    freq_nut_2_muac.mamgarcon_6m_4 = sum(sum_nut_2_muac.mamgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_garcons * weights_sampling, na.rm = T),
+    freq_nut_2_muac.mam_6m_4 = sum((sum_nut_2_muac.mamfille_0_4+sum_nut_2_muac.mamgarcon_0_4) * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4 * weights_sampling, na.rm = T),
     
     
     freq_protect_9 = sum(sum_protect_9 * weights_sampling, na.rm = T)/sum(sum_agegrp_4_18 * weights_sampling, na.rm = T),
@@ -335,13 +335,13 @@ freq_admin0grp <- response_updated_cluster %>%
     freq_sante_5_5plus_malades.fievre_garcons_5_17 = sum(sum_sante_5_5plus_malades.fievre_garcons_5_17 * weights_sampling, na.rm = T)/ sum(sum_agegrp_5_17_hommes * weights_sampling, na.rm = T),
     freq_sante_5_5plus_malades.fievre_garcons_18plus = sum(sum_sante_5_5plus_malades.fievre_garcons_18plus * weights_sampling, na.rm = T)/ sum(sum_agegrp_18plus_hommes * weights_sampling, na.rm = T),
     
-    freq_nut_2_muac.masfille_0_4 = sum(sum_nut_2_muac.masfille_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_0_4_femmes * weights_sampling, na.rm = T),
-    freq_nut_2_muac.masgarcon_0_4 = sum(sum_nut_2_muac.masgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_0_4_hommes * weights_sampling, na.rm = T),
-    freq_nut_2_muac.mas_0_4 = sum((sum_nut_2_muac.masgarcon_0_4+sum_nut_2_muac.masfille_0_4) * weights_sampling, na.rm = T)/ sum((sum_agegrp_0_4_hommes+sum_agegrp_0_4_femmes) * weights_sampling, na.rm = T),
+    freq_nut_2_muac.masfille_6m_4 = sum(sum_nut_2_muac.masfille_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_filles * weights_sampling, na.rm = T),
+    freq_nut_2_muac.masgarcon_6m_4 = sum(sum_nut_2_muac.masgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_garcons * weights_sampling, na.rm = T),
+    freq_nut_2_muac.mas_6m_4 = sum((sum_nut_2_muac.masgarcon_0_4+sum_nut_2_muac.masfille_0_4) * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4 * weights_sampling, na.rm = T),
     
-    freq_nut_2_muac.mamfille_0_4 = sum(sum_nut_2_muac.mamfille_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_0_4_femmes * weights_sampling, na.rm = T),
-    freq_nut_2_muac.mamgarcon_0_4 = sum(sum_nut_2_muac.mamgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_0_4_hommes * weights_sampling, na.rm = T),
-    freq_nut_2_muac.mam_0_4 = sum((sum_nut_2_muac.mamfille_0_4+sum_nut_2_muac.mamgarcon_0_4) * weights_sampling, na.rm = T)/ sum((sum_agegrp_0_4_hommes+sum_agegrp_0_4_femmes) * weights_sampling, na.rm = T),
+    freq_nut_2_muac.mamfille_6m_4 = sum(sum_nut_2_muac.mamfille_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_filles * weights_sampling, na.rm = T),
+    freq_nut_2_muac.mamgarcon_6m_4 = sum(sum_nut_2_muac.mamgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_garcons * weights_sampling, na.rm = T),
+    freq_nut_2_muac.mam_6m_4 = sum((sum_nut_2_muac.mamfille_0_4+sum_nut_2_muac.mamgarcon_0_4) * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4 * weights_sampling, na.rm = T),
     
     
     freq_protect_9 = sum(sum_protect_9 * weights_sampling, na.rm = T)/sum(sum_agegrp_4_18 * weights_sampling, na.rm = T),
@@ -505,13 +505,13 @@ freq_admin1 <- response_updated_cluster %>%
     freq_sante_5_5plus_malades.fievre_garcons_5_17 = sum(sum_sante_5_5plus_malades.fievre_garcons_5_17 * weights_sampling, na.rm = T)/ sum(sum_agegrp_5_17_hommes * weights_sampling, na.rm = T),
     freq_sante_5_5plus_malades.fievre_garcons_18plus = sum(sum_sante_5_5plus_malades.fievre_garcons_18plus * weights_sampling, na.rm = T)/ sum(sum_agegrp_18plus_hommes * weights_sampling, na.rm = T),
     
-    freq_nut_2_muac.masfille_0_4 = sum(sum_nut_2_muac.masfille_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_0_4_femmes * weights_sampling, na.rm = T),
-    freq_nut_2_muac.masgarcon_0_4 = sum(sum_nut_2_muac.masgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_0_4_hommes * weights_sampling, na.rm = T),
-    freq_nut_2_muac.mas_0_4 = sum((sum_nut_2_muac.masgarcon_0_4+sum_nut_2_muac.masfille_0_4) * weights_sampling, na.rm = T)/ sum((sum_agegrp_0_4_hommes+sum_agegrp_0_4_femmes) * weights_sampling, na.rm = T),
+    freq_nut_2_muac.masfille_6m_4 = sum(sum_nut_2_muac.masfille_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_filles * weights_sampling, na.rm = T),
+    freq_nut_2_muac.masgarcon_6m_4 = sum(sum_nut_2_muac.masgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_garcons * weights_sampling, na.rm = T),
+    freq_nut_2_muac.mas_6m_4 = sum((sum_nut_2_muac.masgarcon_0_4+sum_nut_2_muac.masfille_0_4) * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4 * weights_sampling, na.rm = T),
     
-    freq_nut_2_muac.mamfille_0_4 = sum(sum_nut_2_muac.mamfille_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_0_4_femmes * weights_sampling, na.rm = T),
-    freq_nut_2_muac.mamgarcon_0_4 = sum(sum_nut_2_muac.mamgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_0_4_hommes * weights_sampling, na.rm = T),
-    freq_nut_2_muac.mam_0_4 = sum((sum_nut_2_muac.mamfille_0_4+sum_nut_2_muac.mamgarcon_0_4) * weights_sampling, na.rm = T)/ sum((sum_agegrp_0_4_hommes+sum_agegrp_0_4_femmes) * weights_sampling, na.rm = T),
+    freq_nut_2_muac.mamfille_6m_4 = sum(sum_nut_2_muac.mamfille_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_filles * weights_sampling, na.rm = T),
+    freq_nut_2_muac.mamgarcon_6m_4 = sum(sum_nut_2_muac.mamgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_garcons * weights_sampling, na.rm = T),
+    freq_nut_2_muac.mam_6m_4 = sum((sum_nut_2_muac.mamfille_0_4+sum_nut_2_muac.mamgarcon_0_4) * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4 * weights_sampling, na.rm = T),
     
     
     freq_protect_9 = sum(sum_protect_9 * weights_sampling, na.rm = T)/sum(sum_agegrp_4_18 * weights_sampling, na.rm = T),
@@ -675,13 +675,13 @@ freq_admin1grp <- response_updated_cluster %>%
     freq_sante_5_5plus_malades.fievre_garcons_5_17 = sum(sum_sante_5_5plus_malades.fievre_garcons_5_17 * weights_sampling, na.rm = T)/ sum(sum_agegrp_5_17_hommes * weights_sampling, na.rm = T),
     freq_sante_5_5plus_malades.fievre_garcons_18plus = sum(sum_sante_5_5plus_malades.fievre_garcons_18plus * weights_sampling, na.rm = T)/ sum(sum_agegrp_18plus_hommes * weights_sampling, na.rm = T),
     
-    freq_nut_2_muac.masfille_0_4 = sum(sum_nut_2_muac.masfille_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_0_4_femmes * weights_sampling, na.rm = T),
-    freq_nut_2_muac.masgarcon_0_4 = sum(sum_nut_2_muac.masgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_0_4_hommes * weights_sampling, na.rm = T),
-    freq_nut_2_muac.mas_0_4 = sum((sum_nut_2_muac.masgarcon_0_4+sum_nut_2_muac.masfille_0_4) * weights_sampling, na.rm = T)/ sum((sum_agegrp_0_4_hommes+sum_agegrp_0_4_femmes) * weights_sampling, na.rm = T),
+    freq_nut_2_muac.masfille_6m_4 = sum(sum_nut_2_muac.masfille_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_filles * weights_sampling, na.rm = T),
+    freq_nut_2_muac.masgarcon_6m_4 = sum(sum_nut_2_muac.masgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_garcons * weights_sampling, na.rm = T),
+    freq_nut_2_muac.mas_6m_4 = sum((sum_nut_2_muac.masgarcon_0_4+sum_nut_2_muac.masfille_0_4) * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4 * weights_sampling, na.rm = T),
     
-    freq_nut_2_muac.mamfille_0_4 = sum(sum_nut_2_muac.mamfille_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_0_4_femmes * weights_sampling, na.rm = T),
-    freq_nut_2_muac.mamgarcon_0_4 = sum(sum_nut_2_muac.mamgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_0_4_hommes * weights_sampling, na.rm = T),
-    freq_nut_2_muac.mam_0_4 = sum((sum_nut_2_muac.mamfille_0_4+sum_nut_2_muac.mamgarcon_0_4) * weights_sampling, na.rm = T)/ sum((sum_agegrp_0_4_hommes+sum_agegrp_0_4_femmes) * weights_sampling, na.rm = T),
+    freq_nut_2_muac.mamfille_6m_4 = sum(sum_nut_2_muac.mamfille_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_filles * weights_sampling, na.rm = T),
+    freq_nut_2_muac.mamgarcon_6m_4 = sum(sum_nut_2_muac.mamgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_garcons * weights_sampling, na.rm = T),
+    freq_nut_2_muac.mam_6m_4 = sum((sum_nut_2_muac.mamfille_0_4+sum_nut_2_muac.mamgarcon_0_4) * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4 * weights_sampling, na.rm = T),
     
     
     freq_protect_9 = sum(sum_protect_9 * weights_sampling, na.rm = T)/sum(sum_agegrp_4_18 * weights_sampling, na.rm = T),
@@ -845,13 +845,13 @@ freq_admin2 <- response_updated_cluster %>%
     freq_sante_5_5plus_malades.fievre_garcons_5_17 = sum(sum_sante_5_5plus_malades.fievre_garcons_5_17 * weights_sampling, na.rm = T)/ sum(sum_agegrp_5_17_hommes * weights_sampling, na.rm = T),
     freq_sante_5_5plus_malades.fievre_garcons_18plus = sum(sum_sante_5_5plus_malades.fievre_garcons_18plus * weights_sampling, na.rm = T)/ sum(sum_agegrp_18plus_hommes * weights_sampling, na.rm = T),
     
-    freq_nut_2_muac.masfille_0_4 = sum(sum_nut_2_muac.masfille_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_0_4_femmes * weights_sampling, na.rm = T),
-    freq_nut_2_muac.masgarcon_0_4 = sum(sum_nut_2_muac.masgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_0_4_hommes * weights_sampling, na.rm = T),
-    freq_nut_2_muac.mas_0_4 = sum((sum_nut_2_muac.masgarcon_0_4+sum_nut_2_muac.masfille_0_4) * weights_sampling, na.rm = T)/ sum((sum_agegrp_0_4_hommes+sum_agegrp_0_4_femmes) * weights_sampling, na.rm = T),
+    freq_nut_2_muac.masfille_6m_4 = sum(sum_nut_2_muac.masfille_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_filles * weights_sampling, na.rm = T),
+    freq_nut_2_muac.masgarcon_6m_4 = sum(sum_nut_2_muac.masgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_garcons * weights_sampling, na.rm = T),
+    freq_nut_2_muac.mas_6m_4 = sum((sum_nut_2_muac.masgarcon_0_4+sum_nut_2_muac.masfille_0_4) * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4 * weights_sampling, na.rm = T),
     
-    freq_nut_2_muac.mamfille_0_4 = sum(sum_nut_2_muac.mamfille_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_0_4_femmes * weights_sampling, na.rm = T),
-    freq_nut_2_muac.mamgarcon_0_4 = sum(sum_nut_2_muac.mamgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_0_4_hommes * weights_sampling, na.rm = T),
-    freq_nut_2_muac.mam_0_4 = sum((sum_nut_2_muac.mamfille_0_4+sum_nut_2_muac.mamgarcon_0_4) * weights_sampling, na.rm = T)/ sum((sum_agegrp_0_4_hommes+sum_agegrp_0_4_femmes) * weights_sampling, na.rm = T),
+    freq_nut_2_muac.mamfille_6m_4 = sum(sum_nut_2_muac.mamfille_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_filles * weights_sampling, na.rm = T),
+    freq_nut_2_muac.mamgarcon_6m_4 = sum(sum_nut_2_muac.mamgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_garcons * weights_sampling, na.rm = T),
+    freq_nut_2_muac.mam_6m_4 = sum((sum_nut_2_muac.mamfille_0_4+sum_nut_2_muac.mamgarcon_0_4) * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4 * weights_sampling, na.rm = T),
     
     
     freq_protect_9 = sum(sum_protect_9 * weights_sampling, na.rm = T)/sum(sum_agegrp_4_18 * weights_sampling, na.rm = T),
@@ -1014,13 +1014,13 @@ freq_admin0_sexHHD <- response_updated_cluster %>%
     freq_sante_5_5plus_malades.fievre_garcons_5_17 = sum(sum_sante_5_5plus_malades.fievre_garcons_5_17 * weights_sampling, na.rm = T)/ sum(sum_agegrp_5_17_hommes * weights_sampling, na.rm = T),
     freq_sante_5_5plus_malades.fievre_garcons_18plus = sum(sum_sante_5_5plus_malades.fievre_garcons_18plus * weights_sampling, na.rm = T)/ sum(sum_agegrp_18plus_hommes * weights_sampling, na.rm = T),
     
-    freq_nut_2_muac.masfille_0_4 = sum(sum_nut_2_muac.masfille_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_0_4_femmes * weights_sampling, na.rm = T),
-    freq_nut_2_muac.masgarcon_0_4 = sum(sum_nut_2_muac.masgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_0_4_hommes * weights_sampling, na.rm = T),
-    freq_nut_2_muac.mas_0_4 = sum((sum_nut_2_muac.masgarcon_0_4+sum_nut_2_muac.masfille_0_4) * weights_sampling, na.rm = T)/ sum((sum_agegrp_0_4_hommes+sum_agegrp_0_4_femmes) * weights_sampling, na.rm = T),
+    freq_nut_2_muac.masfille_6m_4 = sum(sum_nut_2_muac.masfille_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_filles * weights_sampling, na.rm = T),
+    freq_nut_2_muac.masgarcon_6m_4 = sum(sum_nut_2_muac.masgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_garcons * weights_sampling, na.rm = T),
+    freq_nut_2_muac.mas_6m_4 = sum((sum_nut_2_muac.masgarcon_0_4+sum_nut_2_muac.masfille_0_4) * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4 * weights_sampling, na.rm = T),
     
-    freq_nut_2_muac.mamfille_0_4 = sum(sum_nut_2_muac.mamfille_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_0_4_femmes * weights_sampling, na.rm = T),
-    freq_nut_2_muac.mamgarcon_0_4 = sum(sum_nut_2_muac.mamgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_0_4_hommes * weights_sampling, na.rm = T),
-    freq_nut_2_muac.mam_0_4 = sum((sum_nut_2_muac.mamfille_0_4+sum_nut_2_muac.mamgarcon_0_4) * weights_sampling, na.rm = T)/ sum((sum_agegrp_0_4_hommes+sum_agegrp_0_4_femmes) * weights_sampling, na.rm = T),
+    freq_nut_2_muac.mamfille_6m_4 = sum(sum_nut_2_muac.mamfille_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_filles * weights_sampling, na.rm = T),
+    freq_nut_2_muac.mamgarcon_6m_4 = sum(sum_nut_2_muac.mamgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_garcons * weights_sampling, na.rm = T),
+    freq_nut_2_muac.mam_6m_4 = sum((sum_nut_2_muac.mamfille_0_4+sum_nut_2_muac.mamgarcon_0_4) * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4 * weights_sampling, na.rm = T),
     
     
     freq_protect_9 = sum(sum_protect_9 * weights_sampling, na.rm = T)/sum(sum_agegrp_4_18 * weights_sampling, na.rm = T),
