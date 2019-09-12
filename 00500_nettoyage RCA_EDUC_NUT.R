@@ -1,6 +1,6 @@
 ## Import data
 educ_data = read.csv("./output/educ_database_tobecleaned.csv", stringsAsFactors = F)
-final_data = read.csv("./output/REACH_CAR_MSNA_Final_dataset_0309.csv", stringsAsFactors = F)
+final_data = read.csv("./output/REACH_CAR_MSNA_Final_dataset_0309_clean_sampled.csv", stringsAsFactors = F)
 
 educ_data_final = subset(educ_data, is_in(educ_data$X_parent_index, final_data$X_index))
 

@@ -2,12 +2,12 @@
     "path" : "~/SpiderOak Hive/IMPACT/26_CAR/CAR_MSNA_HH_Analysis",
     "sortOrder" : [
         {
-            "ascending" : false,
-            "columnIndex" : 4
-        },
-        {
             "ascending" : true,
             "columnIndex" : 2
+        },
+        {
+            "ascending" : false,
+            "columnIndex" : 4
         }
     ]
 }

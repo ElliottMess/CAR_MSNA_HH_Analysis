@@ -12,7 +12,7 @@ library(parallel)
 #devtools::install_github('sharonorengo/koboloops')
 library(koboloops)
 library(mergekobodata)
-
+library(cleaninginspectoR)
 #install.packages("vctrs")
 library(vctrs)
 
@@ -20,10 +20,274 @@ library(vctrs)
 #main <- read.csv("./output/REACH_CAR_MSNA_Final_dataset_2.csv", stringsAsFactors = F)
 raw_data <- read.csv("input/questionnaire_MSNA_HH_2019-08-29.csv", stringsAsFactors = F)
 
-### Importing final 'HH Members loop' :
-hh_ind <- read.csv("./input/questionnaire_MSNA_HH_loop_2019-08-29.csv", stringsAsFactors = F)
+choices_form <- read.csv("input/questionnaire_kobo_hh_combine_v4_FINAL_PourAnalyse_choices.csv", stringsAsFactors = F)
 
-### Create 2 different final files including the loop:
+removed_nonUTF <- function(x){
+  x <- gsub('[^ -~]', '', x)
+  x <- gsub(' ', "", x )
+  x <- gsub("\'", "", x)
+  x <- gsub("[(),.]", "", x)
+  x <- tolower(x)
+  return(x)
+}
+
+write.csv.withversion <- function(data, file.name){
+  file.name <- paste(file.name, format(Sys.time(), "%Y%m%d"), sep="_")
+    if(!file.exists(file.name)){return(file.name)}
+    i=1
+    repeat {
+      f = paste(file.name,i,sep=".")
+      if(!file.exists(f)){return(f)}
+      i=i+1
+    }
+}
+
+write.csv.withversion(hh_ind, "hh_ind.csv")
+
+
+hh_ind <- read.csv("input/questionnaire_MSNA_HH_loop_2019-08-29.csv", stringsAsFactors = F, encoding = "UTF-8")%>%
+  mutate_at(vars(ends_with("_autre")), removed_nonUTF)
+
+
+###Cleaning HH data
+
+DataCleaningLogBook_hh_ind <-data.frame( matrix(ncol = 8, nrow = 0))
+names(DataCleaningLogBook_hh_ind) <- c("uuid", "index", "question.name", "Issue",	"feedback",	"changed",	"old.value",	"new.value")
+
+log_cols <- names(DataCleaningLogBook_hh_ind)
+
+hh_ind_cleaned_value <- read.csv("./input/questionnaire_MSNA_HH_loop_2019-08-29_autreToClean.csv", stringsAsFactors = F)%>%
+  mutate_at(vars(ends_with("_autre")), removed_nonUTF)
+
+
+change_select_one_value <- function(question.name, other.q.name, old.value.name, new.value.name, toadd.value, data, codes.df){
+  variable.coded <- codes.df%>%
+    select(starts_with(other.q.name))%>%
+    distinct()%>%
+    filter(UQ(sym(other.q.name))!="")
+
+  old.value <- variable.coded[[old.value.name]]
+  
+  new.value <- variable.coded[[new.value.name]]
+  
+  other.q <- data[[other.q.name]] 
+  question.v <- data[[question.name]]
+  data[[other.q.name]] <- plyr::mapvalues(other.q, old.value, new.value)
+  question.v[which(!(is.null(other.q)))] <- !(is.null(data[[other.q.name]]))
+  question.v[data[[other.q.name]] %in% toadd.value] <- data[[other.q.name]][data[[other.q.name]] %in% toadd.value]
+  data[[question.name]] <- question.v
+  return(data)
+}
+
+change_select_one_value_log <- function(logbook, data, codes.df, other.q.name, new.value.name){
+  variable.coded <- codes.df%>%
+    select(starts_with(other.q.name))%>%
+    distinct()%>%
+    filter(UQ(sym(other.q.name))!="")
+  
+  variables.log <- data %>%
+    inner_join(variable.coded)%>%
+    select(X_submission__uuid, X_index, other.q.name, new.value.name)%>%
+    mutate(uuid = X_submission__uuid, index = X_index, question.name = other.q.name, 
+           feedback = "", Issue = "Autre a recoder", changed = "Oui", 
+           old.value = UQ(sym(other.q.name)), new.value = UQ(sym(new.value.name)))%>%
+    select(log_cols)
+  
+  rbind(logbook, variables.log)
+  
+  return(logbook)
+}
+
+#### Accouchement
+
+list_to_add_accouch <- choices_form$name[choices_form$list_name == "accouch"]
+
+hh_ind$sante_1_accouch <- change_select_one_value(question.name = "sante_1_accouch", 
+                                                  other.q.name = "sante_1_accouch_autre", 
+                                                  old.value.name  = "sante_1_accouch_autre", 
+                                                  new.value.name = "sante_1_accouch_autre_recoding",
+                                                  toadd.value = list_to_add_accouch,
+                                                  data = hh_ind,
+                                                  codes.df = hh_ind_cleaned_value)$sante_1_accouch
+
+DataCleaningLogBook_hh_ind <- change_select_one_value_log(DataCleaningLogBook_hh_ind, hh_ind, hh_ind_cleaned_value, 
+                                                          other.q.name = "sante_1_accouch_autre",
+                                                          new.value.name = "sante_1_accouch_autre_recoding")
+
+### Accouche maison
+
+list_to_add_accouch_maison <- choices_form$name[choices_form$list_name == "accouch_maison"]
+
+hh_ind$sante_1_accouch_maison <- change_select_one_value(question.name = "sante_1_accouch_maison", 
+                                                  other.q.name = "sante_1_accouch_maison_autre", 
+                                                  old.value.name  = "sante_1_accouch_maison_autre", 
+                                                  new.value.name = "sante_1_accouch_maison_autre_recoding",
+                                                  toadd.value = list_to_add_accouch_maison,
+                                                  data = hh_ind,
+                                                  codes.df = hh_ind_cleaned_value)$sante_1_accouch_maison
+
+DataCleaningLogBook_hh_ind <- change_select_one_value_log(DataCleaningLogBook_hh_ind, hh_ind, hh_ind_cleaned_value, 
+                                                          other.q.name = "sante_1_accouch_maison_autre",
+                                                          new.value.name = "sante_1_accouch_maison_autre_recoding")
+### Soin recu
+
+list_to_add_soin_recu <- choices_form$name[choices_form$list_name == "soin_recu"]
+
+hh_ind$sante_2_soin_recu <- change_select_one_value(question.name = "sante_2_soin_recu", 
+                                                  other.q.name = "sante_2_soin_recu_autre", 
+                                                  old.value.name  = "sante_2_soin_recu_autre", 
+                                                  new.value.name = "sante_2_soin_recu_autre_recoding",
+                                                  toadd.value = list_to_add_soin_recu,
+                                                  data = hh_ind,
+                                                  codes.df = hh_ind_cleaned_value)$sante_2_soin_recu
+
+DataCleaningLogBook_hh_ind <- change_select_one_value_log(DataCleaningLogBook_hh_ind, hh_ind, hh_ind_cleaned_value, 
+                                                          other.q.name = "sante_2_soin_recu_autre",
+                                                          new.value.name = "sante_2_soin_recu_autre_recoding")
+
+### Soin non-recu
+
+list_to_add_soin_non_recu <- choices_form$name[choices_form$list_name == "soin_non_recu"]
+
+hh_ind$sante_2_soin_recu <- change_select_one_value(question.name = "sante_3_soin_non_recu", 
+                                                    other.q.name = "sante_3_soin_non_recu_autre", 
+                                                    old.value.name  = "sante_3_soin_non_recu_autre", 
+                                                    new.value.name = "sante_3_soin_non_recu_autre_recoding",
+                                                    toadd.value = list_to_add_soin_non_recu,
+                                                    data = hh_ind,
+                                                    codes.df = hh_ind_cleaned_value)$sante_2_soin_recu
+
+DataCleaningLogBook_hh_ind <- change_select_one_value_log(DataCleaningLogBook_hh_ind, hh_ind, hh_ind_cleaned_value, 
+                                                          other.q.name = "sante_2_soin_recu_autre",
+                                                          new.value.name = "sante_2_soin_recu_autre_recoding")
+
+### Soin handi_acces
+
+list_to_add_handi_acces <- choices_form$name[choices_form$list_name == "educ_enfant_handi"]
+
+hh_ind$sante_2_soin_recu <- change_select_one_value(question.name = "educ_4_handi_acces", 
+                                                    other.q.name = "educ_4_handi_acces_autre", 
+                                                    old.value.name  = "educ_4_handi_acces_autre", 
+                                                    new.value.name = "educ_4_handi_acces_autre_recoding",
+                                                    toadd.value = list_to_add_handi_acces,
+                                                    data = hh_ind,
+                                                    codes.df = hh_ind_cleaned_value)$sante_2_soin_recu
+
+DataCleaningLogBook_hh_ind <- change_select_one_value_log(DataCleaningLogBook_hh_ind, hh_ind, hh_ind_cleaned_value, 
+                                                          other.q.name = "educ_4_handi_acces_autre",
+                                                          new.value.name = "educ_4_handi_acces_autre_recoding")
+
+### Soin handi_acces
+
+list_to_add_handi_acces <- choices_form$name[choices_form$list_name == "educ_enfant_handi"]
+
+hh_ind$sante_2_soin_recu <- change_select_one_value(question.name = "educ_4_handi_acces", 
+                                                    other.q.name = "educ_4_handi_acces_autre", 
+                                                    old.value.name  = "educ_4_handi_acces_autre", 
+                                                    new.value.name = "educ_4_handi_acces_autre_recoding",
+                                                    toadd.value = list_to_add_handi_acces,
+                                                    data = hh_ind,
+                                                    codes.df = hh_ind_cleaned_value)$sante_2_soin_recu
+
+DataCleaningLogBook_hh_ind <- change_select_one_value_log(DataCleaningLogBook_hh_ind, hh_ind, hh_ind_cleaned_value, 
+                                                          other.q.name = "educ_4_handi_acces_autre",
+                                                          new.value.name = "educ_4_handi_acces_autre_recoding")
+
+
+add_toselectmutlipe <- function(col_sm, col_sm_autre, other.choice.name, data){
+   split_name <- gsub(".*?\\.","", names(data[col_sm]))
+   data[[col_sm_autre]] <- trimws(data[[col_sm_autre]])
+   in_col_sm_autre <- as.numeric(grepl(split_name, data[[col_sm_autre]], ignore.case=T))
+   col_sm_value <- data[[col_sm]]
+   value <- rowSums(cbind(in_col_sm_autre, col_sm_value))
+   if(split_name == other.choice.name){
+     value <- if_else(value >1,1,0)
+     }else{
+     value <- if_else(value >=1,1,0)
+     }
+   return(value)
+}
+
+### Malades <5 ans
+change_select_multiple_value <- function(question.name, other.q.name, old.value.name, new.value.name, other.choice.name, toadd.value, data, codes.df){
+  variable.coded <- codes.df%>%
+    select(starts_with(other.q.name))%>%
+    distinct()%>%
+    filter(UQ(sym(other.q.name))!="")
+  
+  old.value <- variable.coded[[old.value.name]]
+  new.value <- variable.coded[[new.value.name]]
+  other.q <- data[[other.q.name]] 
+  question.v <- data[[question.name]]
+  data[[other.q.name]] <- plyr::mapvalues(other.q, old.value, new.value)
+  list_sm_cols <- names(data%>%select(starts_with(paste0(question.name, "."))))
+  cols_toadd <- paste0("sante_4_0_4_malades.", toadd.value)
+  not_incols <- cols_toadd[!cols_toadd %in% list_sm_cols]
+  data[,not_incols] <- NA
+  list_sm_cols <- names(data%>%select(starts_with(paste0(question.name, "."))))
+  
+  data[,list_sm_cols] <- sapply(list_sm_cols, add_toselectmutlipe, col_sm_autre = other.q.name, other.choice.name = other.choice.name, data = data)
+
+  return(data)
+}
+
+
+list_to_add_sante_4_0_4_malades <- choices_form$name[choices_form$list_name == "maladies_0_4"]
+
+hh_ind <- change_select_multiple_value(question.name = "sante_4_0_4_malades", 
+                                                  other.q.name = "sante_4_0_4_malades_autre", 
+                                                  old.value.name  = "sante_4_0_4_malades_autre", 
+                                                  new.value.name = "sante_4_0_4_malades_autre_recoding",
+                                                  toadd.value = list_to_add_sante_4_0_4_malades,
+                                                  data = hh_ind,
+                                                  other.choice.name = "autre",
+                                                  codes.df = hh_ind_cleaned_value)
+
+DataCleaningLogBook_hh_ind <- change_select_one_value_log(DataCleaningLogBook_hh_ind, hh_ind, hh_ind_cleaned_value, 
+                                                          other.q.name = "sante_4_0_4_malades_autre",
+                                                          new.value.name = "sante_4_0_4_malades_autre_recoding")
+
+
+###  sante_5_5plus_malades
+
+list_to_add_sante_5_5plus_malades <- choices_form$name[choices_form$list_name == "maladies"]
+
+hh_ind <- change_select_multiple_value(question.name = "sante_5_5plus_malades", 
+                                                  other.q.name = "sante_5_5plus_malades_autre", 
+                                                  old.value.name  = "sante_5_5plus_malades_autre", 
+                                                  new.value.name = "sante_5_5plus_malades_autre_recoding",
+                                                  toadd.value = maladies,
+                                                  data = hh_ind,
+                                                  other.choice.name = "autre",
+                                  
+                                                  codes.df = hh_ind_cleaned_value)
+
+DataCleaningLogBook_hh_ind <- change_select_one_value_log(DataCleaningLogBook_hh_ind, hh_ind, hh_ind_cleaned_value, 
+                                                          other.q.name = "sante_5_5plus_malades_autre",
+                                                          new.value.name = "sante_5_5plus_malades_autre_recoding")
+
+
+###  protect_10 
+
+list_to_add_protect_10  <- choices_form$name[choices_form$list_name == "type_activite_4_18"]
+
+hh_ind <- change_select_multiple_value(question.name = "protect_10", 
+                                  other.q.name = "protect_10_autre", 
+                                  old.value.name  = "protect_10_autre", 
+                                  new.value.name = "protect_10_autre_recoding",
+                                  toadd.value = list_to_add_protect_10,
+                                  other.choice.name = "autre",
+                                  data = hh_ind,
+                                  codes.df = hh_ind_cleaned_value)
+    
+
+DataCleaningLogBook_hh_ind <- change_select_one_value_log(DataCleaningLogBook_hh_ind, hh_ind, hh_ind_cleaned_value, 
+                                                          other.q.name = "protect_10_autre",
+                                                          new.value.name = "protect_10_autre_recoding")
+
+write.csv(DataCleaningLogBook_hh_ind, paste0("./output/DataCleaningLogbook_hh_ind-",format(Sys.time(), "%Y%m%d"), ".csv"))
+
+  ### Create 2 different final files including the loop:
 #browseVignettes("koboloops")
 ## check loop that might be not correct :
 # loops must have a member with age of respondent and start with the youngest child (for maternity info) (create var in raw_data file with 1 if wrong)
@@ -176,6 +440,9 @@ hh_ind$sante_4_0_4_malades_oui_fievre_filles = ifelse(hh_ind$sante_4_0_4_malades
 hh_ind$sante_4_0_4_malades_oui_fievre_garcons = ifelse(hh_ind$sante_4_0_4_malades.fievre %in% 1 & hh_ind$sexe_hh %in% "homme",1,0)
 hh_ind$sante_4_0_4_malades_oui_nsp_filles = ifelse(hh_ind$sante_4_0_4_malades.nsp %in% 1 & hh_ind$sexe_hh %in% "femme",1,0)
 hh_ind$sante_4_0_4_malades_oui_nsp_garcons = ifelse(hh_ind$sante_4_0_4_malades.nsp %in% 1 & hh_ind$sexe_hh %in% "homme",1,0)
+hh_ind$sante_4_0_4_malades_oui_palu_filles = ifelse(hh_ind$sante_4_0_4_malades.palu %in% 1 & hh_ind$sexe_hh %in% "femme",1,0)
+hh_ind$sante_4_0_4_malades_oui_palu_garcons = ifelse(hh_ind$sante_4_0_4_malades.palu %in% 1 & hh_ind$sexe_hh %in% "homme",1,0)
+
 
 main_withloop <- affect_loop_to_parent(loop = hh_ind, parent = main_withloop, aggregate.function = sum , 
                                        variable.to.add = c(sum_sante_4_0_4_malades_autre_filles = "sante_4_0_4_malades_oui_autre_filles",
@@ -353,16 +620,16 @@ nut_DB_withmain <- add_parent_to_loop(loop = nut_DB, parent = main_withloop,
 
 write.csv(nut_DB_withmain, "./output/nutrition_database_tobecleaned.csv")
 
-hh_ind$nut_2_muac.MAS_fille_0_5 <- ifelse(hh_ind$nut_2_muac >0 & hh_ind$nut_2_muac <= 115 &  (hh_ind$age_hh >=0 & hh_ind$age_hh <=5) & hh_ind$sexe_hh == "femme", 1, 0)
-hh_ind$nut_2_muac.MAS_garcon_0_5 <- ifelse(hh_ind$nut_2_muac >0 & hh_ind$nut_2_muac <= 115 &  (hh_ind$age_hh >=0 & hh_ind$age_hh <=5) & hh_ind$sexe_hh == "homme", 1, 0)
-hh_ind$nut_2_muac.MAM_fille_0_5 <- ifelse(hh_ind$nut_2_muac >115 & hh_ind$nut_2_muac <= 125 &  (hh_ind$age_hh >=0 & hh_ind$age_hh <=5) & hh_ind$sexe_hh == "femme", 1, 0)
-hh_ind$nut_2_muac.MAM_garcon_0_5 <- ifelse(hh_ind$nut_2_muac >115 & hh_ind$nut_2_muac <= 125 &  (hh_ind$age_hh >=0 & hh_ind$age_hh <=5) & hh_ind$sexe_hh == "homme", 1, 0)
+hh_ind$nut_2_muac.MAS_fille_0_4 <- ifelse(hh_ind$nut_2_muac >0 & hh_ind$nut_2_muac <= 115 &  (hh_ind$age_hh >=0 & hh_ind$age_hh <5) & hh_ind$sexe_hh == "femme", 1, 0)
+hh_ind$nut_2_muac.MAS_garcon_0_4 <- ifelse(hh_ind$nut_2_muac >0 & hh_ind$nut_2_muac <= 115 &  (hh_ind$age_hh >=0 & hh_ind$age_hh <5) & hh_ind$sexe_hh == "homme", 1, 0)
+hh_ind$nut_2_muac.MAM_fille_0_4 <- ifelse(hh_ind$nut_2_muac >115 & hh_ind$nut_2_muac <= 125 &  (hh_ind$age_hh >=0 & hh_ind$age_hh <5) & hh_ind$sexe_hh == "femme", 1, 0)
+hh_ind$nut_2_muac.MAM_garcon_0_4 <- ifelse(hh_ind$nut_2_muac >115 & hh_ind$nut_2_muac <= 125 &  (hh_ind$age_hh >=0 & hh_ind$age_hh <5) & hh_ind$sexe_hh == "homme", 1, 0)
 
 main_withloop <- affect_loop_to_parent(loop = hh_ind, parent = main_withloop, aggregate.function = sum , 
-                                       variable.to.add = c(sum_nut_2_muac.MASfille_0_5 = "nut_2_muac.MAS_fille_0_5",
-                                                           sum_nut_2_muac.MASgarcon_0_5 = "nut_2_muac.MAS_garcon_0_5",
-                                                           sum_nut_2_muac.MAMfille_0_5 = "nut_2_muac.MAM_fille_0_5",
-                                                           sum_nut_2_muac.MAMgarcon_0_5 = "nut_2_muac.MAM_garcon_0_5"
+                                       variable.to.add = c(sum_nut_2_muac.MASfille_0_4 = "nut_2_muac.MAS_fille_0_4",
+                                                           sum_nut_2_muac.MASgarcon_0_4 = "nut_2_muac.MAS_garcon_0_4",
+                                                           sum_nut_2_muac.MAMfille_0_4 = "nut_2_muac.MAM_fille_0_4",
+                                                           sum_nut_2_muac.MAMgarcon_0_4 = "nut_2_muac.MAM_garcon_0_4"
                                        ),
                                        uuid.name.loop = "X_parent_index", uuid.name.parent = "X_index")
 
@@ -441,6 +708,20 @@ hh_ind$educ_4_handi_acces.scol_non_opti <- ifelse(hh_ind$educ_4_handi_acces == "
 hh_ind$educ_4_handi_acces.scol_ok <- ifelse(hh_ind$educ_4_handi_acces == "scol_ok", 1,0)
 hh_ind$educ_4_handi_acces.autre <- ifelse(hh_ind$educ_4_handi_acces == "autre", 1,0)
 
+hh_ind$educ_4_handi_acces.descol_autre_filles <- ifelse(hh_ind$educ_4_handi_acces == "descol_autre" & hh_ind$sexe_hh == "femme", 1,0)
+hh_ind$educ_4_handi_acces.descol_acces_filles <- ifelse(hh_ind$educ_4_handi_acces == "descol_acces" & hh_ind$sexe_hh == "femme", 1,0)
+hh_ind$educ_4_handi_acces.descol_enseignement_filles <- ifelse(hh_ind$educ_4_handi_acces == "descol_enseignement" & hh_ind$sexe_hh == "femme", 1,0)
+hh_ind$educ_4_handi_acces.scol_non_opti_filles <- ifelse(hh_ind$educ_4_handi_acces == "scol_non_opti" & hh_ind$sexe_hh == "femme", 1,0)
+hh_ind$educ_4_handi_acces.scol_ok_filles <- ifelse(hh_ind$educ_4_handi_acces == "scol_ok" & hh_ind$sexe_hh == "femme", 1,0)
+hh_ind$educ_4_handi_acces.autre_filles <- ifelse(hh_ind$educ_4_handi_acces == "autre"& hh_ind$sexe_hh == "femme", 1,0)
+
+hh_ind$educ_4_handi_acces.descol_autre_garcons <- ifelse(hh_ind$educ_4_handi_acces == "descol_autre" & hh_ind$sexe_hh == "homme", 1,0)
+hh_ind$educ_4_handi_acces.descol_acces_garcons <- ifelse(hh_ind$educ_4_handi_acces == "descol_acces"& hh_ind$sexe_hh == "homme", 1,0)
+hh_ind$educ_4_handi_acces.descol_enseignement_garcons <- ifelse(hh_ind$educ_4_handi_acces == "descol_enseignement" & hh_ind$sexe_hh == "homme", 1,0)
+hh_ind$educ_4_handi_acces.scol_non_opti_garcons <- ifelse(hh_ind$educ_4_handi_acces == "scol_non_opti" & hh_ind$sexe_hh == "homme", 1,0)
+hh_ind$educ_4_handi_acces.scol_ok_garcons <- ifelse(hh_ind$educ_4_handi_acces == "scol_ok" & hh_ind$sexe_hh == "homme", 1,0)
+hh_ind$educ_4_handi_acces.autre_garcons <- ifelse(hh_ind$educ_4_handi_acces == "autre" & hh_ind$sexe_hh == "homme", 1,0)
+
 
 main_withloop <- affect_loop_to_parent(loop = hh_ind, parent = main_withloop, aggregate.function = sum , 
                                        variable.to.add = c(
@@ -477,12 +758,33 @@ main_withloop <- affect_loop_to_parent(loop = hh_ind, parent = main_withloop, ag
                                          sum_educ_4_handi_acces.descol_enseignement <- "educ_4_handi_acces.descol_enseignement",
                                          sum_educ_4_handi_acces.scol_non_opti <- "educ_4_handi_acces.scol_non_opti",
                                          sum_educ_4_handi_acces.scol_ok <- "educ_4_handi_acces.scol_ok",
-                                         sum_educ_4_handi_acces.autre <- "educ_4_handi_acces.autre"
+                                         sum_educ_4_handi_acces.autre <- "educ_4_handi_acces.autre",
+                                         
+                                         sum_educ_4_handi_acces.descol_autre_filles <- "educ_4_handi_acces.descol_autre_filles",
+                                         sum_educ_4_handi_acces.descol_acces_filles <- "educ_4_handi_acces.descol_acces_filles",
+                                         sum_educ_4_handi_acces.descol_enseignement_filles <- "educ_4_handi_acces.descol_enseignement_filles",
+                                         sum_educ_4_handi_acces.scol_non_opti_filles <- "educ_4_handi_acces.scol_non_opti_filles",
+                                         sum_educ_4_handi_acces.scol_ok_filles <- "educ_4_handi_acces.scol_ok_filles",
+                                         sum_educ_4_handi_acces.autre_filles <- "educ_4_handi_acces.autre_filles",
+                                         
+                                         sum_educ_4_handi_acces.descol_autre_garcons <- "educ_4_handi_acces.descol_autre_garcons",
+                                         sum_educ_4_handi_acces.descol_acces_garcons <- "educ_4_handi_acces.descol_acces_garcons",
+                                         sum_educ_4_handi_acces.descol_enseignement_garcons <- "educ_4_handi_acces.descol_enseignement_garcons",
+                                         sum_educ_4_handi_acces.scol_non_opti_garcons <- "educ_4_handi_acces.scol_non_opti_garcons",
+                                         sum_educ_4_handi_acces.scol_ok_garcons <- "educ_4_handi_acces.scol_ok_garcons",
+                                         sum_educ_4_handi_acces.autre_garcons <- "educ_4_handi_acces.autre_garcons"
                                        ),
                                        uuid.name.loop = "X_parent_index", uuid.name.parent = "X_index")
 
 # Create var for child protect: 
 #"% de m?nages avec des enfants de moins de 18 ans qui sont impliqu?s dans des types de travail"
+
+
+hh_ind$protect_9_garcon <- ifelse(hh_ind$protect_9 == "oui" & hh_ind$sexe_hh == "homme", 1,0)
+hh_ind$protect_9_fille <- ifelse(hh_ind$protect_9 == "oui" & hh_ind$sexe_hh == "femme", 1,0)
+hh_ind$protect_9 <- ifelse(hh_ind$protect_9 == "oui", 1,0)
+
+
 
 hh_ind[,c("protect_10.agric", "protect_10.peche", "protect_10.elevage","protect_10.carriere",
           "protect_10.petit_commerce", "protect_10.restauration","protect_10.artisanat", "protect_10.travaux_domestiques", 
@@ -508,7 +810,10 @@ main_withloop <- affect_loop_to_parent(loop = hh_ind, parent = main_withloop, ag
                                                            sum_protect_10.recrutes = "protect_10.recrutes",
                                                            sum_protect_10.prostitution = "protect_10.prostitution",
                                                            sum_protect_10.autre = "protect_10.autre",
-                                                           sum_protect_10.nsp = "protect_10.nsp"),
+                                                           sum_protect_10.nsp = "protect_10.nsp",
+                                                           sum_protect_9_garcon = "protect_9_garcon",
+                                                           sum_protect_9_fille = "protect_9_fille",
+                                                           sum_protect_9 = "protect_9"),
                                        uuid.name.loop = "X_parent_index", uuid.name.parent = "X_index")
 
 hh_ind$agegrp_7_12_filles <- if_else(hh_ind$age_hh>=7 & hh_ind$age_hh<=12 & hh_ind$sexe_hh == "femme",1,0)
@@ -525,5 +830,57 @@ main_withloop <- affect_loop_to_parent(loop = hh_ind, parent = main_withloop, ag
                                        ),
                                        uuid.name.loop = "X_parent_index", uuid.name.parent = "X_index")
 
+hh_ind$agegrp_0_17_femmes <- if_else(hh_ind$age_hh >=0 & hh_ind$age_hh <=17 & hh_ind$sexe_hh == "femme",1,0) 
+hh_ind$agegrp_0_18_femmes <- if_else(hh_ind$age_hh >=0 & hh_ind$age_hh <=18 & hh_ind$sexe_hh == "femme",1,0) 
+hh_ind$agegrp_18_59_femmes <- if_else(hh_ind$age_hh >=18 & hh_ind$age_hh <=59 & hh_ind$sexe_hh == "femme",1,0) 
+hh_ind$agegrp_19_59_femmes <- if_else(hh_ind$age_hh >=19 & hh_ind$age_hh <=59 & hh_ind$sexe_hh == "femme",1,0) 
+hh_ind$agegrp_59plus_femmes <- if_else(hh_ind$age_hh >=60 & hh_ind$age_hh <=1000 & hh_ind$sexe_hh == "femme",1,0) 
+
+hh_ind$agegrp_0_17_hommes <- if_else(hh_ind$age_hh >=0 & hh_ind$age_hh <=17 & hh_ind$sexe_hh == "homme",1,0) 
+hh_ind$agegrp_0_18_hommes <- if_else(hh_ind$age_hh >=0 & hh_ind$age_hh <=18 & hh_ind$sexe_hh == "homme",1,0) 
+hh_ind$agegrp_18_59_hommes <- if_else(hh_ind$age_hh >=18 & hh_ind$age_hh <=59 & hh_ind$sexe_hh == "homme",1,0) 
+hh_ind$agegrp_19_59_hommes <- if_else(hh_ind$age_hh >=19 & hh_ind$age_hh <=59 & hh_ind$sexe_hh == "homme",1,0) 
+hh_ind$agegrp_59plus_hommes <- if_else(hh_ind$age_hh >=60 & hh_ind$age_hh <=1000 & hh_ind$sexe_hh == "homme",1,0) 
+
+hh_ind$agegrp_0_17_tot <- if_else(hh_ind$age_hh >=0 & hh_ind$age_hh <=17 ,1,0) 
+hh_ind$agegrp_0_18_tot <- if_else(hh_ind$age_hh >=0 & hh_ind$age_hh <=18 ,1,0) 
+hh_ind$agegrp_18_59_tot <- if_else(hh_ind$age_hh >=18 & hh_ind$age_hh <=59 ,1,0) 
+hh_ind$agegrp_19_59_tot <- if_else(hh_ind$age_hh >=19 & hh_ind$age_hh <=59 ,1,0) 
+hh_ind$agegrp_59plus_tot <- if_else(hh_ind$age_hh >=60 & hh_ind$age_hh <=1000,1,0) 
+
+hh_ind$agegrp_5_17_femmes <- if_else(hh_ind$age_hh >=5 & hh_ind$age_hh <= 17 & hh_ind$sexe_hh == "femme", 1,0)
+hh_ind$agegrp_5_17_hommes <- if_else(hh_ind$age_hh >=5 & hh_ind$age_hh <= 17 & hh_ind$sexe_hh == "homme", 1,0)
+hh_ind$agegrp_5_17 <- if_else(hh_ind$age_hh >=5 & hh_ind$age_hh <= 17, 1,0)
+
+hh_ind$agegrp_0_4_femmes <- if_else(hh_ind$age_hh >=0 & hh_ind$age_hh <= 4 & hh_ind$sexe_hh == "femme", 1,0)
+hh_ind$agegrp_0_4_hommes <- if_else(hh_ind$age_hh >=0 & hh_ind$age_hh <= 4 & hh_ind$sexe_hh == "homme", 1,0)
+
+
+main_withloop <- affect_loop_to_parent(loop = hh_ind, parent = main_withloop, aggregate.function = sum , 
+                                       variable.to.add = c(
+                                         sum_agegrp_0_18_femmes = "agegrp_0_18_femmes",
+                                         sum_agegrp_18_59_femmes = "agegrp_18_59_femmes",
+                                         sum_agegrp_19_59_femmes = "agegrp_19_59_femmes",
+                                         sum_agegrp_59plus_femmes = "agegrp_59plus_femmes",
+                                         
+                                         sum_agegrp_0_18_hommes = "agegrp_0_18_hommes",
+                                         sum_agegrp_18_59_hommes = "agegrp_18_59_hommes",
+                                         sum_agegrp_19_59_hommes = "agegrp_19_59_hommes",
+                                         sum_agegrp_59plus_hommes = "agegrp_59plus_hommes",
+                                         
+                                         sum_agegrp_0_17_tot = "agegrp_0_17_tot",
+                                         sum_agegrp_0_18_tot = "agegrp_0_18_tot",
+                                         sum_agegrp_18_59_tot = "agegrp_18_59_tot",
+                                         sum_agegrp_19_59_tot = "agegrp_19_59_tot",
+                                         sum_agegrp_59plus_tot = "agegrp_59plus_tot",
+                                         
+                                         sum_agegrp_5_17_femmes = "agegrp_5_17_femmes",
+                                         sum_agegrp_5_17_hommes = "agegrp_5_17_hommes",
+                                         sum_agegrp_5_17 = "agegrp_5_17",
+                                         
+                                         sum_agegrp_0_4_femmes = "agegrp_0_4_femmes",
+                                         sum_agegrp_0_4_hommes = "agegrp_0_4_hommes"
+                                       ),
+                                       uuid.name.loop = "X_parent_index", uuid.name.parent = "X_index")
 
 write.csv(main_withloop, "./output/main_DS_withloop_tobecleaned.csv")

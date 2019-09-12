@@ -1,4 +1,4 @@
-data_final = read.csv("./output/REACH_CAR_MSNA_Final_dataset_0309.csv", stringsAsFactors = F)
+data_final = read.csv("./output/REACH_CAR_MSNA_Final_dataset_0309_clean.csv", stringsAsFactors = F)
 
 sampling_cluster = read.csv("./input/sampling_fr_cluster.csv", stringsAsFactors = F)
 sampling_strata = read.csv("./input/sampling_fr_strata.csv", stringsAsFactors = F)
@@ -17,12 +17,10 @@ sampling_strata$Admin2 <- gsub("ï","i" , sampling_strata$Admin2 ,ignore.case = 
 sampling_strata$Admin2 <- gsub(" ","-" , sampling_strata$Admin2 ,ignore.case = TRUE)
 
 admin2_tbc = unique(subset(sampling_strata,  !is_in(sampling_strata$Admin2, data_final$admin2_labels))$Admin2)
-admin2_tbc
 
 # all in H2R -> delete from sampling_strata file : 
 sampling_strata = subset(sampling_strata, !is_in(sampling_strata$Admin2, admin2_tbc))
 
-unique(sampling_strata$Groupe)
 
 sampling_strata$stratum = paste(sampling_strata$Admin2, sampling_strata$Groupe, sep ="_")
 
@@ -33,12 +31,11 @@ data_final$ig_8_statut_Groupe = ifelse(data_final$ig_8_statut == "hote", data_fi
 
 data_final$stratum = paste(data_final$admin2_labels, "_", data_final$ig_8_statut_Groupe, sep ="")
 
+
 admin2_tbc_inSampling_notDS = unique(subset(sampling_strata,  !is_in(sampling_strata$stratum, data_final$stratum))$stratum)
-admin2_tbc_inSampling_notDS
 admin2_tbc_inSampling_notDS = subset(sampling_strata, is_in(sampling_strata$stratum, admin2_tbc_inSampling_notDS))
 
 admin2_tbc_inDS_notSampling = unique(subset(data_final,  !is_in(data_final$stratum, sampling_strata$stratum))$stratum)
-admin2_tbc_inDS_notSampling
 admin2_tbc_inDS_notSampling = subset(data_final, is_in(data_final$stratum, admin2_tbc_inDS_notSampling))
 
 
@@ -52,8 +49,8 @@ sampling_strata_v2 = rbind(sampling_strata, popsize_AmadaGazaPDISite, popsize_Ba
 
 
 ## Delete others and considered as new returns
-rm_FalseStratum = subset(data_final,  !is_in(data_final$stratum, sampling_strata$stratum))
-data_final = subset(data_final,  is_in(data_final$stratum, sampling_strata$stratum))
+rm_FalseStratum = subset(data_final,  !is_in(data_final$stratum, sampling_strata_v2$stratum))
+data_final = subset(data_final,  is_in(data_final$stratum, sampling_strata_v2$stratum))
 
 DataCleaningLogBook = read.csv("./output/DataCleaningLogBook_0309.csv", stringsAsFactors = F)
 DataCleaningLogBook = DataCleaningLogBook[,-1]
@@ -189,62 +186,4 @@ for (i in 1:length(village_tbc_inDS_notSampling)){
 
 write.csv(sampling_cluster_new_all, "./output/sampling_fr_cluster_v5.csv")
 
-write.csv(data_final, "./output/REACH_CAR_MSNA_Final_dataset_0309.csv")
-
-### Get data from DTM source :
-#
-#popsize_dtm$GPS.point = ""
-#popsize_dtm = popsize_dtm[, c("_Village", "_ADM1_NAME", "_ADM2_NAME", "_ADM3_NAME", "ind_idp", "ind_ret_rca", "ind_ret_oth")]
-#popsize_dtm$VillageAll_test = gsub(" ","" , popsize_dtm$`_Village` ,ignore.case = TRUE)
-#popsize_dtm$VillageAll_test =  sapply(popsize_dtm$VillageAll_test, tolower) 
-##popsize_dtm$VillageAll_test = gsub("´","i" , popsize_dtm$VillageAll_test ,ignore.case = TRUE)
-##popsize_dtm$VillageAll_test = gsub("?z","e" , popsize_dtm$VillageAll_test ,ignore.case = TRUE)
-#
-#popsize_dtm$`_ADM2_NAME` = gsub("?","e" , popsize_dtm$`_ADM2_NAME` ,ignore.case = TRUE)
-#popsize_dtm$`_ADM2_NAME` = gsub("?","e" , popsize_dtm$`_ADM2_NAME` ,ignore.case = TRUE)
-#popsize_dtm$`_ADM2_NAME` = sapply(popsize_dtm$`_ADM2_NAME`, tolower)
-#popsize_dtm$`_ADM2_NAME` = gsub(" ","" , popsize_dtm$`_ADM2_NAME` ,ignore.case = TRUE)
-#
-#popsize_dtm$VillageAll_admin2 = paste0(popsize_dtm$VillageAll_test, " _ ", popsize_dtm$`_ADM2_NAME` , sep="")
-#
-#popsize_dtm = popsize_dtm[-1,]
-#popsize_dtm$GPS.point = ""
-#popsize_dtm$admin1Pcod = ""
-#popsize_dtm$admin2Pcod = ""
-#popsize_dtm$admin3Name = ""
-#popsize_dtm$admin3Pcod = ""
-#popsize_dtm$TotalPop_idp_ret = as.numeric(popsize_dtm$ind_idp) + as.numeric(popsize_dtm$ind_ret_rca) + as.numeric(popsize_dtm$ind_ret_oth)
-#
-#popsize_dtm = popsize_dtm[,c(1,10,2,11,3,12:15,8,9)]  
-#colnames(popsize_dtm) = colnames(sampling_cluster_new)
-#
-#sampling_cluster_new_2 = subset(sampling_cluster_new,  is_in(sampling_cluster_new$VillageAll_admin2, data_final$localite_final_labels_admin2))
-#for (i in 1:length(village_tbc_inDS_notSampling)){
-#  if(is_in(sapply(village_tbc_inDS_notSampling, tolower)[i], popsize_dtm$VillageAll_admin2)){
-#    sampling_cluster_new_2 = rbind(sampling_cluster_new_2, subset(popsize_dtm, popsize_dtm$VillageAll_admin2 == sapply(village_tbc_inDS_notSampling, tolower)[i]))
-#  }
-#}
-#
-#village_tbc_inDS_notSampling = unique(subset(data_final,  !is_in(sapply(data_final$localite_final_labels_admin2, tolower), 
-#                                                                 sapply(sampling_cluster_new_2$VillageAll_admin2, tolower)))$localite_final_labels_admin2)
-#village_tbc_inDS_notSampling
-#
-#
-#
-#
-#sampling_cluster_new_all = sampling_cluster_new_2
-#for (i in 1:length(village_tbc_inDS_notSampling)){
-#    sampling_cluster_new_all = rbind(sampling_cluster_new_all, c(subset(data_final, data_final$localite_final_labels_admin2 == village_tbc_inDS_notSampling[i])$localite_final_labels[1],
-#                                                                 "", 
-#                                                                 subset(data_final, data_final$localite_final_labels_admin2 == village_tbc_inDS_notSampling[i])$admin_1[1],
-#                                                                 "",
-#                                                                 subset(data_final, data_final$localite_final_labels_admin2 == village_tbc_inDS_notSampling[i])$admin2_labels[1],
-#                                                                 "",
-#                                                                 subset(data_final, data_final$localite_final_labels_admin2 == village_tbc_inDS_notSampling[i])$admin_3[1],
-#                                                                 "", "", 
-#                                                                 subset(data_final, data_final$localite_final_labels_admin2 == village_tbc_inDS_notSampling[i])$localite_final_labels_admin2[1]))
-#}
-#
-#write.csv(sampling_cluster_new_all, "./output/sampling_fr_cluster_v4.csv")
-#
-#
+write.csv(data_final, "./output/REACH_CAR_MSNA_Final_dataset_0309_clean_sampled.csv")
