@@ -93,10 +93,10 @@ freq_admin0 <- response_updated_cluster %>%
     freq_sante_2_malade_oui_0_5_filles = sum(sum_sante_2_malade_oui_0_5_filles * weights_sampling, na.rm =  T) / sum(sum_agegrp_0_4_femmes * weights_sampling, na.rm = T),
     freq_sante_2_malade_oui_0_5_garcons = sum(sum_sante_2_malade_oui_0_5_garcons * weights_sampling, na.rm =  T) / sum(sum_agegrp_0_4_hommes * weights_sampling, na.rm = T),
 
-    freq_sante_2_soin_recu_oui_autre = sum(sum_sante_2_soin_recu_oui_autre * weights_sampling, na.rm=T)/sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
-    freq_sante_2_soin_recu_oui_cs = sum(sum_sante_2_soin_recu_oui_cs * weights_sampling, na.rm=T)/sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
-    freq_sante_2_soin_recu_oui_maison = sum(sum_sante_2_soin_recu_oui_maison * weights_sampling, na.rm=T)/sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
-    freq_sante_2_soin_recu_non = sum(sum_sante_2_soin_recu_non * weights_sampling, na.rm=T)/sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
+    freq_sante_2_soin_recu_oui_autre = sum(sum_sante_2_soin_recu_oui_autre * weights_sampling, na.rm=T)/sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
+    freq_sante_2_soin_recu_oui_cs = sum(sum_sante_2_soin_recu_oui_cs * weights_sampling, na.rm=T)/sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
+    freq_sante_2_soin_recu_oui_maison = sum(sum_sante_2_soin_recu_oui_maison * weights_sampling, na.rm=T)/sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
+    freq_sante_2_soin_recu_non = sum(sum_sante_2_soin_recu_non * weights_sampling, na.rm=T)/sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
     
     freq_sante_3_soin_non_recu_non_autre = sum(sum_sante_3_soin_non_recu_non_autre * weights_sampling, na.rm=T)/sum(sum_sante_2_soin_recu_non * weights_sampling, na.rm = T),
     freq_sante_3_soin_non_recu_infra_detruite_ca = sum(sum_sante_3_soin_non_recu_infra_detruite_ca * weights_sampling, na.rm=T)/sum(sum_sante_2_soin_recu_non * weights_sampling, na.rm = T),
@@ -262,10 +262,10 @@ freq_admin0grp <- response_updated_cluster %>%
     freq_sante_2_malade_oui_0_5_filles = sum(sum_sante_2_malade_oui_0_5_filles * weights_sampling, na.rm =  T) / sum(sum_agegrp_0_4_femmes * weights_sampling, na.rm = T),
     freq_sante_2_malade_oui_0_5_garcons = sum(sum_sante_2_malade_oui_0_5_garcons * weights_sampling, na.rm =  T) / sum(sum_agegrp_0_4_hommes * weights_sampling, na.rm = T),
     
-    freq_sante_2_soin_recu_oui_autre = sum(sum_sante_2_soin_recu_oui_autre * weights_sampling, na.rm=T)/sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
-    freq_sante_2_soin_recu_oui_cs = sum(sum_sante_2_soin_recu_oui_cs * weights_sampling, na.rm=T)/sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
-    freq_sante_2_soin_recu_oui_maison = sum(sum_sante_2_soin_recu_oui_maison * weights_sampling, na.rm=T)/sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
-    freq_sante_2_soin_recu_non = sum(sum_sante_2_soin_recu_non * weights_sampling, na.rm=T)/sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
+    freq_sante_2_soin_recu_oui_autre = sum(sum_sante_2_soin_recu_oui_autre * weights_sampling, na.rm=T)/sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
+    freq_sante_2_soin_recu_oui_cs = sum(sum_sante_2_soin_recu_oui_cs * weights_sampling, na.rm=T)/sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
+    freq_sante_2_soin_recu_oui_maison = sum(sum_sante_2_soin_recu_oui_maison * weights_sampling, na.rm=T)/sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
+    freq_sante_2_soin_recu_non = sum(sum_sante_2_soin_recu_non * weights_sampling, na.rm=T)/sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
     
     freq_sante_3_soin_non_recu_non_autre = sum(sum_sante_3_soin_non_recu_non_autre * weights_sampling, na.rm=T)/sum(sum_sante_2_soin_recu_non * weights_sampling, na.rm = T),
     freq_sante_3_soin_non_recu_infra_detruite_ca = sum(sum_sante_3_soin_non_recu_infra_detruite_ca * weights_sampling, na.rm=T)/sum(sum_sante_2_soin_recu_non * weights_sampling, na.rm = T),
@@ -432,10 +432,10 @@ freq_admin1 <- response_updated_cluster %>%
     freq_sante_2_malade_oui_0_5_filles = sum(sum_sante_2_malade_oui_0_5_filles * weights_sampling, na.rm =  T) / sum(sum_agegrp_0_4_femmes * weights_sampling, na.rm = T),
     freq_sante_2_malade_oui_0_5_garcons = sum(sum_sante_2_malade_oui_0_5_garcons * weights_sampling, na.rm =  T) / sum(sum_agegrp_0_4_hommes * weights_sampling, na.rm = T),
     
-    freq_sante_2_soin_recu_oui_autre = sum(sum_sante_2_soin_recu_oui_autre * weights_sampling, na.rm=T)/sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
-    freq_sante_2_soin_recu_oui_cs = sum(sum_sante_2_soin_recu_oui_cs * weights_sampling, na.rm=T)/sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
-    freq_sante_2_soin_recu_oui_maison = sum(sum_sante_2_soin_recu_oui_maison * weights_sampling, na.rm=T)/sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
-    freq_sante_2_soin_recu_non = sum(sum_sante_2_soin_recu_non * weights_sampling, na.rm=T)/sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
+    freq_sante_2_soin_recu_oui_autre = sum(sum_sante_2_soin_recu_oui_autre * weights_sampling, na.rm=T)/sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
+    freq_sante_2_soin_recu_oui_cs = sum(sum_sante_2_soin_recu_oui_cs * weights_sampling, na.rm=T)/sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
+    freq_sante_2_soin_recu_oui_maison = sum(sum_sante_2_soin_recu_oui_maison * weights_sampling, na.rm=T)/sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
+    freq_sante_2_soin_recu_non = sum(sum_sante_2_soin_recu_non * weights_sampling, na.rm=T)/sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
     
     freq_sante_3_soin_non_recu_non_autre = sum(sum_sante_3_soin_non_recu_non_autre * weights_sampling, na.rm=T)/sum(sum_sante_2_soin_recu_non * weights_sampling, na.rm = T),
     freq_sante_3_soin_non_recu_infra_detruite_ca = sum(sum_sante_3_soin_non_recu_infra_detruite_ca * weights_sampling, na.rm=T)/sum(sum_sante_2_soin_recu_non * weights_sampling, na.rm = T),
@@ -602,10 +602,10 @@ freq_admin1grp <- response_updated_cluster %>%
     freq_sante_2_malade_oui_0_5_filles = sum(sum_sante_2_malade_oui_0_5_filles * weights_sampling, na.rm =  T) / sum(sum_agegrp_0_4_femmes * weights_sampling, na.rm = T),
     freq_sante_2_malade_oui_0_5_garcons = sum(sum_sante_2_malade_oui_0_5_garcons * weights_sampling, na.rm =  T) / sum(sum_agegrp_0_4_hommes * weights_sampling, na.rm = T),
     
-    freq_sante_2_soin_recu_oui_autre = sum(sum_sante_2_soin_recu_oui_autre * weights_sampling, na.rm=T)/sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
-    freq_sante_2_soin_recu_oui_cs = sum(sum_sante_2_soin_recu_oui_cs * weights_sampling, na.rm=T)/sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
-    freq_sante_2_soin_recu_oui_maison = sum(sum_sante_2_soin_recu_oui_maison * weights_sampling, na.rm=T)/sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
-    freq_sante_2_soin_recu_non = sum(sum_sante_2_soin_recu_non * weights_sampling, na.rm=T)/sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
+    freq_sante_2_soin_recu_oui_autre = sum(sum_sante_2_soin_recu_oui_autre * weights_sampling, na.rm=T)/sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
+    freq_sante_2_soin_recu_oui_cs = sum(sum_sante_2_soin_recu_oui_cs * weights_sampling, na.rm=T)/sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
+    freq_sante_2_soin_recu_oui_maison = sum(sum_sante_2_soin_recu_oui_maison * weights_sampling, na.rm=T)/sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
+    freq_sante_2_soin_recu_non = sum(sum_sante_2_soin_recu_non * weights_sampling, na.rm=T)/sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
     
     freq_sante_3_soin_non_recu_non_autre = sum(sum_sante_3_soin_non_recu_non_autre * weights_sampling, na.rm=T)/sum(sum_sante_2_soin_recu_non * weights_sampling, na.rm = T),
     freq_sante_3_soin_non_recu_infra_detruite_ca = sum(sum_sante_3_soin_non_recu_infra_detruite_ca * weights_sampling, na.rm=T)/sum(sum_sante_2_soin_recu_non * weights_sampling, na.rm = T),
@@ -772,10 +772,10 @@ freq_admin2 <- response_updated_cluster %>%
     freq_sante_2_malade_oui_0_5_filles = sum(sum_sante_2_malade_oui_0_5_filles * weights_sampling, na.rm =  T) / sum(sum_agegrp_0_4_femmes * weights_sampling, na.rm = T),
     freq_sante_2_malade_oui_0_5_garcons = sum(sum_sante_2_malade_oui_0_5_garcons * weights_sampling, na.rm =  T) / sum(sum_agegrp_0_4_hommes * weights_sampling, na.rm = T),
     
-    freq_sante_2_soin_recu_oui_autre = sum(sum_sante_2_soin_recu_oui_autre * weights_sampling, na.rm=T)/sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
-    freq_sante_2_soin_recu_oui_cs = sum(sum_sante_2_soin_recu_oui_cs * weights_sampling, na.rm=T)/sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
-    freq_sante_2_soin_recu_oui_maison = sum(sum_sante_2_soin_recu_oui_maison * weights_sampling, na.rm=T)/sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
-    freq_sante_2_soin_recu_non = sum(sum_sante_2_soin_recu_non * weights_sampling, na.rm=T)/sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
+    freq_sante_2_soin_recu_oui_autre = sum(sum_sante_2_soin_recu_oui_autre * weights_sampling, na.rm=T)/sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
+    freq_sante_2_soin_recu_oui_cs = sum(sum_sante_2_soin_recu_oui_cs * weights_sampling, na.rm=T)/sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
+    freq_sante_2_soin_recu_oui_maison = sum(sum_sante_2_soin_recu_oui_maison * weights_sampling, na.rm=T)/sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
+    freq_sante_2_soin_recu_non = sum(sum_sante_2_soin_recu_non * weights_sampling, na.rm=T)/sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
     
     freq_sante_3_soin_non_recu_non_autre = sum(sum_sante_3_soin_non_recu_non_autre * weights_sampling, na.rm=T)/sum(sum_sante_2_soin_recu_non * weights_sampling, na.rm = T),
     freq_sante_3_soin_non_recu_infra_detruite_ca = sum(sum_sante_3_soin_non_recu_infra_detruite_ca * weights_sampling, na.rm=T)/sum(sum_sante_2_soin_recu_non * weights_sampling, na.rm = T),
@@ -941,10 +941,10 @@ freq_admin0_sexHHD <- response_updated_cluster %>%
     freq_sante_2_malade_oui_0_5_filles = sum(sum_sante_2_malade_oui_0_5_filles * weights_sampling, na.rm =  T) / sum(sum_agegrp_0_4_femmes * weights_sampling, na.rm = T),
     freq_sante_2_malade_oui_0_5_garcons = sum(sum_sante_2_malade_oui_0_5_garcons * weights_sampling, na.rm =  T) / sum(sum_agegrp_0_4_hommes * weights_sampling, na.rm = T),
     
-    freq_sante_2_soin_recu_oui_autre = sum(sum_sante_2_soin_recu_oui_autre * weights_sampling, na.rm=T)/sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
-    freq_sante_2_soin_recu_oui_cs = sum(sum_sante_2_soin_recu_oui_cs * weights_sampling, na.rm=T)/sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
-    freq_sante_2_soin_recu_oui_maison = sum(sum_sante_2_soin_recu_oui_maison * weights_sampling, na.rm=T)/sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
-    freq_sante_2_soin_recu_non = sum(sum_sante_2_soin_recu_non * weights_sampling, na.rm=T)/sum(ig_6_hh_membres_tot * weights_sampling, na.rm = T),
+    freq_sante_2_soin_recu_oui_autre = sum(sum_sante_2_soin_recu_oui_autre * weights_sampling, na.rm=T)/sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
+    freq_sante_2_soin_recu_oui_cs = sum(sum_sante_2_soin_recu_oui_cs * weights_sampling, na.rm=T)/sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
+    freq_sante_2_soin_recu_oui_maison = sum(sum_sante_2_soin_recu_oui_maison * weights_sampling, na.rm=T)/sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
+    freq_sante_2_soin_recu_non = sum(sum_sante_2_soin_recu_non * weights_sampling, na.rm=T)/sum(sum_sante_2_malade_oui * weights_sampling, na.rm = T),
     
     freq_sante_3_soin_non_recu_non_autre = sum(sum_sante_3_soin_non_recu_non_autre * weights_sampling, na.rm=T)/sum(sum_sante_2_soin_recu_non * weights_sampling, na.rm = T),
     freq_sante_3_soin_non_recu_infra_detruite_ca = sum(sum_sante_3_soin_non_recu_infra_detruite_ca * weights_sampling, na.rm=T)/sum(sum_sante_2_soin_recu_non * weights_sampling, na.rm = T),
