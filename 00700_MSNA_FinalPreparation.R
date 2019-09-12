@@ -151,60 +151,53 @@ cluster_weighting <- map_to_weighting(sampling.frame = sampling.frame.clust,
 
 weighting_combined <- combine_weighting_functions(cluster_weighting, weighting_sf)
 
+response_updated_cluster <- do.call(data.frame,lapply(response_updated_cluster, function(x) replace(x, is.infinite(x),NA)))
+
 response_updated_cluster <- response_updated_cluster[, !colnames(response_updated_cluster) %in% unwanted_cols]
 
-# #### Loading missing functions ####
-# this_folder <- getwd()
-# setwd("C:/Users/Elliott Messeiller/Downloads/hypegrammaR-master(2)/hypegrammaR-master/R")
-# files.sources = list.files()
-# sapply(files.sources, source)
-# setwd(this_folder)
+response_updated_cluster$pin_secal_fcs <- as.character(response_updated_cluster$pin_secal_fcs)
+
+
 
 #### Replacing infinite by NAs
-response_updated_cluster <- do.call(data.frame,lapply(response_updated_cluster, function(x) replace(x, is.infinite(x),NA)))
 
 ### weights columns
 response_updated_cluster$weights_sampling <- weighting_combined(response_updated_cluster)
 
 response_updated_cluster$pin_protec_acces_service <- as.character(response_updated_cluster$pin_protec_acces_service)
 
-# #### pcodes
-# pcodes <- read.csv("./input/PCODES_Localites_OCHA.csv", stringsAsFactors = F, check.names = F)
-# ##### cleaning pcodes
-# pcodes$ADM1_NAME <- gsub("-", "_", pcodes$ADM1_NAME)
-# pcodes$ADM1_NAME <- gsub("\'", "", pcodes$ADM1_NAME)
-# pcodes$ADM1_NAME <- gsub(" ", "_", pcodes$ADM1_NAME)
-# 
-# pcodes$ADM2_NAME <- gsub("-", "_", pcodes$ADM2_NAME)
-# pcodes$ADM2_NAME <-  gsub('[^ -~]', '', pcodes$ADM2_NAME)
-# pcodes$ADM2_NAME <-  gsub('Mbr', 'Mbres', pcodes$ADM2_NAME)
-# pcodes$ADM2_NAME <-  gsub('Mba', 'Mbaiki', pcodes$ADM2_NAME)
-# 
-# pcodes <- pcodes %>%
-#   filter(ADM2_NAME %in% response_updated_cluster$admin_2)
-# 
-# pcodes$ADM3_NAME <- gsub("-", "_", pcodes$ADM3_NAME)
-# pcodes$ADM3_NAME <-  gsub('[^ -~]', '', pcodes$ADM3_NAME)
-# pcodes$ADM3_NAME <- gsub(" ", "_", pcodes$ADM3_NAME)
-# pcodes$ADM3_NAME <- gsub("\'", "", pcodes$ADM3_NAME)
-# pcodes$ADM3_NAME <- gsub("\'", "", pcodes$ADM3_NAME)
-# pcodes$ADM3_NAME <- gsub("Badou_Ngoumb", "Baidou_Ngoumbourou", pcodes$ADM3_NAME)
-# pcodes$ADM3_NAME <- gsub("Griva_", "Grivai_Pamia", pcodes$ADM3_NAME)
-# pcodes$ADM3_NAME <- gsub("Haute_Ba", "Haute_Batouri", pcodes$ADM3_NAME)
-# pcodes$ADM3_NAME <- gsub("Male", "Mala", pcodes$ADM3_NAME)
-# 
-# pcodes$combined_admin_levels <- paste(pcodes$ADM1_NAME, pcodes$ADM2_NAME, pcodes$ADM3_NAME, sep = "_")
-# 
-# pcodes <- pcodes%>%
-#   select(combined_admin_levels, RowcaCode3)%>%
-#   distinct()
-# 
-# response_updated_cluster$combined_admin_levels <- paste(response_updated_cluster$admin_1, response_updated_cluster$admin_2, response_updated_cluster$admin_3, sep ="_")
-# 
-# response_updated_cluster <- response_updated_cluster%>%
-#   left_join(pcodes, by = c("combined_admin_levels"= "combined_admin_levels"))%>%
-#               select(-combined_admin_levels)
-
-response_updated_cluster$pin_secal_fcs <- as.character(response_updated_cluster$pin_secal_fcs)
-
 write.csv(response_updated_cluster, paste0("./output/REACH_CAR_dataset_HH_MSNA_", format(Sys.time(), "%Y%m%d"),".csv"))
+
+
+#### pcodes ####
+final_dataset_tobeshared <- response_updated_cluster
+
+
+pcodes <- read.csv("./input/PCODES_Localites_OCHA.csv", stringsAsFactors = F, check.names = F)
+##### cleaning pcodes
+pcodes$ADM1_NAME <- gsub("-", "_", pcodes$ADM1_NAME)
+pcodes$ADM1_NAME <- gsub("\'", "", pcodes$ADM1_NAME)
+pcodes$ADM1_NAME <- gsub(" ", "_", pcodes$ADM1_NAME)
+
+pcodes$ADM2_NAME <- gsub("-", "_", pcodes$ADM2_NAME)
+pcodes$ADM2_NAME <-  gsub('[^ -~]', '', pcodes$ADM2_NAME)
+pcodes$ADM2_NAME <-  gsub('Mbr', 'Mbres', pcodes$ADM2_NAME)
+pcodes$ADM2_NAME <-  gsub('Mba', 'Mbaiki', pcodes$ADM2_NAME)
+
+pcodes <- pcodes %>%
+  filter(ADM2_NAME %in% final_dataset_tobeshared$admin_2)
+
+
+pcodes$combined_admin_levels <- paste(pcodes$ADM1_NAME, pcodes$ADM2_NAME, sep = "_")
+
+pcodes <- pcodes%>%
+  select(combined_admin_levels, RowcaCode2)%>%
+  distinct()
+
+final_dataset_tobeshared$combined_admin_levels <- paste(final_dataset_tobeshared$admin_1, final_dataset_tobeshared$admin_2, sep ="_")
+
+final_dataset_tobeshared <- final_dataset_tobeshared%>%
+  left_join(pcodes, by = c("combined_admin_levels"= "combined_admin_levels"))%>%
+              select(-combined_admin_levels)
+
+write.csv(final_dataset_tobeshared, paste0("./ExternalShares/REACH_CAR_dataset_HH_MSNA_", format(Sys.time(), "%Y%m%d"),".csv"))

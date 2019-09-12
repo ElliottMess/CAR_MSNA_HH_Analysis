@@ -59,7 +59,7 @@ analysisplan_admin_0 <- make_analysis_plan_template(df= response_updated_cluster
 analysisplan_admin_0 <- analysisplan_admin_0[!analysisplan_admin_0$dependent.variable %in% unwanted_cols,]
 analysisplan_admin_0 <- analysisplan_admin_0[!is.na(analysisplan_admin_0$dependent.variable.type),]
 
-running_timezz <- data.frame(matrix(ncol = 4, nrow = 0) )
+running_timezz <- data.frame(matrix(ncol = 4, nrow = 6) )
 
 names(running_timezz) <- c("Level", "Start", "End", "Running_time")
 
@@ -74,8 +74,9 @@ final_result_admin_0 <- from_analysisplan_map_to_output(data = response_updated_
 
 end_time_admin0 <- Sys.time()
 
-# summary.stats_admin0 <- final_result_admin_0$results %>%
-#   lapply(function(x){x$summary.statistic}) %>% do.call(rbind, .)
+summary.stats_admin0 <- final_result_admin_0$results %>%
+  lapply(function(x){x$summary.statistic}) %>% do.call(rbind, .)%>%
+  map_to_file(paste0("./output/tables/RAW/","summary_stats_admin0_RAW_",format(Sys.time(), "%Y%m%d"),".csv"))
 # 
 # cols_analysisplan <- final_result_admin_0$analysisplan %>% select(research.question, sub.research.question, dependent.var)
 # 
@@ -116,8 +117,10 @@ final_result_admin_0_grp <- from_analysisplan_map_to_output(data = response_upda
 
 end_time_admin0_grp <- Sys.time()
 
-# summary.stats_admin0_grp <- final_result_admin_0_grp$results %>%
-#   lapply(function(x){x$summary.statistic}) %>% do.call(rbind, .)
+summary.stats_admin0_grp <- final_result_admin_0_grp$results %>%
+  lapply(function(x){x$summary.statistic}) %>% do.call(rbind, .)%>%
+  map_to_file(paste0("./output/tables/RAW/","summary_stats_admin0_grp_RAW_",format(Sys.time(), "%Y%m%d"),".csv"))
+  
 # 
 # cols_analysisplan <- final_result_admin_0_grp$analysisplan %>% select(research.question, sub.research.question, dependent.var)
 # 
@@ -156,6 +159,10 @@ final_result_admin_0_sexHHD <- from_analysisplan_map_to_output(data = response_u
 
 end_time_admin0_sexHHD <- Sys.time()
 
+summary.stats_admin0_sexHHD <- final_result_admin_0_sexHHD$results %>%
+  lapply(function(x){x$summary.statistic}) %>% do.call(rbind, .)%>%
+  map_to_file(paste0("./output/tables/RAW/","summary_stats_admin0_sexHHD_RAW_",format(Sys.time(), "%Y%m%d"),".csv"))
+
 
 #### ADMIN 1 ####
 
@@ -177,8 +184,10 @@ final_result_admin_1 <- from_analysisplan_map_to_output(data = response_updated_
                                                         questionnaire = questionnaire)
 end_time_admin1 <- Sys.time()
 
-# summary.stats_admin1 <- final_result_admin_1$results %>%
-#   lapply(function(x){x$summary.statistic}) %>% do.call(rbind, .)
+summary.stats_admin1 <- final_result_admin_1$results %>%
+  lapply(function(x){x$summary.statistic}) %>% do.call(rbind, .)%>%
+  map_to_file(paste0("./output/tables/RAW/","summary_stats_admin1_RAW_",format(Sys.time(), "%Y%m%d"),".csv"))
+  
 # 
 # cols_analysisplan <- final_result_admin_1$analysisplan %>% select(research.question, sub.research.question, dependent.var)%>%distinct
 # 
@@ -214,8 +223,10 @@ final_result_admin_1_grp <- from_analysisplan_map_to_output(data = response_upda
 
 end_time_admin1_grp <- Sys.time()
 
-# summary.stats_admin1_grp <- final_result_admin_1_grp$results %>%
-#   lapply(function(x){x$summary.statistic}) %>% do.call(rbind, .)
+summary.stats_admin1_grp <- final_result_admin_1_grp$results %>%
+  lapply(function(x){x$summary.statistic}) %>% do.call(rbind, .)%>%
+  map_to_file(paste0("./output/tables/RAW/","summary_stats_admin1_grp_RAW_",format(Sys.time(), "%Y%m%d"),".csv"))
+
 # 
 # cols_analysisplan <- final_result_admin_1_grp$analysisplan %>% select(research.question, sub.research.question, dependent.var)%>%distinct()
 # 
@@ -252,9 +263,10 @@ final_result_admin_2 <- from_analysisplan_map_to_output(data = response_updated_
                                                         questionnaire = questionnaire)
 end_time_admin2 <- Sys.time()
 
-# summary.stats_admin2 <- final_result_admin_2$results %>%
-#   lapply(function(x){x$summary.statistic}) %>% do.call(rbind, .)
-# 
+summary.stats_admin2 <- final_result_admin_2$results %>%
+  lapply(function(x){x$summary.statistic}) %>% do.call(rbind, .)%>%
+  map_to_file(paste0("./output/tables/RAW/","summary_stats_admin2_RAW_",format(Sys.time(), "%Y%m%d"),".csv"))
+
 # cols_analysisplan <- final_result_admin_2$analysisplan %>% select(research.question, sub.research.question, dependent.var)%>%distinct()
 # 
 # summary.stats_admin2_nice <- summary.stats_admin2%>% 
@@ -267,3 +279,16 @@ end_time_admin2 <- Sys.time()
 #   left_join(questions_nameslables, by = c("dependent.var" = "name"))%>%
 #   map_to_file(paste0("./output/tables/","summary_stats_admin2_",format(Sys.time(), "%Y%m%d"),".csv"))
 # 
+running_timezz <- data.frame(matrix(ncol = 4, nrow = 6) )
+
+names(running_timezz) <- c("Level", "Start", "End", "Running_time")
+
+running_timezz$Level <- c("admin0", "admin0_grp", "admin0_sexHHD", "admin1", "admin1_grp", "admin2")
+running_timezz$Start <- c(start_time_admin0, start_time_admin0_grp, start_time_admin0_sexHHD, start_time_admin1, start_time_admin1_grp, start_time_admin2)
+running_timezz$End <- c(end_time_admin0, end_time_admin0_grp, end_time_admin0_sexHHD, end_time_admin1, end_time_admin1_grp, end_time_admin2)
+running_timezz <- running_timezz%>%
+  mutate(Start = as.POSIXct(Start))%>%
+  mutate(End = as.POSIXct(End))%>%
+  mutate(Running_time = difftime(End, Start))
+
+running_timezz                                 

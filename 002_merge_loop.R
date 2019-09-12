@@ -157,8 +157,8 @@ hh_ind$sante_3_soin_non_recu <- change_select_one_value(question.name = "sante_3
                                                     codes.df = hh_ind_cleaned_value)$sante_3_soin_non_recu
 
 DataCleaningLogBook_hh_ind <- change_select_one_value_log(DataCleaningLogBook_hh_ind, hh_ind, hh_ind_cleaned_value, 
-                                                          other.q.name = "sante_2_soin_recu_autre",
-                                                          new.value.name = "sante_2_soin_recu_autre_recoding")
+                                                          other.q.name = "sante_3_soin_non_recu_autre",
+                                                          new.value.name = "sante_3_soin_non_recu_autre_recoding")
 
 ### Educ handi_acces
 

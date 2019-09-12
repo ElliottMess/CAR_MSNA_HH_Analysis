@@ -175,12 +175,12 @@ freq_admin0 <- response_updated_cluster %>%
     freq_nut_2_muac.mamgarcon_6m_4 = sum(sum_nut_2_muac.mamgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_garcons * weights_sampling, na.rm = T),
     freq_nut_2_muac.mam_6m_4 = sum((sum_nut_2_muac.mamfille_0_4+sum_nut_2_muac.mamgarcon_0_4) * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4 * weights_sampling, na.rm = T),
     
-    freq_educ_4_handi_4_18.descol_autre = sum(sum_educ_4_handi_acces.descol_autre * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.descol_acces = sum(sum_educ_4_handi_acces.descol_acces * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.descol_enseignement = sum(sum_educ_4_handi_acces.descol_enseignement * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.scol_non_opti = sum(sum_educ_4_handi_acces.scol_non_opti * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.scol_ok = sum(sum_educ_4_handi_acces.scol_ok * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.autre = sum(sum_educ_4_handi_acces.autre * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.descol_autre = sum(aggregation_result_educ_4_handi_acces.descol_autre * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.descol_acces = sum(aggregation_result_educ_4_handi_acces.descol_acces * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.descol_enseignement = sum(aggregation_result_educ_4_handi_acces.descol_enseignement * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.scol_non_opti = sum(aggregation_result_educ_4_handi_acces.scol_non_opti * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.scol_ok = sum(aggregation_result_educ_4_handi_acces.scol_ok * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.autre = sum(aggregation_result_educ_4_handi_acces.autre * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
     
     freq_protect_9 = sum(sum_protect_9 * weights_sampling, na.rm = T)/sum(sum_agegrp_4_18 * weights_sampling, na.rm = T),
     freq_garcon_among_protect_9 = sum(sum_protect_9_garcon * weights_sampling, na.rm = T)/sum(sum_protect_9 * weights_sampling, na.rm = T),
@@ -351,12 +351,12 @@ freq_admin0grp <- response_updated_cluster %>%
     freq_nut_2_muac.mamgarcon_6m_4 = sum(sum_nut_2_muac.mamgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_garcons * weights_sampling, na.rm = T),
     freq_nut_2_muac.mam_6m_4 = sum((sum_nut_2_muac.mamfille_0_4+sum_nut_2_muac.mamgarcon_0_4) * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4 * weights_sampling, na.rm = T),
     
-    freq_educ_4_handi_4_18.descol_autre = sum(sum_educ_4_handi_acces.descol_autre * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.descol_acces = sum(sum_educ_4_handi_acces.descol_acces * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.descol_enseignement = sum(sum_educ_4_handi_acces.descol_enseignement * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.scol_non_opti = sum(sum_educ_4_handi_acces.scol_non_opti * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.scol_ok = sum(sum_educ_4_handi_acces.scol_ok * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.autre = sum(sum_educ_4_handi_acces.autre * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.descol_autre = sum(aggregation_result_educ_4_handi_acces.descol_autre * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.descol_acces = sum(aggregation_result_educ_4_handi_acces.descol_acces * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.descol_enseignement = sum(aggregation_result_educ_4_handi_acces.descol_enseignement * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.scol_non_opti = sum(aggregation_result_educ_4_handi_acces.scol_non_opti * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.scol_ok = sum(aggregation_result_educ_4_handi_acces.scol_ok * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.autre = sum(aggregation_result_educ_4_handi_acces.autre * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
     
     freq_protect_9 = sum(sum_protect_9 * weights_sampling, na.rm = T)/sum(sum_agegrp_4_18 * weights_sampling, na.rm = T),
     freq_garcon_among_protect_9 = sum(sum_protect_9_garcon * weights_sampling, na.rm = T)/sum(sum_protect_9 * weights_sampling, na.rm = T),
@@ -377,7 +377,7 @@ freq_admin0grp <- response_updated_cluster %>%
     freq_protect_10.nsp = sum(sum_protect_10.nsp * weights_sampling, na.rm = T)/ sum(sum_protect_9 * weights_sampling, na.rm = T),
     
   )%>%
-  gather(key = "variable", value= "percent")
+  gather(key = "variable", value= "percent", - ig_8_statut_groupe)
 
 write.csv(freq_admin0grp, paste0("./output/freq/freq_admin0grp_.csv"))
 
@@ -527,12 +527,12 @@ freq_admin1 <- response_updated_cluster %>%
     freq_nut_2_muac.mamgarcon_6m_4 = sum(sum_nut_2_muac.mamgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_garcons * weights_sampling, na.rm = T),
     freq_nut_2_muac.mam_6m_4 = sum((sum_nut_2_muac.mamfille_0_4+sum_nut_2_muac.mamgarcon_0_4) * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4 * weights_sampling, na.rm = T),
     
-    freq_educ_4_handi_4_18.descol_autre = sum(sum_educ_4_handi_acces.descol_autre * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.descol_acces = sum(sum_educ_4_handi_acces.descol_acces * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.descol_enseignement = sum(sum_educ_4_handi_acces.descol_enseignement * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.scol_non_opti = sum(sum_educ_4_handi_acces.scol_non_opti * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.scol_ok = sum(sum_educ_4_handi_acces.scol_ok * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.autre = sum(sum_educ_4_handi_acces.autre * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.descol_autre = sum(aggregation_result_educ_4_handi_acces.descol_autre * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.descol_acces = sum(aggregation_result_educ_4_handi_acces.descol_acces * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.descol_enseignement = sum(aggregation_result_educ_4_handi_acces.descol_enseignement * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.scol_non_opti = sum(aggregation_result_educ_4_handi_acces.scol_non_opti * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.scol_ok = sum(aggregation_result_educ_4_handi_acces.scol_ok * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.autre = sum(aggregation_result_educ_4_handi_acces.autre * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
     
     freq_protect_9 = sum(sum_protect_9 * weights_sampling, na.rm = T)/sum(sum_agegrp_4_18 * weights_sampling, na.rm = T),
     freq_garcon_among_protect_9 = sum(sum_protect_9_garcon * weights_sampling, na.rm = T)/sum(sum_protect_9 * weights_sampling, na.rm = T),
@@ -553,7 +553,8 @@ freq_admin1 <- response_updated_cluster %>%
     freq_protect_10.nsp = sum(sum_protect_10.nsp * weights_sampling, na.rm = T)/ sum(sum_protect_9 * weights_sampling, na.rm = T),
     
   )%>%
-  gather(key = "variable", value= "percent")
+  ungroup()%>%
+  gather(key = "variable", value= "percent",-admin_1)
 
 write.csv(freq_admin1, paste0("./output/freq/freq_admin1_.csv"))
 
@@ -703,12 +704,12 @@ freq_admin1grp <- response_updated_cluster %>%
     freq_nut_2_muac.mamgarcon_6m_4 = sum(sum_nut_2_muac.mamgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_garcons * weights_sampling, na.rm = T),
     freq_nut_2_muac.mam_6m_4 = sum((sum_nut_2_muac.mamfille_0_4+sum_nut_2_muac.mamgarcon_0_4) * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4 * weights_sampling, na.rm = T),
     
-    freq_educ_4_handi_4_18.descol_autre = sum(sum_educ_4_handi_acces.descol_autre * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.descol_acces = sum(sum_educ_4_handi_acces.descol_acces * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.descol_enseignement = sum(sum_educ_4_handi_acces.descol_enseignement * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.scol_non_opti = sum(sum_educ_4_handi_acces.scol_non_opti * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.scol_ok = sum(sum_educ_4_handi_acces.scol_ok * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.autre = sum(sum_educ_4_handi_acces.autre * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.descol_autre = sum(aggregation_result_educ_4_handi_acces.descol_autre * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.descol_acces = sum(aggregation_result_educ_4_handi_acces.descol_acces * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.descol_enseignement = sum(aggregation_result_educ_4_handi_acces.descol_enseignement * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.scol_non_opti = sum(aggregation_result_educ_4_handi_acces.scol_non_opti * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.scol_ok = sum(aggregation_result_educ_4_handi_acces.scol_ok * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.autre = sum(aggregation_result_educ_4_handi_acces.autre * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
     
     freq_protect_9 = sum(sum_protect_9 * weights_sampling, na.rm = T)/sum(sum_agegrp_4_18 * weights_sampling, na.rm = T),
     freq_garcon_among_protect_9 = sum(sum_protect_9_garcon * weights_sampling, na.rm = T)/sum(sum_protect_9 * weights_sampling, na.rm = T),
@@ -729,7 +730,7 @@ freq_admin1grp <- response_updated_cluster %>%
     freq_protect_10.nsp = sum(sum_protect_10.nsp * weights_sampling, na.rm = T)/ sum(sum_protect_9 * weights_sampling, na.rm = T),
     
   )%>%
-  gather(key = "variable", value= "percent")
+  gather(key = "variable", value= "percent", -admin_1, -ig_8_statut_groupe)
 
 write.csv(freq_admin1grp, paste0("./output/freq/freq_admin1grp_.csv"))
 
@@ -879,12 +880,12 @@ freq_admin2 <- response_updated_cluster %>%
     freq_nut_2_muac.mamgarcon_6m_4 = sum(sum_nut_2_muac.mamgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_garcons * weights_sampling, na.rm = T),
     freq_nut_2_muac.mam_6m_4 = sum((sum_nut_2_muac.mamfille_0_4+sum_nut_2_muac.mamgarcon_0_4) * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4 * weights_sampling, na.rm = T),
     
-    freq_educ_4_handi_4_18.descol_autre = sum(sum_educ_4_handi_acces.descol_autre * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.descol_acces = sum(sum_educ_4_handi_acces.descol_acces * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.descol_enseignement = sum(sum_educ_4_handi_acces.descol_enseignement * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.scol_non_opti = sum(sum_educ_4_handi_acces.scol_non_opti * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.scol_ok = sum(sum_educ_4_handi_acces.scol_ok * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.autre = sum(sum_educ_4_handi_acces.autre * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.descol_autre = sum(aggregation_result_educ_4_handi_acces.descol_autre * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.descol_acces = sum(aggregation_result_educ_4_handi_acces.descol_acces * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.descol_enseignement = sum(aggregation_result_educ_4_handi_acces.descol_enseignement * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.scol_non_opti = sum(aggregation_result_educ_4_handi_acces.scol_non_opti * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.scol_ok = sum(aggregation_result_educ_4_handi_acces.scol_ok * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.autre = sum(aggregation_result_educ_4_handi_acces.autre * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
     
     freq_protect_9 = sum(sum_protect_9 * weights_sampling, na.rm = T)/sum(sum_agegrp_4_18 * weights_sampling, na.rm = T),
     freq_garcon_among_protect_9 = sum(sum_protect_9_garcon * weights_sampling, na.rm = T)/sum(sum_protect_9 * weights_sampling, na.rm = T),
@@ -905,7 +906,7 @@ freq_admin2 <- response_updated_cluster %>%
     freq_protect_10.nsp = sum(sum_protect_10.nsp * weights_sampling, na.rm = T)/ sum(sum_protect_9 * weights_sampling, na.rm = T),
     
   )%>%
-  gather(key = "variable", value= "percent")
+  gather(key = "variable", value= "percent", -admin_2)
 
 write.csv(freq_admin2, paste0("./output/freq/freq_admin2_.csv"))
 
@@ -1054,12 +1055,12 @@ freq_admin0_sexHHD <- response_updated_cluster %>%
     freq_nut_2_muac.mamgarcon_6m_4 = sum(sum_nut_2_muac.mamgarcon_0_4 * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4_garcons * weights_sampling, na.rm = T),
     freq_nut_2_muac.mam_6m_4 = sum((sum_nut_2_muac.mamfille_0_4+sum_nut_2_muac.mamgarcon_0_4) * weights_sampling, na.rm = T)/ sum(sum_agegrp_6m_4 * weights_sampling, na.rm = T),
     
-    freq_educ_4_handi_4_18.descol_autre = sum(sum_educ_4_handi_acces.descol_autre * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.descol_acces = sum(sum_educ_4_handi_acces.descol_acces * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.descol_enseignement = sum(sum_educ_4_handi_acces.descol_enseignement * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.scol_non_opti = sum(sum_educ_4_handi_acces.scol_non_opti * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.scol_ok = sum(sum_educ_4_handi_acces.scol_ok * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
-    freq_educ_4_handi_4_18.autre = sum(sum_educ_4_handi_acces.autre * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.descol_autre = sum(aggregation_result_educ_4_handi_acces.descol_autre * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.descol_acces = sum(aggregation_result_educ_4_handi_acces.descol_acces * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.descol_enseignement = sum(aggregation_result_educ_4_handi_acces.descol_enseignement * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.scol_non_opti = sum(aggregation_result_educ_4_handi_acces.scol_non_opti * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.scol_ok = sum(aggregation_result_educ_4_handi_acces.scol_ok * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
+    freq_educ_4_handi_4_18.autre = sum(aggregation_result_educ_4_handi_acces.autre * weights_sampling, na.rm = T)/ sum(sum_handi_4_18 * weights_sampling, na.rm = T), 
     
     freq_protect_9 = sum(sum_protect_9 * weights_sampling, na.rm = T)/sum(sum_agegrp_4_18 * weights_sampling, na.rm = T),
     freq_garcon_among_protect_9 = sum(sum_protect_9_garcon * weights_sampling, na.rm = T)/sum(sum_protect_9 * weights_sampling, na.rm = T),
@@ -1080,7 +1081,7 @@ freq_admin0_sexHHD <- response_updated_cluster %>%
     freq_protect_10.nsp = sum(sum_protect_10.nsp * weights_sampling, na.rm = T)/ sum(sum_protect_9 * weights_sampling, na.rm = T),
     
   )%>%
-  gather(key = "variable", value= "percent")
+  gather(key = "variable", value= "percent", - sexe_chef_menage)
 
 write.csv(freq_admin0_sexHHD, paste0("./output/freq/freq_admin0_sexHHD_.csv"))
 

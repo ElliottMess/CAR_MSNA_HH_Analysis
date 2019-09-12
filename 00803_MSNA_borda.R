@@ -17,6 +17,17 @@ borda_applier(borda_script_admin0, df_hh) %>%
             na = "")
 
 
+borda_script_admin0_grp <- borda_script_template%>%
+  mutate(
+    disaggregate = "ig_8_statut_groupe",
+    repeat_var = "admin_0"
+  )
+
+borda_applier(borda_script_admin0_grp, df_hh) %>% 
+  write_csv("output/borda/borda_admin0_grp.csv",
+            na = "")
+
+
 borda_script_admin1 <- borda_script_template%>%
   mutate(
     disaggregate = NA,
@@ -55,6 +66,6 @@ borda_script_admin0_sex <- borda_script_template%>%
     repeat_var = "admin_0"
   )
 
-borda_applier(borda_script_admin2, df_hh) %>% 
+borda_applier(borda_script_admin0_sex, df_hh) %>% 
   write_csv("output/borda/borda_admin0_sexHHD.csv",
             na = "")
