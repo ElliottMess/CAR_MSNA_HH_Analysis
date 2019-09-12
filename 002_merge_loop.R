@@ -523,7 +523,10 @@ main_withloop <- affect_loop_to_parent(loop = hh_ind, parent = main_withloop, ag
                                          sum_agegrp_7_12_filles = "agegrp_7_12_filles",
                                          sum_agegrp_7_12_garcons = "agegrp_7_12_garcons",
                                          sum_agegrp_13_18_filles = "agegrp_13_18_filles",
-                                         sum_agegrp_13_18_garcons = "agegrp_13_18_garcons"
+                                         sum_agegrp_13_18_garcons = "agegrp_13_18_garcons",
+                                         sum_agegrp_6m_4_filles = "agegrp_6m_4_filles",
+                                         sum_agegrp_6m_4_garcons = "agegrp_6m_4_garcons",
+                                         sum_agegrp_6m_4 = "agegrp_6m_4"
                                        ),
                                        uuid.name.loop = "X_parent_index", uuid.name.parent = "X_index")
 
