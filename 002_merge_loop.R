@@ -148,49 +148,34 @@ DataCleaningLogBook_hh_ind <- change_select_one_value_log(DataCleaningLogBook_hh
 
 list_to_add_soin_non_recu <- choices_form$name[choices_form$list_name == "soin_non_recu"]
 
-hh_ind$sante_2_soin_recu <- change_select_one_value(question.name = "sante_3_soin_non_recu", 
+hh_ind$sante_3_soin_non_recu <- change_select_one_value(question.name = "sante_3_soin_non_recu", 
                                                     other.q.name = "sante_3_soin_non_recu_autre", 
                                                     old.value.name  = "sante_3_soin_non_recu_autre", 
                                                     new.value.name = "sante_3_soin_non_recu_autre_recoding",
                                                     toadd.value = list_to_add_soin_non_recu,
                                                     data = hh_ind,
-                                                    codes.df = hh_ind_cleaned_value)$sante_2_soin_recu
+                                                    codes.df = hh_ind_cleaned_value)$sante_3_soin_non_recu
 
 DataCleaningLogBook_hh_ind <- change_select_one_value_log(DataCleaningLogBook_hh_ind, hh_ind, hh_ind_cleaned_value, 
                                                           other.q.name = "sante_2_soin_recu_autre",
                                                           new.value.name = "sante_2_soin_recu_autre_recoding")
 
-### Soin handi_acces
+### Educ handi_acces
 
 list_to_add_handi_acces <- choices_form$name[choices_form$list_name == "educ_enfant_handi"]
 
-hh_ind$sante_2_soin_recu <- change_select_one_value(question.name = "educ_4_handi_acces", 
+hh_ind$educ_4_handi_acces <- change_select_one_value(question.name = "educ_4_handi_acces", 
                                                     other.q.name = "educ_4_handi_acces_autre", 
                                                     old.value.name  = "educ_4_handi_acces_autre", 
                                                     new.value.name = "educ_4_handi_acces_autre_recoding",
                                                     toadd.value = list_to_add_handi_acces,
                                                     data = hh_ind,
-                                                    codes.df = hh_ind_cleaned_value)$sante_2_soin_recu
+                                                    codes.df = hh_ind_cleaned_value)$educ_4_handi_acces
 
 DataCleaningLogBook_hh_ind <- change_select_one_value_log(DataCleaningLogBook_hh_ind, hh_ind, hh_ind_cleaned_value, 
                                                           other.q.name = "educ_4_handi_acces_autre",
                                                           new.value.name = "educ_4_handi_acces_autre_recoding")
 
-### Soin handi_acces
-
-list_to_add_handi_acces <- choices_form$name[choices_form$list_name == "educ_enfant_handi"]
-
-hh_ind$sante_2_soin_recu <- change_select_one_value(question.name = "educ_4_handi_acces", 
-                                                    other.q.name = "educ_4_handi_acces_autre", 
-                                                    old.value.name  = "educ_4_handi_acces_autre", 
-                                                    new.value.name = "educ_4_handi_acces_autre_recoding",
-                                                    toadd.value = list_to_add_handi_acces,
-                                                    data = hh_ind,
-                                                    codes.df = hh_ind_cleaned_value)$sante_2_soin_recu
-
-DataCleaningLogBook_hh_ind <- change_select_one_value_log(DataCleaningLogBook_hh_ind, hh_ind, hh_ind_cleaned_value, 
-                                                          other.q.name = "educ_4_handi_acces_autre",
-                                                          new.value.name = "educ_4_handi_acces_autre_recoding")
 
 
 add_toselectmutlipe <- function(col_sm, col_sm_autre, other.choice.name, data){
@@ -721,6 +706,11 @@ hh_ind$educ_4_handi_acces.scol_non_opti_garcons <- ifelse(hh_ind$educ_4_handi_ac
 hh_ind$educ_4_handi_acces.scol_ok_garcons <- ifelse(hh_ind$educ_4_handi_acces == "scol_ok" & hh_ind$sexe_hh == "homme", 1,0)
 hh_ind$educ_4_handi_acces.autre_garcons <- ifelse(hh_ind$educ_4_handi_acces == "autre" & hh_ind$sexe_hh == "homme", 1,0)
 
+hh_ind$handi_4_18 = ifelse(hh_ind$agegrp_4_18 == 1 & (hh_ind$ig_7_gr_vulnerable_hommes_enfants.handi_ment == 1 |
+                                                        hh_ind$ig_7_gr_vulnerable_femmes_adultes.handi_ment == 1 |
+                                                        hh_ind$ig_7_gr_vulnerable_hommes_enfants.handi_phy == 1 |
+                                                        hh_ind$ig_7_gr_vulnerable_femmes_enfants.handi_phy == 1), 1, 0)
+
 
 main_withloop <- affect_loop_to_parent(loop = hh_ind, parent = main_withloop, aggregate.function = sum , 
                                        variable.to.add = c(
@@ -771,7 +761,9 @@ main_withloop <- affect_loop_to_parent(loop = hh_ind, parent = main_withloop, ag
                                          sum_educ_4_handi_acces.descol_enseignement_garcons <- "educ_4_handi_acces.descol_enseignement_garcons",
                                          sum_educ_4_handi_acces.scol_non_opti_garcons <- "educ_4_handi_acces.scol_non_opti_garcons",
                                          sum_educ_4_handi_acces.scol_ok_garcons <- "educ_4_handi_acces.scol_ok_garcons",
-                                         sum_educ_4_handi_acces.autre_garcons <- "educ_4_handi_acces.autre_garcons"
+                                         sum_educ_4_handi_acces.autre_garcons <- "educ_4_handi_acces.autre_garcons",
+                                         
+                                         sum_handi_4_18 = "handi_4_18"
                                        ),
                                        uuid.name.loop = "X_parent_index", uuid.name.parent = "X_index")
 
@@ -819,13 +811,18 @@ hh_ind$agegrp_7_12_filles <- if_else(hh_ind$age_hh>=7 & hh_ind$age_hh<=12 & hh_i
 hh_ind$agegrp_7_12_garcons <- if_else(hh_ind$age_hh>=7 & hh_ind$age_hh<=12 & hh_ind$sexe_hh == "homme",1,0)
 hh_ind$agegrp_13_18_filles <- if_else(hh_ind$age_hh>=13 & hh_ind$age_hh<=18 & hh_ind$sexe_hh == "femme",1,0)
 hh_ind$agegrp_13_18_garcons <- if_else(hh_ind$age_hh>=13 & hh_ind$age_hh<=18 & hh_ind$sexe_hh == "homme",1,0)
+hh_ind$agegrp_6m_4_filles <- if_else(hh_ind$agegrp_6m_4 == 1 & hh_ind$sexe_hh == "femme",1,0)
+hh_ind$agegrp_6m_4_garcons <- if_else(hh_ind$agegrp_6m_4 == 1 & hh_ind$sexe_hh == "homme",1,0)
 
 main_withloop <- affect_loop_to_parent(loop = hh_ind, parent = main_withloop, aggregate.function = sum , 
                                        variable.to.add = c(
                                          sum_agegrp_7_12_filles = "agegrp_7_12_filles",
                                          sum_agegrp_7_12_garcons = "agegrp_7_12_garcons",
                                          sum_agegrp_13_18_filles = "agegrp_13_18_filles",
-                                         sum_agegrp_13_18_garcons = "agegrp_13_18_garcons"
+                                         sum_agegrp_13_18_garcons = "agegrp_13_18_garcons",
+                                         sum_agegrp_6m_4_filles = "agegrp_6m_4_filles",
+                                         sum_agegrp_6m_4_garcons = "agegrp_6m_4_garcons",
+                                         sum_agegrp_6m_4 = "agegrp_6m_4"
                                        ),
                                        uuid.name.loop = "X_parent_index", uuid.name.parent = "X_index")
 
