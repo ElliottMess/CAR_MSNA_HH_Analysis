@@ -1,14 +1,14 @@
 library(dplyr)
 
 ##### LOADING Agg Tables ####
-table_raw_admin0 <- read.csv(paste0("./output/tables/RAW/summary_stats_admin0_RAW_", format(Sys.time(), "%Y%m%d"),".csv"), stringsAsFactors = F)
-table_raw_admin0_grp <- read.csv(paste0("./output/tables/RAW/summary_stats_admin0_grp_RAW_", format(Sys.time(), "%Y%m%d"),".csv"), stringsAsFactors = F)
-table_raw_admin0_sexHHD <- read.csv(paste0("./output/tables/RAW/summary_stats_admin0_sexHHD_RAW_", format(Sys.time(), "%Y%m%d"),".csv"), stringsAsFactors = F)
+table_raw_admin0 <- read.csv(paste0("./output/tables/RAW/summary_stats_admin0_RAW_20190912.csv"), stringsAsFactors = F)
+table_raw_admin0_grp <- read.csv(paste0("./output/tables/RAW/summary_stats_admin0_grp_RAW_20190912.csv"), stringsAsFactors = F)
+table_raw_admin0_sexHHD <- read.csv(paste0("./output/tables/RAW/summary_stats_admin0_sexHHD_RAW_20190912.csv"), stringsAsFactors = F)
 
-table_raw_admin1 <- read.csv(paste0("./output/tables/RAW/summary_stats_admin1_RAW_", format(Sys.time(), "%Y%m%d"),".csv"), stringsAsFactors = F)
-table_raw_admin1_grp <- read.csv(paste0("./output/tables/RAW/summary_stats_admin1_grp_RAW_", format(Sys.time(), "%Y%m%d"),".csv"), stringsAsFactors = F)
+table_raw_admin1 <- read.csv(paste0("./output/tables/RAW/summary_stats_admin1_RAW_20190912.csv"), stringsAsFactors = F)
+table_raw_admin1_grp <- read.csv(paste0("./output/tables/RAW/summary_stats_admin1_grp_RAW_20190912.csv"), stringsAsFactors = F)
 
-table_raw_admin2 <- read.csv(paste0("./output/tables/RAW/summary_stats_admin2_RAW_", format(Sys.time(), "%Y%m%d"),".csv"), stringsAsFactors = F)
+table_raw_admin2 <- read.csv(paste0("./output/tables/RAW/summary_stats_admin2_RAW_20190912.csv"), stringsAsFactors = F)
 
 ##### LOADING Frequency Tables ####
 
@@ -46,21 +46,21 @@ borda_admin0 <- borda_admin0%>%
 
 borda_admin0_1 <- borda_admin0%>%
   select(question_1, rank_1, percent_1, repeat_var, disaggregation)%>%
-  mutate(dependent.var =question_1, dependent.var.value = rank_1, independent.var="total", independent.var.value = disaggregation, 
+  mutate(dependent.var =question_1, dependent.var.value = rank_1, independent.var="total", independent.var.value = "total", 
          repeat.var = repeat_var, repeat.var.value = "RCA", numbers = as.numeric(str_remove(percent_1, "%"))/100
   )%>%
   select(dependent.var, dependent.var.value, independent.var, independent.var.value, repeat.var, repeat.var.value, numbers)
 
 borda_admin0_2 <- borda_admin0%>%
   select(question_2, rank_2, percent_2, repeat_var, disaggregation)%>%
-  mutate(dependent.var =question_2, dependent.var.value = rank_2, independent.var="total", independent.var.value = disaggregation, 
+  mutate(dependent.var =question_2, dependent.var.value = rank_2, independent.var="total", independent.var.value = "total", 
          repeat.var = repeat_var, repeat.var.value = "RCA", numbers = as.numeric(str_remove(percent_2, "%"))/100
   )%>%
   select(dependent.var, dependent.var.value, independent.var, independent.var.value, repeat.var, repeat.var.value, numbers)
 
 borda_admin0_3 <- borda_admin0%>%
   select(question_3, rank_3, percent_3, repeat_var, disaggregation)%>%
-  mutate(dependent.var =question_3, dependent.var.value = rank_3, independent.var="total", independent.var.value = disaggregation, 
+  mutate(dependent.var =question_3, dependent.var.value = rank_3, independent.var="total", independent.var.value = "total", 
          repeat.var = repeat_var, repeat.var.value = "RCA", numbers = as.numeric(str_remove(percent_3, "%"))/100
   )%>%
   select(dependent.var, dependent.var.value, independent.var, independent.var.value, repeat.var, repeat.var.value, numbers)
@@ -168,21 +168,21 @@ borda_admin1 <- borda_admin1%>%
 
 borda_admin1_1 <- borda_admin1%>%
   select(question_1, rank_1, percent_1, repeat_var, disaggregation)%>%
-  mutate(dependent.var =question_1, dependent.var.value = rank_1, independent.var="total", independent.var.value = disaggregation, 
+  mutate(dependent.var =question_1, dependent.var.value = rank_1, independent.var="total", independent.var.value = "total", 
          repeat.var.value = repeat_var, repeat.var = "admin_1", numbers = as.numeric(str_remove(percent_1, "%"))/100
   )%>%
   select(dependent.var, dependent.var.value, independent.var, independent.var.value, repeat.var, repeat.var.value, numbers)
 
 borda_admin1_2 <- borda_admin1%>%
   select(question_2, rank_2, percent_2, repeat_var, disaggregation)%>%
-  mutate(dependent.var =question_2, dependent.var.value = rank_2, independent.var="total", independent.var.value = disaggregation, 
+  mutate(dependent.var =question_2, dependent.var.value = rank_2, independent.var="total", independent.var.value = "total", 
          repeat.var.value = repeat_var, repeat.var = "admin_1", numbers = as.numeric(str_remove(percent_2, "%"))/100
   )%>%
   select(dependent.var, dependent.var.value, independent.var, independent.var.value, repeat.var, repeat.var.value, numbers)
 
 borda_admin1_3 <- borda_admin1%>%
   select(question_3, rank_3, percent_3, repeat_var, disaggregation)%>%
-  mutate(dependent.var =question_3, dependent.var.value = rank_3, independent.var="total", independent.var.value = disaggregation, 
+  mutate(dependent.var =question_3, dependent.var.value = rank_3, independent.var="total", independent.var.value = "total", 
          repeat.var.value = repeat_var, repeat.var = "admin_1", numbers = as.numeric(str_remove(percent_3, "%"))/100
   )%>%
   select(dependent.var, dependent.var.value, independent.var, independent.var.value, repeat.var, repeat.var.value, numbers)
@@ -256,21 +256,21 @@ borda_admin2 <- borda_admin2%>%
 
 borda_admin2_1 <- borda_admin2%>%
   select(question_1, rank_1, percent_1, repeat_var, disaggregation)%>%
-  mutate(dependent.var =question_1, dependent.var.value = rank_1, independent.var="total", independent.var.value = disaggregation, 
+  mutate(dependent.var =question_1, dependent.var.value = rank_1, independent.var="total", independent.var.value = "total", 
          repeat.var.value = repeat_var, repeat.var = "admin_2", numbers = as.numeric(str_remove(percent_1, "%"))/100
   )%>%
   select(dependent.var, dependent.var.value, independent.var, independent.var.value, repeat.var, repeat.var.value, numbers)
 
 borda_admin2_2 <- borda_admin2%>%
   select(question_2, rank_2, percent_2, repeat_var, disaggregation)%>%
-  mutate(dependent.var =question_2, dependent.var.value = rank_2, independent.var="total", independent.var.value = disaggregation, 
+  mutate(dependent.var =question_2, dependent.var.value = rank_2, independent.var="total", independent.var.value = "total", 
          repeat.var.value = repeat_var, repeat.var = "admin_2", numbers = as.numeric(str_remove(percent_2, "%"))/100
   )%>%
   select(dependent.var, dependent.var.value, independent.var, independent.var.value, repeat.var, repeat.var.value, numbers)
 
 borda_admin2_3 <- borda_admin2%>%
   select(question_3, rank_3, percent_3, repeat_var, disaggregation)%>%
-  mutate(dependent.var =question_3, dependent.var.value = rank_3, independent.var="total", independent.var.value = disaggregation, 
+  mutate(dependent.var =question_3, dependent.var.value = rank_3, independent.var="total", independent.var.value = "total", 
          repeat.var.value = repeat_var, repeat.var = "admin_2", numbers = as.numeric(str_remove(percent_3, "%"))/100
   )%>%
   select(dependent.var, dependent.var.value, independent.var, independent.var.value, repeat.var, repeat.var.value, numbers)

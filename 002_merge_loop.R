@@ -706,11 +706,16 @@ hh_ind$educ_4_handi_acces.scol_non_opti_garcons <- ifelse(hh_ind$educ_4_handi_ac
 hh_ind$educ_4_handi_acces.scol_ok_garcons <- ifelse(hh_ind$educ_4_handi_acces == "scol_ok" & hh_ind$sexe_hh == "homme", 1,0)
 hh_ind$educ_4_handi_acces.autre_garcons <- ifelse(hh_ind$educ_4_handi_acces == "autre" & hh_ind$sexe_hh == "homme", 1,0)
 
-hh_ind$handi_4_18 = ifelse(hh_ind$agegrp_4_18 == 1 & (hh_ind$ig_7_gr_vulnerable_hommes_enfants.handi_ment == 1 |
-                                                        hh_ind$ig_7_gr_vulnerable_femmes_adultes.handi_ment == 1 |
-                                                        hh_ind$ig_7_gr_vulnerable_hommes_enfants.handi_phy == 1 |
-                                                        hh_ind$ig_7_gr_vulnerable_femmes_enfants.handi_phy == 1), 1, 0)
+hh_ind <- hh_ind%>%
+  mutate(
+    sum_handi = rowSums(select(.,ig_7_gr_vulnerable_hommes_enfants.handi_ment,ig_7_gr_vulnerable_femmes_enfants.handi_ment ,
+                    ig_7_gr_vulnerable_hommes_enfants.handi_phy,ig_7_gr_vulnerable_femmes_enfants.handi_phy), na.rm = T),
+    aumoinsunhandi = if_else(sum_handi>=1, 1, 0),
+    handi_4_18 = if_else(agegrp_4_18 == 1,
+                         if_else(aumoinsunhandi==1, 1,0),0)
+  )
 
+test_withloop <- main_withloop
 
 main_withloop <- affect_loop_to_parent(loop = hh_ind, parent = main_withloop, aggregate.function = sum , 
                                        variable.to.add = c(
@@ -742,26 +747,26 @@ main_withloop <- affect_loop_to_parent(loop = hh_ind, parent = main_withloop, ag
                                          sum_educ_3_presence_18_19.garcons_13_18.0m_3m = "educ_3_presence_18_19.garcons_13_18.0m_3m",
                                          sum_educ_3_presence_18_19.garcons_13_18.0m = "educ_3_presence_18_19.garcons_13_18.0m",
                                          
-                                         sum_educ_4_handi_acces.descol_autre <- "educ_4_handi_acces.descol_autre",
-                                         sum_educ_4_handi_acces.descol_acces <- "educ_4_handi_acces.descol_acces",
-                                         sum_educ_4_handi_acces.descol_enseignement <- "educ_4_handi_acces.descol_enseignement",
-                                         sum_educ_4_handi_acces.scol_non_opti <- "educ_4_handi_acces.scol_non_opti",
-                                         sum_educ_4_handi_acces.scol_ok <- "educ_4_handi_acces.scol_ok",
-                                         sum_educ_4_handi_acces.autre <- "educ_4_handi_acces.autre",
+                                         sum_educ_4_handi_acces.descol_autre = "educ_4_handi_acces.descol_autre",
+                                         sum_educ_4_handi_acces.descol_acces = "educ_4_handi_acces.descol_acces",
+                                         sum_educ_4_handi_acces.descol_enseignement = "educ_4_handi_acces.descol_enseignement",
+                                         sum_educ_4_handi_acces.scol_non_opti = "educ_4_handi_acces.scol_non_opti",
+                                         sum_educ_4_handi_acces.scol_ok = "educ_4_handi_acces.scol_ok",
+                                         sum_educ_4_handi_acces.autre = "educ_4_handi_acces.autre",
                                          
-                                         sum_educ_4_handi_acces.descol_autre_filles <- "educ_4_handi_acces.descol_autre_filles",
-                                         sum_educ_4_handi_acces.descol_acces_filles <- "educ_4_handi_acces.descol_acces_filles",
-                                         sum_educ_4_handi_acces.descol_enseignement_filles <- "educ_4_handi_acces.descol_enseignement_filles",
-                                         sum_educ_4_handi_acces.scol_non_opti_filles <- "educ_4_handi_acces.scol_non_opti_filles",
-                                         sum_educ_4_handi_acces.scol_ok_filles <- "educ_4_handi_acces.scol_ok_filles",
-                                         sum_educ_4_handi_acces.autre_filles <- "educ_4_handi_acces.autre_filles",
+                                         sum_educ_4_handi_acces.descol_autre_filles = "educ_4_handi_acces.descol_autre_filles",
+                                         sum_educ_4_handi_acces.descol_acces_filles = "educ_4_handi_acces.descol_acces_filles",
+                                         sum_educ_4_handi_acces.descol_enseignement_filles = "educ_4_handi_acces.descol_enseignement_filles",
+                                         sum_educ_4_handi_acces.scol_non_opti_filles = "educ_4_handi_acces.scol_non_opti_filles",
+                                         sum_educ_4_handi_acces.scol_ok_filles = "educ_4_handi_acces.scol_ok_filles",
+                                         sum_educ_4_handi_acces.autre_filles = "educ_4_handi_acces.autre_filles",
                                          
-                                         sum_educ_4_handi_acces.descol_autre_garcons <- "educ_4_handi_acces.descol_autre_garcons",
-                                         sum_educ_4_handi_acces.descol_acces_garcons <- "educ_4_handi_acces.descol_acces_garcons",
-                                         sum_educ_4_handi_acces.descol_enseignement_garcons <- "educ_4_handi_acces.descol_enseignement_garcons",
-                                         sum_educ_4_handi_acces.scol_non_opti_garcons <- "educ_4_handi_acces.scol_non_opti_garcons",
-                                         sum_educ_4_handi_acces.scol_ok_garcons <- "educ_4_handi_acces.scol_ok_garcons",
-                                         sum_educ_4_handi_acces.autre_garcons <- "educ_4_handi_acces.autre_garcons",
+                                         sum_educ_4_handi_acces.descol_autre_garcons =  "educ_4_handi_acces.descol_autre_garcons",
+                                         sum_educ_4_handi_acces.descol_acces_garcons = "educ_4_handi_acces.descol_acces_garcons",
+                                         sum_educ_4_handi_acces.descol_enseignement_garcons = "educ_4_handi_acces.descol_enseignement_garcons",
+                                         sum_educ_4_handi_acces.scol_non_opti_garcons = "educ_4_handi_acces.scol_non_opti_garcons",
+                                         sum_educ_4_handi_acces.scol_ok_garcons = "educ_4_handi_acces.scol_ok_garcons",
+                                         sum_educ_4_handi_acces.autre_garcons = "educ_4_handi_acces.autre_garcons",
                                          
                                          sum_handi_4_18 = "handi_4_18"
                                        ),
