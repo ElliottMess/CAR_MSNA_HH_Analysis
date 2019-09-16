@@ -240,7 +240,7 @@ hh_ind <- change_select_multiple_value(question.name = "sante_5_5plus_malades",
                                                   other.q.name = "sante_5_5plus_malades_autre", 
                                                   old.value.name  = "sante_5_5plus_malades_autre", 
                                                   new.value.name = "sante_5_5plus_malades_autre_recoding",
-                                                  toadd.value = maladies,
+                                                  toadd.value = list_to_add_sante_5_5plus_malades,
                                                   data = hh_ind,
                                                   other.choice.name = "autre",
                                   

@@ -45,7 +45,6 @@
   codes_others_aap <- read.csv("./input/questionnaire_MSNA_HH_autreToClean.csv", stringsAsFactors = F)%>%
     mutate_at(vars(ends_with("_autre")), removed_nonUTF)
   
-  
   questions_toberecoded <- names(select(codes_others_aap, ends_with("_autre")))
   
   df_hh <- df_hh%>%
