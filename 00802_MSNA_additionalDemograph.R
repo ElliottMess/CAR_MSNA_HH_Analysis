@@ -24,7 +24,7 @@ source("functions/format_hypothesis_test.R")
 ### source("SOME_NGA_SPECIFIC_FUNCTIONS")
 
 #### READING LATEST DATAFRAME FROM TODAY!!
-response_updated_cluster <- read.csv(paste0("./output/REACH_CAR_dataset_HH_MSNA_", format(Sys.time(), "%Y%m%d"),".csv"), stringsAsFactors = FALSE)
+response_updated_cluster <- read.csv(paste0("./output/REACH_CAR_dataset_HH_MSNA_20190918.csv"), stringsAsFactors = FALSE)
 
 response_updated_cluster <- response_updated_cluster%>%
   mutate(
@@ -39,7 +39,7 @@ response_updated_cluster <- response_updated_cluster%>%
 
     sum_educ_3_presence_18_19.total.0m = rowSums(select(.,ends_with(".0m")), na.rm = T),
     sum_educ_3_presence_18_19.total.0m_3m = rowSums(select(.,ends_with("0m_3m")), na.rm = T),
-    sum_educ_3_presence_18_19.total.12m = rowSums(select(.,ends_with("12m")), na.rm = T),
+    sum_educ_3_presence_18_19.total.12m = rowSums(select(.,ends_with(".12m")), na.rm = T),
     sum_educ_3_presence_18_19.total.3m_6m = rowSums(select(.,ends_with("3m_6m")), na.rm = T),
     sum_educ_3_presence_18_19.total.6m_12m = rowSums(select(.,ends_with("6m_12m")), na.rm = T),
     
